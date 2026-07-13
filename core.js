@@ -1,53 +1,71 @@
 // ==========================================================
-// Core Engine (Config, API, Utilities, Cart)
+// CORE PLATFORM DATA MATRIX UTILITIES
 // ==========================================================
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycbxh5gW0crf7r_TnOlKzZQGTPVBv43k-nwcL5wWXLwifVyXf60JoeGfZwFtWXYeY0--rBQ/exec",
+  API: "https://script.google.com/macros/s/AKfycbwm6J7cIAbV6Hz7KAxH8MwtIPN97jKk4dIdWvOPDWtUCDIOwUneT_-APIo2WXbMqkY/exec",
   UPI: "9050623210@sbi",
-  NAME: "JK Enterprises"
+  NAME: "JK Enterprises",
+  WHATSAPP: "919050623210" // Destination phone framework array with country code prefix
 };
 
-// Network Fetcher
+export const formatINR = (num) => {
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0
+  }).format(num);
+};
+
 export const api = {
-  get: async (action, params = {}) => {
-    const query = new URLSearchParams({ action, ...params }).toString();
-    const res = await fetch(`${CONFIG.API}?${query}`);
-    return res.json();
+  async get(action) {
+    try {
+      const response = await fetch(`${CONFIG.API}?action=${action}`);
+      if (!response.ok) throw new Error("Network tier rejection token.");
+      return await response.json();
+    } catch (err) {
+      console.error("API Fetch Error:", err);
+      throw err;
+    }
   },
-  post: async (action, data) => {
-    const res = await fetch(`${CONFIG.API}?action=${action}`, { method: "POST", body: JSON.stringify(data) });
-    return res.json();
+  async post(action, data) {
+    try {
+      const response = await fetch(`${CONFIG.API}?action=${action}`, {
+        method: "POST",
+        body: JSON.stringify(data)
+      });
+      return await response.json();
+    } catch (err) {
+      console.error("API Write Rejection:", err);
+      return { success: false, error: err.toString() };
+    }
   }
 };
 
-// Global Reactive App State
+// Global reactive application cart storage layout architecture mappings
 export const app = {
-  cart: JSON.parse(localStorage.getItem("jk_cart")) || [],
-  cache: {},
-  
-  updateCart(id, q, price, name, img) {
-    const idx = this.cart.findIndex(i => i.id === id);
-    if (q <= 0) { if (idx > -1) this.cart.splice(idx, 1); }
-    else if (idx > -1) this.cart[idx].q = q;
-    else this.cart.push({ id, q, price, name, img });
-    localStorage.setItem("jk_cart", JSON.stringify(this.cart));
-    document.dispatchEvent(new Event("cartUpdated"));
+  getCart() {
+    try {
+      return JSON.parse(localStorage.getItem("jke_cart")) || [];
+    } catch (e) {
+      return [];
+    }
   },
-  
-  getCartTotals(isCOD = false) {
-    const subtotal = this.cart.reduce((sum, i) => sum + (i.price * i.q), 0);
-    const codFee = isCOD ? Math.round(subtotal * 0.05) : 0;
-    return { subtotal, codFee, total: subtotal + codFee, count: this.cart.reduce((sum, i) => sum + i.q, 0) };
+  saveCart(cart) {
+    localStorage.setItem("jke_cart", JSON.stringify(cart));
+    window.dispatchEvent(new Event("cart_updated"));
   },
-  
+  updateCart(sku, qty, price, name, img) {
+    let cart = this.getCart();
+    const index = cart.findIndex(item => item.sku === sku);
+    if (index > -1) {
+      if (qty <= 0) cart.splice(index, 1);
+      else cart[index].qty = qty;
+    } else if (qty > 0) {
+      cart.push({ sku, qty, price, name, img });
+    }
+    this.saveCart(cart);
+  },
   clearCart() {
-    this.cart = [];
-    localStorage.removeItem("jk_cart");
-    document.dispatchEvent(new Event("cartUpdated"));
+    this.saveCart([]);
   }
 };
-
-// Utilities
-export const $ = (sel) => document.querySelector(sel);
-export const formatINR = (amt) => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(amt);
-export const getUPIString = (amt, refId) => `upi://pay?pa=${CONFIG.UPI}&pn=${encodeURIComponent(CONFIG.NAME)}&am=${amt}&cu=INR&tn=${encodeURIComponent('Order ' + refId)}`;

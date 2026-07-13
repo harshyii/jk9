@@ -2,7 +2,7 @@
 // Core Engine (Config, API, Utilities, Cart)
 // ==========================================================
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycby_aDi_kn_ary8bBuUn0q4hrP2bKfKLQeDHvI6XgI7QCflUc6pOH4V0WCzkauEiH0FjSA/exec",
+  API: "https://script.google.com/macros/s/AKfycbxh5gW0crf7r_TnOlKzZQGTPVBv43k-nwcL5wWXLwifVyXf60JoeGfZwFtWXYeY0--rBQ/exec",
   UPI: "9050623210@sbi",
   NAME: "JK Enterprises"
 };

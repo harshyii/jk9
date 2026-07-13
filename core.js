@@ -1,12 +1,15 @@
 // ==========================================================
 // CORE PLATFORM DATA MATRIX UTILITIES
 // ==========================================================
+export const $ = (selector) => document.querySelector(selector);
 export const CONFIG = {
   API: "https://script.google.com/macros/s/AKfycbwm6J7cIAbV6Hz7KAxH8MwtIPN97jKk4dIdWvOPDWtUCDIOwUneT_-APIo2WXbMqkY/exec",
   UPI: "9050623210@sbi",
   NAME: "JK Enterprises",
   WHATSAPP: "919050623210" // Destination phone framework array with country code prefix
 };
+
+
 
 export const formatINR = (num) => {
   return new Intl.NumberFormat('en-IN', {

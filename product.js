@@ -1,7 +1,24 @@
 // ==========================================================
-// Catalog & Single Product Engineering Module (Corrected)
+// Catalog & Single Product Engineering Module (Hardened SKU Variant)
 // ==========================================================
 import { api, app, formatINR } from "./core.js";
+
+// Helper helper function to find the SKU column dynamically, ignoring hidden spaces/cases
+function findSku(p) {
+  if (!p) return "N/A";
+  // Search through all object keys to find one that contains "ProductIDSKU" or "id"
+  const targetKey = Object.keys(p).find(key => 
+    key.replace(/\s+/g, '').toLowerCase().includes("productidsku") || 
+    key.replace(/\s+/g, '').toLowerCase() === "id"
+  );
+  return targetKey ? String(p[targetKey]).trim() : (p.id || "N/A");
+}
+
+function getCleanPrice(p) {
+  const rawPrice = p["Sale Price"] || p["price"] || "0";
+  const matched = String(rawPrice).match(/\d+/);
+  return matched ? Number(matched[0]) : 0;
+}
 
 export async function render(container, params) {
   if (params.id) {
@@ -49,13 +66,6 @@ export async function render(container, params) {
   }
 }
 
-function getCleanPrice(p) {
-  // Extracts digits out of mixed data formatting blocks like "5PC8600"
-  const rawPrice = p["Sale Price"] || p["price"] || "0";
-  const matched = String(rawPrice).match(/\d+/);
-  return matched ? Number(matched[0]) : 0;
-}
-
 function displayGrid(target, list) {
   if (!list || list.length === 0) {
     target.innerHTML = `<p class="text-muted text-center py-4">No industrial stock matches found.</p>`;
@@ -63,7 +73,7 @@ function displayGrid(target, list) {
   }
   target.innerHTML = list.map(p => {
     const name = p["Item Name"] || p["name"] || "Unnamed Product";
-    const sku = p["ProductIDSKU"] || p["id"] || "N/A";
+    const sku = findSku(p);
     const brand = p["Brand"] || p["brand"] || "OEM";
     const price = getCleanPrice(p);
     const img = p["Image1"] || p["img"] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400";
@@ -73,7 +83,7 @@ function displayGrid(target, list) {
         <div class="card h-100 border-0 shadow-sm rounded-0 product-card position-relative">
           <img src="${img}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height:150px; background:#fafafa;" alt="${name}">
           <div class="card-body p-3 d-flex flex-column">
-            <h6 class="fw-bold text-truncate text-dark mb-1">${name}</h6>
+            <h6 class="fw-bold text-truncate text-dark mb-1" title="${name}">${name}</h6>
             <span class="badge bg-light text-dark align-self-start font-monospace mb-2" style="font-size:10px;">${brand}</span>
             <div class="mt-auto">
               <div class="fw-bold text-danger mb-2">${formatINR(price)}</div>
@@ -90,8 +100,9 @@ async function renderDetail(container, id) {
   container.innerHTML = `<div class="text-center py-5"><div class="spinner-border text-warning"></div></div>`;
   try {
     const products = await api.get("products");
-    // Find matching item by scanning ProductIDSKU fields directly
-    const p = products.find(item => String(item["ProductIDSKU"] || item["id"]) === String(id));
+    
+    // Fuzzy matching evaluation against the actual incoming dynamic product payload string
+    const p = products.find(item => findSku(item) === String(id));
     
     if (!p) {
       container.innerHTML = `<div class="alert alert-warning text-center">SKU profile [${id}] not indexed in factory distribution network.</div>`;
@@ -99,7 +110,7 @@ async function renderDetail(container, id) {
     }
 
     const name = p["Item Name"] || p["name"] || "Unnamed Product";
-    const sku = p["ProductIDSKU"] || p["id"] || "N/A";
+    const sku = findSku(p);
     const brand = p["Brand"] || p["brand"] || "OEM";
     const price = getCleanPrice(p);
     const mrp = p["MRP"] ? Number(String(p["MRP"]).replace(/[^\d]/g, '')) : null;

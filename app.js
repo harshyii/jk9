@@ -1,12 +1,20 @@
 // ==========================================================
-// Application Core Bootstrapper & Lifecycle Initialization
+// APPLICATION INITIALIZATION ENTRY POINT MATRIX
 // ==========================================================
 import { initRouter } from "./router.js";
 import { updateCartBadges } from "./layout.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Fire routing and synchronize system session badges instantly
+  // Initialize navigation routing layout engines
   initRouter();
-  updateCartBadges();
-  console.log("1.1");
+
+  // Attach immediate reactive listeners to custom storage update sequences
+  window.addEventListener("cart_updated", () => {
+    updateCartBadges();
+  });
+
+  // Initial runtime load update signature pass
+  setTimeout(() => {
+    updateCartBadges();
+  }, 50);
 });

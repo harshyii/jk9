@@ -8,4 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fire routing and synchronize system session badges instantly
   initRouter();
   updateCartBadges();
+  console.log("1.1");
 });

@@ -33,7 +33,8 @@ export async function render(container, params) {
     grid.innerHTML = data.map(p => {
       // Safely map your exact capitalization headers from the Excel sheet
       const productName = p["Item Name"] || p["name"] || "Unknown Item";
-      const productSku = p["ProductIDSKU"] || p["id"] || "N/A";
+      // Add this line inside the map loop of home.js where it parses the elements:
+const productSku = Object.keys(p).find(k => k.toLowerCase().includes("productidsku")) ? p[Object.keys(p).find(k => k.toLowerCase().includes("productidsku"))] : "N/A";
       const productBrand = p["Brand"] || p["brand"] || "OEM";
       const productPrice = Number(p["Sale Price"] || p["price"] || 0);
       const productMrp = p["MRP"] || p["mrp"] ? Number(p["MRP"] || p["mrp"]) : null;

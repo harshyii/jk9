@@ -101,11 +101,26 @@ async function renderDetail(container, id) {
   try {
     const products = await api.get("products");
     
-    // Fuzzy matching evaluation against the actual incoming dynamic product payload string
-    const p = products.find(item => findSku(item) === String(id));
+    // Decode the URL parameter to make sure it handles symbols and spaces properly
+    const decodedId = decodeURIComponent(id).trim().toLowerCase();
+    
+    // Hardened Matcher: Checks if the ID exists inside the spreadsheet SKU string, OR vice versa
+    const p = products.find(item => {
+      const itemSku = String(findSku(item)).trim().toLowerCase();
+      return itemSku.includes(decodedId) || decodedId.includes(itemSku);
+    });
     
     if (!p) {
-      container.innerHTML = `<div class="alert alert-warning text-center">SKU profile [${id}] not indexed in factory distribution network.</div>`;
+      container.innerHTML = `
+        <div class="container py-5 text-center">
+          <div class="alert alert-warning border-0 rounded-0 shadow-sm mx-auto" style="max-width: 500px;">
+            <i class="bi bi-exclamation-triangle text-warning fs-3 d-block mb-2"></i>
+            <span class="fw-bold d-block text-dark mb-1">SKU Profile Indexing Fault</span>
+            <span class="text-muted small">The identifier <code class="text-danger">${id}</code> does not match our current distribution manifest.</span>
+          </div>
+          <a href="#/products" class="btn btn-sm btn-dark rounded-0 font-monospace mt-3">Return to Manifest Catalog</a>
+        </div>
+      `;
       return;
     }
 
@@ -125,7 +140,7 @@ async function renderDetail(container, id) {
         <div class="col-md-7">
           <span class="badge bg-warning text-dark font-monospace mb-2">${brand}</span>
           <h3 class="fw-bold text-dark">${name}</h3>
-          <p class="text-muted font-monospace small">SKU: ${sku}</p>
+          <p class="text-muted font-monospace small">SKU System ID: ${sku}</p>
           <hr class="text-muted">
           <div class="d-flex align-items-baseline gap-3 my-3">
             <h2 class="text-danger fw-bold mb-0">${formatINR(price)}</h2>

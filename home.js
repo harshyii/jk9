@@ -31,29 +31,38 @@ export async function render(container, params) {
     }
 
     grid.innerHTML = data.map(p => {
-      // Safely map your exact capitalization headers from the Excel sheet
-      const productName = p["Item Name"] || p["name"] || "Unknown Item";
-      // Add this line inside the map loop of home.js where it parses the elements:
-const productSku = Object.keys(p).find(k => k.toLowerCase().includes("productidsku")) ? p[Object.keys(p).find(k => k.toLowerCase().includes("productidsku"))] : "N/A";
-      const productBrand = p["Brand"] || p["brand"] || "OEM";
-      const productPrice = Number(p["Sale Price"] || p["price"] || 0);
-      const productMrp = p["MRP"] || p["mrp"] ? Number(p["MRP"] || p["mrp"]) : null;
-      const productImage = p["Image1"] || p["img"] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400";
+      // Inline Failsafe SKU matching strategy pattern for the homepage catalog template layout grid
+      let sku = "N/A";
+      const foundKey = Object.keys(p).find(k => k.replace(/\s+/g, '').toLowerCase().includes("productidsku") || k.toLowerCase() === "id");
+      if (foundKey && String(p[foundKey]).trim()) {
+        sku = String(p[foundKey]).trim();
+      } else {
+        const fallbackMatch = String(p["Item Name"] || p["name"] || "").match(/^[A-Z0-9]+/);
+        sku = fallbackMatch && fallbackMatch[0].length >= 4 ? fallbackMatch[0] : "JKE-" + Math.floor(1000 + Math.random() * 9000);
+      }
+
+      const name = p["Item Name"] || p["name"] || "Unnamed Product";
+      const brand = p["Brand"] || p["brand"] || "OEM";
+      
+      const rawPrice = p["Sale Price"] || p["price"] || "0";
+      const matchedDigits = String(rawPrice).match(/\d+/);
+      const price = matchedDigits ? Number(matchedDigits[0]) : 0;
+      
+      const img = p["Image1"] || p["img"] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400";
 
       return `
         <div class="col-6 col-md-4 col-lg-3">
           <div class="card h-100 border-0 shadow-sm rounded-0 product-card position-relative">
-            <div class="position-absolute top-0 end-0 bg-warning text-dark font-monospace fw-bold px-2 py-0.5 small z-1">${productBrand}</div>
-            <img src="${productImage}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height: 180px; background: #fafafa;" alt="${productName}">
+            <div class="position-absolute top-0 end-0 bg-warning text-dark font-monospace fw-bold px-2 py-0.5 small z-1">${brand}</div>
+            <img src="${img}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height: 180px; background: #fafafa;" alt="${name}">
             <div class="card-body d-flex flex-column p-3">
-              <h6 class="card-title fw-bold text-dark text-truncate mb-1">${productName}</h6>
-              <p class="text-muted small mb-2 font-monospace">SKU: ${productSku}</p>
+              <h6 class="card-title fw-bold text-dark text-truncate mb-1">${name}</h6>
+              <p class="text-muted small mb-2 font-monospace">SKU: ${sku}</p>
               <div class="mt-auto">
                 <div class="d-flex align-items-baseline gap-2 mb-2">
-                  <span class="fs-5 fw-bold text-danger">${formatINR(productPrice)}</span>
-                  ${productMrp ? `<del class="text-muted small">${formatINR(productMrp)}</del>` : ''}
+                  <span class="fs-5 fw-bold text-danger">${formatINR(price)}</span>
                 </div>
-                <a href="#/product?id=${productSku}" class="btn btn-sm btn-outline-dark w-100 rounded-0 fw-bold">View Procurement Data</a>
+                <a href="#/product?id=${encodeURIComponent(sku)}" class="btn btn-sm btn-outline-dark w-100 rounded-0 fw-bold">View Procurement Data</a>
               </div>
             </div>
           </div>

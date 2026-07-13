@@ -1,17 +1,37 @@
 // ==========================================================
-// Catalog & Single Product Engineering Module (Hardened SKU Variant)
+// Catalog & Single Product Engineering Module (Zero-Fail SKU)
 // ==========================================================
 import { api, app, formatINR } from "./core.js";
 
-// Helper helper function to find the SKU column dynamically, ignoring hidden spaces/cases
+// Hardened structural fallback key identifier loop
 function findSku(p) {
   if (!p) return "N/A";
-  // Search through all object keys to find one that contains "ProductIDSKU" or "id"
-  const targetKey = Object.keys(p).find(key => 
-    key.replace(/\s+/g, '').toLowerCase().includes("productidsku") || 
-    key.replace(/\s+/g, '').toLowerCase() === "id"
-  );
-  return targetKey ? String(p[targetKey]).trim() : (p.id || "N/A");
+  
+  // 1. Look for any exact or fuzzy match column header
+  const targetKey = Object.keys(p).find(key => {
+    const cleanKey = key.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    return cleanKey.includes("productidsku") || cleanKey === "sku" || cleanKey === "id";
+  });
+  
+  if (targetKey && String(p[targetKey]).trim()) {
+    return String(p[targetKey]).trim();
+  }
+  
+  // 2. Fallback: If no column is found, extract from the start of the text values (e.g., "FPTEEIW0000280")
+  const potentialSource = p["Item Name"] || p["name"] || p["Description"] || "";
+  const match = String(potentialSource).match(/^[A-Z0-9]+/);
+  if (match && match[0].length >= 4) {
+    return match[0];
+  }
+  
+  // 3. Absolute Fallback: Generate a clean internal hash out of the item title string index
+  const fallbackStr = p["Item Name"] || JSON.stringify(p);
+  let hash = 0;
+  for (let i = 0; i < fallbackStr.length; i++) {
+    hash = (hash << 5) - hash + fallbackStr.charCodeAt(i);
+    hash |= 0;
+  }
+  return "JKE-SKU-" + Math.abs(hash).toString().slice(-6);
 }
 
 function getCleanPrice(p) {
@@ -100,15 +120,10 @@ async function renderDetail(container, id) {
   container.innerHTML = `<div class="text-center py-5"><div class="spinner-border text-warning"></div></div>`;
   try {
     const products = await api.get("products");
-    
-    // Decode the URL parameter to make sure it handles symbols and spaces properly
     const decodedId = decodeURIComponent(id).trim().toLowerCase();
     
-    // Hardened Matcher: Checks if the ID exists inside the spreadsheet SKU string, OR vice versa
-    const p = products.find(item => {
-      const itemSku = String(findSku(item)).trim().toLowerCase();
-      return itemSku.includes(decodedId) || decodedId.includes(itemSku);
-    });
+    // Scans dynamically using our newly defined findSku routine parameters loop logic
+    const p = products.find(item => findSku(item).toLowerCase().includes(decodedId) || decodedId.includes(findSku(item).toLowerCase()));
     
     if (!p) {
       container.innerHTML = `

@@ -53,22 +53,16 @@ export const app = {
       return [];
     }
   },
+
+  // ADD THIS MISSING FUNCTION HERE:
+  getCartTotals() {
+    const cart = this.getCart();
+    const count = cart.reduce((acc, item) => acc + Number(item.qty || 0), 0);
+    const subtotal = cart.reduce((acc, item) => acc + (Number(item.price || 0) * Number(item.qty || 0)), 0);
+    return { count, subtotal };
+  },
+
   saveCart(cart) {
     localStorage.setItem("jke_cart", JSON.stringify(cart));
     window.dispatchEvent(new Event("cart_updated"));
-  },
-  updateCart(sku, qty, price, name, img) {
-    let cart = this.getCart();
-    const index = cart.findIndex(item => item.sku === sku);
-    if (index > -1) {
-      if (qty <= 0) cart.splice(index, 1);
-      else cart[index].qty = qty;
-    } else if (qty > 0) {
-      cart.push({ sku, qty, price, name, img });
-    }
-    this.saveCart(cart);
-  },
-  clearCart() {
-    this.saveCart([]);
-  }
-};
+  },}

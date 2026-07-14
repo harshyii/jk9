@@ -407,13 +407,26 @@ price:i.price
 
 console.log("Sending order...", order);
 
-const res = await api.post("order", order);
+const params = new URLSearchParams({
+    action: "order",
+    customerName: order.customerName,
+    phone: order.phone,
+    address: order.address,
+    paymentMethod: order.paymentMethod,
+    subtotal: order.subtotal,
+    codCharge: order.codCharge,
+    total: order.total,
+    items: JSON.stringify(order.items)
+});
+
+const res = await fetch(`${CONFIG.API}?${params}`);
+const data = await res.json();
 
 console.log("API Response:", res);
 
-const orderId=res.success
-?res.orderId
-:"JKE-"+Date.now();
+const orderId = data.success
+    ? data.orderId
+    : "JKE-" + Date.now();
 
 let msg=`*New Order : ${orderId}*\n\n`;
 

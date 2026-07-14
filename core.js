@@ -29,7 +29,9 @@ clearTimeout(timeoutId);
 if(!response.ok)throw new Error(`HTTP ${response.status}`);
 const text=await response.text();
 
-return JSON.parse(text);
+const json=JSON.parse(text);
+
+return json.data ?? json;
 }catch(err){
 console.error("GET Error:",err);
 return [];
@@ -37,22 +39,68 @@ return [];
 },
 
 async post(action,data){
+
 try{
+
+// Google Apps Script order endpoint uses GET
+if(action==="order"){
+
+const params=new URLSearchParams({
+action,
+customerName:data.customerName,
+phone:data.phone,
+address:data.address,
+paymentMethod:data.paymentMethod,
+subtotal:data.subtotal,
+codCharge:data.codCharge,
+total:data.total,
+items:JSON.stringify(data.items)
+});
+
+const response=await fetch(`${CONFIG.API}?${params}`);
+
+if(!response.ok)
+throw new Error(`HTTP ${response.status}`);
+
+return await response.json();
+
+}
+
+// Everything else still uses POST
 const controller=new AbortController();
+
 const timeoutId=setTimeout(()=>controller.abort(),10000);
-const response=await fetch(`${CONFIG.API}?action=${encodeURIComponent(action)}`,{
+
+const response=await fetch(
+`${CONFIG.API}?action=${encodeURIComponent(action)}`,
+{
 method:"POST",
-headers:{"Content-Type":"application/json"},
+headers:{
+"Content-Type":"application/json"
+},
 body:JSON.stringify(data),
 signal:controller.signal
-});
-clearTimeout(timeoutId);
-if(!response.ok)throw new Error(`HTTP ${response.status}`);
-return await response.json();
-}catch(err){
-console.error("POST Error:",err);
-return{success:false,error:err.message};
 }
+);
+
+clearTimeout(timeoutId);
+
+if(!response.ok)
+throw new Error(`HTTP ${response.status}`);
+
+return await response.json();
+
+}catch(err){
+
+console.error("POST Error:",err);
+
+return{
+success:false,
+error:err.message
+};
+
+}
+
 }
 };
 

@@ -5,7 +5,7 @@ export const $ = (selector) => document.querySelector(selector);
 // CORE PLATFORM DATA MATRIX UTILITIES (OFFLINE COMPATIBLE)
 // ==========================================================
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycbxfyBNEi6hXXLZsH_Nra_XH6AzF5Xk7P80dbmW3cgRA1P7oVUj_Fd9fuC8bVVOocQ-omg/exec",
+  API: "https://script.google.com/macros/s/AKfycbwA9kETIPQkzkW7XzilbP89fZspRxvz3iK2m26IUFLa184SbI16iKJqLzt5HrstuU4i/exec",
   UPI: "9050623210@sbi",
   NAME: "JK Enterprises",
   WHATSAPP: "919050623210" // Destination phone framework array with country code prefix
@@ -19,46 +19,43 @@ export const formatINR = (num) => {
   }).format(num);
 };
 
-export const api = {
-  async get(action) {
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000);
+export const api={
+async get(action){
+try{
+const controller=new AbortController();
+const timeoutId=setTimeout(()=>controller.abort(),6000);
+const response=await fetch(`${CONFIG.API}?action=${encodeURIComponent(action)}`,{signal:controller.signal});
+clearTimeout(timeoutId);
+if(!response.ok)throw new Error(`HTTP ${response.status}`);
+const text=await response.text();
+console.log("API:",text);
+return JSON.parse(text);
+}catch(err){
+console.error("GET Error:",err);
+return [];
+}
+},
 
-    // REMOVED: mode: 'no-cors'
-    const response = await fetch(`${CONFIG.API}?action=${action}`, { 
-      signal: controller.signal 
-    });
-    
-    clearTimeout(timeoutId);
-
-    if (!response.ok) throw new Error("Network tier rejection token.");
-    
-    // Now you can safely parse the JSON
-    return await response.json(); 
-  } catch (err) {
-    // ... rest of your error handling
-  }
-  },
-  
-  async post(action, data) {
-    try {
-      const response = await fetch(`${CONFIG.API}?action=${action}`, {
-        mode: 'no-cors',
-        method: "POST",
-        body: JSON.stringify(data)
-      });
-      return await response.json();
-    } catch (err) {
-      console.error("API Write Rejection (Using fallback local pipeline):", err);
-      // Return a temporary client-side mock id if the script database sheet is out of reach
-      return { 
-        success: false, 
-        fallback: true,
-        orderId: "JKE-OFFLINE-" + Math.floor(10000 + Math.random() * 90000) 
-      };
-    }
-  }
+async post(action,data){
+try{
+const controller=new AbortController();
+const timeoutId=setTimeout(()=>controller.abort(),10000);
+const response=await fetch(`${CONFIG.API}?action=${encodeURIComponent(action)}`,{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(data),
+signal:controller.signal
+});
+clearTimeout(timeoutId);
+if(!response.ok)throw new Error(`HTTP ${response.status}`);
+const text=await response.text();
+console.log("POST:",text);
+return JSON.parse(text);
+}catch(err){
+console.error("POST Error:",err);
+return{success:false,error:err.message};
+}
+}
 };
 
 // Global reactive application cart storage layout architecture mappings

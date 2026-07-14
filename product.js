@@ -1,204 +1,287 @@
 // ==========================================================
-// Catalog & Single Product Engineering Module (Robust Sanitizer)
+// Products
 // ==========================================================
-import { api, app, formatINR } from "./core.js";
 
-// Extracts clean numeric identifiers out of messy scraper data like "5PC8600"
-function sanitizePrice(p) {
-  const rawPrice = p["Sale Price"] || p["price"] || "0";
-  // Filters out string numbers, looks for matching sequences common to product listings
-  const match = String(rawPrice).replace(/[^\d]/g, '');
-  if (!match) return 0;
-  
-  // If scraper appended text fields together like "5PC8600", slice off common prefixes
-  if (String(rawPrice).startsWith("5PC") && match.length > 4) {
-    return Number(match.substring(1)); // Removes the '5' leaving '8600'
-  }
-  return Number(match) > 100000 ? Number(String(match).slice(0, 4)) : Number(match);
-}
+import {api,app,formatINR} from "./core.js";
 
-// Scans messy objects to find a valid SKU identifier
-function sanitizeSku(p){
+function sku(p){
 return String(
 p.ProductID||
 p["Product ID"]||
 p.SKU||
-p["SKU"]||
 p.ID||
-p["Model Number"]||
 p.Model||
 p.ASIN||
-p.Asin||
 ""
 ).trim();
 }
 
-export async function render(container, params) {
-  if (params.id) {
-    return renderDetail(container, params.id);
-  }
-
-  container.innerHTML = `
-    <div class="row">
-      <div class="col-md-3 mb-4">
-        <div class="bg-white p-3 shadow-sm border small">
-          <h6 class="fw-bold text-dark border-bottom pb-2">Filter Catalog</h6>
-          <div class="mb-3">
-            <label class="form-label fw-semibold text-muted">Sort Allocations</label>
-            <select id="sort-select" class="form-select form-select-sm rounded-0">
-              <option value="default">Default Matrix</option>
-              <option value="low">Price: Low to High</option>
-              <option value="high">Price: High to Low</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-9">
-        <h4 class="fw-bold text-dark mb-4">Complete Inventory Manifest</h4>
-        <div class="row g-3" id="catalog-grid">
-          <div class="col-12 text-center py-5"><div class="spinner-border text-warning"></div></div>
-        </div>
-      </div>
-    </div>
-  `;
-
-  try {
-    let items = await api.get("products");
-    console.log(items);
-    console.log(Array.isArray(items));
-    const grid = document.getElementById("catalog-grid");
-
-    document.getElementById("sort-select").addEventListener("change", (e) => {
-      let sorted = [...items];
-      if (e.target.value === "low") sorted.sort((a,b) => sanitizePrice(a) - sanitizePrice(b));
-      if (e.target.value === "high") sorted.sort((a,b) => sanitizePrice(b) - sanitizePrice(a));
-      displayGrid(grid, sorted);
-    });
-
-    displayGrid(grid, items);
-  } catch(err){
-    console.error(err);
-    console.error(err.stack);
-    document.getElementById("catalog-grid").innerHTML=
-    `<div class="alert alert-danger">${err.message}</div>`;
-    }
+function name(p){
+return p["Item Name"]||p.Name||"Unnamed Product";
 }
 
-function displayGrid(target, list) {
-  if (!list || list.length === 0) {
-    target.innerHTML = `<p class="text-muted text-center py-4">No industrial stock matches found.</p>`;
-    return;
-  }
-  target.innerHTML = list.map(p => {
-    const name = p["Item Name"] || "Unnamed Product";
-    const sku = sanitizeSku(p);
-    const brand = p["Brand"] || "OEM";
-    const price = sanitizePrice(p);
-    const img = p["Image1"] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400";
-
-    return `
-      <div class="col-6 col-md-4">
-        <div class="card h-100 border-0 shadow-sm rounded-0 product-card position-relative border-bottom">
-          <img src="${img}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height:150px; background:#fafafa;" alt="${name}">
-          <div class="card-body p-3 d-flex flex-column">
-            <h6 class="fw-bold text-truncate text-dark mb-1" title="${name}">${name}</h6>
-            <span class="badge bg-light text-dark align-self-start font-monospace mb-2" style="font-size:10px;">${brand}</span>
-            <div class="mt-auto">
-              <div class="fw-bold text-danger mb-2">${formatINR(price)}</div>
-              <a href="#/product?id=${encodeURIComponent(sku)}" class="btn btn-sm btn-dark w-100 rounded-0 font-monospace">Analyze Specs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-  }).join("");
+function brand(p){
+return p.Brand||"";
 }
 
-async function renderDetail(container, id) {
-  container.innerHTML = `<div class="text-center py-5"><div class="spinner-border text-warning"></div></div>`;
-  try {
-    const products = await api.get("products");
-    const decodedId = decodeURIComponent(id).trim().toLowerCase();
-    
-    const p = products.find(item => sanitizeSku(item).toLowerCase() === decodedId || sanitizeSku(item).toLowerCase().includes(decodedId));
-    
-    if (!p) {
-      container.innerHTML = `<div class="alert alert-warning text-center my-5">SKU [${id}] not found inside catalog mappings.</div>`;
-      return;
-    }
+function image(p){
+return p.Image1||"404.webp";
+}
 
-    const name = p["Item Name"] || "Unnamed Product";
-    const sku = sanitizeSku(p);
-    const brand = p["Brand"] || "OEM";
-    const price = sanitizePrice(p);
-    const desc = p["Description"] || "No secondary information provided.";
-    
-    // Dynamically look through columns Image1 to Image8 to extract active URLs
-    let images = [];
-    for (let i = 1; i <= 8; i++) {
-      if (p[`Image${i}`] && String(p[`Image${i}`]).startsWith("http")) {
-        images.push(p[`Image${i}`]);
-      }
-    }
-    if (images.length === 0) images.push("https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500");
+function price(p){
+return Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
+}
 
-    // Render image gallery markup dynamically
-    const mainImgHtml = `<img id="main-product-frame" src="${images[0]}" class="img-fluid border bg-light p-3 object-fit-contain w-100" style="height:350px;" alt="${name}">`;
-    const thumbsHtml = images.map((img, idx) => `
-      <div class="col-3">
-        <img src="${img}" class="img-fluid border p-1 thumbnail-clickable style="height:60px; cursor:pointer;" onclick="document.getElementById('main-product-frame').src='${img}'" alt="thumb">
-      </div>
-    `).join("");
+export async function render(container,params){
 
-    container.innerHTML = `
-      <div class="row g-4 bg-white p-3 p-md-4 rounded shadow-sm border">
-        <div class="col-md-5">
-          ${mainImgHtml}
-          <div class="row g-2 mt-2">${thumbsHtml}</div>
-        </div>
-        <div class="col-md-7">
-          <span class="badge bg-warning text-dark font-monospace mb-2">${brand}</span>
-          <h3 class="fw-bold text-dark">${name}</h3>
-          <p class="text-muted font-monospace small">Verified System SKU: <b class="text-dark">${sku}</b></p>
-          <hr class="text-muted">
-          <div class="d-flex align-items-baseline gap-3 my-3">
-            <h2 class="text-danger fw-bold mb-0">${formatINR(price)}</h2>
-          </div>
-          <p class="text-secondary small my-3" style="white-space: pre-line;">${desc}</p>
-          <div class="row g-2 align-items-center pt-2">
-            <div class="col-3 col-sm-2">
-              <input type="number" id="qty-input" class="form-control rounded-0 font-monospace text-center fw-bold" value="1" min="1">
-            </div>
-            <div class="col-9 col-sm-6">
-              <button id="add-to-cart-btn" class="btn btn-dark rounded-0 w-100 fw-bold"><i class="bi bi-cart-plus me-2"></i>Add to Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
+if(params.id)return renderDetail(container,params.id);
 
-    // Connect image carousel swap logic manually to explicitly catch inline event handling drops
-    const thumbElements = container.querySelectorAll('.row.g-2.mt-2 img');
-    thumbElements.forEach(thumb => {
-      thumb.addEventListener('click', (e) => {
-        document.getElementById('main-product-frame').src = e.target.src;
-      });
-    });
+container.innerHTML=`
+<div class="row">
 
-    document.getElementById("add-to-cart-btn").addEventListener("click", () => {
-      const q = parseInt(document.getElementById("qty-input").value) || 1;
-      app.updateCart(sku, q, price, name, images[0]);
-      
-      const btn = document.getElementById("add-to-cart-btn");
-      btn.className = "btn btn-success rounded-0 w-100 fw-bold";
-      btn.innerHTML = `<i class="bi bi-check-circle me-2"></i>Added to Cart`;
-      setTimeout(() => {
-        btn.className = "btn btn-dark rounded-0 w-100 fw-bold";
-        btn.innerHTML = `<i class="bi bi-cart-plus me-2"></i>Add to Cart`;
-      }, 2000);
-    });
+<div class="col-lg-3 mb-4">
 
-  } catch (err) {
-    container.innerHTML = `<div class="alert alert-danger">Procurement data matrix loading drop: ${err.message}</div>`;
-  }
+<div class="card shadow-sm">
+
+<div class="card-body">
+
+<h5 class="mb-3">Products</h5>
+
+<label class="form-label">Sort By</label>
+
+<select id="sort" class="form-select">
+
+<option value="">Default</option>
+<option value="low">Price : Low to High</option>
+<option value="high">Price : High to Low</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-9">
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+<h3 class="m-0">All Products</h3>
+
+</div>
+
+<div class="row g-4" id="catalog-grid">
+
+<div class="col-12 text-center py-5">
+
+<div class="spinner-border text-warning"></div>
+
+<p class="mt-3 mb-0 text-muted">
+Loading products...
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+`;
+
+try{
+
+const data=await api.get("products");
+
+const products=Array.isArray(data)?data:(data.data||[]);
+
+const grid=document.getElementById("catalog-grid");
+
+displayGrid(grid,products);
+
+document.getElementById("sort").onchange=e=>{
+
+let list=[...products];
+
+switch(e.target.value){
+
+case "low":
+list.sort((a,b)=>price(a)-price(b));
+break;
+
+case "high":
+list.sort((a,b)=>price(b)-price(a));
+break;
+
+}
+
+displayGrid(grid,list);
+
+};
+
+}catch(err){
+
+console.error(err);
+
+document.getElementById("catalog-grid").innerHTML=`
+<div class="col-12">
+<div class="alert alert-danger">
+Unable to load products.
+</div>
+</div>
+`;
+
+}
+
+}
+function displayGrid(target,list){
+
+if(!list.length){
+target.innerHTML=`
+<div class="col-12 text-center py-5 text-muted">
+No products available.
+</div>`;
+return;
+}
+
+target.innerHTML=list.map(p=>{
+
+const sku=String(
+p.ProductID||
+p["Product ID"]||
+p.SKU||
+p.ID||
+""
+).trim();
+
+const name=p["Item Name"]||p.Name||"Product";
+const brand=p.Brand||"";
+const price=Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
+const img=p.Image1||p.Image||"404.webp";
+
+return`
+
+<div class="col-6 col-md-4 col-lg-3">
+
+<div class="card h-100 shadow-sm border-0 rounded-3">
+
+<a href="#/product?id=${encodeURIComponent(sku)}">
+
+<img
+src="${img}"
+class="card-img-top p-3"
+style="height:220px;object-fit:contain;background:#fafafa">
+
+</a>
+
+<div class="card-body d-flex flex-column p-3">
+
+${brand?`<small class="text-muted text-uppercase fw-semibold mb-1">${brand}</small>`:""}
+
+<h6
+class="fw-semibold mb-2"
+style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:48px;">
+${name}
+</h6>
+
+<div class="fw-bold text-danger fs-4 mb-3">
+${formatINR(price)}
+</div>
+
+<div class="mt-auto">
+
+<label class="small text-muted">Quantity</label>
+
+<div class="input-group input-group-sm mb-3">
+
+<button
+class="btn btn-outline-secondary qty-minus"
+data-sku="${sku}">
+−
+</button>
+
+<input
+id="qty-${sku}"
+class="form-control text-center"
+value="1"
+readonly>
+
+<button
+class="btn btn-outline-secondary qty-plus"
+data-sku="${sku}">
++
+</button>
+
+</div>
+
+<button
+class="btn btn-warning w-100 add-cart mb-2"
+data-sku="${sku}"
+data-name="${name.replace(/"/g,"&quot;")}"
+data-price="${price}"
+data-img="${img}">
+🛒 Add to Cart
+</button>
+
+<a
+href="#/product?id=${encodeURIComponent(sku)}"
+class="btn btn-outline-secondary w-100">
+View Details
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}).join("");
+
+target.querySelectorAll(".qty-plus").forEach(btn=>{
+btn.onclick=()=>{
+const input=document.getElementById("qty-"+btn.dataset.sku);
+input.value=parseInt(input.value)+1;
+};
+});
+
+target.querySelectorAll(".qty-minus").forEach(btn=>{
+btn.onclick=()=>{
+const input=document.getElementById("qty-"+btn.dataset.sku);
+const q=parseInt(input.value);
+if(q>1)input.value=q-1;
+};
+});
+
+target.querySelectorAll(".add-cart").forEach(btn=>{
+btn.onclick=()=>{
+
+const qty=parseInt(document.getElementById("qty-"+btn.dataset.sku).value);
+
+app.updateCart(
+btn.dataset.sku,
+qty,
+Number(btn.dataset.price),
+btn.dataset.name,
+btn.dataset.img
+);
+
+const old=btn.innerHTML;
+
+btn.classList.replace("btn-warning","btn-success");
+btn.innerHTML="✓ Added";
+
+setTimeout(()=>{
+btn.classList.replace("btn-success","btn-warning");
+btn.innerHTML=old;
+},1500);
+
+};
+
+});
+
 }

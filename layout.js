@@ -20,8 +20,8 @@ export function getHeaderHTML() {
         </button>
         <div class="collapse navbar-collapse" id="navMatrix">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-monospace small">
-            <li class="nav-item"><a class="nav-link" href="#/">Home Matrix</a></li>
-            <li class="nav-item"><a class="nav-link" href="#/products">Product Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#/products">Products</a></li>
           </ul>
           <div class="d-flex align-items-center gap-3">
             <a href="#/checkout" class="btn btn-warning btn-sm rounded-0 fw-bold font-monospace position-relative d-flex align-items-center gap-2">

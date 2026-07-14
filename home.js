@@ -1,4 +1,4 @@
-import { api, formatINR } from "./core.js";
+import { api, app, formatINR } from "./core.js";
 
 export async function render(container){
 container.innerHTML=`
@@ -6,8 +6,6 @@ container.innerHTML=`
 <div class="row align-items-center">
 <div class="col-lg-7">
 <h1 class="display-5 fw-bold mb-3">Welcome to JK Enterprises</h1>
-<p class="lead text-light opacity-75 mb-4">Find quality tools, electrical products, solar equipment, hardware and industrial supplies at competitive prices.</p>
-<a href="#/products" class="btn btn-warning btn-lg fw-semibold">Shop Now</a>
 </div>
 </div>
 </div>
@@ -26,7 +24,7 @@ container.innerHTML=`
 `;
 
 try{
-const products=(await api.get("products")).slice(0,8);
+const products=(await api.get("products")).slice(0,9);
 const grid=document.getElementById("home-products-feed");
 
 if(!products.length){
@@ -36,11 +34,10 @@ return;
 
 grid.innerHTML=products.map(p=>{
 
-const id=String(
+const sku=String(
 p.ProductID||
 p["Product ID"]||
 p.SKU||
-p["Model Number"]||
 p.ID||
 ""
 ).trim();
@@ -48,26 +45,76 @@ p.ID||
 const name=p["Item Name"]||p.Name||"Product";
 const brand=p.Brand||"";
 const price=Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
-const image=p.Image1||p.Image||"https://via.placeholder.com/400x400?text=No+Image";
+const img=p.Image1||p.Image||"404.webp";
 
 return`
 <div class="col-6 col-md-4 col-lg-3">
-<div class="card h-100 shadow-sm border-0">
 
-<img src="${image}" class="card-img-top p-3" style="height:220px;object-fit:contain;" alt="${name}">
+<div class="card h-100 shadow-sm border-0 rounded-3">
 
-<div class="card-body d-flex flex-column">
+<a href="#/product?id=${encodeURIComponent(sku)}" class="text-decoration-none">
 
-${brand?`<small class="text-muted mb-1">${brand}</small>`:""}
+<img
+src="${img}"
+class="card-img-top p-3"
+style="height:220px;object-fit:contain;background:#fafafa"
+alt="${name}">
 
-<h6 class="fw-semibold mb-2">${name}</h6>
+</a>
+
+<div class="card-body d-flex flex-column p-3">
+
+${brand?`<small class="text-muted text-uppercase fw-semibold mb-1">${brand}</small>`:""}
+
+<h6
+class="fw-semibold mb-2"
+style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:48px;">
+${name}
+</h6>
+
+<div class="fw-bold text-danger fs-4 mb-3">
+${formatINR(price)}
+</div>
 
 <div class="mt-auto">
 
-<div class="fs-5 fw-bold text-danger mb-3">${formatINR(price)}</div>
+<label class="small text-muted mb-1">Quantity</label>
 
-<a href="#/product?id=${encodeURIComponent(id)}" class="btn btn-warning w-100 fw-semibold">
-View Product
+<div class="input-group input-group-sm mb-3">
+
+<button
+class="btn btn-outline-secondary qty-minus"
+data-sku="${sku}">
+−
+</button>
+
+<input
+id="qty-${sku}"
+class="form-control text-center fw-semibold"
+value="1"
+readonly>
+
+<button
+class="btn btn-outline-secondary qty-plus"
+data-sku="${sku}">
++
+</button>
+
+</div>
+
+<button
+class="btn btn-warning w-100 fw-semibold add-cart mb-2"
+data-sku="${sku}"
+data-name="${name.replace(/"/g,"&quot;")}"
+data-price="${price}"
+data-img="${img}">
+🛒 Add to Cart
+</button>
+
+<a
+href="#/product?id=${encodeURIComponent(sku)}"
+class="btn btn-outline-secondary w-100">
+View Details
 </a>
 
 </div>
@@ -75,11 +122,53 @@ View Product
 </div>
 
 </div>
+
 </div>
 `;
 
 }).join("");
+grid.querySelectorAll(".qty-plus").forEach(btn=>{
+btn.onclick=()=>{
+const input=document.getElementById("qty-"+btn.dataset.sku);
+input.value=parseInt(input.value)+1;
+};
+});
 
+grid.querySelectorAll(".qty-minus").forEach(btn=>{
+btn.onclick=()=>{
+const input=document.getElementById("qty-"+btn.dataset.sku);
+const q=parseInt(input.value);
+if(q>1)input.value=q-1;
+};
+});
+
+grid.querySelectorAll(".add-cart").forEach(btn=>{
+btn.onclick=()=>{
+
+const qty=parseInt(document.getElementById("qty-"+btn.dataset.sku).value);
+
+app.updateCart(
+btn.dataset.sku,
+qty,
+Number(btn.dataset.price),
+btn.dataset.name,
+btn.dataset.img
+);
+
+const old=btn.innerHTML;
+
+btn.classList.remove("btn-warning");
+btn.classList.add("btn-success");
+btn.innerHTML="✓ Added";
+
+setTimeout(()=>{
+btn.classList.remove("btn-success");
+btn.classList.add("btn-warning");
+btn.innerHTML=old;
+},1500);
+
+};
+});
 }catch(e){
 
 document.getElementById("home-products-feed").innerHTML=`

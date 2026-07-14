@@ -1,123 +1,403 @@
 // ==========================================================
-// B2B Wholesale Allocation Checkout Controller
+// Checkout
 // ==========================================================
+
 import { app, api, formatINR, CONFIG } from "./core.js";
 
-export async function render(container) {
-  const cart = app.getCart();
-  
-  if (cart.length === 0) {
-    container.innerHTML = `
-      <div class="text-center py-5 bg-white border border-dashed rounded shadow-sm">
-        <i class="bi bi-cart-x fs-1 text-muted d-block mb-2"></i>
-        <h5 class="fw-bold">Procurement Manifest Empty</h5>
-        <p class="text-muted small">Add industrial components inside catalog matrices before testing checkout vectors.</p>
-        <a href="#/products" class="btn btn-sm btn-dark rounded-0 font-monospace mt-2">Open Product Catalog</a>
-      </div>
-    `;
-    return;
-  }
+export async function render(container){
 
-  let subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
-  let codCharge = 0; // Configured for wholesale invoice parameters
-  let total = subtotal + codCharge;
+const cart=app.getCart();
 
-  const orderItemsHtml = cart.map(item => `
-    <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-2 small">
-      <div>
-        <span class="fw-bold text-dark d-block">${item.name.substring(0,35)}...</span>
-        <span class="text-muted font-monospace font-size:11px;">SKU: ${item.sku} × ${item.qty}</span>
-      </div>
-      <span class="fw-bold text-secondary">${formatINR(item.price * item.qty)}</span>
-    </div>
-  `).join("");
+if(!cart.length){
 
-  container.innerHTML = `
-    <div class="row g-4">
-      <div class="col-md-7">
-        <div class="bg-white p-4 rounded shadow-sm border">
-          <h5 class="fw-bold text-dark mb-3">Checkout</h5>
-          <form id="checkout-form">
-            <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Full Name</label>
-              <input type="text" id="cust-name" class="form-control rounded-0" required placeholder="e.g., JK Spares Pvt Ltd">
-            </div>
-            <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Active Authorized Contact Phone</label>
-              <input type="tel" id="cust-phone" class="form-control rounded-0" required placeholder="10-digit primary mobile">
-            </div>
-            <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Complete Commercial Destination Address</label>
-              <textarea id="cust-address" class="form-control rounded-0" rows="3" required placeholder="Include GSTIN details if applicable..."></textarea>
-            </div>
-            <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Mobile Number</label>
-              <select id="payment-method" class="form-select rounded-0">
-                <option value="UPI Direct Clearance">UPI Direct Clearance (Instant Order Dispatch)</option>
-                <option value="Cash On Delivery">Cash On Delivery (Wholesale Terms Apply)</option>
-              </select>
-            </div>
-            <button type="submit" id="submit-order-btn" class="btn btn-dark rounded-0 w-100 fw-bold py-2 font-monospace">Payment Method</button>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="bg-white p-4 rounded shadow-sm border position-sticky" style="top:20px;">
-          <h5 class="fw-bold text-dark border-bottom pb-2 mb-3">Order Summary</h5>
-          ${orderItemsHtml}
-          <div class="d-flex justify-content-between fw-bold fs-5 text-danger pt-2 mt-3 border-top">
-            <span>Total Value:</span>
-            <span>${formatINR(total)}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+container.innerHTML=`
+<div class="text-center py-5">
 
-  document.getElementById("checkout-form").addEventListener("submit", async (e) => {
-    e.preventDefault();
-    
-    const btn = document.getElementById("submit-order-btn");
-    btn.disabled = true;
-    btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Syncing Order to Sheet Clusters...`;
+<i class="bi bi-cart-x display-1 text-muted"></i>
 
-    const orderPayload = {
-      customerName: document.getElementById("cust-name").value.trim(),
-      phone: document.getElementById("cust-phone").value.trim(),
-      address: document.getElementById("cust-address").value.trim(),
-      paymentMethod: document.getElementById("payment-method").value,
-      subtotal: subtotal,
-      codCharge: codCharge,
-      total: total,
-      items: cart.map(i => ({ sku: i.sku, name: i.name, qty: i.qty, lineTotal: i.price * i.qty }))
-    };
+<h3 class="mt-3">
+Your cart is empty
+</h3>
 
-    // 1. Post to your Google Sheets database script via JSON payload mapping
-    const res = await api.post("order", orderPayload);
-    const generatedRefId = res.success ? res.orderId : "JKE-TEMP-" + Math.floor(10000 + Math.random()*90000);
+<p class="text-muted">
+Add some products before proceeding to checkout.
+</p>
 
-    // 2. Format a structured text message containing the order breakdown
-    let itemManifestString = "";
-    cart.forEach((item, idx) => {
-      itemManifestString += `${idx + 1}. SKU: ${item.sku} | Qty: ${item.qty} | Value: ${formatINR(item.price * item.qty)}\n`;
-    });
+<a
+href="#/products"
+class="btn btn-warning fw-semibold">
+Continue Shopping
+</a>
 
-    const whatsappMessage = `Hello ${CONFIG.NAME},\n\n` +
-      `I have remitted payment/placed an order for Industrial Order Token: *${generatedRefId}*.\n\n` +
-      `*─── PURCHASE ORDER MANIFEST ───*\n` +
-      `${itemManifestString}\n` +
-      `*Total Invoice Amount:* ${formatINR(total)}\n` +
-      `*Payment Route Selected:* ${orderPayload.paymentMethod}\n\n` +
-      `*─── CUSTOMER BILLING LOGISTICS ───*\n` +
-      `Entity Name: ${orderPayload.customerName}\n` +
-      `Phone: ${orderPayload.phone}\n` +
-      `Delivery Destination:\n${orderPayload.address}\n\n` +
-      `Attached is my clearance transaction statement snapshot. Please clear allocation path tracking vectors.`;
+</div>
+`;
 
-    // 3. Clear shopping data structures and redirect execution routes safely out to the WhatsApp gateway API
-    app.clearCart();
-    
-    const encodedUrl = `https://api.whatsapp.com/send?phone=${CONFIG.WHATSAPP}&text=${encodeURIComponent(whatsappMessage)}`;
-    window.location.href = encodedUrl;
-  });
+return;
+
 }
+
+let subtotal=cart.reduce((t,i)=>t+i.price*i.qty,0);
+let codCharge=0;
+let total=subtotal;
+
+const items=cart.map(i=>`
+
+<div class="d-flex justify-content-between border-bottom py-2">
+
+<div>
+
+<div class="fw-semibold">
+${i.name}
+</div>
+
+<small class="text-muted">
+${i.qty} × ${formatINR(i.price)}
+</small>
+
+</div>
+
+<div class="fw-semibold">
+${formatINR(i.price*i.qty)}
+</div>
+
+</div>
+
+`).join("");
+
+container.innerHTML=`
+
+<div class="row g-4">
+
+<div class="col-lg-7">
+
+<div class="card shadow-sm">
+
+<div class="card-body p-4">
+
+<h3 class="mb-4">
+Checkout
+</h3>
+
+<form id="checkout-form">
+
+<div class="mb-3">
+
+<label class="form-label">
+Full Name
+</label>
+
+<input
+id="cust-name"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+Mobile Number
+</label>
+
+<input
+id="cust-phone"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">
+Delivery Address
+</label>
+
+<textarea
+id="cust-address"
+rows="4"
+class="form-control"
+required></textarea>
+
+</div>
+
+<div class="mb-4">
+
+<label class="form-label">
+Payment Method
+</label>
+
+<select
+id="payment-method"
+class="form-select">
+
+<option value="UPI">
+UPI Payment
+</option>
+
+<option value="COD">
+Cash on Delivery (+5%)
+</option>
+
+</select>
+
+</div>
+
+<button
+id="submit-order-btn"
+class="btn btn-warning w-100 fw-semibold">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-5">
+
+<div class="card shadow-sm position-sticky" style="top:20px;">
+
+<div class="card-body">
+
+<h4 class="mb-3">
+Order Summary
+</h4>
+
+${items}
+
+<div class="d-flex justify-content-between mt-3">
+
+<span>
+Subtotal
+</span>
+
+<span id="subtotal-price">
+${formatINR(subtotal)}
+</span>
+
+</div>
+
+<div class="d-flex justify-content-between mt-2">
+
+<span>
+Delivery
+</span>
+
+<span class="text-success">
+Free
+</span>
+
+</div>
+
+<div class="d-flex justify-content-between mt-2">
+
+<span>
+COD Charge
+</span>
+
+<span id="cod-price">
+${formatINR(codCharge)}
+</span>
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between fw-bold fs-4">
+
+<span>
+Total
+</span>
+
+<span
+id="total-price"
+class="text-danger">
+
+${formatINR(total)}
+
+</span>
+
+</div>
+
+<hr>
+
+<div id="upi-box">
+
+<h5 class="text-center mb-3">
+Scan & Pay
+</h5>
+
+<div
+id="upi-qr"
+class="d-flex justify-content-center mb-3">
+</div>
+
+<div class="text-center">
+
+<div class="fw-bold fs-4 text-danger">
+${formatINR(total)}
+</div>
+
+<small class="text-muted">
+UPI ID<br>
+${CONFIG.UPI}
+</small>
+
+</div>
+
+<a
+id="upi-pay-btn"
+class="btn btn-success w-100 mt-3 fw-semibold">
+Pay with UPI App
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+const payment=document.getElementById("payment-method");
+const totalBox=document.getElementById("total-price");
+const codBox=document.getElementById("cod-price");
+const qrBox=document.getElementById("upi-box");
+const qr=document.getElementById("upi-qr");
+
+function drawQR(){
+
+qr.innerHTML="";
+
+new QRCode(qr,{
+text:
+`upi://pay?pa=${CONFIG.UPI}`+
+`&pn=${encodeURIComponent(CONFIG.NAME)}`+
+`&tn=${encodeURIComponent("Order Payment")}`+
+`&am=${total.toFixed(2)}`+
+`&cu=INR`,
+width:220,
+height:220
+});
+
+}
+
+if(typeof QRCode==="function"){
+drawQR();
+const upiBtn=document.getElementById("upi-pay-btn");
+
+function updateUPILink(){
+
+upiBtn.href=
+`upi://pay?pa=${CONFIG.UPI}`+
+`&pn=${encodeURIComponent(CONFIG.NAME)}`+
+`&tn=${encodeURIComponent("Order Payment")}`+
+`&am=${total.toFixed(2)}`+
+`&cu=INR`;
+
+}
+
+updateUPILink();
+if(!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){
+upiBtn.style.display="none";
+}
+}else{
+qr.innerHTML=`
+<div class="alert alert-warning mb-0">
+QR Library not loaded.
+</div>`;
+}
+
+payment.onchange=()=>{
+
+if(payment.value==="COD"){
+
+codCharge=Math.round(subtotal*0.05);
+qrBox.style.display="none";
+
+}else{
+
+codCharge=0;
+qrBox.style.display="block";
+
+}
+
+total=subtotal+codCharge;
+
+codBox.innerHTML=formatINR(codCharge);
+totalBox.innerHTML=formatINR(total);
+
+updateUPILink();
+
+if(payment.value==="UPI")drawQR();
+
+};
+
+document.getElementById("checkout-form").onsubmit=async e=>{
+
+e.preventDefault();
+
+const btn=document.getElementById("submit-order-btn");
+
+btn.disabled=true;
+
+btn.innerHTML=`
+<span class="spinner-border spinner-border-sm me-2"></span>
+Placing Order...
+`;
+
+const order={
+
+customerName:document.getElementById("cust-name").value.trim(),
+phone:document.getElementById("cust-phone").value.trim(),
+address:document.getElementById("cust-address").value.trim(),
+paymentMethod:payment.value,
+subtotal,
+codCharge,
+total,
+
+items:cart.map(i=>({
+sku:i.sku,
+name:i.name,
+qty:i.qty,
+price:i.price
+}))
+
+};
+
+const res=await api.post("order",order);
+
+const orderId=res.success
+?res.orderId
+:"JKE-"+Date.now();
+
+let msg=`*New Order : ${orderId}*\n\n`;
+
+cart.forEach((i,n)=>{
+msg+=`${n+1}. ${i.name}\n`;
+msg+=`Qty : ${i.qty}\n`;
+msg+=`Amount : ${formatINR(i.price*i.qty)}\n\n`;
+});
+
+msg+=`Total : ${formatINR(total)}\n`;
+msg+=`Payment : ${payment.value}\n\n`;
+
+msg+=`Customer : ${order.customerName}\n`;
+msg+=`Phone : ${order.phone}\n`;
+msg+=`Address : ${order.address}`;
+
+app.clearCart();
+
+window.location.href=
+`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(msg)}`;
+
+};}

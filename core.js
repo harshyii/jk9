@@ -28,7 +28,7 @@ const response=await fetch(`${CONFIG.API}?action=${encodeURIComponent(action)}`,
 clearTimeout(timeoutId);
 if(!response.ok)throw new Error(`HTTP ${response.status}`);
 const text=await response.text();
-console.log("API:",text);
+
 return JSON.parse(text);
 }catch(err){
 console.error("GET Error:",err);

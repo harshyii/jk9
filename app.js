@@ -1,6 +1,9 @@
 // ==========================================================
 // APPLICATION INITIALIZATION ENTRY POINT MATRIX
 // ==========================================================
+import * as Home from "./home.js";
+import * as Product from "./product.js";
+
 import { initRouter } from "./router.js";
 import { updateCartBadges } from "./layout.js";
 

@@ -71,7 +71,7 @@ container.innerHTML = `
       <div class="card-body d-flex align-items-center gap-3 p-2">
 
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/330px-Tata_logo.svg.png"
+          src="404.webp"
           alt="Products"
           style="height:38px;width:90px;object-fit:contain;">
 

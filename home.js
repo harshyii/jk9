@@ -1,136 +1,270 @@
 import { api, app, formatINR } from "./core.js";
 
-export async function render(container){
+export async function render(container) {
+
 container.innerHTML = `
+
+<!-- Hero Categories -->
+
 <div class="row g-3 mb-5">
 
-<div class="col-6 col-lg-3">
-<a href="#/brand?name=Eastman" class="card text-center text-decoration-none shadow-sm h-100 border-0 py-5">
-<i class="bi bi-tools fs-1 text-warning mb-3"></i>
-<h4 class="fw-bold text-dark">EASTMAN</h4>
-<p class="text-muted mb-0">Power Tools</p>
-</a>
+  <div class="col-6 col-lg-3">
+    <a href="#/brand?name=Eastman"
+       class="card shadow-sm text-decoration-none h-100">
+      <div class="card-body d-flex align-items-center gap-3 p-2">
+
+        <img
+          src="https://www.eastmanshop.com/cdn/shop/files/EASTMAN_LOGO_2_d03dc81a-227c-4cb6-a832-13cea09fe67b_1968x500.webp?v=1781506228"
+          alt="Eastman"
+          style="height:38px;width:90px;object-fit:contain;">
+
+        <div>
+          <div class="fw-semibold text-dark">Eastman</div>
+          <small class="text-muted">Power Tools</small>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-3">
+    <a href="#/brand?name=Foxcare"
+       class="card shadow-sm text-decoration-none h-100">
+      <div class="card-body d-flex align-items-center gap-3 p-2">
+
+        <img
+          src="https://www.foxcare.in/cdn/shop/files/FINAL_-_6_WITH_WHITE_691f08d6-667b-4b18-8a8b-40e05e06b51c_208x.png?v=1630612777"
+          alt="Foxcare"
+          style="height:38px;width:90px;object-fit:contain;">
+
+        <div>
+          <div class="fw-semibold text-dark">Foxcare</div>
+          <small class="text-muted">Car Care</small>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-3">
+    <a href="#/products?category=Solar"
+       class="card shadow-sm text-decoration-none h-100">
+      <div class="card-body d-flex align-items-center gap-3 p-2">
+
+        <img
+          src="https://www.loomsolar.com/cdn/shop/files/Loom_logo_f50a89a5-291b-4c15-9a87-303dc061554e_140x@2x.png?v=1752208604"
+          alt="Solar"
+          style="height:38px;width:90px;object-fit:contain;">
+
+        <div>
+          <div class="fw-semibold text-dark">Solar</div>
+          <small class="text-muted">Panels</small>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-3">
+    <a href="#/products"
+       class="card shadow-sm text-decoration-none h-100">
+      <div class="card-body d-flex align-items-center gap-3 p-2">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/330px-Tata_logo.svg.png"
+          alt="Products"
+          style="height:38px;width:90px;object-fit:contain;">
+
+        <div>
+          <div class="fw-semibold text-dark">All Products</div>
+          <small class="text-muted">Browse</small>
+        </div>
+
+      </div>
+    </a>
+  </div>
+
 </div>
 
-<div class="col-6 col-lg-3">
-<a href="#/brand?name=Foxcare" class="card text-center text-decoration-none shadow-sm h-100 border-0 py-5">
-<i class="bi bi-car-front fs-1 text-warning mb-3"></i>
-<h4 class="fw-bold text-dark">FOXCARE</h4>
-<p class="text-muted mb-0">Car Care</p>
-</a>
-</div>
+<!-- Featured Products -->
 
-<div class="col-6 col-lg-3">
-<a href="#/products?category=Solar" class="card text-center text-decoration-none shadow-sm h-100 border-0 py-5">
-<i class="bi bi-sun fs-1 text-warning mb-3"></i>
-<h4 class="fw-bold text-dark">SOLAR</h4>
-<p class="text-muted mb-0">Solar Products</p>
-</a>
-</div>
+<div class="d-flex justify-content-between align-items-center mb-3">
 
-<div class="col-6 col-lg-3">
-<a href="#/products" class="card text-center text-decoration-none shadow-sm h-100 border-0 py-5">
-<i class="bi bi-grid fs-1 text-warning mb-3"></i>
-<h4 class="fw-bold text-dark">ALL PRODUCTS</h4>
-<p class="text-muted mb-0">Browse Catalog</p>
-</a>
-</div>
+  <h2 class="fw-bold mb-0">
+    Featured Products
+  </h2>
+
+  <a
+    href="#/products"
+    class="btn btn-outline-dark">
+
+    View All
+
+  </a>
 
 </div>
+
+<div
+class="row g-4"
+id="home-products-feed">
+
+  <div class="col-12 text-center py-5">
+
+    <div
+      class="spinner-border text-warning">
+    </div>
+
+    <p class="text-muted mt-3 mb-0">
+      Loading products...
+    </p>
+
+  </div>
+
+</div>
+
 `;
+try {
 
-try{
-const products=(await api.get("products")).slice(0,9);
-const grid=document.getElementById("home-products-feed");
+const products = await api.get("products");
 
-if(!products.length){
-grid.innerHTML=`<div class="col-12 text-center py-5 text-muted">No products available.</div>`;
-return;
+const list = Array.isArray(products)
+  ? products.slice(0, 8)
+  : [];
+
+const grid = document.getElementById("home-products-feed");
+
+if (!grid) return;
+
+if (!list.length) {
+  grid.innerHTML = `
+    <div class="col-12 text-center py-5 text-muted">
+      No products available.
+    </div>
+  `;
+  return;
 }
 
-grid.innerHTML=products.map(p=>{
+grid.innerHTML = list.map(p => {
 
-const sku=String(
-p.ProductID||
-p["Product ID"]||
-p.SKU||
-p.ID||
+const sku = String(
+p.ProductID ||
+p["Product ID"] ||
+p.SKU ||
+p.ID ||
 ""
 ).trim();
 
-const name=p["Item Name"]||p.Name||"Product";
-const brand=p.Brand||"";
-const price=Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
-const img=p.Image1||p.Image||"404.webp";
+const name = p["Item Name"] || p.Name || "Product";
 
-return`
+const brand = p.Brand || "";
+
+const price =
+Number(
+String(
+p["Sale Price"] ||
+p.Price ||
+0
+).replace(/[^\d.]/g,"")
+) || 0;
+
+const img =
+p.Image1 ||
+p.Image ||
+"404.webp";
+
+return `
+
 <div class="col-6 col-md-4 col-lg-3">
 
 <div class="card h-100 shadow-sm border-0 rounded-3">
 
-<a href="#/product?id=${encodeURIComponent(sku)}" class="text-decoration-none">
+<a
+href="#/product?id=${encodeURIComponent(sku)}"
+class="text-decoration-none">
 
 <img
 src="${img}"
 class="card-img-top p-3"
-style="height:220px;object-fit:contain;background:#fafafa"
+style="height:220px;object-fit:contain;background:#fafafa;"
 alt="${name}">
 
 </a>
 
-<div class="card-body d-flex flex-column p-3">
+<div class="card-body d-flex flex-column">
 
-${brand?`<small class="text-muted text-uppercase fw-semibold mb-1">${brand}</small>`:""}
+${brand ? `
+<small class="text-muted text-uppercase fw-semibold mb-1">
+${brand}
+</small>` : ""}
 
 <h6
 class="fw-semibold mb-2"
-style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:48px;">
+style="
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden;
+min-height:48px;">
+
 ${name}
+
 </h6>
 
-<div class="fw-bold text-danger fs-4 mb-3">
+<div class="fw-bold text-danger fs-5 mb-3">
+
 ${formatINR(price)}
+
 </div>
 
 <div class="mt-auto">
 
-<label class="small text-muted mb-1">Quantity</label>
+<label class="small text-muted">
+Quantity
+</label>
 
 <div class="input-group input-group-sm mb-3">
 
 <button
 class="btn btn-outline-secondary qty-minus"
 data-sku="${sku}">
+
 −
+
 </button>
 
 <input
 id="qty-${sku}"
-class="form-control text-center fw-semibold"
+class="form-control text-center"
 value="1"
 readonly>
 
 <button
 class="btn btn-outline-secondary qty-plus"
 data-sku="${sku}">
+
 +
+
 </button>
 
 </div>
 
 <button
-class="btn btn-warning w-100 fw-semibold add-cart mb-2"
+class="btn btn-warning w-100 add-cart mb-2"
 data-sku="${sku}"
 data-name="${name.replace(/"/g,"&quot;")}"
 data-price="${price}"
 data-img="${img}">
+
 🛒 Add to Cart
+
 </button>
 
 <a
 href="#/product?id=${encodeURIComponent(sku)}"
 class="btn btn-outline-secondary w-100">
+
 View Details
+
 </a>
 
 </div>
@@ -140,28 +274,56 @@ View Details
 </div>
 
 </div>
+
 `;
 
 }).join("");
-grid.querySelectorAll(".qty-plus").forEach(btn=>{
-btn.onclick=()=>{
-const input=document.getElementById("qty-"+btn.dataset.sku);
-input.value=parseInt(input.value)+1;
+
+grid.querySelectorAll(".qty-plus").forEach(btn => {
+
+btn.onclick = () => {
+
+const input =
+document.getElementById(
+"qty-" + btn.dataset.sku
+);
+
+input.value =
+parseInt(input.value) + 1;
+
 };
+
 });
 
-grid.querySelectorAll(".qty-minus").forEach(btn=>{
-btn.onclick=()=>{
-const input=document.getElementById("qty-"+btn.dataset.sku);
-const q=parseInt(input.value);
-if(q>1)input.value=q-1;
+grid.querySelectorAll(".qty-minus").forEach(btn => {
+
+btn.onclick = () => {
+
+const input =
+document.getElementById(
+"qty-" + btn.dataset.sku
+);
+
+const qty =
+parseInt(input.value);
+
+if (qty > 1)
+input.value = qty - 1;
+
 };
+
 });
 
-grid.querySelectorAll(".add-cart").forEach(btn=>{
-btn.onclick=()=>{
+grid.querySelectorAll(".add-cart").forEach(btn => {
 
-const qty=parseInt(document.getElementById("qty-"+btn.dataset.sku).value);
+btn.onclick = () => {
+
+const qty =
+parseInt(
+document.getElementById(
+"qty-" + btn.dataset.sku
+).value
+);
 
 app.updateCart(
 btn.dataset.sku,
@@ -171,29 +333,55 @@ btn.dataset.name,
 btn.dataset.img
 );
 
-const old=btn.innerHTML;
+const old = btn.innerHTML;
 
-btn.classList.remove("btn-warning");
-btn.classList.add("btn-success");
-btn.innerHTML="✓ Added";
+btn.classList.replace(
+"btn-warning",
+"btn-success"
+);
 
-setTimeout(()=>{
-btn.classList.remove("btn-success");
-btn.classList.add("btn-warning");
-btn.innerHTML=old;
+btn.innerHTML = "✓ Added";
+
+setTimeout(() => {
+
+btn.classList.replace(
+"btn-success",
+"btn-warning"
+);
+
+btn.innerHTML = old;
+
 },1500);
 
 };
-});
-}catch(e){
 
-document.getElementById("home-products-feed").innerHTML=`
+});
+
+} catch (e) {
+
+console.error(e);
+
+const grid =
+document.getElementById(
+"home-products-feed"
+);
+
+if (grid) {
+
+grid.innerHTML = `
+
 <div class="col-12">
-<div class="alert alert-warning text-center mb-0">
-Unable to load products. Please try again later.
+
+<div class="alert alert-warning text-center">
+
+Unable to load products.
+
 </div>
+
 </div>
+
 `;
 
 }
-}
+
+}}

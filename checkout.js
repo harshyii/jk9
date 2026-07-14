@@ -36,10 +36,10 @@ export async function render(container) {
     <div class="row g-4">
       <div class="col-md-7">
         <div class="bg-white p-4 rounded shadow-sm border">
-          <h5 class="fw-bold text-dark mb-3">Corporate Logistics & Billing Matrix</h5>
+          <h5 class="fw-bold text-dark mb-3">Checkout</h5>
           <form id="checkout-form">
             <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Legal Corporate Entity Name</label>
+              <label class="form-label small fw-bold text-muted">Full Name</label>
               <input type="text" id="cust-name" class="form-control rounded-0" required placeholder="e.g., JK Spares Pvt Ltd">
             </div>
             <div class="mb-3">
@@ -51,19 +51,19 @@ export async function render(container) {
               <textarea id="cust-address" class="form-control rounded-0" rows="3" required placeholder="Include GSTIN details if applicable..."></textarea>
             </div>
             <div class="mb-3">
-              <label class="form-label small fw-bold text-muted">Settlement Vector Option</label>
+              <label class="form-label small fw-bold text-muted">Mobile Number</label>
               <select id="payment-method" class="form-select rounded-0">
                 <option value="UPI Direct Clearance">UPI Direct Clearance (Instant Order Dispatch)</option>
                 <option value="Cash On Delivery">Cash On Delivery (Wholesale Terms Apply)</option>
               </select>
             </div>
-            <button type="submit" id="submit-order-btn" class="btn btn-dark rounded-0 w-100 fw-bold py-2 font-monospace">Authorize Procurement Invoice</button>
+            <button type="submit" id="submit-order-btn" class="btn btn-dark rounded-0 w-100 fw-bold py-2 font-monospace">Payment Method</button>
           </form>
         </div>
       </div>
       <div class="col-md-5">
         <div class="bg-white p-4 rounded shadow-sm border position-sticky" style="top:20px;">
-          <h5 class="fw-bold text-dark border-bottom pb-2 mb-3">Item Allocations Manifest</h5>
+          <h5 class="fw-bold text-dark border-bottom pb-2 mb-3">Order Summary</h5>
           ${orderItemsHtml}
           <div class="d-flex justify-content-between fw-bold fs-5 text-danger pt-2 mt-3 border-top">
             <span>Total Value:</span>

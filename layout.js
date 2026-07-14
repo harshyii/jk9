@@ -30,7 +30,7 @@ export function getHeaderHTML() {
 
           <ul class="navbar-nav me-lg-3 mb-2 mb-lg-0 font-monospace small">
             <li class="nav-item">
-              <a class="nav-link" href="#/">Blog</a>
+              <a class="nav-link" href="#/blogs">Blog</a>
             </li>
 
             <li class="nav-item">

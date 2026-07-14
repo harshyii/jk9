@@ -89,6 +89,8 @@ Full Name
 <input
 id="cust-name"
 class="form-control"
+type="text"
+placeholder="Enter your full name"
 required>
 
 </div>
@@ -102,6 +104,10 @@ Mobile Number
 <input
 id="cust-phone"
 class="form-control"
+type="tel"
+maxlength="11"
+inputmode="numeric"
+placeholder="9876543210"
 required>
 
 </div>
@@ -269,6 +275,16 @@ Pay with UPI App
 `;
 
 const payment=document.getElementById("payment-method");
+const phone=document.getElementById("cust-phone");
+
+phone.oninput=()=>{
+
+phone.value=phone.value.replace(/\D/g,"");
+
+if(phone.value.length>11)
+phone.value=phone.value.slice(0,11);
+
+};
 const totalBox=document.getElementById("total-price");
 const codBox=document.getElementById("cod-price");
 const qrBox=document.getElementById("upi-box");
@@ -345,6 +361,21 @@ if(payment.value==="UPI")drawQR();
 document.getElementById("checkout-form").onsubmit=async e=>{
 
 e.preventDefault();
+const phoneNo=phone.value.trim();
+
+if(
+!(
+(phoneNo.length===10&&/^[1-9]\d{9}$/.test(phoneNo))||
+(phoneNo.length===11&&/^0\d{10}$/.test(phoneNo))
+)
+){
+
+alert("Enter a valid mobile number.\n\nUse either:\n• 9876543210\n• 09876543210");
+
+phone.focus();
+return;
+
+}
 
 const btn=document.getElementById("submit-order-btn");
 

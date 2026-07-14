@@ -420,42 +420,44 @@ const params = new URLSearchParams({
 });
 
 const res = await fetch(`${CONFIG.API}?${params}`);
+
+if(!res.ok){
+    throw new Error(`HTTP ${res.status}`);
+}
+
 const data = await res.json();
 
-console.log("API Response:", res);
+console.log("API Response:", data);
 
-const orderId = data.success
-    ? data.orderId
-    : "JKE-" + Date.now();
+if(!data.success){
+
+    alert(data.error || "Order could not be saved.");
+
+    btn.disabled=false;
+    btn.innerHTML="Place Order";
+
+    return;
+}
+
+const orderId = data.orderId;
 
 let msg=`*New Order : ${orderId}*\n\n`;
 
 cart.forEach((i,n)=>{
-msg+=`${n+1}. ${i.name}\n`;
-msg+=`Qty : ${i.qty}\n`;
-msg+=`Amount : ${formatINR(i.price*i.qty)}\n\n`;
+    msg+=`${n+1}. ${i.name}\n`;
+    msg+=`Qty : ${i.qty}\n`;
+    msg+=`Amount : ${formatINR(i.price*i.qty)}\n\n`;
 });
 
 msg+=`Total : ${formatINR(total)}\n`;
 msg+=`Payment : ${payment.value}\n\n`;
-
 msg+=`Customer : ${order.customerName}\n`;
 msg+=`Phone : ${order.phone}\n`;
 msg+=`Address : ${order.address}`;
 
-if(!res || !res.success){
-
-alert("Order could not be saved.");
-
-btn.disabled=false;
-btn.innerHTML="Place Order";
-return;
-
-}
-
 app.clearCart();
 
-window.location.href=
+window.location.href =
 `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(msg)}`;
 
 };}

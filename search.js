@@ -1,43 +1,179 @@
 // ==========================================================
-// Search Index Core Processing Array Module
+// Search
 // ==========================================================
+
 import { api, formatINR } from "./core.js";
 
+function sku(p) {
+  return String(
+    p.ProductID ||
+    p["Product ID"] ||
+    p.SKU ||
+    p.ID ||
+    p.Model ||
+    p.ASIN ||
+    ""
+  ).trim();
+}
+
+function name(p) {
+  return p["Item Name"] || p.Name || "Unnamed Product";
+}
+
+function brand(p) {
+  return p.Brand || "";
+}
+
+function image(p) {
+  return p.Image1 || "404.webp";
+}
+
+function price(p) {
+  return Number(
+    String(p["Sale Price"] || p.Price || 0).replace(/[^\d.]/g, "")
+  ) || 0;
+}
+
 export async function render(container, params) {
-  const query = params.q || "";
+
+  const query = (params.q || "").trim().toLowerCase();
+
   container.innerHTML = `
-    <h4 class="fw-bold text-dark mb-3">Search Metric Results</h4>
-    <p class="text-muted small mb-4">Parameters queried: <span class="badge bg-dark font-monospace">${query || 'All Assets'}</span></p>
-    <div class="row g-3" id="search-results-grid">
-      <div class="col-12 text-center py-5"><div class="spinner-border text-warning"></div></div>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h3 class="mb-1">Search Results</h3>
+        <div class="text-muted">
+          ${query ? `Showing results for "<strong>${query}</strong>"` : "All Products"}
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4" id="search-results-grid">
+      <div class="col-12 text-center py-5">
+        <div class="spinner-border text-warning"></div>
+      </div>
     </div>
   `;
 
   try {
-    const hits = await api.get("search", { q: query });
-    const grid = document.getElementById("search-results-grid");
 
-    if (!hits || hits.length === 0) {
-      grid.innerHTML = `<div class="col-12 text-center text-muted py-5"><i class="bi bi-exclamation-diamond fs-2 text-warning d-block mb-2"></i>Zero records found matching query parameters within internal inventory layers.</div>`;
-      return;
+    const data = await api.get("products");
+
+    const products = Array.isArray(data)
+      ? data
+      : (data.data || []);
+
+    let results = products;
+
+    if (query) {
+
+      results = products.filter(p => {
+
+        return [
+          sku(p),
+          name(p),
+          brand(p),
+          p.Category,
+          p.Subcategory,
+          p.Description,
+          p["Detailed Info"]
+        ]
+        .join(" ")
+        .toLowerCase()
+        .includes(query);
+
+      });
+
     }
 
-    grid.innerHTML = hits.map(p => `
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-0 product-card">
-          <img src="${p.img || 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400'}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height:140px; background:#fafafa;" alt="${p.name}">
-          <div class="card-body p-3 d-flex flex-column">
-            <span class="text-muted font-monospace small d-block mb-1" style="font-size:10px;">${p.brand || 'OEM'}</span>
-            <h6 class="fw-bold text-dark text-truncate mb-1">${p.name}</h6>
-            <div class="mt-auto">
-              <div class="text-danger fw-bold mb-2">${formatINR(p.price)}</div>
-              <a href="#/product?id=${p.id}" class="btn btn-sm btn-outline-dark w-100 rounded-0">Analyze</a>
-            </div>
-          </div>
+    displayGrid(
+      document.getElementById("search-results-grid"),
+      results
+    );
+
+  } catch (err) {
+
+    console.error(err);
+
+    document.getElementById("search-results-grid").innerHTML = `
+      <div class="col-12">
+        <div class="alert alert-danger">
+          Unable to search products.
         </div>
       </div>
-    `).join("");
-  } catch (err) {
-    document.getElementById("search-results-grid").innerHTML = `<div class="alert alert-danger">Error indexing structural database entries.</div>`;
+    `;
+
   }
+
+}
+
+function displayGrid(target, list) {
+
+  if (!list.length) {
+
+    target.innerHTML = `
+      <div class="col-12 text-center py-5">
+        <i class="bi bi-search fs-1 text-muted"></i>
+        <h5 class="mt-3">No matching products found.</h5>
+      </div>
+    `;
+
+    return;
+  }
+
+  target.innerHTML = list.map(p => {
+
+    const id = sku(p);
+
+    return `
+      <div class="col-6 col-md-4 col-lg-3">
+
+        <div class="card h-100 shadow-sm border-0 rounded-3">
+
+          <a href="#/product?id=${encodeURIComponent(id)}">
+
+            <img
+              src="${image(p)}"
+              class="card-img-top p-3"
+              style="height:220px;object-fit:contain;background:#fafafa;">
+
+          </a>
+
+          <div class="card-body d-flex flex-column">
+
+            ${
+              brand(p)
+                ? `<small class="text-muted text-uppercase">${brand(p)}</small>`
+                : ""
+            }
+
+            <h6
+              class="fw-semibold mt-1"
+              style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:48px;">
+
+              ${name(p)}
+
+            </h6>
+
+            <div class="fw-bold text-danger fs-5 mb-3">
+              ${formatINR(price(p))}
+            </div>
+
+            <a
+              href="#/product?id=${encodeURIComponent(id)}"
+              class="btn btn-warning mt-auto">
+
+              View Details
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    `;
+
+  }).join("");
+
 }

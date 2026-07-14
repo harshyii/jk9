@@ -20,22 +20,44 @@ export const formatINR = (num) => {
 };
 
 export const api={
-async get(action){
-try{
-const controller=new AbortController();
-const timeoutId=setTimeout(()=>controller.abort(),6000);
-const response=await fetch(`${CONFIG.API}?action=${encodeURIComponent(action)}`,{signal:controller.signal});
-clearTimeout(timeoutId);
-if(!response.ok)throw new Error(`HTTP ${response.status}`);
-const text=await response.text();
+async get(action, params = {}) {
 
-const json=JSON.parse(text);
+try{
+
+const controller = new AbortController();
+
+const timeoutId = setTimeout(()=>controller.abort(),6000);
+
+const url = new URL(CONFIG.API);
+
+url.searchParams.set("action", action);
+
+Object.entries(params).forEach(([key,value])=>{
+    if(value !== undefined && value !== null)
+        url.searchParams.set(key,value);
+});
+
+const response = await fetch(url,{
+    signal:controller.signal
+});
+
+clearTimeout(timeoutId);
+
+if(!response.ok)
+    throw new Error(`HTTP ${response.status}`);
+
+const json = await response.json();
 
 return json.data ?? json;
+
 }catch(err){
+
 console.error("GET Error:",err);
+
 return [];
+
 }
+
 },
 
 async post(action,data){

@@ -2,7 +2,7 @@
 // Central UI View Router Broker Matrix
 // ==========================================================
 import { $ } from "./core.js";
-import { getHeaderHTML, getFooterHTML } from "./layout.js";
+import { getHeaderHTML, getFooterHTML, initHeaderEvents } from "./layout.js";
 
 // Static Policy & Legal Layout Module Render Templates
 const legalTemplates = {
@@ -29,7 +29,7 @@ export async function renderView(viewName, params = {}) {
     </main>
     ${getFooterHTML()}
   `;
-
+  initHeaderEvents();
   const target = $("#main-content");
 
   // Handle Static Legal View Documents instantly

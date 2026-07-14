@@ -405,7 +405,11 @@ price:i.price
 
 };
 
-const res=await api.post("order",order);
+console.log("Sending order...", order);
+
+const res = await api.post("order", order);
+
+console.log("API Response:", res);
 
 const orderId=res.success
 ?res.orderId
@@ -425,6 +429,16 @@ msg+=`Payment : ${payment.value}\n\n`;
 msg+=`Customer : ${order.customerName}\n`;
 msg+=`Phone : ${order.phone}\n`;
 msg+=`Address : ${order.address}`;
+
+if(!res || !res.success){
+
+alert("Order could not be saved.");
+
+btn.disabled=false;
+btn.innerHTML="Place Order";
+return;
+
+}
 
 app.clearCart();
 

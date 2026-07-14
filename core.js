@@ -5,7 +5,7 @@ export const $ = (selector) => document.querySelector(selector);
 // CORE PLATFORM DATA MATRIX UTILITIES (OFFLINE COMPATIBLE)
 // ==========================================================
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycbwA9kETIPQkzkW7XzilbP89fZspRxvz3iK2m26IUFLa184SbI16iKJqLzt5HrstuU4i/exec",
+  API: "https://script.google.com/macros/s/AKfycbywzgqu88hDPHKVo6MTi9UntK7d122dZLTCT8TGIvlcWW9uahpFVkq1-Gz5XmCughAZyg/exec",
   UPI: "9050623210@sbi",
   NAME: "JK Enterprises",
   WHATSAPP: "919050623210" // Destination phone framework array with country code prefix

@@ -5,7 +5,7 @@ export const $ = (selector) => document.querySelector(selector);
 // CORE PLATFORM DATA MATRIX UTILITIES (OFFLINE COMPATIBLE)
 // ==========================================================
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycby_aDi_kn_ary8bBuUn0q4hrP2bKfKLQeDHvI6XgI7QCflUc6pOH4V0WCzkauEiH0FjSA/exec",
+  API: "https://script.google.com/macros/s/AKfycbxfyBNEi6hXXLZsH_Nra_XH6AzF5Xk7P80dbmW3cgRA1P7oVUj_Fd9fuC8bVVOocQ-omg/exec",
   UPI: "9050623210@sbi",
   NAME: "JK Enterprises",
   WHATSAPP: "919050623210" // Destination phone framework array with country code prefix
@@ -21,39 +21,24 @@ export const formatINR = (num) => {
 
 export const api = {
   async get(action) {
-    try {
-      // Set up a quick 6-second timeout to handle hanging or ultra-slow connections gracefully
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 6000);
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
 
-      const response = await fetch(`${CONFIG.API}?action=${action}`, { signal: controller.signal });
-      mode: 'no-cors'
-      clearTimeout(timeoutId);
+    // REMOVED: mode: 'no-cors'
+    const response = await fetch(`${CONFIG.API}?action=${action}`, { 
+      signal: controller.signal 
+    });
+    
+    clearTimeout(timeoutId);
 
-      if (!response.ok) throw new Error("Network tier rejection token.");
-      
-      const data = await response.json();
-      
-      // If we are getting the product manifest, preserve a snapshot locally as a fallback cache
-      if (action === "products" && data && data.length > 0) {
-        localStorage.setItem("jke_cached_products", JSON.stringify(data));
-        localStorage.setItem("jke_cache_timestamp", Date.now());
-      }
-      
-      return data;
-    } catch (err) {
-      console.warn(`[Network Layer Slow/Offline] Falling back to local mirror cache for action: ${action}`);
-      
-      // Look for data inside local memory if the API connection drops or slows down
-      if (action === "products") {
-        const cachedData = localStorage.getItem("jke_cached_products");
-        if (cachedData) {
-          return JSON.parse(cachedData);
-        }
-      }
-      
-      throw new Error("Network offline and no local data found.");
-    }
+    if (!response.ok) throw new Error("Network tier rejection token.");
+    
+    // Now you can safely parse the JSON
+    return await response.json(); 
+  } catch (err) {
+    // ... rest of your error handling
+  }
   },
   
   async post(action, data) {

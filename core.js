@@ -27,6 +27,7 @@ export const api = {
       const timeoutId = setTimeout(() => controller.abort(), 6000);
 
       const response = await fetch(`${CONFIG.API}?action=${action}`, { signal: controller.signal });
+      mode: 'no-cors'
       clearTimeout(timeoutId);
 
       if (!response.ok) throw new Error("Network tier rejection token.");
@@ -58,6 +59,7 @@ export const api = {
   async post(action, data) {
     try {
       const response = await fetch(`${CONFIG.API}?action=${action}`, {
+        mode: 'no-cors',
         method: "POST",
         body: JSON.stringify(data)
       });

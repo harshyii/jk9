@@ -1,25 +1,69 @@
 import { api, app, formatINR } from "./core.js";
 
 export async function render(container){
-container.innerHTML=`
-<div class="bg-dark text-white rounded p-4 p-md-5 mb-4" style="background:linear-gradient(135deg,#212529,#343a40);">
-<div class="row align-items-center">
-<div class="col-lg-7">
-<h1 class="display-5 fw-bold mb-3">Welcome to JK Enterprises</h1>
-</div>
-</div>
-</div>
+container.innerHTML = `
+<div class="row g-3 mb-5">
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-<h3 class="fw-bold m-0">Featured Products</h3>
-<a href="#/products" class="btn btn-outline-dark btn-sm">View All</a>
-</div>
+  <div class="col-6 col-lg-3">
+    <a href="#/brands?brand=Eastman" class="text-decoration-none">
+      <div class="card border-0 shadow-sm h-100 overflow-hidden">
+        <img src="assets/img/hero/eastman.webp"
+             class="card-img-top"
+             style="height:220px;object-fit:cover;"
+             alt="Eastman">
+        <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+          <h4 class="text-white fw-bold mb-1">EASTMAN</h4>
+          <small class="text-light">Power Tools</small>
+        </div>
+      </div>
+    </a>
+  </div>
 
-<div class="row g-4" id="home-products-feed">
-<div class="col-12 text-center py-5">
-<div class="spinner-border text-warning"></div>
-<p class="mt-3 mb-0 text-muted">Loading products...</p>
-</div>
+  <div class="col-6 col-lg-3">
+    <a href="#/brands?brand=Foxcare" class="text-decoration-none">
+      <div class="card border-0 shadow-sm h-100 overflow-hidden">
+        <img src="assets/img/hero/foxcare.webp"
+             class="card-img-top"
+             style="height:220px;object-fit:cover;"
+             alt="Foxcare">
+        <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+          <h4 class="text-white fw-bold mb-1">FOXCARE</h4>
+          <small class="text-light">Car Care</small>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-3">
+    <a href="#/products?category=Solar" class="text-decoration-none">
+      <div class="card border-0 shadow-sm h-100 overflow-hidden">
+        <img src="assets/img/hero/solar.webp"
+             class="card-img-top"
+             style="height:220px;object-fit:cover;"
+             alt="Solar">
+        <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+          <h4 class="text-white fw-bold mb-1">SOLAR</h4>
+          <small class="text-light">Panels & Accessories</small>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-6 col-lg-3">
+    <a href="#/products?category=Industrial" class="text-decoration-none">
+      <div class="card border-0 shadow-sm h-100 overflow-hidden">
+        <img src="assets/img/hero/industrial.webp"
+             class="card-img-top"
+             style="height:220px;object-fit:cover;"
+             alt="Industrial">
+        <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+          <h4 class="text-white fw-bold mb-1">INDUSTRIAL</h4>
+          <small class="text-light">Equipment & Tools</small>
+        </div>
+      </div>
+    </a>
+  </div>
+
 </div>
 `;
 

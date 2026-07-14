@@ -64,6 +64,8 @@ export async function render(container, params) {
 
   try {
     let items = await api.get("products");
+    console.log(items);
+    console.log(Array.isArray(items));
     const grid = document.getElementById("catalog-grid");
 
     document.getElementById("sort-select").addEventListener("change", (e) => {
@@ -74,9 +76,12 @@ export async function render(container, params) {
     });
 
     displayGrid(grid, items);
-  } catch (err) {
-    document.getElementById("catalog-grid").innerHTML = `<div class="alert alert-danger">Error loading product inventory database.</div>`;
-  }
+  } catch(err){
+    console.error(err);
+    console.error(err.stack);
+    document.getElementById("catalog-grid").innerHTML=
+    `<div class="alert alert-danger">${err.message}</div>`;
+    }
 }
 
 function displayGrid(target, list) {

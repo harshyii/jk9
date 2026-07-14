@@ -48,9 +48,7 @@ signal:controller.signal
 });
 clearTimeout(timeoutId);
 if(!response.ok)throw new Error(`HTTP ${response.status}`);
-const text=await response.text();
-console.log("POST:",text);
-return JSON.parse(text);
+return await response.json();
 }catch(err){
 console.error("POST Error:",err);
 return{success:false,error:err.message};

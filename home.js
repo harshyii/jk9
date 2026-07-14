@@ -68,7 +68,7 @@ container.innerHTML = `
 `;
 
 try{
-const products=(await api.get("products")).slice(0,9);
+const products=(await api.get("products")).slice(0,12);
 const grid=document.getElementById("home-products-feed");
 
 if(!products.length){

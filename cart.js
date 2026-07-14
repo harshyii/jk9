@@ -53,7 +53,7 @@ products.map(p=>`
 <div class="card h-100 shadow-sm">
 
 <img
-src="${p.Image1||'404.webp'}"
+src="${p.Image1||'assets/404.webp'}"
 class="card-img-top p-3"
 style="height:170px;object-fit:contain;">
 

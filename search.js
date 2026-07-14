@@ -25,7 +25,7 @@ function brand(p) {
 }
 
 function image(p) {
-  return p.Image1 || "404.webp";
+  return p.Image1 || "assets/404.webp";
 }
 
 function price(p) {

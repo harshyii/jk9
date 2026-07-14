@@ -14,7 +14,7 @@ container.innerHTML = `
       <div class="card-body d-flex align-items-center gap-3 p-2">
 
         <img
-          src="https://www.eastmanshop.com/cdn/shop/files/EASTMAN_LOGO_2_d03dc81a-227c-4cb6-a832-13cea09fe67b_1968x500.webp?v=1781506228"
+          src="assets/eastman.webp"
           alt="Eastman"
           style="height:38px;width:90px;object-fit:contain;">
 
@@ -33,7 +33,7 @@ container.innerHTML = `
       <div class="card-body d-flex align-items-center gap-3 p-2">
 
         <img
-          src="https://www.foxcare.in/cdn/shop/files/FINAL_-_6_WITH_WHITE_691f08d6-667b-4b18-8a8b-40e05e06b51c_208x.png?v=1630612777"
+          src="assets/foxcare.webp"
           alt="Foxcare"
           style="height:38px;width:90px;object-fit:contain;">
 
@@ -52,7 +52,7 @@ container.innerHTML = `
       <div class="card-body d-flex align-items-center gap-3 p-2">
 
         <img
-          src="https://www.loomsolar.com/cdn/shop/files/Loom_logo_f50a89a5-291b-4c15-9a87-303dc061554e_140x@2x.png?v=1752208604"
+          src="assets/loom.webp"
           alt="Solar"
           style="height:38px;width:90px;object-fit:contain;">
 
@@ -71,7 +71,7 @@ container.innerHTML = `
       <div class="card-body d-flex align-items-center gap-3 p-2">
 
         <img
-          src="404.webp"
+          src="assets/404.webp"
           alt="Products"
           style="height:38px;width:90px;object-fit:contain;">
 
@@ -170,7 +170,7 @@ p.Price ||
 const img =
 p.Image1 ||
 p.Image ||
-"404.webp";
+"assets/404.webp";
 
 return `
 

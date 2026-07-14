@@ -25,7 +25,7 @@ return p.Brand||"";
 }
 
 function image(p){
-return p.Image1||"404.webp";
+return p.Image1||"assets/404.webp";
 }
 
 function price(p){
@@ -158,7 +158,7 @@ p.ID||
 const name=p["Item Name"]||p.Name||"Product";
 const brand=p.Brand||"";
 const price=Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
-const img=p.Image1||p.Image||"404.webp";
+const img=p.Image1||p.Image||"assets/404.webp";
 
 return`
 

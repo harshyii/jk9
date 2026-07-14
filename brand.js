@@ -42,7 +42,11 @@ async function renderBrandProducts(container, brandName) {
   container.innerHTML = `<h4 class="fw-bold text-dark mb-4">Pipeline: ${brandName}</h4><div class="row g-3" id="brand-filtered-grid"><div class="col-12 text-center py-5"><div class="spinner-border text-warning"></div></div></div>`;
   
   try {
-    const match = await api.get("products", { brand: brandName });
+    const products = await api.get("products");
+
+  const match = products.filter(p =>
+  (p.Brand || "").toLowerCase() === brandName.toLowerCase()
+  );
     const grid = document.getElementById("brand-filtered-grid");
 
     if(!match || match.length === 0) {
@@ -50,20 +54,83 @@ async function renderBrandProducts(container, brandName) {
       return;
     }
 
-    grid.innerHTML = match.map(p => `
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-0 product-card">
-          <img src="${p.img || 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400'}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height:150px; background:#fafafa;" alt="${p.name}">
-          <div class="card-body p-3 d-flex flex-column">
-            <h6 class="fw-bold text-dark text-truncate mb-1">${p.name}</h6>
-            <div class="mt-auto">
-              <div class="text-danger fw-bold mb-2">${formatINR(p.price)}</div>
-              <a href="#/product?id=${p.id}" class="btn btn-sm btn-dark w-100 rounded-0 font-monospace">Open Specs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `).join("");
+    grid.innerHTML = match.map(p => {
+
+const sku = String(
+  p.ProductID ||
+  p["Product ID"] ||
+  p.SKU ||
+  p.ID ||
+  ""
+).trim();
+
+const name = p["Item Name"] || p.Name || "Product";
+
+const img = p.Image1 || p.Image || "404.webp";
+
+const price =
+Number(
+String(
+p["Sale Price"] ||
+p.Price ||
+0
+).replace(/[^\d.]/g,"")
+) || 0;
+
+return `
+
+<div class="col-6 col-md-4 col-lg-3">
+
+<div class="card h-100 shadow-sm border-0 rounded-3">
+
+<a href="#/product?id=${encodeURIComponent(sku)}">
+
+<img
+src="${img}"
+class="card-img-top p-3"
+style="height:220px;object-fit:contain;background:#fafafa;"
+alt="${name}">
+
+</a>
+
+<div class="card-body d-flex flex-column">
+
+<h6
+class="fw-semibold mb-2"
+style="
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden;
+min-height:48px;">
+
+${name}
+
+</h6>
+
+<div class="fw-bold text-danger fs-5 mb-3">
+
+${formatINR(price)}
+
+</div>
+
+<a
+href="#/product?id=${encodeURIComponent(sku)}"
+class="btn btn-dark w-100">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}).join("");
   } catch (err) {
     document.getElementById("brand-filtered-grid").innerHTML = `<div class="alert alert-danger">Communication drop parsing channel rows.</div>`;
   }

@@ -18,23 +18,19 @@ function sanitizePrice(p) {
 }
 
 // Scans messy objects to find a valid SKU identifier
-function sanitizeSku(p) {
-  if (!p) return "UNKNOWN";
-  
-  // Check common model field markers
-  if (p["Model Number"] && String(p["Model Number"]).trim()) return String(p["Model Number"]).trim();
-  if (p["Asin"] && String(p["Asin"]).trim()) return String(p["Asin"]).trim();
-  
-  // Parse out text wrapped in parentheses from the title (e.g., "(ECD-10NK)")
-  const name = p["Item Name"] || "";
-  const parenMatch = name.match(/\(([^)]+)\)/);
-  if (parenMatch && parenMatch[1]) return parenMatch[1].trim();
-
-  const rawKey = Object.keys(p).find(k => k.toLowerCase().includes("productidsku"));
-  if (rawKey && String(p[rawKey]).trim() && String(p[rawKey]).length < 30) return String(p[rawKey]).trim();
-
-  // Last resort clean hash generation matching name parameters
-  return "JKE-" + Math.abs(name.hashCode || name.length * 17).toString().slice(-5);
+function sanitizeSku(p){
+return String(
+p.ProductID||
+p["Product ID"]||
+p.SKU||
+p["SKU"]||
+p.ID||
+p["Model Number"]||
+p.Model||
+p.ASIN||
+p.Asin||
+""
+).trim();
 }
 
 export async function render(container, params) {
@@ -169,7 +165,7 @@ async function renderDetail(container, id) {
               <input type="number" id="qty-input" class="form-control rounded-0 font-monospace text-center fw-bold" value="1" min="1">
             </div>
             <div class="col-9 col-sm-6">
-              <button id="add-to-cart-btn" class="btn btn-dark rounded-0 w-100 fw-bold"><i class="bi bi-cart-plus me-2"></i>Commit To Allocation Batch</button>
+              <button id="add-to-cart-btn" class="btn btn-dark rounded-0 w-100 fw-bold"><i class="bi bi-cart-plus me-2"></i>Add to Cart</button>
             </div>
           </div>
         </div>
@@ -193,7 +189,7 @@ async function renderDetail(container, id) {
       btn.innerHTML = `<i class="bi bi-check-circle me-2"></i>Added to Cart`;
       setTimeout(() => {
         btn.className = "btn btn-dark rounded-0 w-100 fw-bold";
-        btn.innerHTML = `<i class="bi bi-cart-plus me-2"></i>Commit To Allocation Batch`;
+        btn.innerHTML = `<i class="bi bi-cart-plus me-2"></i>Add to Cart`;
       }, 2000);
     });
 

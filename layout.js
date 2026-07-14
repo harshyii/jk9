@@ -25,7 +25,7 @@ export function getHeaderHTML() {
           </ul>
           <div class="d-flex align-items-center gap-3">
             <a href="#/checkout" class="btn btn-warning btn-sm rounded-0 fw-bold font-monospace position-relative d-flex align-items-center gap-2">
-              <i class="bi bi-cart3"></i> Allocation Batch
+              <i class="bi bi-cart3"></i> View Cart
               <span id="cart-badge-count" class="badge bg-danger rounded-pill ${totals.count === 0 ? 'd-none' : ''}">${totals.count}</span>
             </a>
           </div>

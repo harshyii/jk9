@@ -1,77 +1,94 @@
-// ==========================================================
-// Storefront Dashboard Matrix View Components
-// ==========================================================
 import { api, formatINR } from "./core.js";
 
-export async function render(container, params) {
-  container.innerHTML = `
-    <!-- Hero Corporate Showcase Grid Banner -->
-    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-dark text-light position-relative overflow-hidden shadow-sm" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));">
-      <div class="col-lg-7 px-0 position-relative z-1">
-        <h1 class="display-5 fw-bold text-warning">Industrial Wholesale Hub India</h1>
-        <p class="lead my-3 text-white-50">Direct commercial factory allocation across verified heavy tools, solar engines, safety apparel arrays, and workshop systems.</p>
-        <a href="#/products" class="btn btn-warning fw-bold px-4 py-2 mt-2">Browse Store Catalog</a>
-      </div>
-    </div>
+export async function render(container){
+container.innerHTML=`
+<div class="bg-dark text-white rounded p-4 p-md-5 mb-4" style="background:linear-gradient(135deg,#212529,#343a40);">
+<div class="row align-items-center">
+<div class="col-lg-7">
+<h1 class="display-5 fw-bold mb-3">Welcome to JK Enterprises</h1>
+<p class="lead text-light opacity-75 mb-4">Find quality tools, electrical products, solar equipment, hardware and industrial supplies at competitive prices.</p>
+<a href="#/products" class="btn btn-warning btn-lg fw-semibold">Shop Now</a>
+</div>
+</div>
+</div>
 
-    <!-- Live Data Processing Feeds Layout Grid Matrix Nodes -->
-    <h4 class="fw-bold text-dark border-bottom pb-2 mb-4">Featured B2B Supply Line Tiers</h4>
-    <div class="row g-4" id="home-products-feed">
-      <div class="col-12 text-center py-4 text-muted"><div class="spinner-grow spinner-grow-sm text-warning me-2"></div>Syncing manufacturing live product array rows...</div>
-    </div>
-  `;
+<div class="d-flex justify-content-between align-items-center mb-3">
+<h3 class="fw-bold m-0">Featured Products</h3>
+<a href="#/products" class="btn btn-outline-dark btn-sm">View All</a>
+</div>
 
-  try {
-    const data = await api.get("products", { limit: "8" });
-    const grid = document.getElementById("home-products-feed");
-    
-    if (!data || data.length === 0) {
-      grid.innerHTML = `<div class="col-12 text-center text-muted py-3">No active distribution supply lines exposed currently. Check network metrics.</div>`;
-      return;
-    }
+<div class="row g-4" id="home-products-feed">
+<div class="col-12 text-center py-5">
+<div class="spinner-border text-warning"></div>
+<p class="mt-3 mb-0 text-muted">Loading products...</p>
+</div>
+</div>
+`;
 
-    grid.innerHTML = data.map(p => {
-      // Inline Failsafe SKU matching strategy pattern for the homepage catalog template layout grid
-      let sku = "N/A";
-      const foundKey = Object.keys(p).find(k => k.replace(/\s+/g, '').toLowerCase().includes("productidsku") || k.toLowerCase() === "id");
-      if (foundKey && String(p[foundKey]).trim()) {
-        sku = String(p[foundKey]).trim();
-      } else {
-        const fallbackMatch = String(p["Item Name"] || p["name"] || "").match(/^[A-Z0-9]+/);
-        sku = fallbackMatch && fallbackMatch[0].length >= 4 ? fallbackMatch[0] : "JKE-" + Math.floor(1000 + Math.random() * 9000);
-      }
+try{
+const products=(await api.get("products")).slice(0,8);
+const grid=document.getElementById("home-products-feed");
 
-      const name = p["Item Name"] || p["name"] || "Unnamed Product";
-      const brand = p["Brand"] || p["brand"] || "OEM";
-      
-      const rawPrice = p["Sale Price"] || p["price"] || "0";
-      const matchedDigits = String(rawPrice).match(/\d+/);
-      const price = matchedDigits ? Number(matchedDigits[0]) : 0;
-      
-      const img = p["Image1"] || p["img"] || "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400";
+if(!products.length){
+grid.innerHTML=`<div class="col-12 text-center py-5 text-muted">No products available.</div>`;
+return;
+}
 
-      return `
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="card h-100 border-0 shadow-sm rounded-0 product-card position-relative">
-            <div class="position-absolute top-0 end-0 bg-warning text-dark font-monospace fw-bold px-2 py-0.5 small z-1">${brand}</div>
-            <img src="${img}" class="card-img-top rounded-0 p-3 object-fit-contain" style="height: 180px; background: #fafafa;" alt="${name}">
-            <div class="card-body d-flex flex-column p-3">
-              <h6 class="card-title fw-bold text-dark text-truncate mb-1">${name}</h6>
-              <p class="text-muted small mb-2 font-monospace">SKU: ${sku}</p>
-              <div class="mt-auto">
-                <div class="d-flex align-items-baseline gap-2 mb-2">
-                  <span class="fs-5 fw-bold text-danger">${formatINR(price)}</span>
-                </div>
-                <a href="#/product?id=${encodeURIComponent(sku)}" class="btn btn-sm btn-outline-dark w-100 rounded-0 fw-bold">View Procurement Data</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    }).join("");
-    
+grid.innerHTML=products.map(p=>{
 
-  } catch (error) {
-    document.getElementById("home-products-feed").innerHTML = `<div class="col-12 alert alert-warning">Network communication layer slow/offline. Dynamic assets deferred.</div>`;
-  }
+const id=String(
+p.ProductID||
+p["Product ID"]||
+p.SKU||
+p["Model Number"]||
+p.ID||
+""
+).trim();
+
+const name=p["Item Name"]||p.Name||"Product";
+const brand=p.Brand||"";
+const price=Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
+const image=p.Image1||p.Image||"https://via.placeholder.com/400x400?text=No+Image";
+
+return`
+<div class="col-6 col-md-4 col-lg-3">
+<div class="card h-100 shadow-sm border-0">
+
+<img src="${image}" class="card-img-top p-3" style="height:220px;object-fit:contain;" alt="${name}">
+
+<div class="card-body d-flex flex-column">
+
+${brand?`<small class="text-muted mb-1">${brand}</small>`:""}
+
+<h6 class="fw-semibold mb-2">${name}</h6>
+
+<div class="mt-auto">
+
+<div class="fs-5 fw-bold text-danger mb-3">${formatINR(price)}</div>
+
+<a href="#/product?id=${encodeURIComponent(id)}" class="btn btn-warning w-100 fw-semibold">
+View Product
+</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+`;
+
+}).join("");
+
+}catch(e){
+
+document.getElementById("home-products-feed").innerHTML=`
+<div class="col-12">
+<div class="alert alert-warning text-center mb-0">
+Unable to load products. Please try again later.
+</div>
+</div>
+`;
+
+}
 }

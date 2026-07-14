@@ -7,7 +7,7 @@ container.innerHTML = `
   <div class="col-6 col-lg-3">
     <a href="#/brands?brand=Eastman" class="text-decoration-none">
       <div class="card border-0 shadow-sm h-100 overflow-hidden">
-        <img src="assets/img/hero/eastman.webp"
+        <img src="https://www.eastmanshop.com/cdn/shop/files/EASTMAN_LOGO_2_d03dc81a-227c-4cb6-a832-13cea09fe67b_1968x500.webp?v=1781506228"
              class="card-img-top"
              style="height:220px;object-fit:cover;"
              alt="Eastman">
@@ -22,7 +22,7 @@ container.innerHTML = `
   <div class="col-6 col-lg-3">
     <a href="#/brands?brand=Foxcare" class="text-decoration-none">
       <div class="card border-0 shadow-sm h-100 overflow-hidden">
-        <img src="assets/img/hero/foxcare.webp"
+        <img src="https://www.foxcare.in/cdn/shop/files/FINAL_-_6_WITH_WHITE_691f08d6-667b-4b18-8a8b-40e05e06b51c_208x.png?v=1630612777webp"
              class="card-img-top"
              style="height:220px;object-fit:cover;"
              alt="Foxcare">
@@ -37,7 +37,7 @@ container.innerHTML = `
   <div class="col-6 col-lg-3">
     <a href="#/products?category=Solar" class="text-decoration-none">
       <div class="card border-0 shadow-sm h-100 overflow-hidden">
-        <img src="assets/img/hero/solar.webp"
+        <img src="https://www.loomsolar.com/cdn/shop/files/Loom_logo_f50a89a5-291b-4c15-9a87-303dc061554e_140x@2x.png?v=1752208604"
              class="card-img-top"
              style="height:220px;object-fit:cover;"
              alt="Solar">
@@ -52,7 +52,7 @@ container.innerHTML = `
   <div class="col-6 col-lg-3">
     <a href="#/products?category=Industrial" class="text-decoration-none">
       <div class="card border-0 shadow-sm h-100 overflow-hidden">
-        <img src="assets/img/hero/industrial.webp"
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/330px-Tata_logo.svg.png"
              class="card-img-top"
              style="height:220px;object-fit:cover;"
              alt="Industrial">

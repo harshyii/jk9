@@ -55,11 +55,7 @@ Products
 </a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#/brands">
-Brands
-</a>
-</li>
+
 
 <li class="nav-item">
 <a class="nav-link" href="#/blogs">

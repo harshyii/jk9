@@ -62,7 +62,7 @@ export async function render(container, params) {
       const image =
         post.Image ||
         post.Image1 ||
-        "404.webp";
+        "assets/404.webp";
 
       const slug =
         post.Slug ||

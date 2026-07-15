@@ -66,7 +66,7 @@ const sku = String(
 
 const name = p["Item Name"] || p.Name || "Product";
 
-const img = p.Image1 || p.Image || "404.webp";
+const img = p.Image1 || p.Image || "assets/404.webp";
 
 const price =
 Number(

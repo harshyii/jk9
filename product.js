@@ -67,7 +67,9 @@ container.innerHTML=`
 
 <div class="d-flex justify-content-between align-items-center mb-3">
 
-<h3 class="m-0">All Products</h3>
+<h3 class="m-0">
+${params.brand ? params.brand + " Products" : "All Products"}
+</h3>
 
 </div>
 
@@ -94,15 +96,26 @@ try{
 
 const data=await api.get("products");
 
-const products=Array.isArray(data)?data:(data.data||[]);
+const products = Array.isArray(data) ? data : (data.data || []);
 
-const grid=document.getElementById("catalog-grid");
+let filtered = [...products];
 
-displayGrid(grid,products);
+if(params.brand){
+
+filtered = filtered.filter(p =>
+String(p.Brand || "").trim().toLowerCase() ===
+String(params.brand).trim().toLowerCase()
+);
+
+}
+
+const grid = document.getElementById("catalog-grid");
+
+displayGrid(grid, filtered);
 
 document.getElementById("sort").onchange=e=>{
 
-let list=[...products];
+let list=[...filtered];
 
 switch(e.target.value){
 
@@ -135,9 +148,14 @@ Unable to load products.
 }
 
 }
-function displayGrid(target,list){
+function displayGrid(target, list){
 
-if(!list.length){
+if(!target){
+console.error("catalog-grid not found");
+return;
+}
+
+if(!list || !list.length){
 target.innerHTML=`
 <div class="col-12 text-center py-5 text-muted">
 No products available.

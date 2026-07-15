@@ -1699,7 +1699,12 @@ export async function renderView(viewName, params = {}) {
       await viewModule.render(target, params);
     }
   } catch (err) {
-    console.error("View initialization fault:", err);
-    target.innerHTML = `<div class="alert alert-danger">Critical infrastructure communication failure while processing view route template.</div>`;
-  }
-}
+  console.error(err);
+
+  target.innerHTML = `
+    <div class="alert alert-danger">
+      <h5>${err.name}</h5>
+      <pre>${err.message}</pre>
+    </div>
+  `;
+}}

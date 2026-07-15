@@ -34,7 +34,7 @@ return Number(String(p["Sale Price"]||p.Price||0).replace(/[^\d.]/g,""))||0;
 
 export async function render(container,params){
 
-if(params.id)return renderDetail(container,params.id);
+ if(params.id)return renderDetail(container,params.id);
 
 container.innerHTML=`
 <div class="row">
@@ -300,6 +300,337 @@ btn.innerHTML=old;
 
 };
 
+
+
 });
+}
+async function renderDetail(container,id){
+
+container.innerHTML=`
+<div class="text-center py-5">
+<div class="spinner-border text-warning"></div>
+</div>
+`;
+
+try{
+
+const data=await api.get("products");
+
+const products=Array.isArray(data)
+?data
+:(data.data||[]);
+
+const p=products.find(item=>
+
+String(
+item.ProductID||
+item["Product ID"]||
+item.SKU||
+item.ID||
+""
+).trim()===String(id).trim()
+
+);
+
+if(!p){
+
+container.innerHTML=`
+<div class="alert alert-warning">
+Product not found.
+</div>
+`;
+
+return;
+
+}
+
+const sku=String(
+p.ProductID||
+p["Product ID"]||
+p.SKU||
+p.ID||
+""
+).trim();
+
+const name=p["Item Name"]||p.Name||"Product";
+
+const brand=p.Brand||"";
+
+const price=Number(
+String(
+p["Sale Price"]||
+p.Price||
+0
+).replace(/[^\d.]/g,"")
+)||0;
+
+const mrp=Number(
+String(
+p.MRP||
+price
+).replace(/[^\d.]/g,"")
+)||price;
+
+const description=p.Description||"";
+
+const details=p["Detailed Info"]||"";
+
+const img1=p.Image1||"assets/404.webp";
+const img2=p.Image2||img1;
+
+const stock=p["Stock Quantity"]||"-";
+const warranty=p.Warranty||"-";
+const weight=p["Weight (kg)"]||"-";
+const dimension=p["Dimensions (cm)"]||"-";
+const unit=p.Unit||"";
+const supplier=p.Supplier||"";
+
+container.innerHTML=`
+
+<div class="row g-5">
+
+<div class="col-lg-5">
+
+<div class="card shadow-sm border-0">
+
+<img
+id="product-main-image"
+src="${img1}"
+class="img-fluid p-4"
+style="height:420px;object-fit:contain;"
+alt="${name}">
+
+</div>
+
+<div class="row g-2 mt-3">
+
+${img1?`
+<div class="col-6">
+<img
+src="${img1}"
+class="img-fluid border rounded product-thumb"
+style="height:100px;object-fit:contain;cursor:pointer;">
+</div>`:""}
+
+${img2&&img2!==img1?`
+<div class="col-6">
+<img
+src="${img2}"
+class="img-fluid border rounded product-thumb"
+style="height:100px;object-fit:contain;cursor:pointer;">
+</div>`:""}
+
+</div>
+
+</div>
+
+<div class="col-lg-7">
+
+<small class="text-uppercase text-muted fw-semibold">
+
+${brand}
+
+</small>
+
+<h2 class="fw-bold mt-2">
+
+${name}
+
+</h2>
+
+<p class="text-muted">
+
+SKU :
+<strong>${sku}</strong>
+
+</p>
+
+<div class="d-flex align-items-center gap-3 mb-3">
+
+<h2 class="text-danger fw-bold mb-0">
+
+${formatINR(price)}
+
+</h2>
+
+${mrp>price?`
+<del class="text-muted">
+${formatINR(mrp)}
+</del>
+`:""}
+
+</div>
+
+<div class="mb-4">
+
+<h5 class="fw-bold mb-3">
+About this item
+</h5>
+
+${description
+.split(". ")
+.map(line => `
+<p class="mb-2">
+${line.trim()}${line.endsWith(".") ? "" : "."}
+</p>
+`).join("")}
+
+</div>
+
+<table class="table table-bordered table-sm">
+
+<tr>
+<th width="35%">Brand</th>
+<td>${brand}</td>
+</tr>
+
+<tr>
+<th>SKU</th>
+<td>${sku}</td>
+</tr>
+
+<tr>
+<th>Stock</th>
+<td>${stock}</td>
+</tr>
+
+<tr>
+<th>Unit</th>
+<td>${unit}</td>
+</tr>
+
+<tr>
+<th>Warranty</th>
+<td>${warranty}</td>
+</tr>
+
+<tr>
+<th>Weight</th>
+<td>${weight}</td>
+</tr>
+
+<tr>
+<th>Dimensions</th>
+<td>${dimension}</td>
+</tr>
+
+<tr>
+<th>Supplier</th>
+<td>${supplier}</td>
+</tr>
+
+</table>
+
+<div class="d-flex gap-2 mt-4">
+
+<a
+href="#/checkout"
+class="btn btn-warning">
+
+Buy Now
+
+</a>
+
+<button
+class="btn btn-dark"
+id="detail-add-cart">
+
+🛒 Add to Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+${details ? `
+
+<div class="card mt-5 shadow-sm">
+
+<div class="card-header bg-light">
+<h4 class="mb-0">Product Specifications</h4>
+</div>
+
+<div class="card-body p-0">
+
+<table class="table table-striped table-hover mb-0">
+
+<tbody>
+
+${details
+.split("|")
+.map(item => {
+
+const parts = item.split(":");
+
+if(parts.length < 2) return "";
+
+const key = parts.shift().trim();
+const value = parts.join(":").trim();
+
+return `
+<tr>
+<th style="width:35%;">${key}</th>
+<td>${value}</td>
+</tr>
+`;
+
+}).join("")}
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+` : ""}
+
+`;
+
+document.querySelectorAll(".product-thumb").forEach(img=>{
+
+img.onclick=()=>{
+
+document.getElementById("product-main-image").src=img.src;
+
+};
+
+});
+
+document.getElementById("detail-add-cart").onclick=()=>{
+
+app.updateCart(
+
+sku,
+1,
+price,
+name,
+img1
+
+);
+
+alert("Added to cart.");
+
+};
+
+}catch(err){
+
+console.error(err);
+
+container.innerHTML=`
+
+<div class="alert alert-danger">
+
+Unable to load product.
+
+</div>
+
+`;
+
+}
 
 }

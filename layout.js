@@ -246,7 +246,7 @@ Need Help?
 
 <p class="mb-1">
 
-✉️ info@haryana.tools
+✉️ care@haryana.tools
 
 </p>
 

@@ -323,8 +323,8 @@ Email
 </h6>
 
 <p class="mb-1">
-<a href="mailto:info@haryana.tools" class="text-decoration-none">
-info@haryana.tools
+<a href="mailto:care@haryana.tools" class="text-decoration-none">
+care@haryana.tools
 </a>
 </p>
 
@@ -412,7 +412,7 @@ Business Information
 
 <tr>
 <th>Support</th>
-<td>info@haryana.tools</td>
+<td>care@haryana.tools</td>
 </tr>
 
 <tr>
@@ -499,7 +499,7 @@ Our team is committed to providing reliable service, genuine products and timely
 Call Now
 </a>
 
-<a href="mailto:info@haryana.tools" class="btn btn-outline-dark btn-lg">
+<a href="mailto:care@haryana.tools" class="btn btn-outline-dark btn-lg">
 <i class="bi bi-envelope-fill me-2"></i>
 Email Us
 </a>
@@ -936,7 +936,7 @@ If you have any questions regarding this Privacy Policy or your personal informa
 
 <li><strong>JK Enterprises</strong></li>
 
-<li>📧 info@haryana.tools</li>
+<li>📧 care@haryana.tools</li>
 
 <li>📞 +91 90506 23210</li>
 
@@ -1202,7 +1202,7 @@ If you have any questions regarding shipping, delivery timelines or order tracki
 
 <li>📞 +91 90506 23210</li>
 
-<li>📧 info@haryana.tools</li>
+<li>📧 care@haryana.tools</li>
 
 <li>🌐 https://haryana.tools</li>
 
@@ -1436,7 +1436,7 @@ Our support team will be happy to assist you with returns, replacements, warrant
 <div class="col-md-4">
 
 <strong>Email</strong><br>
-info@haryana.tools
+care@haryana.tools
 
 </div>
 
@@ -1622,7 +1622,7 @@ If you couldn't find the information you were looking for, our team will be happ
 
 <div class="col-md-4">
 <h6 class="fw-bold">Email</h6>
-<p class="mb-0">info@haryana.tools</p>
+<p class="mb-0">care@haryana.tools</p>
 </div>
 
 <div class="col-md-4">

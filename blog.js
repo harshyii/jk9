@@ -5,6 +5,8 @@ import { api } from "./core.js";
 
 export async function render(container, params) {
 
+  
+
   const urlParams = new URLSearchParams(window.location.hash.split("?")[1]);
   const blogId = params.id || urlParams.get("id");
 
@@ -54,14 +56,14 @@ export async function render(container, params) {
         "Untitled";
 
       const summary =
-        post.Excerpt ||
-        post.Description ||
-        post.summary ||
-        "Read this article.";
+      post.Excerpt ||
+      post.MetaDescription ||
+      "Read this article.";
+
 
       const image =
-        post.Image ||
-        post.Image1 ||
+        post.FeaturedImage ||
+        post.OGImage ||
         "assets/404.webp";
 
       const slug =
@@ -71,7 +73,7 @@ export async function render(container, params) {
 
       const date =
         post.Date ||
-        post["Publish Date"] ||
+        post["PublishDate "] ||
         "";
 
       return `
@@ -181,9 +183,29 @@ async function renderPost(container, slugId) {
       post.Image1 ||
       "";
 
-    const content =
-      post.Content ||
-      "Content coming soon.";
+    let content = "Content coming soon.";
+
+if (post.ContentFile) {
+
+  try {
+
+    const response = await fetch(
+      "blog/" + post.ContentFile
+    );
+
+    if (response.ok) {
+
+      content = await response.text();
+
+    }
+
+  } catch (err) {
+
+    console.error("Unable to load markdown", err);
+
+  }
+
+}
 
     container.innerHTML = `
 
@@ -221,9 +243,7 @@ async function renderPost(container, slugId) {
 
         </div>
 
-        <div
-          class="lh-lg"
-          style="white-space:pre-line;">
+        <div class="blog-content">
 
           ${content}
 

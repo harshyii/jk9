@@ -37,3 +37,79 @@ body { background-color: var(--jk-body); font-family: -apple-system, BlinkMacSys
 /* Custom Minimalist Styling Triggers */
 .bg-amazon-hero { background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(19,25,33,0.85) 100%); }
 .carousel-item img { filter: brightness(75%); }
+
+
+/* ===========================
+   Blog Content
+=========================== */
+
+.blog-content{
+    max-width:900px;
+    margin:auto;
+    line-height:1.65;
+    font-size:16px;
+}
+
+.blog-content h1{
+    font-size:2rem;
+    margin:0 0 1rem;
+    font-weight:700;
+}
+
+.blog-content h2{
+    font-size:1.45rem;
+    margin:1.5rem 0 .75rem;
+    font-weight:700;
+}
+
+.blog-content h3{
+    font-size:1.2rem;
+    margin:1.25rem 0 .5rem;
+    font-weight:600;
+}
+
+.blog-content h4{
+    margin:1rem 0 .5rem;
+}
+
+.blog-content p{
+    margin:.75rem 0;
+}
+
+.blog-content ul,
+.blog-content ol{
+    margin:.75rem 0;
+    padding-left:1.25rem;
+}
+
+.blog-content li{
+    margin:.35rem 0;
+}
+
+.blog-content img{
+    width:100%;
+    border-radius:12px;
+    margin:1rem 0;
+}
+
+.blog-content table{
+    width:100%;
+    margin:1rem 0;
+}
+
+.blog-content hr{
+    margin:1.5rem 0;
+}
+
+.blog-content blockquote{
+    margin:1rem 0;
+    padding:1rem;
+}
+
+.blog-content .card{
+    margin:1rem 0;
+}
+
+.blog-content .alert{
+    margin:1rem 0;
+}

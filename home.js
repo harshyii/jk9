@@ -127,9 +127,12 @@ try {
 
 const products = await api.get("products");
 
-const list = Array.isArray(products)
-  ? products.slice(0, 8)
-  : [];
+
+
+const list = [...products]
+.filter(p=>Number(p["Stock Quantity"]||0)>0)
+.sort(()=>Math.random()-0.5)
+.slice(0,12);
 
 const grid = document.getElementById("home-products-feed");
 

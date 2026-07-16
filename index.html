@@ -104,5 +104,20 @@
   }
 </script>
 
+<script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+
+<script>
+  merchantWidgetScript.addEventListener('load', function () {
+    merchantwidget.start({
+         // REQUIRED FIELDS
+         merchant_id: 5815016273,
+
+         // OPTIONAL FIELDS
+         position: POSITION,
+         region: REGION,
+    });
+  });
+</script>
+
 </body>
 </html>

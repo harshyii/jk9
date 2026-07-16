@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Loading...</title>
+
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+<div id="app-root"></div>
+
+<script type="module">
+
+const id = new URLSearchParams(location.search).get("id");
+
+location.replace("/#/blog?id=" + encodeURIComponent(id));
+
+</script>
+
+</body>
+</html>

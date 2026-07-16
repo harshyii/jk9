@@ -7,9 +7,22 @@ export async function render(container, params) {
 
   
 
-  const urlParams = new URLSearchParams(window.location.hash.split("?")[1]);
-  const blogId = params.id || urlParams.get("id");
+    // Support both:
+    // #/blog?id=...
+    // blog.html?id=...
 
+    const hashParams = new URLSearchParams(
+        window.location.hash.split("?")[1] || ""
+    );
+
+    const searchParams = new URLSearchParams(
+        window.location.search
+    );
+
+    const blogId =
+        params.id ||
+        searchParams.get("id") ||
+        hashParams.get("id");
   if (blogId) {
     return renderPost(container, blogId);
   }
@@ -18,7 +31,7 @@ export async function render(container, params) {
     <div class="mb-4">
       <h2 class="fw-bold">Latest Blogs</h2>
       <p class="text-muted">
-        Buying guides, product tips, industry news and useful articles from JK Enterprises.
+        Buying guides, product tips, industry news and useful articles from Haryana Tools.
       </p>
     </div>
 
@@ -111,7 +124,7 @@ export async function render(container, params) {
             </p>
 
             <a
-              href="#/blog?id=${encodeURIComponent(slug)}"
+              href="blog.html?id=${encodeURIComponent(slug)}"
               class="btn btn-warning">
 
               Read More
@@ -214,7 +227,7 @@ if (post.ContentFile) {
       <article class="mx-auto" style="max-width:900px;">
 
         <a
-          href="#/blogs"
+          href="index.html#/blogs"
           class="btn btn-outline-secondary mb-4">
 
           ← Back to Blogs

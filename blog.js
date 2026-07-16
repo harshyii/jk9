@@ -32,7 +32,9 @@ export async function render(container, params) {
   try {
 
     const articles = await api.get("blogs");
-
+    articles.sort((a, b) => {
+  return Number(b.SortOrder || 0) - Number(a.SortOrder || 0);
+  });
     const grid = document.getElementById("blog-catalog-grid");
 
     if (!articles || !articles.length) {

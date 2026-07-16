@@ -205,8 +205,8 @@ if (post.ContentFile) {
   try {
 
     const response = await fetch(
-      "blog/" + post.ContentFile
-    );
+    "assets/blogs/" + post.ContentFile
+);
 
     if (response.ok) {
 

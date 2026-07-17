@@ -364,7 +364,7 @@ function renderGrid(target, products) {
         ${brand(product) ? `
 
         <span
-    class="position-absolute top-0 end-0 mt-2 me-2 px-3 py-1 rounded-pill text-white fw-semibold shadow-sm"
+    class="position-absolute top-1.5 end-0 mt-2 me-2 px-3 py-1 rounded-2 text-white fw-semibold shadow-sm"
     style="
         background:${brandColor(brand(product))};
         font-size:.72rem;

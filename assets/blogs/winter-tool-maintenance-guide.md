@@ -671,11 +671,11 @@ Small maintenance tasks often prevent expensive repairs. Regular cleaning, lubri
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises supplies professional power tools, industrial equipment, electrical accessories and workshop essentials from trusted manufacturers. Whether you're preparing for winter maintenance or upgrading your workshop, we provide reliable products designed for long-term performance.
+HARYANA TOOLS supplies professional power tools, industrial equipment, electrical accessories and workshop essentials from trusted manufacturers. Whether you're preparing for winter maintenance or upgrading your workshop, we provide reliable products designed for long-term performance.
 
 </p>
 
@@ -915,19 +915,19 @@ Keep Your Workshop Running All Winter
 
 <p class="mb-4">
 
-JK Enterprises supplies professional power tools, hand tools, workshop equipment, electrical accessories and industrial products from trusted brands. Whether you're replacing worn-out equipment or preparing your workshop for winter, we provide reliable solutions for professionals and DIY users across India.
+HARYANA TOOLS supplies professional power tools, hand tools, workshop equipment, electrical accessories and industrial products from trusted brands. Whether you're replacing worn-out equipment or preparing your workshop for winter, we provide reliable solutions for professionals and DIY users across India.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Power%20Tools" class="btn btn-warning btn-lg">
+<a href="products.html?category=Power%20Tools" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 
 </a>
 
-<a href="#/products?category=Hand%20Tools" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Hand%20Tools" class="btn btn-outline-light btn-lg">
 
 Explore Hand Tools
 

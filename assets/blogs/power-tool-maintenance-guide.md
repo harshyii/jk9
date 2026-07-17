@@ -432,10 +432,10 @@ Replace cutting discs, blades, drill bits and brushes immediately if they become
 <h2 class="mb-3">Maintain Your Tools. Maximize Their Life.</h2>
 
 <p class="mb-3">
-Regular maintenance improves safety, increases productivity and protects your investment. JK Enterprises supplies professional power tools, spare parts and accessories for workshops, contractors and industrial users across India.
+Regular maintenance improves safety, increases productivity and protects your investment. HARYANA TOOLS supplies professional power tools, spare parts and accessories for workshops, contractors and industrial users across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Power Tools
 </a>
 

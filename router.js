@@ -1,35 +1,178 @@
 // ==========================================================
-// Client-Side Hash Router
+// Router
 // ==========================================================
+
 import { renderView } from "./ui.js";
 
-const routes = [
-  "index", "products", "product", "brands", "brand", 
-  "blogs", "blog", "about", "contact", "search", 
-  "cart", "checkout", "terms", "returns", "shipping", "privacy", "faq"
-];
+// ==========================================================
+// Pages
+// ==========================================================
 
-function handleRoute(){
-const hash=location.hash||"#/index";
-const [pathPart,queryPart]=hash.slice(2).split("?");
-const route=pathPart===""?"index":pathPart;
-const page=routes.includes(route)?route:"404";
-const params=Object.fromEntries(new URLSearchParams(queryPart||""));
+const PAGES = {
 
-let canonical=document.querySelector('link[rel="canonical"]');
-if(!canonical){
-canonical=document.createElement("link");
-canonical.rel="canonical";
-document.head.appendChild(canonical);
+    "": "index",
+
+    "index.html": "index",
+
+    "products.html": "products",
+
+    "product.html": "product",
+
+    "brands.html": "brands",
+
+    "brand.html": "brand",
+
+    "blogs.html": "blogs",
+
+    "blog.html": "blog",
+
+    "search.html": "search",
+
+    "cart.html": "cart",
+
+    "checkout.html": "checkout",
+
+    "about.html": "about",
+
+    "contact.html": "contact",
+
+    "faq.html": "faq",
+
+    "privacy.html": "privacy",
+
+    "returns.html": "returns",
+
+    "shipping.html": "shipping",
+
+    "terms.html": "terms",
+
+    "404.html": "404"
+
+};
+
+// ==========================================================
+// Helpers
+// ==========================================================
+
+function getPage() {
+
+    const file =
+
+        location.pathname
+
+            .split("/")
+
+            .pop() ||
+
+        "";
+
+    return PAGES[file] || "404";
+
 }
 
-canonical.href=`${location.origin}${location.pathname}${hash}`;
+function getParams() {
 
-window.scrollTo(0,0);
-renderView(page,params);
+    return Object.fromEntries(
+
+        new URLSearchParams(
+
+            location.search
+
+        )
+
+    );
+
 }
+
+function updateCanonical() {
+
+    let canonical =
+
+        document.querySelector(
+
+            'link[rel="canonical"]'
+
+        );
+
+    if (!canonical) {
+
+        canonical =
+
+            document.createElement(
+
+                "link"
+
+            );
+
+        canonical.rel =
+
+            "canonical";
+
+        document.head.appendChild(
+
+            canonical
+
+        );
+
+    }
+
+    canonical.href =
+
+        location.origin +
+
+        location.pathname +
+
+        location.search;
+
+}
+// ==========================================================
+// Route Handler
+// ==========================================================
+
+function handleRoute() {
+
+    updateCanonical();
+
+    window.scrollTo({
+
+        top: 0,
+
+        left: 0,
+
+        behavior: "instant"
+
+    });
+
+    renderView(
+
+        getPage(),
+
+        getParams()
+
+    );
+
+}
+
+// ==========================================================
+// Router
+// ==========================================================
 
 export function initRouter() {
-  window.addEventListener("hashchange", handleRoute);
-  window.addEventListener("load", handleRoute);
+
+    window.addEventListener(
+
+        "DOMContentLoaded",
+
+        handleRoute
+
+    );
+
+    window.addEventListener(
+
+        "popstate",
+
+        handleRoute
+
+    );
+
 }

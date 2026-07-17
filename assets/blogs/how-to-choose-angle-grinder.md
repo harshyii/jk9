@@ -438,10 +438,10 @@ Choose the Right Tool for Every Job
 </h2>
 
 <p class="mb-3">
-JK Enterprises supplies professional angle grinders, cutting discs and industrial power tools from trusted manufacturers for workshops, contractors and businesses across India.
+HARYANA TOOLS supplies professional angle grinders, cutting discs and industrial power tools from trusted manufacturers for workshops, contractors and businesses across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Angle Grinders
 </a>
 

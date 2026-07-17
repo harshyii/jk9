@@ -8,7 +8,7 @@ alt="Solar Panel Dealer in Pehowa">
 
 <h1>Best Solar Panel Dealer in Pehowa | Residential & Commercial Rooftop Solar Solutions</h1>
 
-<p>Looking for a trusted <strong>solar panel dealer in Pehowa</strong>? JK Enterprises provides complete solar energy solutions including rooftop solar panels, on-grid solar systems, solar inverters, mounting structures, accessories and installation support for residential, commercial and industrial applications. Whether you want to reduce electricity bills or invest in clean renewable energy, choosing the right solar products and installation partner is the first step toward long-term savings.</p>
+<p>Looking for a trusted <strong>solar panel dealer in Pehowa</strong>? HARYANA TOOLS provides complete solar energy solutions including rooftop solar panels, on-grid solar systems, solar inverters, mounting structures, accessories and installation support for residential, commercial and industrial applications. Whether you want to reduce electricity bills or invest in clean renewable energy, choosing the right solar products and installation partner is the first step toward long-term savings.</p>
 
 <p>With increasing electricity costs and government support for renewable energy, rooftop solar systems have become one of the most cost-effective investments for homes, offices, schools, factories and commercial buildings throughout Haryana.</p>
 
@@ -44,7 +44,7 @@ alt="Solar Panel Dealer in Pehowa">
 
 <hr>
 
-<h2>Solar Products Available at JK Enterprises</h2>
+<h2>Solar Products Available at HARYANA TOOLS</h2>
 
 <div class="row g-3">
 
@@ -288,7 +288,7 @@ alt="Solar Panel Dealer in Pehowa">
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises supplies solar panels and related products across Haryana, including:</p>
+<p>HARYANA TOOLS supplies solar panels and related products across Haryana, including:</p>
 
 <div class="list-group">
 
@@ -550,7 +550,7 @@ alt="Solar Panel Dealer in Pehowa">
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <div class="alert alert-success">
 
@@ -600,7 +600,7 @@ Which is the best solar panel dealer in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises supplies residential, commercial and industrial solar products along with complete installation guidance and support.
+HARYANA TOOLS supplies residential, commercial and industrial solar products along with complete installation guidance and support.
 
 </div>
 
@@ -714,13 +714,13 @@ Yes. Solar panels continue generating electricity on cloudy days, although outpu
 
 <p class="mb-3">
 
-JK Enterprises supplies high-quality solar panels, on-grid solar systems, inverters, mounting structures and accessories for residential, commercial and industrial customers across Pehowa, Kurukshetra and nearby regions. Whether you're planning a small rooftop installation or a large commercial project, our team can help you choose the right solar solution.
+HARYANA TOOLS supplies high-quality solar panels, on-grid solar systems, inverters, mounting structures and accessories for residential, commercial and industrial customers across Pehowa, Kurukshetra and nearby regions. Whether you're planning a small rooftop installation or a large commercial project, our team can help you choose the right solar solution.
 
 </p>
 
 <a href="#/contact" class="btn btn-warning btn-lg">
 
-Contact JK Enterprises
+Contact HARYANA TOOLS
 
 </a>
 

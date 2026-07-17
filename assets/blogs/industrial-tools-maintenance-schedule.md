@@ -291,9 +291,9 @@ Replace cutting discs, drill bits and blades immediately if cracked, excessively
 
 <h2 class="mb-3">Maintain Your Tools, Maximize Productivity</h2>
 
-<p class="mb-3">JK Enterprises supplies professional power tools, industrial equipment and genuine accessories to help businesses maintain reliable performance and reduce downtime.</p>
+<p class="mb-3">HARYANA TOOLS supplies professional power tools, industrial equipment and genuine accessories to help businesses maintain reliable performance and reduce downtime.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Industrial Tools</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Industrial Tools</a>
 
 </div>
 

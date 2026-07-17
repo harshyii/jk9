@@ -8,7 +8,7 @@ import { getHeaderHTML, getFooterHTML, initHeaderEvents } from "./layout.js";
 // Static Pages
 // ==========================================================
 
-const legalTemplates = {
+const STATIC_PAGES  = {
 
 about: `
 <div class="bg-white rounded shadow-sm p-4 p-lg-5">
@@ -16,7 +16,7 @@ about: `
 <div class="text-center mb-5">
 
 <h1 class="fw-bold mb-3">
-About JK Enterprises
+About HARYANA TOOLS
 </h1>
 
 <p class="lead text-muted mb-0">
@@ -34,7 +34,7 @@ Who We Are
 </h3>
 
 <p>
-JK Enterprises is an Indian supplier of quality industrial products, power tools,
+HARYANA TOOLS is an Indian supplier of quality industrial products, power tools,
 hand tools, solar products, automotive care products and workshop equipment.
 We serve retailers, workshops, contractors, institutions, businesses and individual
 customers with reliable products sourced from trusted manufacturers.
@@ -55,7 +55,7 @@ bulk quantities, we aim to make purchasing easy and transparent.
 <div class="card-body">
 
 <h5 class="fw-bold mb-3">
-Why Choose JK Enterprises?
+Why Choose HARYANA TOOLS?
 </h5>
 
 <ul class="mb-0">
@@ -236,7 +236,7 @@ Serving wholesalers, businesses and individual customers.
 <div class="text-center">
 
 <h3 class="fw-bold mb-3">
-Thank You for Choosing JK Enterprises
+Thank You for Choosing HARYANA TOOLS
 </h3>
 
 <p class="text-muted mb-4">
@@ -244,7 +244,7 @@ We appreciate your trust and look forward to serving you with quality products,
 competitive pricing and reliable customer support.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg px-4">
+<a href="products.html" class="btn btn-warning btn-lg px-4">
 Browse Products
 </a>
 
@@ -259,7 +259,7 @@ contact: `
 <div class="text-center mb-5">
 
 <h1 class="fw-bold mb-3">
-Contact JK Enterprises
+Contact HARYANA TOOLS
 </h1>
 
 <p class="lead text-muted mb-0">
@@ -402,7 +402,7 @@ Business Information
 
 <tr>
 <th>Business</th>
-<td>JK Enterprises</td>
+<td>HARYANA TOOLS</td>
 </tr>
 
 <tr>
@@ -519,7 +519,7 @@ Terms & Conditions
 </h1>
 
 <p class="lead text-muted mb-0">
-Please read these Terms & Conditions carefully before using our website or placing an order with JK Enterprises.
+Please read these Terms & Conditions carefully before using our website or placing an order with HARYANA TOOLS.
 </p>
 
 </div>
@@ -622,7 +622,7 @@ By accessing this website or placing an order, you agree to comply with these Te
 
 <p>
 
-Products carrying a manufacturer's warranty are covered only by the respective manufacturer's warranty policy. JK Enterprises assists customers wherever possible but does not provide additional warranties unless specifically mentioned.
+Products carrying a manufacturer's warranty are covered only by the respective manufacturer's warranty policy. HARYANA TOOLS assists customers wherever possible but does not provide additional warranties unless specifically mentioned.
 
 </p>
 
@@ -650,7 +650,7 @@ Returns and refunds are governed by our Return & Refund Policy. Customers are re
 
 <p>
 
-All content on this website including text, logos, graphics, images and design elements belongs to JK Enterprises or their respective owners and may not be copied, reproduced or distributed without permission.
+All content on this website including text, logos, graphics, images and design elements belongs to HARYANA TOOLS or their respective owners and may not be copied, reproduced or distributed without permission.
 
 </p>
 
@@ -664,7 +664,7 @@ All content on this website including text, logos, graphics, images and design e
 
 <p>
 
-JK Enterprises shall not be liable for any indirect, incidental or consequential damages arising from the use of this website or the products sold through it, except where required by applicable law.
+HARYANA TOOLS shall not be liable for any indirect, incidental or consequential damages arising from the use of this website or the products sold through it, except where required by applicable law.
 
 </p>
 
@@ -711,7 +711,7 @@ Privacy Policy
 </h1>
 
 <p class="lead text-muted mb-0">
-Your privacy is important to us. This Privacy Policy explains how JK Enterprises collects, uses, stores and protects your personal information when you visit our website or place an order.
+Your privacy is important to us. This Privacy Policy explains how HARYANA TOOLS collects, uses, stores and protects your personal information when you visit our website or place an order.
 </p>
 
 </div>
@@ -785,7 +785,7 @@ The information collected is used only for legitimate business purposes includin
 </h3>
 
 <p>
-Payments are processed through trusted payment providers. JK Enterprises does not store your complete debit card, credit card or banking credentials on this website.
+Payments are processed through trusted payment providers. HARYANA TOOLS does not store your complete debit card, credit card or banking credentials on this website.
 </p>
 
 </div>
@@ -934,7 +934,7 @@ If you have any questions regarding this Privacy Policy or your personal informa
 
 <ul class="list-unstyled mb-0">
 
-<li><strong>JK Enterprises</strong></li>
+<li><strong>HARYANA TOOLS</strong></li>
 
 <li>📧 care@haryana.tools</li>
 
@@ -959,7 +959,7 @@ Shipping Policy
 </h1>
 
 <p class="lead text-muted mb-0">
-JK Enterprises is committed to delivering your orders safely and on time. Please read our shipping policy to understand how we process and deliver orders across India.
+HARYANA TOOLS is committed to delivering your orders safely and on time. Please read our shipping policy to understand how we process and deliver orders across India.
 </p>
 
 </div>
@@ -1198,7 +1198,7 @@ If you have any questions regarding shipping, delivery timelines or order tracki
 
 <ul class="list-unstyled mb-0">
 
-<li><strong>JK Enterprises</strong></li>
+<li><strong>HARYANA TOOLS</strong></li>
 
 <li>📞 +91 90506 23210</li>
 
@@ -1223,7 +1223,7 @@ Return & Refund Policy
 </h1>
 
 <p class="lead text-muted mb-0">
-At JK Enterprises, customer satisfaction is important to us. If you receive a damaged, defective or incorrect product, we will do our best to resolve the issue quickly and fairly.
+At HARYANA TOOLS, customer satisfaction is important to us. If you receive a damaged, defective or incorrect product, we will do our best to resolve the issue quickly and fairly.
 </p>
 
 </div>
@@ -1367,7 +1367,7 @@ If the product is unavailable, an appropriate refund or alternative solution wil
 </h3>
 
 <p>
-Many products sold by JK Enterprises are covered by the respective manufacturer's warranty.
+Many products sold by HARYANA TOOLS are covered by the respective manufacturer's warranty.
 </p>
 
 <p class="mb-0">
@@ -1464,7 +1464,7 @@ Frequently Asked Questions
 </h1>
 
 <p class="lead text-muted mb-0">
-Find answers to the most commonly asked questions about JK Enterprises, our services, ordering process and customer support.
+Find answers to the most commonly asked questions about HARYANA TOOLS, our services, ordering process and customer support.
 </p>
 
 </div>
@@ -1474,12 +1474,12 @@ Find answers to the most commonly asked questions about JK Enterprises, our serv
 <div class="accordion-item">
 <h2 class="accordion-header">
 <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
-What is JK Enterprises?
+What is HARYANA TOOLS?
 </button>
 </h2>
 <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
 <div class="accordion-body">
-JK Enterprises is an Indian supplier of industrial tools, power tools, hand tools, solar products, automotive care products and related equipment. We serve both retail and wholesale customers across India.
+HARYANA TOOLS is an Indian supplier of industrial tools, power tools, hand tools, solar products, automotive care products and related equipment. We serve both retail and wholesale customers across India.
 </div>
 </div>
 </div>
@@ -1487,7 +1487,7 @@ JK Enterprises is an Indian supplier of industrial tools, power tools, hand tool
 <div class="accordion-item">
 <h2 class="accordion-header">
 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-Where is JK Enterprises located?
+Where is HARYANA TOOLS located?
 </button>
 </h2>
 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1513,7 +1513,7 @@ Our customer support team is available from <strong>Monday to Saturday, 9:00 AM 
 <div class="accordion-item">
 <h2 class="accordion-header">
 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
-How can I contact JK Enterprises?
+How can I contact HARYANA TOOLS?
 </button>
 </h2>
 <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1596,7 +1596,7 @@ How can I stay updated?
 </h2>
 <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 <div class="accordion-body">
-Visit our website regularly to discover new products, special offers, buying guides and business updates published by JK Enterprises.
+Visit our website regularly to discover new products, special offers, buying guides and business updates published by HARYANA TOOLS.
 </div>
 </div>
 </div>
@@ -1657,54 +1657,86 @@ export async function renderView(viewName, params = {}) {
   const target = $("#main-content");
 
   // Handle Static Legal View Documents instantly
-  if (legalTemplates[viewName]) {
-    target.innerHTML = `<div class="bg-white p-4 rounded shadow-sm">${legalTemplates[viewName]}</div>`;
+  if (STATIC_PAGES[viewName]) {
+
+    target.innerHTML = `
+        <div class="bg-white p-4 rounded shadow-sm">
+            ${STATIC_PAGES[viewName]}
+        </div>
+    `;
+
     return;
-  }
+}
 
   try {
-    let viewModule;
-    switch (viewName) {
-      case "index":
-        viewModule = await import("./home.js");
-        break;
-      case "products":
-      case "product":
-        viewModule = await import("./product.js");
-        break;
-      case "brands":
-      case "brand":
-        viewModule = await import("./brand.js");
-        break;
-      case "blogs":
-      case "blog":
-        viewModule = await import("./blog.js");
-        break;
-      case "search":
-        viewModule = await import("./search.js");
-        break;
-      case "cart":
-        viewModule = await import("./cart.js");
-        break;
-      case "checkout":
-        viewModule = await import("./checkout.js");
-        break;
-      default:
-        target.innerHTML = `<div class="text-center py-5"><h3>404 - Content Matrix Not Found</h3><a href="#/index" class="btn btn-warning mt-3">Back to Hub</a></div>`;
-        return;
-    }
+    const modules = {
 
-    // Trigger the view construction execution module method
-    if (viewModule && typeof viewModule.render === "function") {
-      await viewModule.render(target, params);
-    }
-  } catch (err) {
-  console.error(err);
+    index: "./home.js",
 
-  target.innerHTML = `
-    <div class="alert alert-danger">
-      <h5>${err.name}</h5>
-      <pre>${err.message}</pre>
-    </div>
-  `;
-}}
+    products: "./product.js",
+
+    product: "./product.js",
+
+    brands: "./brand.js",
+
+    brand: "./brand.js",
+
+    blogs: "./blog.js",
+
+    blog: "./blog.js",
+
+    search: "./search.js",
+
+    cart: "./cart.js",
+
+    checkout: "./checkout.js"
+
+};
+
+const file = modules[viewName];
+
+if (!file) {
+
+    target.innerHTML = `
+
+<div class="text-center py-5">
+
+<h2>404</h2>
+
+<p>Page not found.</p>
+
+<a href="index.html" class="btn btn-warning">
+
+Home
+
+</a>
+
+</div>
+
+`;
+
+    return;
+
+}
+
+const viewModule = await import(file);
+await viewModule.render(target, params);
+
+} catch (err) {
+
+    console.error(err);
+
+    target.innerHTML = `
+
+<div class="alert alert-danger">
+
+    <h5>Unable to load page</h5>
+
+    <p>${err.message}</p>
+
+</div>
+
+`;
+
+}
+}

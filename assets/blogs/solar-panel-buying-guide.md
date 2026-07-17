@@ -436,9 +436,9 @@ Monocrystalline panels generally offer the highest efficiency, longest lifespan 
 
 <h2 class="mb-3">Start Saving with Solar Energy</h2>
 
-<p class="mb-3">JK Enterprises supplies high-quality solar panels, inverters, mounting structures and complete solar solutions for homes, businesses and industrial projects across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies high-quality solar panels, inverters, mounting structures and complete solar solutions for homes, businesses and industrial projects across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Solar Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Solar Products</a>
 
 </div>
 

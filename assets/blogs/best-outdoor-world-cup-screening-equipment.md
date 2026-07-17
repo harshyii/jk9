@@ -659,11 +659,11 @@ Before your FIFA World Cup screening begins, confirm you have:
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises supplies quality electrical accessories, extension boards, industrial cables, LED lighting, power tools, safety equipment and solar products suitable for homes, businesses and outdoor events across India.
+HARYANA TOOLS supplies quality electrical accessories, extension boards, industrial cables, LED lighting, power tools, safety equipment and solar products suitable for homes, businesses and outdoor events across India.
 
 </p>
 
@@ -829,11 +829,11 @@ Host an Amazing FIFA World Cup 2026 Screening
 
 <p class="mb-4">
 
-From electrical accessories and extension boards to LED lighting, power tools and solar solutions, JK Enterprises provides reliable products that help you organize safe and successful outdoor football screenings.
+From electrical accessories and extension boards to LED lighting, power tools and solar solutions, HARYANA TOOLS provides reliable products that help you organize safe and successful outdoor football screenings.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Our Products
 

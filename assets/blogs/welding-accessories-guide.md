@@ -756,10 +756,10 @@ No. Welding accessories are specifically designed to withstand high temperatures
 <h2 class="mb-3">Build a Safe & Professional Welding Workshop</h2>
 
 <p class="mb-3">
-JK Enterprises supplies welding machines, helmets, gloves, electrode holders, earth clamps, welding cables, abrasives and industrial fabrication accessories from trusted brands for workshops, contractors and manufacturing industries across India.
+HARYANA TOOLS supplies welding machines, helmets, gloves, electrode holders, earth clamps, welding cables, abrasives and industrial fabrication accessories from trusted brands for workshops, contractors and manufacturing industries across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Welding Products
 </a>
 

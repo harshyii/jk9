@@ -406,9 +406,9 @@ Standard bolts may be reused if undamaged, but highly stressed fasteners, lock n
 
 <h2 class="mb-3">Build Stronger & Safer Connections</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial fasteners, bolts, nuts, washers, threaded rods and fastening accessories for manufacturing, fabrication, construction and maintenance applications across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial fasteners, bolts, nuts, washers, threaded rods and fastening accessories for manufacturing, fabrication, construction and maintenance applications across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Industrial Fasteners
 </a>
 

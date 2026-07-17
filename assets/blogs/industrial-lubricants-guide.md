@@ -355,9 +355,9 @@ Dust, water and metal particles accelerate wear, reduce lubrication performance 
 
 <h2 class="mb-3">Protect Your Machinery with the Right Lubricant</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial lubricants, greases, maintenance products and workshop consumables for factories, contractors, workshops and businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial lubricants, greases, maintenance products and workshop consumables for factories, contractors, workshops and businesses across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Industrial Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Industrial Products</a>
 
 </div>
 

@@ -8,13 +8,13 @@ alt="Welding Machine Dealer in Pehowa">
 
 <h1>Best Welding Machine Dealer in Pehowa | ARC, MIG, TIG & Inverter Welding Machines</h1>
 
-<p>If you're looking for a reliable <strong>welding machine dealer in Pehowa</strong>, JK Enterprises supplies quality welding machines, welding accessories, safety equipment and industrial tools for workshops, fabricators, mechanics, farmers, construction contractors and manufacturing industries across Pehowa and nearby areas.</p>
+<p>If you're looking for a reliable <strong>welding machine dealer in Pehowa</strong>, HARYANA TOOLS supplies quality welding machines, welding accessories, safety equipment and industrial tools for workshops, fabricators, mechanics, farmers, construction contractors and manufacturing industries across Pehowa and nearby areas.</p>
 
 <p>Whether you need a compact inverter welding machine for home repairs or a heavy-duty industrial welder for fabrication work, choosing the right machine improves weld quality, productivity and operating costs. Modern welding equipment is available in multiple technologies including ARC (MMA), MIG, TIG and multi-process welding machines, each designed for different applications. :contentReference[oaicite:0]{index=0}</p>
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <div class="row g-3">
 
@@ -586,7 +586,7 @@ Do you supply welding accessories?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises supplies welding helmets, electrodes, cables, clamps, gloves, grinding wheels and other welding accessories.
+Yes. HARYANA TOOLS supplies welding helmets, electrodes, cables, clamps, gloves, grinding wheels and other welding accessories.
 
 </div>
 
@@ -610,7 +610,7 @@ Where can I buy a welding machine in Pehowa?
 
 <div class="accordion-body">
 
-If you're looking for a trusted welding machine dealer in Pehowa, JK Enterprises offers welding machines, accessories and industrial tools for professionals, fabricators and businesses across the region.
+If you're looking for a trusted welding machine dealer in Pehowa, HARYANA TOOLS offers welding machines, accessories and industrial tools for professionals, fabricators and businesses across the region.
 
 </div>
 
@@ -628,11 +628,11 @@ If you're looking for a trusted welding machine dealer in Pehowa, JK Enterprises
 
 <p class="mb-3">
 
-JK Enterprises supplies inverter welding machines, ARC welders, MIG welders, TIG welders, welding accessories, safety equipment and industrial power tools for workshops, fabricators, contractors and manufacturing industries across Pehowa, Kurukshetra and nearby areas.
+HARYANA TOOLS supplies inverter welding machines, ARC welders, MIG welders, TIG welders, welding accessories, safety equipment and industrial power tools for workshops, fabricators, contractors and manufacturing industries across Pehowa, Kurukshetra and nearby areas.
 
 </p>
 
-<a href="#/products?category=Welding" class="btn btn-warning btn-lg">
+<a href="products.html?category=Welding" class="btn btn-warning btn-lg">
 
 Browse Welding Machines
 

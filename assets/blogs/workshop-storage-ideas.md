@@ -232,9 +232,9 @@ A quick cleanup at the end of every workday prevents clutter and extends the lif
 
 <h2 class="mb-3">Build a Smarter Workshop</h2>
 
-<p class="mb-3">JK Enterprises supplies professional storage solutions, tool cabinets, power tools and workshop equipment for businesses, contractors and industrial users across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies professional storage solutions, tool cabinets, power tools and workshop equipment for businesses, contractors and industrial users across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Workshop Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Workshop Products</a>
 
 </div>
 

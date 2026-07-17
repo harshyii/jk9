@@ -770,11 +770,11 @@ Before the tournament begins, ensure you have:
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises supplies quality electrical products, solar equipment, power tools and industrial accessories for homes, businesses and professionals across India. Whether you're preparing for FIFA World Cup 2026 or planning a long-term energy upgrade, we help you choose reliable products that deliver dependable performance.
+HARYANA TOOLS supplies quality electrical products, solar equipment, power tools and industrial accessories for homes, businesses and professionals across India. Whether you're preparing for FIFA World Cup 2026 or planning a long-term energy upgrade, we help you choose reliable products that deliver dependable performance.
 
 </p>
 
@@ -991,25 +991,25 @@ Avoid last-minute electrical problems by checking your inverter, batteries, wiri
 
 <h2 class="mb-3">
 
-Power Every Goal with JK Enterprises
+Power Every Goal with HARYANA TOOLS
 
 </h2>
 
 <p class="mb-4">
 
-JK Enterprises supplies quality solar systems, electrical accessories, extension boards, lighting solutions, power tools and industrial equipment for homes, businesses and professionals across India. Whether you're planning for FIFA World Cup 2026 or upgrading your electrical infrastructure, we have dependable products to meet your needs.
+HARYANA TOOLS supplies quality solar systems, electrical accessories, extension boards, lighting solutions, power tools and industrial equipment for homes, businesses and professionals across India. Whether you're planning for FIFA World Cup 2026 or upgrading your electrical infrastructure, we have dependable products to meet your needs.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Solar" class="btn btn-warning btn-lg">
+<a href="products.html?category=Solar" class="btn btn-warning btn-lg">
 
 Browse Solar Products
 
 </a>
 
-<a href="#/products?category=Electrical" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Electrical" class="btn btn-outline-light btn-lg">
 
 Shop Electrical Accessories
 
@@ -1023,7 +1023,7 @@ Shop Electrical Accessories
 
 <div class="small text-muted">
 
-<strong>Disclaimer:</strong> FIFA World Cup 2026 is a registered tournament organized by FIFA. This article is an informational guide created to help homeowners and businesses prepare reliable electrical and solar power solutions during major sporting events. JK Enterprises is not affiliated with or endorsed by FIFA.
+<strong>Disclaimer:</strong> FIFA World Cup 2026 is a registered tournament organized by FIFA. This article is an informational guide created to help homeowners and businesses prepare reliable electrical and solar power solutions during major sporting events. HARYANA TOOLS is not affiliated with or endorsed by FIFA.
 
 </div>
 

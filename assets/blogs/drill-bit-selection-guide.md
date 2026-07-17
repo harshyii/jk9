@@ -252,9 +252,9 @@ Before purchasing drill bits, check for:
 
 <h2 class="mb-3">Choose the Right Drill Bit Every Time</h2>
 
-<p class="mb-3">JK Enterprises supplies drill bits, SDS accessories, hole saws and professional drilling equipment for workshops, contractors, fabricators and industrial users across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies drill bits, SDS accessories, hole saws and professional drilling equipment for workshops, contractors, fabricators and industrial users across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Drill Bits</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Drill Bits</a>
 
 </div>
 

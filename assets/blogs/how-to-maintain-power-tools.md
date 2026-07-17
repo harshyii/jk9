@@ -368,7 +368,7 @@ Proper maintenance increases productivity, improves safety and helps your tools 
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg px-5">
+<a href="products.html" class="btn btn-warning btn-lg px-5">
 
 Browse Power Tools
 

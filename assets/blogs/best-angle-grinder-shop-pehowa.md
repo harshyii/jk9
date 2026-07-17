@@ -10,7 +10,7 @@ alt="Best Angle Grinder Shop in Pehowa">
 
 <p>If you're searching for the <strong>best angle grinder shop in Pehowa</strong>, you've probably come across dozens of online stores and local dealers. Choosing the right angle grinder isn't just about finding the lowest price—it's about selecting the correct disc size, motor power, safety features and trusted brand for your work.</p>
 
-<p>Whether you're a fabricator, welder, mechanic, contractor, workshop owner or DIY enthusiast, JK Enterprises supplies quality angle grinders, cutting discs, grinding wheels and power tools suitable for both home and industrial applications.</p>
+<p>Whether you're a fabricator, welder, mechanic, contractor, workshop owner or DIY enthusiast, HARYANA TOOLS supplies quality angle grinders, cutting discs, grinding wheels and power tools suitable for both home and industrial applications.</p>
 
 <div class="alert alert-primary">
 
@@ -293,9 +293,9 @@ alt="Best Angle Grinder Shop in Pehowa">
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
-<p>JK Enterprises supplies genuine power tools, industrial equipment and accessories for professionals, contractors and homeowners across Pehowa and nearby areas. Customers can compare multiple products, receive guidance on selecting the correct machine and purchase compatible accessories such as grinding wheels, cutting discs and safety equipment.</p>
+<p>HARYANA TOOLS supplies genuine power tools, industrial equipment and accessories for professionals, contractors and homeowners across Pehowa and nearby areas. Customers can compare multiple products, receive guidance on selecting the correct machine and purchase compatible accessories such as grinding wheels, cutting discs and safety equipment.</p>
 
 <div class="alert alert-success">
 
@@ -673,7 +673,7 @@ Where can I buy an angle grinder in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises supplies professional angle grinders, cutting discs and grinding accessories for home, workshop and industrial applications in Pehowa.
+HARYANA TOOLS supplies professional angle grinders, cutting discs and grinding accessories for home, workshop and industrial applications in Pehowa.
 
 </div>
 
@@ -759,7 +759,7 @@ Most users purchase cutting discs, grinding wheels, flap discs, wire brushes, sa
 
 <h2>Serving Pehowa & Nearby Areas</h2>
 
-<p>JK Enterprises supplies angle grinders, power tools and industrial equipment to customers across:</p>
+<p>HARYANA TOOLS supplies angle grinders, power tools and industrial equipment to customers across:</p>
 
 <div class="row">
 
@@ -815,11 +815,11 @@ Most users purchase cutting discs, grinding wheels, flap discs, wire brushes, sa
 
 <p class="mb-3">
 
-Visit JK Enterprises for professional angle grinders, cutting discs, grinding wheels and industrial power tools from trusted brands. Whether you're a contractor, fabricator, mechanic or DIY enthusiast, we can help you choose the right tool for your application.
+Visit HARYANA TOOLS for professional angle grinders, cutting discs, grinding wheels and industrial power tools from trusted brands. Whether you're a contractor, fabricator, mechanic or DIY enthusiast, we can help you choose the right tool for your application.
 
 </p>
 
-<a href="#/products?category=Power%20Tools" class="btn btn-warning btn-lg">
+<a href="products.html?category=Power%20Tools" class="btn btn-warning btn-lg">
 
 Browse Angle Grinders
 
@@ -829,9 +829,9 @@ Browse Angle Grinders
 
 <hr>
 
-<h2>Why Customers in Pehowa Choose JK Enterprises</h2>
+<h2>Why Customers in Pehowa Choose HARYANA TOOLS</h2>
 
-<p>Choosing the right supplier is just as important as selecting the right angle grinder. Customers across Pehowa and nearby areas trust JK Enterprises for genuine products, competitive pricing and reliable support before and after purchase.</p>
+<p>Choosing the right supplier is just as important as selecting the right angle grinder. Customers across Pehowa and nearby areas trust HARYANA TOOLS for genuine products, competitive pricing and reliable support before and after purchase.</p>
 
 <div class="row g-3">
 
@@ -991,7 +991,7 @@ Searching online for any of these?
 
 </div>
 
-<p>JK Enterprises supplies quality power tools and industrial equipment to customers in <strong>Pehowa, Kurukshetra, Kaithal, Karnal, Ambala, Panipat and surrounding areas of Haryana.</strong></p>
+<p>HARYANA TOOLS supplies quality power tools and industrial equipment to customers in <strong>Pehowa, Kurukshetra, Kaithal, Karnal, Ambala, Panipat and surrounding areas of Haryana.</strong></p>
 
 <hr>
 
@@ -1004,10 +1004,10 @@ Searching online for any of these?
 <div class="d-flex flex-wrap gap-2">
 
 <a href="#/contact" class="btn btn-warning">
-Contact JK Enterprises
+Contact HARYANA TOOLS
 </a>
 
-<a href="#/products?category=Power%20Tools" class="btn btn-outline-dark">
+<a href="products.html?category=Power%20Tools" class="btn btn-outline-dark">
 View Power Tools
 </a>
 

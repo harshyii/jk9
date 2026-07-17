@@ -729,11 +729,11 @@ Keep Your Power Tools Ready for Every Season
 
 <p class="mb-4">
 
-JK Enterprises supplies quality power tools, electrical accessories, storage solutions and industrial equipment to help professionals and DIY users maintain their tools throughout the year. With proper care during the monsoon season, your equipment will remain reliable, safe and ready for every project.
+HARYANA TOOLS supplies quality power tools, electrical accessories, storage solutions and industrial equipment to help professionals and DIY users maintain their tools throughout the year. With proper care during the monsoon season, your equipment will remain reliable, safe and ready for every project.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 
@@ -943,25 +943,25 @@ Regular cleaning, proper lubrication, dry storage and periodic inspections not o
 
 <h2 class="mb-3">
 
-Protect Your Tools with Quality Products from JK Enterprises
+Protect Your Tools with Quality Products from HARYANA TOOLS
 
 </h2>
 
 <p class="mb-4">
 
-JK Enterprises supplies professional power tools, electrical accessories, safety equipment, storage solutions and industrial products that help workshops, factories and homeowners maintain their equipment throughout every season. Whether you're preparing for the monsoon or upgrading your workshop, we offer reliable products from trusted brands.
+HARYANA TOOLS supplies professional power tools, electrical accessories, safety equipment, storage solutions and industrial products that help workshops, factories and homeowners maintain their equipment throughout every season. Whether you're preparing for the monsoon or upgrading your workshop, we offer reliable products from trusted brands.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Power%20Tools" class="btn btn-warning btn-lg">
+<a href="products.html?category=Power%20Tools" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 
 </a>
 
-<a href="#/products?category=Safety" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Safety" class="btn btn-outline-light btn-lg">
 
 Shop Safety Equipment
 

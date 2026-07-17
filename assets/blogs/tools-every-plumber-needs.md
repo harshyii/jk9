@@ -346,9 +346,9 @@ Build Your Professional Plumbing Toolkit
 </h2>
 
 <p class="mb-3">
-JK Enterprises supplies professional plumbing tools, pipe wrenches, cutting tools, measuring equipment, safety gear and industrial maintenance products for plumbers, contractors and maintenance professionals across India.</p>
+HARYANA TOOLS supplies professional plumbing tools, pipe wrenches, cutting tools, measuring equipment, safety gear and industrial maintenance products for plumbers, contractors and maintenance professionals across India.</p>
 
-<a href="#/products?category=Plumbing" class="btn btn-warning btn-lg">
+<a href="products.html?category=Plumbing" class="btn btn-warning btn-lg">
 Browse Plumbing Tools
 </a>
 

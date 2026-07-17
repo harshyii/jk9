@@ -4,176 +4,293 @@
 
 import { api, formatINR } from "./core.js";
 
-function sku(p) {
-  return String(
-    p.ProductID ||
-    p["Product ID"] ||
-    p.SKU ||
-    p.ID ||
-    p.Model ||
-    p.ASIN ||
-    ""
-  ).trim();
-}
+// ==========================================================
+// Helpers
+// ==========================================================
 
-function name(p) {
-  return p["Item Name"] || p.Name || "Unnamed Product";
-}
+const sku = product =>
 
-function brand(p) {
-  return p.Brand || "";
-}
+    String(
 
-function image(p) {
-  return p.Image1 || "assets/404.webp";
-}
+        product.ProductID ||
+        product["Product ID"] ||
+        product.SKU ||
+        product.ID ||
+        product.Model ||
+        product.ASIN ||
+        ""
 
-function price(p) {
-  return Number(
-    String(p["Sale Price"] || p.Price || 0).replace(/[^\d.]/g, "")
-  ) || 0;
-}
+    ).trim();
 
-export async function render(container, params) {
+const name = product =>
 
-  const query = (params.q || "").trim().toLowerCase();
+    product["Item Name"] ||
 
-  container.innerHTML = `
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <div>
-        <h3 class="mb-1">Search Results</h3>
+    product.Name ||
+
+    "Unnamed Product";
+
+const brand = product =>
+
+    product.Brand ||
+
+    "";
+
+const image = product =>
+
+    product.Image1 ||
+
+    product.Image ||
+
+    "assets/404.webp";
+
+const price = product =>
+
+    Number(
+
+        String(
+
+            product["Sale Price"] ||
+
+            product.Price ||
+
+            0
+
+        ).replace(/[^\d.]/g, "")
+
+    ) || 0;
+
+// ==========================================================
+// Search Page
+// ==========================================================
+
+export async function render(container, params = {}) {
+
+    const query =
+
+        (params.q || "")
+
+            .trim()
+
+            .toLowerCase();
+
+    container.innerHTML = `
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+
+        <h3 class="mb-1">
+
+            Search Results
+
+        </h3>
+
         <div class="text-muted">
-          ${query ? `Showing results for "<strong>${query}</strong>"` : "All Products"}
+
+            ${query
+                ? `Showing results for "<strong>${query}</strong>"`
+                : "All Products"}
+
         </div>
-      </div>
+
     </div>
 
-    <div class="row g-4" id="search-results-grid">
-      <div class="col-12 text-center py-5">
+</div>
+
+<div
+    id="search-results-grid"
+    class="row g-4">
+
+    <div class="col-12 text-center py-5">
+
         <div class="spinner-border text-warning"></div>
-      </div>
+
     </div>
-  `;
 
-  try {
+</div>
 
-    const data = await api.get("products");
+`;
 
-    const products = Array.isArray(data)
-      ? data
-      : (data.data || []);
+    try {
 
-    let results = products;
+        const response =
 
-    if (query) {
+            await api.get("products");
 
-      results = products.filter(p => {
+        const products =
 
-        return [
-          sku(p),
-          name(p),
-          brand(p),
-          p.Category,
-          p.Subcategory,
-          p.Description,
-          p["Detailed Info"]
-        ]
-        .join(" ")
-        .toLowerCase()
-        .includes(query);
+            Array.isArray(response)
 
-      });
+                ? response
+
+                : response.data || [];
+
+        const results = query
+
+            ? products.filter(product =>
+
+                [
+
+                    sku(product),
+
+                    name(product),
+
+                    brand(product),
+
+                    product.Category,
+
+                    product.Subcategory,
+
+                    product.Description,
+
+                    product["Detailed Info"]
+
+                ]
+
+                    .join(" ")
+
+                    .toLowerCase()
+
+                    .includes(query)
+
+            )
+
+            : products;
+
+        renderGrid(
+
+            document.getElementById(
+
+                "search-results-grid"
+
+            ),
+
+            results
+
+        );
 
     }
 
-    displayGrid(
-      document.getElementById("search-results-grid"),
-      results
-    );
+    catch (error) {
 
-  } catch (err) {
+        console.error(error);
 
-    console.error(err);
+        document.getElementById(
 
-    document.getElementById("search-results-grid").innerHTML = `
-      <div class="col-12">
-        <div class="alert alert-danger">
-          Unable to search products.
-        </div>
-      </div>
-    `;
+            "search-results-grid"
 
-  }
+        ).innerHTML = `
+
+<div class="col-12">
+
+    <div class="alert alert-danger">
+
+        Unable to search products.
+
+    </div>
+
+</div>
+
+`;
+
+    }
 
 }
+// ==========================================================
+// Search Results Grid
+// ==========================================================
 
-function displayGrid(target, list) {
+function renderGrid(target, products) {
 
-  if (!list.length) {
+    if (!target) return;
 
-    target.innerHTML = `
-      <div class="col-12 text-center py-5">
-        <i class="bi bi-search fs-1 text-muted"></i>
-        <h5 class="mt-3">No matching products found.</h5>
-      </div>
-    `;
+    if (!products.length) {
 
-    return;
-  }
+        target.innerHTML = `
 
-  target.innerHTML = list.map(p => {
+<div class="col-12 text-center py-5">
 
-    const id = sku(p);
+    <i class="bi bi-search fs-1 text-muted"></i>
 
-    return `
-      <div class="col-6 col-md-4 col-lg-3">
+    <h5 class="mt-3">
 
-        <div class="card h-100 shadow-sm border-0 rounded-3">
+        No matching products found.
 
-          <a href="#/product?id=${encodeURIComponent(id)}">
+    </h5>
+
+</div>
+
+`;
+
+        return;
+
+    }
+
+    target.innerHTML = products.map(product => `
+
+<div class="col-6 col-md-4 col-lg-3">
+
+    <div class="card h-100 shadow-sm border-0 rounded-3">
+
+        <a
+            href="product.html?id=${encodeURIComponent(sku(product))}">
 
             <img
-              src="${image(p)}"
-              class="card-img-top p-3"
-              style="height:220px;object-fit:contain;background:#fafafa;">
+                src="${image(product)}"
+                class="card-img-top p-3"
+                style="height:220px;object-fit:contain;background:#fafafa"
+                alt="${name(product)}">
 
-          </a>
+        </a>
 
-          <div class="card-body d-flex flex-column">
+        <div class="card-body d-flex flex-column">
 
-            ${
-              brand(p)
-                ? `<small class="text-muted text-uppercase">${brand(p)}</small>`
-                : ""
-            }
+            ${brand(product) ? `
+
+            <small class="text-muted text-uppercase fw-semibold mb-1">
+
+                ${brand(product)}
+
+            </small>
+
+            ` : ""}
 
             <h6
-              class="fw-semibold mt-1"
-              style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:48px;">
+                class="fw-semibold mb-2"
+                style="
+                    display:-webkit-box;
+                    -webkit-line-clamp:2;
+                    -webkit-box-orient:vertical;
+                    overflow:hidden;
+                    min-height:48px;">
 
-              ${name(p)}
+                ${name(product)}
 
             </h6>
 
             <div class="fw-bold text-danger fs-5 mb-3">
-              ${formatINR(price(p))}
+
+                ${formatINR(price(product))}
+
             </div>
 
             <a
-              href="#/product?id=${encodeURIComponent(id)}"
-              class="btn btn-warning mt-auto">
+                href="product.html?id=${encodeURIComponent(sku(product))}"
+                class="btn btn-warning mt-auto">
 
-              View Details
+                <i class="bi bi-eye me-1"></i>
+
+                View Details
 
             </a>
 
-          </div>
-
         </div>
 
-      </div>
-    `;
+    </div>
 
-  }).join("");
+</div>
+
+`).join("");
 
 }

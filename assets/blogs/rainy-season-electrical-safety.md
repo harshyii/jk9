@@ -676,11 +676,11 @@ Before every monsoon season, ensure that you:
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises supplies quality electrical accessories, extension boards, surge protectors, power tools, safety equipment and industrial products for homes, workshops and businesses. Our focus is on providing dependable products that help improve electrical safety throughout the year.
+HARYANA TOOLS supplies quality electrical accessories, extension boards, surge protectors, power tools, safety equipment and industrial products for homes, workshops and businesses. Our focus is on providing dependable products that help improve electrical safety throughout the year.
 
 </p>
 
@@ -978,25 +978,25 @@ Inspect your electrical system before heavy rains arrive, replace worn-out acces
 
 <h2 class="mb-3">
 
-Protect Your Home & Workplace with JK Enterprises
+Protect Your Home & Workplace with HARYANA TOOLS
 
 </h2>
 
 <p class="mb-4">
 
-JK Enterprises supplies high-quality electrical accessories, extension boards, surge protectors, power tools, LED lighting, safety products and industrial equipment for homes, businesses and workshops across India. Our products are designed to improve reliability, safety and performance in every season.
+HARYANA TOOLS supplies high-quality electrical accessories, extension boards, surge protectors, power tools, LED lighting, safety products and industrial equipment for homes, businesses and workshops across India. Our products are designed to improve reliability, safety and performance in every season.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Electrical" class="btn btn-warning btn-lg">
+<a href="products.html?category=Electrical" class="btn btn-warning btn-lg">
 
 Browse Electrical Products
 
 </a>
 
-<a href="#/products?category=Safety" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Safety" class="btn btn-outline-light btn-lg">
 
 Shop Safety Equipment
 

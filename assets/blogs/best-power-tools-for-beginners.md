@@ -467,9 +467,9 @@ Quality power tools can last for many years when maintained properly and used wi
 
 <h2 class="mb-3">Build Your Tool Collection with Confidence</h2>
 
-<p class="mb-3">JK Enterprises supplies genuine power tools, accessories and industrial equipment from trusted brands. Whether you're a DIY beginner, technician or contractor, we can help you choose reliable tools that match your budget and applications.</p>
+<p class="mb-3">HARYANA TOOLS supplies genuine power tools, accessories and industrial equipment from trusted brands. Whether you're a DIY beginner, technician or contractor, we can help you choose reliable tools that match your budget and applications.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Power Tools</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Power Tools</a>
 
 </div>
 

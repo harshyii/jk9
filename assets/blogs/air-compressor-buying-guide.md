@@ -393,10 +393,10 @@ Power Your Workshop with the Right Air Compressor
 </h2>
 
 <p class="mb-3">
-JK Enterprises supplies high-performance air compressors, pneumatic tools and industrial equipment for workshops, service centers, construction companies and manufacturing industries across India. Whether you need a compact portable compressor or a heavy-duty industrial system, we help you choose the right solution for your application.
+HARYANA TOOLS supplies high-performance air compressors, pneumatic tools and industrial equipment for workshops, service centers, construction companies and manufacturing industries across India. Whether you need a compact portable compressor or a heavy-duty industrial system, we help you choose the right solution for your application.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Air Compressors
 </a>
 

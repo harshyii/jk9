@@ -271,10 +271,10 @@ Choose a heavy-duty extension cord with 1.5 sq.mm or larger copper cable and a 1
 <h2 class="mb-3">Choose Safe & Reliable Power Accessories</h2>
 
 <p class="mb-3">
-JK Enterprises supplies premium extension cords, extension boards, industrial power strips and electrical accessories for homes, workshops, offices and industrial applications across India. Choose certified products that provide safety, durability and dependable performance.
+HARYANA TOOLS supplies premium extension cords, extension boards, industrial power strips and electrical accessories for homes, workshops, offices and industrial applications across India. Choose certified products that provide safety, durability and dependable performance.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Extension Cords
 </a>
 

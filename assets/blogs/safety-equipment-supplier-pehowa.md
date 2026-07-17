@@ -9,7 +9,7 @@ alt="Industrial Safety Equipment Supplier in Pehowa">
 
 <h1>Safety Equipment Supplier in Pehowa | PPE, Industrial Safety Products & Protective Gear</h1>
 
-<p>Employee safety is one of the most important aspects of any workplace. Whether you operate a factory, construction site, warehouse, fabrication unit, workshop, or manufacturing facility, using certified personal protective equipment (PPE) helps reduce workplace accidents and ensures compliance with industrial safety standards. If you are looking for a trusted <strong>Safety Equipment Supplier in Pehowa</strong>, JK Enterprises supplies a wide range of industrial safety products for professionals, contractors, institutions, and industries across Haryana.</p>
+<p>Employee safety is one of the most important aspects of any workplace. Whether you operate a factory, construction site, warehouse, fabrication unit, workshop, or manufacturing facility, using certified personal protective equipment (PPE) helps reduce workplace accidents and ensures compliance with industrial safety standards. If you are looking for a trusted <strong>Safety Equipment Supplier in Pehowa</strong>, HARYANA TOOLS supplies a wide range of industrial safety products for professionals, contractors, institutions, and industries across Haryana.</p>
 
 <p>From safety helmets and industrial gloves to reflective jackets, welding protection, respiratory masks, eye protection, ear protection, and safety shoes, choosing the correct protective equipment helps create a safer and more productive work environment.</p>
 
@@ -481,9 +481,9 @@ alt="Industrial Safety Equipment Supplier in Pehowa">
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
-<p>JK Enterprises supplies industrial safety products suitable for factories, workshops, construction companies, educational institutions and maintenance professionals. We focus on providing reliable products from trusted manufacturers at competitive prices.</p>
+<p>HARYANA TOOLS supplies industrial safety products suitable for factories, workshops, construction companies, educational institutions and maintenance professionals. We focus on providing reliable products from trusted manufacturers at competitive prices.</p>
 
 <div class="alert alert-success">
 
@@ -511,7 +511,7 @@ alt="Industrial Safety Equipment Supplier in Pehowa">
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises supplies safety equipment to customers across:</p>
+<p>HARYANA TOOLS supplies safety equipment to customers across:</p>
 
 <div class="row">
 
@@ -623,7 +623,7 @@ Do you supply industrial safety equipment in bulk?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises supplies safety equipment for factories, contractors, educational institutions, workshops and industrial projects, including bulk requirements.
+Yes. HARYANA TOOLS supplies safety equipment for factories, contractors, educational institutions, workshops and industrial projects, including bulk requirements.
 
 </div>
 
@@ -647,7 +647,7 @@ Can I purchase safety equipment near Pehowa?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises serves customers in Pehowa and nearby areas with a wide selection of industrial safety products, PPE and protective equipment.
+Yes. HARYANA TOOLS serves customers in Pehowa and nearby areas with a wide selection of industrial safety products, PPE and protective equipment.
 
 </div>
 
@@ -665,11 +665,11 @@ Yes. JK Enterprises serves customers in Pehowa and nearby areas with a wide sele
 
 <p class="mb-3">
 
-JK Enterprises supplies industrial safety equipment including helmets, safety shoes, gloves, welding protection, face shields, reflective jackets, respirators and PPE for construction, manufacturing, engineering workshops and industrial applications across Pehowa and Haryana.
+HARYANA TOOLS supplies industrial safety equipment including helmets, safety shoes, gloves, welding protection, face shields, reflective jackets, respirators and PPE for construction, manufacturing, engineering workshops and industrial applications across Pehowa and Haryana.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Safety Equipment
 

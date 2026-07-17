@@ -1,263 +1,709 @@
 // ==========================================================
-// Local Procurement Array (Cart Manager) UI Module
+// Cart Module
 // ==========================================================
+
 import { app, api, formatINR } from "./core.js";
 
 export async function render(container) {
-  const drawCart = () => {
-    const totals = app.getCartTotals();
-    
-    if (app.cart.length === 0) {
-     container.innerHTML=`
-      <div class="text-center py-5">
 
-      <i class="bi bi-cart-x display-4 text-muted"></i>
+    drawCart();
 
-      <h3 class="mt-3">Your Cart is Empty</h3>
+    // ======================================================
+    // Draw Cart
+    // ======================================================
 
-      <p class="text-muted">
-      Looks like you haven't added any products yet.
-      </p>
+    async function drawCart() {
 
-      <a href="#/products"
-      class="btn btn-warning fw-semibold mb-5">
-      Continue Shopping
-      </a>
+        const cart = app.getCart();
 
-      <hr class="my-5">
+        const totals = app.getCartTotals();
 
-      <h4 class="text-start fw-bold mb-4">
-      ⭐ Popular Products
-      </h4>
+        if (!cart.length) {
 
-      <div class="row g-4" id="suggested-products">
+            container.innerHTML = `
 
-      <div class="col-12 text-center">
+<div class="text-center py-5">
 
-      <div class="spinner-border text-warning"></div>
+    <i class="bi bi-cart-x display-3 text-muted"></i>
 
-      </div>
+    <h2 class="mt-3">
 
-      </div>
+        Your Cart is Empty
 
-      </div>
-      `;
+    </h2>
 
-      const products=(await api.get("products")).slice(0,4);
+    <p class="text-muted">
 
-document.getElementById("suggested-products").innerHTML=
-products.map(p=>`
+        Looks like you haven't added any products yet.
+
+    </p>
+
+    <a
+        href="products.html"
+        class="btn btn-warning mb-5">
+
+        Continue Shopping
+
+    </a>
+
+    <hr class="my-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h3 class="fw-bold mb-0">
+
+            Popular Products
+
+        </h3>
+
+    </div>
+
+    <div
+        id="suggested-products"
+        class="row g-4">
+
+        <div class="col-12 text-center py-5">
+
+            <div class="spinner-border text-warning"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
+
+            try {
+
+                const products =
+                    (await api.get("products"))
+                    .slice(0, 4);
+
+                renderSuggestions(products);
+
+            }
+
+            catch (err) {
+
+                console.error(err);
+
+                document.getElementById(
+                    "suggested-products"
+                ).innerHTML = `
+
+<div class="col-12">
+
+    <div class="alert alert-warning text-center">
+
+        Unable to load products.
+
+    </div>
+
+</div>
+
+`;
+
+            }
+
+            return;
+
+        }
+
+        // ==================================================
+        // Cart Page
+        // ==================================================
+
+        container.innerHTML = `
+
+<h2 class="fw-bold mb-4">
+
+    Shopping Cart
+
+</h2>
+
+<div class="row g-4">
+
+    <div class="col-lg-8">
+
+        <div class="card shadow-sm">
+
+            <div class="table-responsive">
+
+                <table class="table align-middle mb-0">
+
+                    <thead class="table-light">
+
+                        <tr>
+
+                            <th>
+
+                                Product
+
+                            </th>
+
+                            <th
+                                class="text-center"
+                                style="width:140px;">
+
+                                Quantity
+
+                            </th>
+
+                            <th
+                                class="text-end">
+
+                                Total
+
+                            </th>
+
+                            <th
+                                class="text-center"
+                                style="width:60px;">
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        ${cart.map(item => {
+
+                            return renderCartRow(item);
+
+                        }).join("")}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-4">
+
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <h5 class="fw-bold mb-4">
+
+                    Order Summary
+
+                </h5>
+
+                <div class="d-flex justify-content-between mb-2">
+
+                    <span>
+
+                        Subtotal
+
+                    </span>
+
+                    <strong>
+
+                        ${formatINR(totals.subtotal)}
+
+                    </strong>
+
+                </div>
+
+                <div class="d-flex justify-content-between mb-3">
+
+                    <span>
+
+                        Shipping
+
+                    </span>
+
+                    <span class="text-success">
+
+                        Free
+
+                    </span>
+
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between mb-4">
+
+                    <h5 class="mb-0">
+
+                        Total
+
+                    </h5>
+
+                    <h4 class="text-danger mb-0">
+
+                        ${formatINR(totals.total)}
+
+                    </h4>
+
+                </div>
+
+                <a
+                    href="checkout.html"
+                    class="btn btn-warning w-100">
+
+                    Proceed to Checkout
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
+
+        bindCartEvents();
+
+    }
+
+// ======================================================
+// Suggested Products
+// ======================================================
+
+function renderSuggestions(products) {
+
+    const grid =
+        document.getElementById(
+            "suggested-products"
+        );
+
+    if (!grid) return;
+
+    if (!products.length) {
+
+        grid.innerHTML = `
+
+<div class="col-12">
+
+    <div class="alert alert-light text-center">
+
+        No products available.
+
+    </div>
+
+</div>
+
+`;
+
+        return;
+
+    }
+
+    grid.innerHTML = products.map(product => {
+
+        const sku = String(
+
+            product.ProductID ||
+            product["Product ID"] ||
+            product.SKU ||
+            product.ID ||
+            ""
+
+        ).trim();
+
+        const name =
+            product["Item Name"] ||
+            product.Name ||
+            "Product";
+
+        const image =
+            product.Image1 ||
+            product.Image ||
+            "assets/404.webp";
+
+        const price = Number(
+
+            String(
+
+                product["Sale Price"] ||
+                product.Price ||
+                0
+
+            ).replace(/[^\d.]/g, "")
+
+        ) || 0;
+
+        return `
 
 <div class="col-6 col-md-3">
 
-<div class="card h-100 shadow-sm">
+    <div class="card h-100 shadow-sm">
 
-<img
-src="${p.Image1||'assets/404.webp'}"
-class="card-img-top p-3"
-style="height:170px;object-fit:contain;">
+        <a
+            href="product.html?id=${encodeURIComponent(sku)}">
 
-<div class="card-body d-flex flex-column">
+            <img
+                src="${image}"
+                class="card-img-top p-3"
+                style="height:180px;object-fit:contain;"
+                alt="${name}">
 
-<h6 class="small fw-semibold">
-${p["Item Name"]}
-</h6>
+        </a>
 
-<div class="text-danger fw-bold mb-2">
-${formatINR(Number(p["Sale Price"]||0))}
-</div>
+        <div class="card-body d-flex flex-column">
 
-<div class="input-group input-group-sm mb-2">
+            <h6
+                class="fw-semibold mb-2"
+                style="
+                    display:-webkit-box;
+                    -webkit-line-clamp:2;
+                    -webkit-box-orient:vertical;
+                    overflow:hidden;
+                    min-height:48px;">
 
-<button class="btn btn-outline-secondary qty-minus"
-data-sku="${p.ProductID||p.SKU}">
-−
-</button>
+                ${name}
 
-<input
-id="qty-${p.ProductID||p.SKU}"
-class="form-control text-center"
-value="1"
-readonly>
+            </h6>
 
-<button class="btn btn-outline-secondary qty-plus"
-data-sku="${p.ProductID||p.SKU}">
-+
-</button>
+            <div class="fw-bold text-danger mb-3">
 
-</div>
+                ${formatINR(price)}
 
-<button
-class="btn btn-warning add-cart mb-2"
-data-sku="${p.ProductID||p.SKU}"
-data-name="${(p["Item Name"]||"").replace(/"/g,"&quot;")}"
-data-price="${Number(p["Sale Price"]||0)}"
-data-img="${p.Image1||""}">
-🛒 Add to Cart
-</button>
-
-<a
-href="#/product?id=${encodeURIComponent(p.ProductID||p.SKU)}"
-class="btn btn-outline-dark">
-View Details
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-`).join("");
-
-// Quantity +
-container.querySelectorAll(".qty-plus").forEach(btn=>{
-btn.onclick=()=>{
-
-const input=document.getElementById("qty-"+btn.dataset.sku);
-
-input.value=parseInt(input.value)+1;
-
-};
-});
-
-// Quantity -
-container.querySelectorAll(".qty-minus").forEach(btn=>{
-btn.onclick=()=>{
-
-const input=document.getElementById("qty-"+btn.dataset.sku);
-
-const q=parseInt(input.value);
-
-if(q>1)input.value=q-1;
-
-};
-});
-
-// Add to cart
-container.querySelectorAll(".add-cart").forEach(btn=>{
-btn.onclick=()=>{
-
-const qty=parseInt(
-document.getElementById("qty-"+btn.dataset.sku).value
-);
-
-app.updateCart(
-btn.dataset.sku,
-qty,
-Number(btn.dataset.price),
-btn.dataset.name,
-btn.dataset.img
-);
-
-const old=btn.innerHTML;
-
-btn.classList.remove("btn-warning");
-btn.classList.add("btn-success");
-
-btn.innerHTML="✓ Added";
-
-setTimeout(()=>{
-
-btn.classList.remove("btn-success");
-btn.classList.add("btn-warning");
-
-btn.innerHTML=old;
-
-},1500);
-
-};
-});
-
-      return;
-    }
-
-    container.innerHTML = `
-      <h4 class="fw-bold text-dark mb-4">Shopping Cart</h4>
-      <div class="row g-4">
-        <div class="col-lg-8">
-          <div class="bg-white border rounded shadow-sm p-3">
-            <div class="table-responsive">
-              <table class="table align-middle mb-0 small">
-                <thead class="table-light font-monospace text-muted">
-                  <tr>
-                    <th>Product</th>
-                    <th class="text-center" style="width:120px;">Quantity</th>
-                    <th class="text-end">Total</th>
-                    <th class="text-end" style="width: 50px;">Remove</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  ${app.cart.map(i => `
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-2">
-                          <img src="${i.img || 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=80'}" style="width:40px;height:40px;" class="object-fit-contain border bg-light p-1" alt="${i.name}">
-                          <div>
-                            <h6 class="mb-0 fw-bold text-dark text-truncate" style="max-width:220px;">${i.name}</h6>
-                            <small class="text-muted font-monospace" style="font-size:10px;">SKU: ${i.id}</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="input-group input-group-sm">
-                          <button class="btn btn-outline-secondary px-2 dec-btn" data-id="${i.id}" data-q="${i.q}"><i class="bi bi-dash"></i></button>
-                          <input type="text" class="form-control text-center fw-bold bg-white border font-monospace qty-view" value="${i.q}" readonly>
-                          <button class="btn btn-outline-secondary px-2 inc-btn" data-id="${i.id}" data-q="${i.q}"><i class="bi bi-plus"></i></button>
-                        </div>
-                      </td>
-                      <td class="text-end fw-bold font-monospace text-dark">${formatINR(i.price * i.q)}</td>
-                      <td class="text-center"><button class="btn btn-sm btn-link text-danger p-0 del-btn" data-id="${i.id}"><i class="bi bi-trash3"></i></button></td>
-                    </tr>
-                  `).join("")}
-                </tbody>
-              </table>
             </div>
-          </div>
+
+            <div class="input-group input-group-sm mb-3">
+
+                <button
+                    class="btn btn-outline-secondary qty-minus"
+                    data-sku="${sku}">
+
+                    −
+
+                </button>
+
+                <input
+                    id="qty-${sku}"
+                    class="form-control text-center"
+                    value="1"
+                    readonly>
+
+                <button
+                    class="btn btn-outline-secondary qty-plus"
+                    data-sku="${sku}">
+
+                    +
+
+                </button>
+
+            </div>
+
+            <button
+                class="btn btn-warning add-cart mb-2"
+                data-sku="${sku}"
+                data-name="${name.replace(/"/g,"&quot;")}"
+                data-price="${price}"
+                data-img="${image}">
+
+                Add to Cart
+
+            </button>
+
+            <a
+                href="product.html?id=${encodeURIComponent(sku)}"
+                class="btn btn-outline-dark">
+
+                View Details
+
+            </a>
+
         </div>
-        <div class="col-lg-4">
-          <div class="bg-white border rounded shadow-sm p-3 small">
-            <h6 class="fw-bold text-dark border-bottom pb-2 mb-3">Order Summary</h6>
-            <div class="d-flex justify-content-between mb-2">
-              <span class="text-muted">Subtotal</span>
-              <span class="fw-bold font-monospace text-dark">${formatINR(totals.subtotal)}</span>
-            </div>
-            <div class="d-flex justify-content-between mb-2">
-              <span class="text-muted">Shipping</span>
-              <span class="text-success fw-bold font-monospace">Free</span>
-            </div>
-            <hr class="text-muted">
-            <div class="d-flex justify-content-between mb-3">
-              <h6 class="fw-bold text-dark mb-0">Total</h6>
-              <h5 class="fw-bold font-monospace text-danger mb-0">${formatINR(totals.total)}</h5>
-            </div>
-            <a href="#/checkout" class="btn btn-warning w-100 rounded-0 fw-bold py-2 font-monospace">Proceed to Checkout</a>
-          </div>
-        </div>
-      </div>
-    `;
 
-    // Hook listeners up instantly using selective click mapping loops
-    container.querySelectorAll(".dec-btn").forEach(b => b.addEventListener("click", () => {
-      const id = b.getAttribute("data-id");
-      const currentQ = parseInt(b.getAttribute("data-q"));
-      app.updateCart(id, currentQ - 1);
-      drawCart();
-    }));
+    </div>
 
-    container.querySelectorAll(".inc-btn").forEach(b => b.addEventListener("click", () => {
-      const id = b.getAttribute("data-id");
-      const currentQ = parseInt(b.getAttribute("data-q"));
-      const targetItem = app.cart.find(item => item.id === id);
-      app.updateCart(id, currentQ + 1, targetItem.price, targetItem.name, targetItem.img);
-      drawCart();
-    }));
+</div>
 
-    container.querySelectorAll(".del-btn").forEach(b => b.addEventListener("click", () => {
-      app.updateCart(b.getAttribute("data-id"), 0);
-      drawCart();
-    }));
-  };
+`;
 
-  drawCart();
+    }).join("");
+
+    bindSuggestionEvents();
+
 }
+// ======================================================
+// Suggested Product Events
+// ======================================================
+
+function bindSuggestionEvents() {
+
+    // ==============================================
+    // Quantity +
+    // ==============================================
+
+    document.querySelectorAll(".qty-plus").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const input = document.getElementById(
+                "qty-" + button.dataset.sku
+            );
+
+            input.value =
+                Number(input.value) + 1;
+
+        });
+
+    });
+
+    // ==============================================
+    // Quantity -
+    // ==============================================
+
+    document.querySelectorAll(".qty-minus").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const input = document.getElementById(
+                "qty-" + button.dataset.sku
+            );
+
+            const quantity =
+                Number(input.value);
+
+            if (quantity > 1) {
+
+                input.value = quantity - 1;
+
+            }
+
+        });
+
+    });
+
+    // ==============================================
+    // Add to Cart
+    // ==============================================
+
+    document.querySelectorAll(".add-cart").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const quantity = Number(
+
+                document.getElementById(
+                    "qty-" + button.dataset.sku
+                ).value
+
+            );
+
+            app.updateCart(
+
+                button.dataset.sku,
+                quantity,
+                Number(button.dataset.price),
+                button.dataset.name,
+                button.dataset.img
+
+            );
+
+            const originalText =
+                button.innerHTML;
+
+            button.classList.replace(
+                "btn-warning",
+                "btn-success"
+            );
+
+            button.innerHTML =
+                '<i class="bi bi-check-lg me-1"></i>Added';
+
+            setTimeout(() => {
+
+                button.classList.replace(
+                    "btn-success",
+                    "btn-warning"
+                );
+
+                button.innerHTML =
+                    originalText;
+
+            }, 1500);
+
+        });
+
+    });
+
+}
+// ======================================================
+// Cart Row
+// ======================================================
+
+function renderCartRow(item) {
+
+    return `
+
+<tr>
+
+    <td>
+
+        <div class="d-flex align-items-center gap-3">
+
+            <img
+                src="${item.img || "assets/404.webp"}"
+                class="border rounded p-1 bg-light"
+                style="width:60px;height:60px;object-fit:contain;"
+                alt="${item.name}">
+
+            <div>
+
+                <a
+                    href="product.html?id=${encodeURIComponent(item.sku)}"
+                    class="fw-semibold text-dark text-decoration-none">
+
+                    ${item.name}
+
+                </a>
+
+                <div class="small text-muted">
+
+                    SKU: ${item.sku}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </td>
+
+    <td>
+
+        <div class="input-group input-group-sm">
+
+            <button
+                class="btn btn-outline-secondary dec-btn"
+                data-id="${item.sku}"
+                data-q="${item.qty}">
+
+                <i class="bi bi-dash"></i>
+
+            </button>
+
+            <input
+                class="form-control text-center"
+                value="${item.qty}"
+                readonly>
+
+            <button
+                class="btn btn-outline-secondary inc-btn"
+                data-id="${item.sku}"
+                data-q="${item.qty}">
+
+                <i class="bi bi-plus"></i>
+
+            </button>
+
+        </div>
+
+    </td>
+
+    <td class="text-end fw-bold">
+
+        ${formatINR(item.price * item.qty)}
+
+    </td>
+
+    <td class="text-center">
+
+        <button
+            class="btn btn-link text-danger del-btn"
+            data-id="${item.sku}">
+
+            <i class="bi bi-trash3"></i>
+
+        </button>
+
+    </td>
+
+</tr>
+
+`;
+
+}
+
+// ======================================================
+// Cart Events
+// ======================================================
+
+function bindCartEvents() {
+
+    document.querySelectorAll(".dec-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const id = button.dataset.id;
+
+            const quantity =
+                Number(button.dataset.q);
+
+            app.updateCart(
+                id,
+                quantity - 1
+            );
+
+            render(document.getElementById("main-content"));
+
+        });
+
+    });
+
+    document.querySelectorAll(".inc-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const id = button.dataset.id;
+
+            const quantity =
+                Number(button.dataset.q);
+
+            const cart = app.getCart();
+
+            const item =
+                cart.find(
+                    product => product.sku === id
+                );
+
+            if (!item) return;
+
+            app.updateCart(
+                id,
+                quantity + 1,
+                item.price,
+                item.name,
+                item.img
+            );
+
+            render(document.getElementById("main-content"));
+
+        });
+
+    });
+
+    document.querySelectorAll(".del-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            app.updateCart(
+                button.dataset.id,
+                0
+            );
+
+            render(document.getElementById("main-content"));
+
+        });
+
+    });
+
+}}

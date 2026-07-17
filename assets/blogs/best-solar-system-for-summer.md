@@ -659,11 +659,11 @@ Actual electricity generation depends on sunlight, roof orientation, panel effic
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises provides reliable rooftop solar solutions for residential, commercial and industrial customers. We help you choose the right solar capacity based on your electricity consumption, roof space and long-term energy goals.
+HARYANA TOOLS provides reliable rooftop solar solutions for residential, commercial and industrial customers. We help you choose the right solar capacity based on your electricity consumption, roof space and long-term energy goals.
 
 </p>
 

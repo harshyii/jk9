@@ -2,462 +2,768 @@
 // Checkout
 // ==========================================================
 
-import { app, api, formatINR, CONFIG } from "./core.js";
+import {
+    app,
+    api,
+    formatINR,
+    CONFIG
+} from "./core.js";
 
-export async function render(container){
+export async function render(container) {
 
-const cart=app.getCart();
+    const cart = app.getCart();
 
-if(!cart.length){
+    // ======================================================
+    // Empty Cart
+    // ======================================================
 
-container.innerHTML=`
+    if (!cart.length) {
+
+        container.innerHTML = `
+
 <div class="text-center py-5">
 
-<i class="bi bi-cart-x display-1 text-muted"></i>
+    <i class="bi bi-cart-x display-2 text-muted"></i>
 
-<h3 class="mt-3">
-Your cart is empty
-</h3>
+    <h2 class="mt-3">
 
-<p class="text-muted">
-Add some products before proceeding to checkout.
-</p>
+        Your Cart is Empty
 
-<a
-href="#/products"
-class="btn btn-warning fw-semibold">
-Continue Shopping
-</a>
+    </h2>
+
+    <p class="text-muted">
+
+        Add some products before proceeding to checkout.
+
+    </p>
+
+    <a
+        href="products.html"
+        class="btn btn-warning">
+
+        Continue Shopping
+
+    </a>
 
 </div>
+
 `;
 
-return;
+        return;
 
-}
+    }
 
-let subtotal=cart.reduce((t,i)=>t+i.price*i.qty,0);
-let codCharge=0;
-let total=subtotal;
+    // ======================================================
+    // Totals
+    // ======================================================
 
-const items=cart.map(i=>`
+    let subtotal = cart.reduce(
 
-<div class="d-flex justify-content-between border-bottom py-2">
+        (total, item) =>
 
-<div>
+            total + (item.price * item.qty),
 
-<div class="fw-semibold">
-${i.name}
-</div>
+        0
 
-<small class="text-muted">
-${i.qty} × ${formatINR(i.price)}
-</small>
+    );
 
-</div>
+    let codCharge = 0;
 
-<div class="fw-semibold">
-${formatINR(i.price*i.qty)}
-</div>
+    let total = subtotal;
 
-</div>
+    // ======================================================
+    // Order Items
+    // ======================================================
 
-`).join("");
+    const items = cart.map(item => renderItem(item)).join("");
 
-container.innerHTML=`
+    // ======================================================
+    // Layout
+    // ======================================================
+
+    container.innerHTML = `
 
 <div class="row g-4">
 
-<div class="col-lg-7">
+    <div class="col-lg-7">
 
-<div class="card shadow-sm">
+        <div class="card shadow-sm">
 
-<div class="card-body p-4">
+            <div class="card-body p-4">
 
-<h3 class="mb-4">
-Checkout
-</h3>
+                <h2 class="mb-4">
 
-<form id="checkout-form">
+                    Checkout
 
-<div class="mb-3">
+                </h2>
 
-<label class="form-label">
-Full Name
-</label>
+                <form id="checkout-form">
 
-<input
-id="cust-name"
-class="form-control"
-type="text"
-placeholder="Enter your full name"
-required>
+                    <div class="mb-3">
 
-</div>
+                        <label class="form-label">
 
-<div class="mb-3">
+                            Full Name
 
-<label class="form-label">
-Mobile Number
-</label>
+                        </label>
 
-<input
-id="cust-phone"
-class="form-control"
-type="tel"
-maxlength="11"
-inputmode="numeric"
-placeholder="9876543210"
-required>
+                        <input
+                            id="cust-name"
+                            class="form-control"
+                            required>
 
-</div>
+                    </div>
 
-<div class="mb-3">
+                    <div class="mb-3">
 
-<label class="form-label">
-Delivery Address
-</label>
+                        <label class="form-label">
 
-<textarea
-id="cust-address"
-rows="4"
-class="form-control"
-required></textarea>
+                            Mobile Number
 
-</div>
+                        </label>
 
-<div class="mb-4">
+                        <input
+                            id="cust-phone"
+                            class="form-control"
+                            maxlength="11"
+                            inputmode="numeric"
+                            placeholder="9876543210"
+                            required>
 
-<label class="form-label">
-Payment Method
-</label>
+                    </div>
 
-<select
-id="payment-method"
-class="form-select">
+                    <div class="mb-3">
 
-<option value="UPI">
-UPI Payment
-</option>
+                        <label class="form-label">
 
-<option value="COD">
-Cash on Delivery (+5%)
-</option>
+                            Delivery Address
 
-</select>
+                        </label>
 
-</div>
+                        <textarea
+                            id="cust-address"
+                            rows="4"
+                            class="form-control"
+                            required></textarea>
 
-<button
-id="submit-order-btn"
-class="btn btn-warning w-100 fw-semibold">
+                    </div>
 
-Place Order
+                    <div class="mb-4">
 
-</button>
+                        <label class="form-label">
 
-</form>
+                            Payment Method
 
-</div>
+                        </label>
 
-</div>
+                        <select
+                            id="payment-method"
+                            class="form-select">
 
-</div>
+                            <option value="UPI">
 
-<div class="col-lg-5">
+                                UPI Payment
 
-<div class="card shadow-sm position-sticky" style="top:20px;">
+                            </option>
 
-<div class="card-body">
+                            <option value="COD">
 
-<h4 class="mb-3">
-Order Summary
-</h4>
+                                Cash on Delivery (+5%)
 
-${items}
+                            </option>
 
-<div class="d-flex justify-content-between mt-3">
+                        </select>
 
-<span>
-Subtotal
-</span>
+                    </div>
 
-<span id="subtotal-price">
-${formatINR(subtotal)}
-</span>
+                    <button
+                        id="submit-order-btn"
+                        class="btn btn-warning w-100">
 
-</div>
+                        Place Order
 
-<div class="d-flex justify-content-between mt-2">
+                    </button>
 
-<span>
-Delivery
-</span>
+                </form>
 
-<span class="text-success">
-Free
-</span>
+            </div>
 
-</div>
+        </div>
 
-<div class="d-flex justify-content-between mt-2">
+    </div>
 
-<span>
-COD Charge
-</span>
+    <div class="col-lg-5">
 
-<span id="cod-price">
-${formatINR(codCharge)}
-</span>
+        <div
+            class="card shadow-sm position-sticky"
+            style="top:20px;">
 
-</div>
+            <div class="card-body">
 
-<hr>
+                <h4 class="mb-3">
 
-<div class="d-flex justify-content-between fw-bold fs-4">
+                    Order Summary
 
-<span>
-Total
-</span>
+                </h4>
 
-<span
-id="total-price"
-class="text-danger">
+                ${items}
 
-${formatINR(total)}
+                <div class="d-flex justify-content-between mt-3">
 
-</span>
+                    <span>
 
-</div>
+                        Subtotal
 
-<hr>
+                    </span>
 
-<div id="upi-box">
+                    <strong id="subtotal-price">
 
-<h5 class="text-center mb-3">
-Scan & Pay
-</h5>
+                        ${formatINR(subtotal)}
 
-<div
-id="upi-qr"
-class="d-flex justify-content-center mb-3">
-</div>
+                    </strong>
 
-<div class="text-center">
+                </div>
 
-<div class="fw-bold fs-4 text-danger">
-${formatINR(total)}
-</div>
+                <div class="d-flex justify-content-between mt-2">
 
-<small class="text-muted">
-UPI ID<br>
-${CONFIG.UPI}
-</small>
+                    <span>
 
-</div>
+                        Delivery
 
-<a
-id="upi-pay-btn"
-class="btn btn-success w-100 mt-3 fw-semibold">
-Pay with UPI App
-</a>
+                    </span>
 
-</div>
+                    <span class="text-success">
 
-</div>
+                        Free
 
-</div>
+                    </span>
 
-</div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+
+                    <span>
+
+                        COD Charge
+
+                    </span>
+
+                    <strong id="cod-price">
+
+                        ${formatINR(codCharge)}
+
+                    </strong>
+
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between">
+
+                    <h4>
+
+                        Total
+
+                    </h4>
+
+                    <h4
+                        id="total-price"
+                        class="text-danger">
+
+                        ${formatINR(total)}
+
+                    </h4>
+
+                </div>
+
+                <hr>
+
+                <div id="upi-box">
+
+                    <h5 class="text-center mb-3">
+
+                        Scan & Pay
+
+                    </h5>
+
+                    <div
+                        id="upi-qr"
+                        class="d-flex justify-content-center mb-3">
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <div class="fs-4 fw-bold text-danger">
+
+                            ${formatINR(total)}
+
+                        </div>
+
+                        <small class="text-muted">
+
+                            UPI ID<br>
+
+                            ${CONFIG.UPI}
+
+                        </small>
+
+                    </div>
+
+                    <a
+                        id="upi-pay-btn"
+                        class="btn btn-success w-100 mt-3">
+
+                        Pay with UPI App
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
 `;
 
-const payment=document.getElementById("payment-method");
-const phone=document.getElementById("cust-phone");
+    initCheckout({
 
-phone.oninput=()=>{
+        cart,
+        subtotal,
+        total,
+        codCharge
 
-phone.value=phone.value.replace(/\D/g,"");
-
-if(phone.value.length>11)
-phone.value=phone.value.slice(0,11);
-
-};
-const totalBox=document.getElementById("total-price");
-const codBox=document.getElementById("cod-price");
-const qrBox=document.getElementById("upi-box");
-const qr=document.getElementById("upi-qr");
-
-function drawQR(){
-
-qr.innerHTML="";
-
-new QRCode(qr,{
-text:
-`upi://pay?pa=${CONFIG.UPI}`+
-`&pn=${encodeURIComponent(CONFIG.NAME)}`+
-`&tn=${encodeURIComponent("Order Payment")}`+
-`&am=${total.toFixed(2)}`+
-`&cu=INR`,
-width:220,
-height:220
-});
+    });
 
 }
+// ======================================================
+// Order Item
+// ======================================================
 
-if(typeof QRCode==="function"){
-drawQR();
-const upiBtn=document.getElementById("upi-pay-btn");
+function renderItem(item) {
 
-function updateUPILink(){
+    return `
 
-upiBtn.href=
-`upi://pay?pa=${CONFIG.UPI}`+
-`&pn=${encodeURIComponent(CONFIG.NAME)}`+
-`&tn=${encodeURIComponent("Order Payment")}`+
-`&am=${total.toFixed(2)}`+
-`&cu=INR`;
+<div class="d-flex justify-content-between align-items-start py-3 border-bottom">
+
+    <div class="pe-3">
+
+        <div class="fw-semibold">
+
+            ${item.name}
+
+        </div>
+
+        <small class="text-muted">
+
+            ${item.qty} × ${formatINR(item.price)}
+
+        </small>
+
+    </div>
+
+    <div class="fw-bold text-end">
+
+        ${formatINR(item.price * item.qty)}
+
+    </div>
+
+</div>
+
+`;
 
 }
+// ======================================================
+// Checkout Events
+// ======================================================
 
-updateUPILink();
-if(!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){
-upiBtn.style.display="none";
-}
-}else{
-qr.innerHTML=`
+function initCheckout({
+
+    cart,
+    subtotal,
+    total,
+    codCharge
+
+}) {
+
+    const phone =
+        document.getElementById("cust-phone");
+
+    const payment =
+        document.getElementById("payment-method");
+
+    const totalBox =
+        document.getElementById("total-price");
+
+    const codBox =
+        document.getElementById("cod-price");
+
+    const qrBox =
+        document.getElementById("upi-box");
+
+    const qr =
+        document.getElementById("upi-qr");
+
+    const upiButton =
+        document.getElementById("upi-pay-btn");
+
+    // ==================================================
+    // Phone Validation
+    // ==================================================
+
+    phone.addEventListener("input", () => {
+
+        phone.value = phone.value
+
+            .replace(/\D/g, "")
+            .slice(0, 11);
+
+    });
+
+    // ==================================================
+    // UPI Link
+    // ==================================================
+
+    function updateUPILink() {
+
+        upiButton.href =
+
+            `upi://pay?pa=${CONFIG.UPI}` +
+            `&pn=${encodeURIComponent(CONFIG.NAME)}` +
+            `&tn=${encodeURIComponent("Order Payment")}` +
+            `&am=${total.toFixed(2)}` +
+            `&cu=INR`;
+
+    }
+
+    // ==================================================
+    // QR Code
+    // ==================================================
+
+    function drawQR() {
+
+        if (typeof QRCode !== "function") {
+
+            qr.innerHTML = `
+
 <div class="alert alert-warning mb-0">
-QR Library not loaded.
-</div>`;
-}
 
-payment.onchange=()=>{
+    QR Library not loaded.
 
-if(payment.value==="COD"){
+</div>
 
-codCharge=Math.round(subtotal*0.05);
-qrBox.style.display="none";
-
-}else{
-
-codCharge=0;
-qrBox.style.display="block";
-
-}
-
-total=subtotal+codCharge;
-
-codBox.innerHTML=formatINR(codCharge);
-totalBox.innerHTML=formatINR(total);
-
-updateUPILink();
-
-if(payment.value==="UPI")drawQR();
-
-};
-
-document.getElementById("checkout-form").onsubmit=async e=>{
-
-e.preventDefault();
-const phoneNo=phone.value.trim();
-
-if(
-!(
-(phoneNo.length===10&&/^[1-9]\d{9}$/.test(phoneNo))||
-(phoneNo.length===11&&/^0\d{10}$/.test(phoneNo))
-)
-){
-
-alert("Enter a valid mobile number.\n\nUse either:\n• 9876543210\n• 09876543210");
-
-phone.focus();
-return;
-
-}
-
-const btn=document.getElementById("submit-order-btn");
-
-btn.disabled=true;
-
-btn.innerHTML=`
-<span class="spinner-border spinner-border-sm me-2"></span>
-Placing Order...
 `;
 
-const order={
+            return;
 
-customerName:document.getElementById("cust-name").value.trim(),
-phone:document.getElementById("cust-phone").value.trim(),
-address:document.getElementById("cust-address").value.trim(),
-paymentMethod:payment.value,
-subtotal,
-codCharge,
-total,
+        }
 
-items:cart.map(i=>({
-sku:i.sku,
-name:i.name,
-qty:i.qty,
-price:i.price
-}))
+        qr.innerHTML = "";
 
-};
+        new QRCode(qr, {
 
-console.log("Sending order...", order);
+            text:
 
-const params = new URLSearchParams({
-    action: "order",
-    customerName: order.customerName,
-    phone: order.phone,
-    address: order.address,
-    paymentMethod: order.paymentMethod,
-    subtotal: order.subtotal,
-    codCharge: order.codCharge,
-    total: order.total,
-    items: JSON.stringify(order.items)
-});
+                `upi://pay?pa=${CONFIG.UPI}` +
+                `&pn=${encodeURIComponent(CONFIG.NAME)}` +
+                `&tn=${encodeURIComponent("Order Payment")}` +
+                `&am=${total.toFixed(2)}` +
+                `&cu=INR`,
 
-const res = await fetch(`${CONFIG.API}?${params}`);
+            width: 220,
 
-if(!res.ok){
-    throw new Error(`HTTP ${res.status}`);
+            height: 220
+
+        });
+
+    }
+
+    updateUPILink();
+
+    drawQR();
+
+    if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+
+        upiButton.style.display = "none";
+
+    }
+
+    // ==================================================
+    // Payment Change
+    // ==================================================
+
+    payment.addEventListener("change", () => {
+
+        codCharge =
+
+            payment.value === "COD"
+
+                ? Math.round(subtotal * 0.05)
+
+                : 0;
+
+        total = subtotal + codCharge;
+
+        codBox.textContent =
+            formatINR(codCharge);
+
+        totalBox.textContent =
+            formatINR(total);
+
+        qrBox.style.display =
+
+            payment.value === "UPI"
+
+                ? "block"
+
+                : "none";
+
+        updateUPILink();
+
+        if (payment.value === "UPI") {
+
+            drawQR();
+
+        }
+
+    });
+
+        // ==================================================
+    // Submit Order
+    // ==================================================
+
+    document
+        .getElementById("checkout-form")
+        .addEventListener("submit", submitOrder);
+
+    async function submitOrder(event) {
+
+        event.preventDefault();
+
+        const phoneNumber =
+            phone.value.trim();
+
+        const validPhone =
+
+            (
+                phoneNumber.length === 10 &&
+                /^[1-9]\d{9}$/.test(phoneNumber)
+            ) ||
+
+            (
+                phoneNumber.length === 11 &&
+                /^0\d{10}$/.test(phoneNumber)
+            );
+
+        if (!validPhone) {
+
+            alert(
+
+`Enter a valid mobile number.
+
+Examples:
+
+9876543210
+09876543210`
+
+            );
+
+            phone.focus();
+
+            return;
+
+        }
+
+        const button =
+            document.getElementById(
+                "submit-order-btn"
+            );
+
+        button.disabled = true;
+
+        button.innerHTML = `
+
+<span class="spinner-border spinner-border-sm me-2"></span>
+
+Placing Order...
+
+`;
+
+        try {
+
+            const order = {
+
+                customerName:
+
+                    document
+                        .getElementById("cust-name")
+                        .value
+                        .trim(),
+
+                phone:
+
+                    phoneNumber,
+
+                address:
+
+                    document
+                        .getElementById("cust-address")
+                        .value
+                        .trim(),
+
+                paymentMethod:
+
+                    payment.value,
+
+                subtotal,
+
+                codCharge,
+
+                total,
+
+                items:
+
+                    cart.map(item => ({
+
+                        sku:
+
+                            item.sku ||
+                            item.sku,
+
+                        name:
+
+                            item.name,
+
+                        qty:
+
+                            item.qty,
+
+                        price:
+
+                            item.price
+
+                    }))
+
+            };
+
+            const params =
+                new URLSearchParams({
+
+                    action: "order",
+
+                    customerName:
+                        order.customerName,
+
+                    phone:
+                        order.phone,
+
+                    address:
+                        order.address,
+
+                    paymentMethod:
+                        order.paymentMethod,
+
+                    subtotal:
+                        order.subtotal,
+
+                    codCharge:
+                        order.codCharge,
+
+                    total:
+                        order.total,
+
+                    items:
+                        JSON.stringify(order.items)
+
+                });
+
+            const response = await fetch(
+
+                `${CONFIG.API}?${params}`
+
+            );
+
+            if (!response.ok) {
+
+                throw new Error(
+
+                    `HTTP ${response.status}`
+
+                );
+
+            }
+
+            const data =
+                await response.json();
+
+            if (!data.success) {
+
+                throw new Error(
+
+                    data.error ||
+                    "Order could not be saved."
+
+                );
+
+            }
+
+            let message =
+                `*New Order : ${data.orderId}*\n\n`;
+
+            cart.forEach((item, index) => {
+
+                message +=
+
+`${index + 1}. ${item.name}
+Qty : ${item.qty}
+Amount : ${formatINR(item.qty * item.price)}
+
+`;
+
+            });
+
+            message +=
+
+`Total : ${formatINR(total)}
+
+Payment : ${payment.value}
+
+Customer : ${order.customerName}
+
+Phone : ${order.phone}
+
+Address : ${order.address}`;
+
+            app.clearCart();
+
+            window.location.href =
+
+                `https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(message)}`;
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+            alert(
+
+                error.message ||
+                "Unable to place order."
+
+            );
+
+            button.disabled = false;
+
+            button.textContent =
+                "Place Order";
+
+        }
+
+    }
+
 }
-
-const data = await res.json();
-
-console.log("API Response:", data);
-
-if(!data.success){
-
-    alert(data.error || "Order could not be saved.");
-
-    btn.disabled=false;
-    btn.innerHTML="Place Order";
-
-    return;
-}
-
-const orderId = data.orderId;
-
-let msg=`*New Order : ${orderId}*\n\n`;
-
-cart.forEach((i,n)=>{
-    msg+=`${n+1}. ${i.name}\n`;
-    msg+=`Qty : ${i.qty}\n`;
-    msg+=`Amount : ${formatINR(i.price*i.qty)}\n\n`;
-});
-
-msg+=`Total : ${formatINR(total)}\n`;
-msg+=`Payment : ${payment.value}\n\n`;
-msg+=`Customer : ${order.customerName}\n`;
-msg+=`Phone : ${order.phone}\n`;
-msg+=`Address : ${order.address}`;
-
-app.clearCart();
-
-window.location.href =
-`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(msg)}`;
-
-};}

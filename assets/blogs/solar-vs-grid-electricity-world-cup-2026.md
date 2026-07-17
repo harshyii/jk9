@@ -972,13 +972,13 @@ Power Your Home with Clean Solar Energy
 
 <p class="mb-4">
 
-JK Enterprises provides reliable rooftop solar solutions, on-grid solar systems, hybrid inverters, electrical accessories and professional guidance for homeowners and businesses. Whether your goal is uninterrupted entertainment during FIFA World Cup 2026 or long-term electricity savings, we help you choose the right solution for your needs.
+HARYANA TOOLS provides reliable rooftop solar solutions, on-grid solar systems, hybrid inverters, electrical accessories and professional guidance for homeowners and businesses. Whether your goal is uninterrupted entertainment during FIFA World Cup 2026 or long-term electricity savings, we help you choose the right solution for your needs.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Solar" class="btn btn-warning btn-lg">
+<a href="products.html?category=Solar" class="btn btn-warning btn-lg">
 
 Explore Solar Products
 
@@ -1002,11 +1002,11 @@ Request a Free Consultation
 
 <ul class="mb-0">
 
-<li><a href="#/blog?id=best-on-grid-solar-installer-pehowa">Best On-Grid Solar System Installer in Pehowa</a></li>
+<li><a href="blog.html?id=best-on-grid-solar-installer-pehowa">Best On-Grid Solar System Installer in Pehowa</a></li>
 
-<li><a href="#/blog?id=watch-world-cup-2026-without-power-cuts">Watch FIFA World Cup 2026 Without Power Cuts</a></li>
+<li><a href="blog.html?id=watch-world-cup-2026-without-power-cuts">Watch FIFA World Cup 2026 Without Power Cuts</a></li>
 
-<li><a href="#/blog?id=ultimate-solar-buying-guide">Complete Solar Buying Guide for Homes & Businesses</a></li>
+<li><a href="blog.html?id=ultimate-solar-buying-guide">Complete Solar Buying Guide for Homes & Businesses</a></li>
 
 </ul>
 
@@ -1016,7 +1016,7 @@ Request a Free Consultation
 
 <div class="small text-muted">
 
-<strong>Disclaimer:</strong> FIFA World Cup 2026 is a registered tournament organized by FIFA. This article is intended for informational and educational purposes to explain energy options for homes and businesses during major sporting events. JK Enterprises is not affiliated with or endorsed by FIFA.
+<strong>Disclaimer:</strong> FIFA World Cup 2026 is a registered tournament organized by FIFA. This article is intended for informational and educational purposes to explain energy options for homes and businesses during major sporting events. HARYANA TOOLS is not affiliated with or endorsed by FIFA.
 
 </div>
 
@@ -1246,11 +1246,11 @@ Actual savings depend on your electricity consumption, tariff, roof size, and sy
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-When investing in solar, selecting the right installer is just as important as selecting the right equipment. JK Enterprises focuses on providing reliable products, quality workmanship and complete customer support from consultation to installation.
+When investing in solar, selecting the right installer is just as important as selecting the right equipment. HARYANA TOOLS focuses on providing reliable products, quality workmanship and complete customer support from consultation to installation.
 
 </p>
 
@@ -1302,7 +1302,7 @@ Always verify product certifications, warranty terms, installer experience and a
 
 <p>
 
-JK Enterprises provides rooftop solar consultation and installation services across Pehowa and nearby regions.
+HARYANA TOOLS provides rooftop solar consultation and installation services across Pehowa and nearby regions.
 
 </p>
 

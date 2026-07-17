@@ -15,9 +15,9 @@ makes a huge difference in productivity and long-term reliability.
 </p>
 
 <p>
-JK Enterprises supplies a wide range of quality <strong>power tools, hand tools, welding machines, cutting
+HARYANA TOOLS supplies a wide range of quality <strong>power tools, hand tools, welding machines, cutting
 tools, safety equipment, solar products, pressure washers, air compressors, and industrial accessories</strong>
-for customers in Pehowa and nearby areas. Local business listings in Pehowa also recognize JK Enterprises among power tool dealers in the area. :contentReference[oaicite:0]{index=0}
+for customers in Pehowa and nearby areas. Local business listings in Pehowa also recognize HARYANA TOOLS among power tool dealers in the area. :contentReference[oaicite:0]{index=0}
 </p>
 
 <hr>
@@ -55,7 +55,7 @@ especially when purchasing professional equipment.
 
 <hr>
 
-<h2>Products Available at JK Enterprises</h2>
+<h2>Products Available at HARYANA TOOLS</h2>
 
 <div class="row g-3">
 
@@ -283,7 +283,7 @@ and service support rather than price alone.
 <h2>Serving Pehowa and Nearby Areas</h2>
 
 <p>
-Customers visit JK Enterprises from Pehowa as well as nearby locations including Kurukshetra,
+Customers visit HARYANA TOOLS from Pehowa as well as nearby locations including Kurukshetra,
 Ismailabad, Kaithal, Cheeka, Shahbad, Ladwa and surrounding areas for industrial tools,
 construction equipment and workshop supplies.
 </p>
@@ -395,7 +395,7 @@ Selecting the correct tool improves productivity, reduces operating costs, and h
 
 <hr>
 
-<h2>Why Professionals Prefer JK Enterprises</h2>
+<h2>Why Professionals Prefer HARYANA TOOLS</h2>
 
 <div class="row g-3">
 
@@ -523,7 +523,7 @@ Where can I buy power tools in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises supplies a wide range of power tools including drills, grinders, rotary hammers, demolition hammers, pressure washers and other workshop equipment for professional and home use.
+HARYANA TOOLS supplies a wide range of power tools including drills, grinders, rotary hammers, demolition hammers, pressure washers and other workshop equipment for professional and home use.
 
 </div>
 
@@ -571,7 +571,7 @@ Can I get cordless drills and angle grinders from one place?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises offers a wide selection of cordless drills, angle grinders and complementary accessories to support both DIY and professional users.
+Yes. HARYANA TOOLS offers a wide selection of cordless drills, angle grinders and complementary accessories to support both DIY and professional users.
 
 </div>
 
@@ -619,7 +619,7 @@ Which nearby areas do you serve?
 
 <div class="accordion-body">
 
-Customers from Pehowa, Kurukshetra, Kaithal, Cheeka, Shahbad, Ismailabad and surrounding areas visit JK Enterprises for quality tools and industrial equipment.
+Customers from Pehowa, Kurukshetra, Kaithal, Cheeka, Shahbad, Ismailabad and surrounding areas visit HARYANA TOOLS for quality tools and industrial equipment.
 
 </div>
 
@@ -653,11 +653,11 @@ Whether you're looking for power tools, hand tools, industrial equipment, weldin
 
 <p class="mb-3">
 
-JK Enterprises supplies quality power tools, industrial tools, hand tools, welding machines, pressure washers, safety equipment, solar products and workshop accessories for customers across Pehowa and nearby areas. Whether you're a professional contractor, workshop owner or DIY enthusiast, we offer dependable products backed by knowledgeable assistance.
+HARYANA TOOLS supplies quality power tools, industrial tools, hand tools, welding machines, pressure washers, safety equipment, solar products and workshop accessories for customers across Pehowa and nearby areas. Whether you're a professional contractor, workshop owner or DIY enthusiast, we offer dependable products backed by knowledgeable assistance.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Our Products
 

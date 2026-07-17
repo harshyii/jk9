@@ -794,12 +794,12 @@ Choose the Right Cutting Disc with Confidence
 
 <p class="mb-3">
 
-JK Enterprises supplies high-quality cutting discs, grinding wheels, diamond blades and industrial abrasives from trusted manufacturers. Whether you're a fabricator, contractor or workshop owner, choosing the right abrasive ensures faster work, better safety and professional results.
+HARYANA TOOLS supplies high-quality cutting discs, grinding wheels, diamond blades and industrial abrasives from trusted manufacturers. Whether you're a fabricator, contractor or workshop owner, choosing the right abrasive ensures faster work, better safety and professional results.
 
 </p>
 
 <a
-href="#/products"
+href="products.html"
 class="btn btn-warning btn-lg">
 
 Browse Cutting Discs

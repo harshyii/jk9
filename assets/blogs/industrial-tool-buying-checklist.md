@@ -273,9 +273,9 @@ Quick access to genuine spare parts reduces downtime and extends the life of ind
 
 <h2 class="mb-3">Buy Quality Tools with Confidence</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial tools, power tools, hand tools, automotive equipment and workshop essentials from trusted brands for businesses, contractors and professionals across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial tools, power tools, hand tools, automotive equipment and workshop essentials from trusted brands for businesses, contractors and professionals across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Industrial Tools</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Industrial Tools</a>
 
 </div>
 

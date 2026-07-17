@@ -269,10 +269,10 @@ Large demolition hammers, heavy grinders and industrial cutting machines general
 <h2 class="mb-3">Find the Right Power Tool</h2>
 
 <p class="mb-3">
-JK Enterprises supplies professional cordless and corded power tools, batteries, chargers and accessories for homeowners, workshops, contractors and industrial buyers across India.
+HARYANA TOOLS supplies professional cordless and corded power tools, batteries, chargers and accessories for homeowners, workshops, contractors and industrial buyers across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Power Tools
 </a>
 

@@ -8,13 +8,13 @@ alt="Industrial Tools Supplier in Pehowa">
 
 <h1>Industrial Tools Supplier in Pehowa | Power Tools, Hand Tools & Industrial Equipment</h1>
 
-<p>If you're looking for a trusted <strong>industrial tools supplier in Pehowa</strong>, JK Enterprises offers a comprehensive range of professional-grade power tools, hand tools, safety equipment, welding machines, solar products, workshop equipment, and industrial accessories. We cater to contractors, factories, workshops, mechanics, fabricators, electricians, farmers, institutions, and homeowners across Pehowa and nearby regions.</p>
+<p>If you're looking for a trusted <strong>industrial tools supplier in Pehowa</strong>, HARYANA TOOLS offers a comprehensive range of professional-grade power tools, hand tools, safety equipment, welding machines, solar products, workshop equipment, and industrial accessories. We cater to contractors, factories, workshops, mechanics, fabricators, electricians, farmers, institutions, and homeowners across Pehowa and nearby regions.</p>
 
 <p>Whether you need a single drill machine for your workshop or complete industrial tooling solutions for a manufacturing facility, choosing quality tools improves productivity, workplace safety, and long-term operating costs.</p>
 
 <div class="alert alert-success py-2">
 
-<strong>Products Available at JK Enterprises</strong>
+<strong>Products Available at HARYANA TOOLS</strong>
 
 <ul class="mt-2 mb-0">
 
@@ -35,9 +35,9 @@ alt="Industrial Tools Supplier in Pehowa">
 
 <hr>
 
-<h2>Why Choose JK Enterprises in Pehowa?</h2>
+<h2>Why Choose HARYANA TOOLS in Pehowa?</h2>
 
-<p>Industrial professionals require reliable products backed by genuine quality and dependable support. JK Enterprises supplies equipment from reputed manufacturers suitable for continuous industrial use as well as residential and commercial applications.</p>
+<p>Industrial professionals require reliable products backed by genuine quality and dependable support. HARYANA TOOLS supplies equipment from reputed manufacturers suitable for continuous industrial use as well as residential and commercial applications.</p>
 
 <div class="row g-3">
 
@@ -321,7 +321,7 @@ Tile, stone and marble cutting with precision.
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises supplies industrial tools and equipment across:</p>
+<p>HARYANA TOOLS supplies industrial tools and equipment across:</p>
 
 <div class="alert alert-primary">
 
@@ -568,7 +568,7 @@ Where can I buy industrial tools in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises supplies industrial tools, power tools, hand tools, safety equipment, welding machines, pressure washers and workshop equipment for professionals, businesses and homeowners in Pehowa and nearby areas.
+HARYANA TOOLS supplies industrial tools, power tools, hand tools, safety equipment, welding machines, pressure washers and workshop equipment for professionals, businesses and homeowners in Pehowa and nearby areas.
 
 </div>
 
@@ -664,7 +664,7 @@ Do you supply customers outside Pehowa?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises serves customers across Kurukshetra, Kaithal, Karnal, Panipat, Ambala, Hisar and other locations throughout Haryana.
+Yes. HARYANA TOOLS serves customers across Kurukshetra, Kaithal, Karnal, Panipat, Ambala, Hisar and other locations throughout Haryana.
 
 </div>
 
@@ -678,7 +678,7 @@ Yes. JK Enterprises serves customers across Kurukshetra, Kaithal, Karnal, Panipa
 
 <h2>Looking for Industrial Tools Near You?</h2>
 
-<p>If you're searching for an <strong>industrial tools supplier in Pehowa</strong>, <strong>industrial tools near me</strong>, <strong>power tools shop near me</strong>, <strong>hardware store in Pehowa</strong> or <strong>industrial equipment supplier in Haryana</strong>, JK Enterprises offers a wide range of reliable products for industrial, commercial and residential applications.</p>
+<p>If you're searching for an <strong>industrial tools supplier in Pehowa</strong>, <strong>industrial tools near me</strong>, <strong>power tools shop near me</strong>, <strong>hardware store in Pehowa</strong> or <strong>industrial equipment supplier in Haryana</strong>, HARYANA TOOLS offers a wide range of reliable products for industrial, commercial and residential applications.</p>
 
 <p>Our inventory includes power tools, hand tools, safety equipment, welding machines, pressure washers, industrial hardware, solar products and workshop accessories suitable for professionals as well as DIY users.</p>
 
@@ -690,11 +690,11 @@ Yes. JK Enterprises serves customers across Kurukshetra, Kaithal, Karnal, Panipa
 
 <p class="mb-3">
 
-JK Enterprises supplies high-quality industrial tools, power tools, hand tools, workshop equipment, safety products, welding machines and industrial accessories for customers across Pehowa and Haryana. Whether you're a contractor, workshop owner, fabricator or homeowner, we have the right tools for your next project.
+HARYANA TOOLS supplies high-quality industrial tools, power tools, hand tools, workshop equipment, safety products, welding machines and industrial accessories for customers across Pehowa and Haryana. Whether you're a contractor, workshop owner, fabricator or homeowner, we have the right tools for your next project.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Industrial Products
 

@@ -860,12 +860,12 @@ Build Your Dream Workshop with Confidence
 
 <p class="mb-3">
 
-JK Enterprises supplies genuine power tools, hand tools, workshop equipment, safety products and industrial accessories from trusted manufacturers. Whether you're setting up your first home workshop or expanding a professional workspace, we offer reliable products designed for performance, durability and long-term value.
+HARYANA TOOLS supplies genuine power tools, hand tools, workshop equipment, safety products and industrial accessories from trusted manufacturers. Whether you're setting up your first home workshop or expanding a professional workspace, we offer reliable products designed for performance, durability and long-term value.
 
 </p>
 
 <a
-href="#/products"
+href="products.html"
 class="btn btn-warning btn-lg">
 
 Explore Workshop Tools

@@ -452,11 +452,11 @@ Invest Once. Work Smarter.
 
 <p class="mb-3">
 
-JK Enterprises supplies premium hand tool kits, mechanic tool sets, industrial maintenance kits and professional workshop tools from trusted brands. Whether you're a homeowner, technician or industrial buyer, we have the right solution for every application.
+HARYANA TOOLS supplies premium hand tool kits, mechanic tool sets, industrial maintenance kits and professional workshop tools from trusted brands. Whether you're a homeowner, technician or industrial buyer, we have the right solution for every application.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Tool Kits
 

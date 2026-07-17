@@ -254,9 +254,9 @@ Yes. Annual professional inspections help identify electrical faults, loose conn
 
 <h2 class="mb-3">Protect Your Solar Investment</h2>
 
-<p class="mb-3">JK Enterprises supplies solar panels, inverters, batteries, mounting accessories and maintenance products for residential, commercial and industrial solar installations across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies solar panels, inverters, batteries, mounting accessories and maintenance products for residential, commercial and industrial solar installations across India.</p>
 
-<a href="#/products?category=Solar" class="btn btn-warning btn-lg">
+<a href="products.html?category=Solar" class="btn btn-warning btn-lg">
 Browse Solar Products
 </a>
 

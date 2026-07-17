@@ -8,7 +8,7 @@ alt="Professional Power Tools Shop in Haryana">
 
 <h1>Power Tools Near Me in Haryana – Find Quality Power Tools for Home & Industrial Use</h1>
 
-<p>If you've searched for <strong>"power tools near me"</strong>, <strong>"tool shop near me"</strong>, or <strong>"industrial tools supplier in Haryana"</strong>, you're likely looking for a reliable supplier offering genuine products, competitive pricing, and dependable after-sales support. JK Enterprises supplies a wide range of professional power tools for homeowners, workshops, fabricators, electricians, mechanics, contractors, and industrial businesses across Haryana.</p>
+<p>If you've searched for <strong>"power tools near me"</strong>, <strong>"tool shop near me"</strong>, or <strong>"industrial tools supplier in Haryana"</strong>, you're likely looking for a reliable supplier offering genuine products, competitive pricing, and dependable after-sales support. HARYANA TOOLS supplies a wide range of professional power tools for homeowners, workshops, fabricators, electricians, mechanics, contractors, and industrial businesses across Haryana.</p>
 
 <p>Whether you need a cordless drill, angle grinder, rotary hammer, demolition hammer, marble cutter, pressure washer, or accessories, selecting the right supplier is just as important as choosing the right tool.</p>
 
@@ -217,7 +217,7 @@ alt="Professional Power Tools Shop in Haryana">
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises supplies power tools to customers across Haryana including:</p>
+<p>HARYANA TOOLS supplies power tools to customers across Haryana including:</p>
 
 <div class="row row-cols-2 row-cols-md-4 g-2">
 
@@ -519,7 +519,7 @@ Where can I buy power tools in Haryana?
 
 <div class="accordion-body">
 
-JK Enterprises supplies a wide selection of professional power tools for industrial, commercial and home users across Haryana.
+HARYANA TOOLS supplies a wide selection of professional power tools for industrial, commercial and home users across Haryana.
 
 </div>
 
@@ -633,11 +633,11 @@ Absolutely. We help customers choose the most suitable machine based on their ap
 
 <p class="mb-3">
 
-JK Enterprises supplies genuine power tools, industrial equipment, hand tools, safety products and workshop machinery to customers across Haryana. Whether you're a contractor, fabricator, mechanic, electrician or DIY enthusiast, we can help you choose reliable tools for your requirements.
+HARYANA TOOLS supplies genuine power tools, industrial equipment, hand tools, safety products and workshop machinery to customers across Haryana. Whether you're a contractor, fabricator, mechanic, electrician or DIY enthusiast, we can help you choose reliable tools for your requirements.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 

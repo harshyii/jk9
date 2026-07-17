@@ -198,9 +198,9 @@ Before buying a circular saw, check for:
 
 <h2 class="mb-3">Cut Smarter. Build Better.</h2>
 
-<p class="mb-3">JK Enterprises supplies professional circular saws, saw blades and woodworking power tools for contractors, carpenters, workshops and industrial buyers across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies professional circular saws, saw blades and woodworking power tools for contractors, carpenters, workshops and industrial buyers across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Circular Saws</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Circular Saws</a>
 
 </div>
 

@@ -152,9 +152,9 @@
 
 <h2 class="mb-3">Build a Safer Workplace</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial safety equipment, storage solutions, material handling tools and warehouse essentials for businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial safety equipment, storage solutions, material handling tools and warehouse essentials for businesses across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Safety Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Safety Products</a>
 
 </div>
 

@@ -359,9 +359,9 @@ Most professional jigsaws can cut wood up to 80–100 mm depending on the blade 
 
 <h2 class="mb-3">Find the Perfect Jigsaw for Every Project</h2>
 
-<p class="mb-3">JK Enterprises supplies genuine jigsaws, woodworking tools, blades and professional power tools from trusted brands for workshops, contractors and DIY enthusiasts across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies genuine jigsaws, woodworking tools, blades and professional power tools from trusted brands for workshops, contractors and DIY enthusiasts across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Jigsaws</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Jigsaws</a>
 
 </div>
 

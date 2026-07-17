@@ -348,9 +348,9 @@ Replace goggles whenever lenses become scratched, cracked, loose or visibility i
 
 <h2 class="mb-3">Protect Your Vision at Every Job Site</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial PPE, safety goggles, face shields, gloves and workplace safety equipment for workshops, factories, construction sites and professional users across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial PPE, safety goggles, face shields, gloves and workplace safety equipment for workshops, factories, construction sites and professional users across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Safety Equipment</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Safety Equipment</a>
 
 </div>
 

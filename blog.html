@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Loading...</title>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="assets/bootstrap.min.css">
-<link rel="stylesheet" href="assets/style.css">
+<title>Blog | Haryana Tools</title>
+
+<link
+    rel="icon"
+    href="assets/favicon.ico">
+
+<link
+    rel="manifest"
+    href="manifest.json">
+
+<link
+    rel="stylesheet"
+    href="assets/bootstrap.min.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link
+    rel="stylesheet"
+    href="assets/style.css">
 
 </head>
 
@@ -17,13 +37,18 @@
 
 <div id="app-root"></div>
 
-<script type="module">
+<script
+    src="assets/bootstrap.bundle.min.js"
+    defer></script>
 
-const id = new URLSearchParams(location.search).get("id");
+<script
+    src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+    defer></script>
 
-location.replace("/#/blog?id=" + encodeURIComponent(id));
-
-</script>
+<script
+    type="module"
+    src="app.js"></script>
 
 </body>
+
 </html>

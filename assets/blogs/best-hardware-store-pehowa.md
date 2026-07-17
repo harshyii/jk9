@@ -10,14 +10,14 @@ alt="Best Hardware Store in Pehowa">
 
 <p>Finding a reliable hardware store in Pehowa is important whether you're building a home, managing a factory, working on a construction site, running a workshop or simply completing a DIY repair. A well-stocked hardware supplier saves time, provides genuine products and ensures you always have the right tools and equipment for the job.</p>
 
-<p>JK Enterprises supplies a wide range of industrial tools, power tools, hand tools, safety equipment, welding accessories, abrasives, fasteners, solar products and workshop equipment for customers across Pehowa, Kurukshetra and nearby areas.</p>
+<p>HARYANA TOOLS supplies a wide range of industrial tools, power tools, hand tools, safety equipment, welding accessories, abrasives, fasteners, solar products and workshop equipment for customers across Pehowa, Kurukshetra and nearby areas.</p>
 
 <div class="alert alert-success">
 
 <strong>Looking for a Hardware Store Near You?</strong>
 
 <p class="mb-0 mt-2">
-Whether you're a contractor, electrician, plumber, mechanic, fabricator or homeowner, JK Enterprises offers quality products from trusted brands with competitive pricing and expert guidance.
+Whether you're a contractor, electrician, plumber, mechanic, fabricator or homeowner, HARYANA TOOLS offers quality products from trusted brands with competitive pricing and expert guidance.
 </p>
 
 </div>
@@ -106,7 +106,7 @@ Support for spare parts, accessories and warranty assistance.
 
 <hr>
 
-<h2>Products Available at JK Enterprises</h2>
+<h2>Products Available at HARYANA TOOLS</h2>
 
 <p>Our hardware store supplies products suitable for industrial users, workshops, fabricators, construction companies, electricians, mechanics and homeowners.</p>
 
@@ -321,7 +321,7 @@ Reliable tools for repairs, renovations and everyday maintenance.
 <div class="alert alert-warning">
 
 <p class="mb-2">
-JK Enterprises supplies products from trusted manufacturers known for quality, durability and performance.
+HARYANA TOOLS supplies products from trusted manufacturers known for quality, durability and performance.
 </p>
 
 <ul class="mb-0">
@@ -338,7 +338,7 @@ JK Enterprises supplies products from trusted manufacturers known for quality, d
 
 <li>Taparia</li>
 
-<li>JK Enterprises Recommended Products</li>
+<li>HARYANA TOOLS Recommended Products</li>
 
 </ul>
 
@@ -346,7 +346,7 @@ JK Enterprises supplies products from trusted manufacturers known for quality, d
 
 <hr>
 
-<h2>Why Customers Choose JK Enterprises</h2>
+<h2>Why Customers Choose HARYANA TOOLS</h2>
 
 <div class="list-group">
 
@@ -529,7 +529,7 @@ JK Enterprises supplies products from trusted manufacturers known for quality, d
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises proudly supplies hardware products and industrial tools to customers across Haryana, including:</p>
+<p>HARYANA TOOLS proudly supplies hardware products and industrial tools to customers across Haryana, including:</p>
 
 <div class="row">
 
@@ -576,7 +576,7 @@ JK Enterprises supplies products from trusted manufacturers known for quality, d
 <strong>Searching for a Hardware Store Near Me?</strong>
 
 <p class="mb-0 mt-2">
-If you're located in or around Pehowa, JK Enterprises offers a wide range of hardware products, industrial tools, power tools and accessories for professionals, businesses and homeowners.
+If you're located in or around Pehowa, HARYANA TOOLS offers a wide range of hardware products, industrial tools, power tools and accessories for professionals, businesses and homeowners.
 </p>
 
 </div>
@@ -603,7 +603,7 @@ Where can I buy quality hardware products in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises offers a wide range of industrial hardware, power tools, hand tools, safety equipment and workshop accessories suitable for professional and home use.
+HARYANA TOOLS offers a wide range of industrial hardware, power tools, hand tools, safety equipment and workshop accessories suitable for professional and home use.
 
 </div>
 
@@ -641,7 +641,7 @@ Yes. We supply tools and equipment for workshops, factories, contractors, fabric
 
 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
 
-Can homeowners purchase tools from JK Enterprises?
+Can homeowners purchase tools from HARYANA TOOLS?
 
 </button>
 
@@ -689,7 +689,7 @@ Yes. Our inventory includes power tools, hand tools, abrasives, safety products,
 
 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
 
-Why choose JK Enterprises over a general hardware shop?
+Why choose HARYANA TOOLS over a general hardware shop?
 
 </button>
 
@@ -717,11 +717,11 @@ We focus on genuine products, competitive pricing, technical guidance, reliable 
 
 <p class="mb-3">
 
-JK Enterprises supplies quality power tools, hand tools, industrial equipment, safety products, welding accessories, solar products and workshop essentials for professionals, businesses and homeowners across Pehowa and nearby areas. Whether you're working on a construction project, industrial maintenance or a home improvement task, we can help you find the right products for the job.
+HARYANA TOOLS supplies quality power tools, hand tools, industrial equipment, safety products, welding accessories, solar products and workshop essentials for professionals, businesses and homeowners across Pehowa and nearby areas. Whether you're working on a construction project, industrial maintenance or a home improvement task, we can help you find the right products for the job.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Products
 

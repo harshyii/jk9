@@ -469,11 +469,11 @@ Keep Your Vehicle Looking Like New
 
 <p class="mb-3">
 
-JK Enterprises offers premium car shampoos, foam cannons, pressure washer accessories, microfiber cloths and professional car care products designed to keep your vehicle clean while protecting its paint finish.
+HARYANA TOOLS offers premium car shampoos, foam cannons, pressure washer accessories, microfiber cloths and professional car care products designed to keep your vehicle clean while protecting its paint finish.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Explore Car Care Products
 

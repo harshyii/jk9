@@ -291,9 +291,9 @@ Absolutely. A heat gun reaches much higher temperatures and is designed for indu
 
 <h2 class="mb-3">Choose the Right Heat Gun</h2>
 
-<p class="mb-3">JK Enterprises supplies professional heat guns, accessories and industrial power tools for workshops, electricians, contractors and manufacturing industries across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies professional heat guns, accessories and industrial power tools for workshops, electricians, contractors and manufacturing industries across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Heat Guns</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Heat Guns</a>
 
 </div>
 

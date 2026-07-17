@@ -367,9 +367,9 @@ Most quality solar inverters last between 10 and 15 years with proper installati
 
 <h2 class="mb-3">Power Your Home with Confidence</h2>
 
-<p class="mb-3">JK Enterprises supplies reliable solar inverters, batteries, solar panels and complete solar energy solutions for homes, businesses and industrial applications across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies reliable solar inverters, batteries, solar panels and complete solar energy solutions for homes, businesses and industrial applications across India.</p>
 
-<a href="#/products?category=Solar" class="btn btn-warning btn-lg">Browse Solar Products</a>
+<a href="products.html?category=Solar" class="btn btn-warning btn-lg">Browse Solar Products</a>
 
 </div>
 

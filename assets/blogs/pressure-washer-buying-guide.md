@@ -383,11 +383,11 @@ Professional models can operate for extended periods, while residential machines
 
 <p class="mb-3">
 
-JK Enterprises supplies reliable pressure washers, foam cannons, hoses, spray guns and industrial cleaning equipment for homeowners, workshops, farms and commercial users across India.
+HARYANA TOOLS supplies reliable pressure washers, foam cannons, hoses, spray guns and industrial cleaning equipment for homeowners, workshops, farms and commercial users across India.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Pressure Washers
 

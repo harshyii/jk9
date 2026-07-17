@@ -430,11 +430,11 @@ Inspect ladders before every use and perform detailed safety inspections at regu
 
 <p class="mb-3">
 
-JK Enterprises supplies industrial ladders, warehouse ladders, platform ladders and workplace safety equipment for contractors, factories, workshops and businesses across India.
+HARYANA TOOLS supplies industrial ladders, warehouse ladders, platform ladders and workplace safety equipment for contractors, factories, workshops and businesses across India.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Industrial Ladders
 

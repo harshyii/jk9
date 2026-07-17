@@ -408,10 +408,10 @@ Use larger diameter pipes, minimize bends, install a loop system and repair air 
 <h2 class="mb-3">Build a Reliable Compressed Air System</h2>
 
 <p class="mb-3">
-JK Enterprises supplies air compressors, pneumatic tools, air hoses, FRL units, quick couplers, regulators and industrial accessories for workshops, garages and manufacturing facilities across India.
+HARYANA TOOLS supplies air compressors, pneumatic tools, air hoses, FRL units, quick couplers, regulators and industrial accessories for workshops, garages and manufacturing facilities across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Explore Pneumatic Tools
 </a>
 

@@ -220,9 +220,9 @@ Most professionals recommend 400–600 GSM microfiber cloths for drying and poli
 
 <h2 class="mb-3">Choose the Right Microfiber Cloth</h2>
 
-<p class="mb-3">JK Enterprises supplies premium microfiber cloths for automotive detailing, industrial cleaning, household maintenance and professional applications. Choose high-quality reusable cloths designed for superior cleaning performance.</p>
+<p class="mb-3">HARYANA TOOLS supplies premium microfiber cloths for automotive detailing, industrial cleaning, household maintenance and professional applications. Choose high-quality reusable cloths designed for superior cleaning performance.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Cleaning Accessories</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Cleaning Accessories</a>
 
 </div>
 

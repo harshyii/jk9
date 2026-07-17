@@ -816,11 +816,11 @@ Protect Your Workshop All Year Round
 
 <p class="mb-4">
 
-JK Enterprises supplies quality power tools, electrical accessories, extension boards, industrial equipment and workshop essentials to help professionals and DIY users keep their workshops safe, organized and ready for every season.
+HARYANA TOOLS supplies quality power tools, electrical accessories, extension boards, industrial equipment and workshop essentials to help professionals and DIY users keep their workshops safe, organized and ready for every season.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Workshop Essentials
 
@@ -1050,7 +1050,7 @@ Proper maintenance keeps tools performing like new.
 
 <p>
 
-Whether you operate a fabrication shop, automobile garage, construction company, manufacturing unit or home workshop, JK Enterprises supplies dependable products to help protect your investment throughout every season.
+Whether you operate a fabrication shop, automobile garage, construction company, manufacturing unit or home workshop, HARYANA TOOLS supplies dependable products to help protect your investment throughout every season.
 
 </p>
 
@@ -1130,13 +1130,13 @@ Build a Workshop That Performs in Every Season
 
 <p class="mb-4">
 
-From scorching summers and heavy monsoons to cold winters and dusty conditions, proper maintenance keeps your workshop safe, productive and efficient. JK Enterprises offers quality power tools, electrical accessories, workshop equipment and industrial solutions trusted by professionals across India.
+From scorching summers and heavy monsoons to cold winters and dusty conditions, proper maintenance keeps your workshop safe, productive and efficient. HARYANA TOOLS offers quality power tools, electrical accessories, workshop equipment and industrial solutions trusted by professionals across India.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Products
 
@@ -1144,7 +1144,7 @@ Browse Products
 
 <a href="#/contact" class="btn btn-outline-light btn-lg">
 
-Contact JK Enterprises
+Contact HARYANA TOOLS
 
 </a>
 

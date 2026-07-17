@@ -172,8 +172,8 @@ Before purchasing industrial hand tools, ensure they offer:
 
 <div class="bg-dark text-white rounded p-4 text-center">
 <h2 class="mb-3">Build Your Professional Tool Kit</h2>
-<p class="mb-3">JK Enterprises supplies premium industrial hand tools, maintenance equipment and workshop accessories for professionals, industries and businesses across India.</p>
-<a href="#/products" class="btn btn-warning btn-lg">Browse Hand Tools</a>
+<p class="mb-3">HARYANA TOOLS supplies premium industrial hand tools, maintenance equipment and workshop accessories for professionals, industries and businesses across India.</p>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Hand Tools</a>
 </div>
 
 </div>

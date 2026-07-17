@@ -8,7 +8,7 @@ export async function render(container, params) {
   
 
     // Support both:
-    // #/blog?id=...
+    // blog.html?id=...
     // blog.html?id=...
 
     const hashParams = new URLSearchParams(
@@ -44,7 +44,7 @@ export async function render(container, params) {
 
   try {
 
-    const articles = await api.get("blogs");
+    const articles = (await api.get("blogs")).reverse();
     articles.sort((a, b) => {
   return Number(b.SortOrder || 0) - Number(a.SortOrder || 0);
   });
@@ -163,10 +163,10 @@ async function renderPost(container, slugId) {
 
   try {
 
-    const articles = await api.get("blogs");
+    const articles = (await api.get("blogs")).reverse();
 
     const post = articles.find(item =>
-      String(item.Slug || item.BlogID || item.id) === String(slugId)
+      String(item.Slug || item.BlogID || item.sku) === String(slugId)
     );
 
     if (!post) {
@@ -186,7 +186,7 @@ async function renderPost(container, slugId) {
 
     const author =
       post.Author ||
-      "JK Enterprises";
+      "HARYANA TOOLS";
 
     const date =
       post.Date ||
@@ -227,7 +227,7 @@ if (post.ContentFile) {
       <article class="mx-auto" style="max-width:900px;">
 
         <a
-          href="index.html#/blogs"
+          href="index.htmlblog.htmls"
           class="btn btn-outline-secondary mb-4">
 
           ← Back to Blogs

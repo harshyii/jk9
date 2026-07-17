@@ -17,6 +17,8 @@ export async function render(container, params) {
 
   try {
     const manufacturers = await api.get("brands");
+    console.log("Brands:", manufacturers);
+    console.log("Is Array:", Array.isArray(manufacturers));
     const grid = document.getElementById("brands-index-grid");
     
     if(!manufacturers || manufacturers.length === 0) {
@@ -26,7 +28,7 @@ export async function render(container, params) {
 
     grid.innerHTML = manufacturers.map(b => `
       <div class="col-6 col-sm-4 col-md-3">
-        <a href="#/brand?name=${encodeURIComponent(b)}" class="card text-decoration-none border shadow-sm p-4 text-center h-100 bg-white rounded-0 transition-element">
+        <a href="brand.html?name=${encodeURIComponent(b)}" class="card text-decoration-none border shadow-sm p-4 text-center h-100 bg-white rounded-0 transition-element">
           <i class="bi bi-building text-warning fs-2 mb-2"></i>
           <h6 class="fw-bold text-dark mb-1 text-truncate">${b}</h6>
           <span class="text-muted font-monospace small text-uppercase" style="font-size:10px;">Authorized Channel</span>
@@ -34,7 +36,13 @@ export async function render(container, params) {
       </div>
     `).join("");
   } catch (err) {
-    document.getElementById("brands-index-grid").innerHTML = `<div class="alert alert-danger">Error linking to brand matrix network node.</div>`;
+    console.error("Brands Error:", err);
+
+  document.getElementById("brands-index-grid").innerHTML = `
+    <div class="alert alert-danger">
+      ${err.message}
+    </div>
+  `;
   }
 }
 
@@ -47,7 +55,7 @@ async function renderBrandProducts(container, brandName) {
   const match = products.filter(p =>
   (p.Brand || "").toLowerCase() === brandName.toLowerCase()
   );
-    const grid = document.getElementById("brand-filtered-grid");
+    const grid = container.querySelector("#brand-filtered-grid");
 
     if(!match || match.length === 0) {
       grid.innerHTML = `<div class="col-12 text-center text-muted py-4">No allocations found for this supply vector channel currently.</div>`;
@@ -83,7 +91,7 @@ return `
 
 <div class="card h-100 shadow-sm border-0 rounded-3">
 
-<a href="#/product?id=${encodeURIComponent(sku)}">
+<a href="product.html?id=${encodeURIComponent(sku)}">
 
 <img
 src="${img}"
@@ -115,7 +123,7 @@ ${formatINR(price)}
 </div>
 
 <a
-href="#/product?id=${encodeURIComponent(sku)}"
+href="product.html?id=${encodeURIComponent(sku)}"
 class="btn btn-dark w-100">
 
 View Details

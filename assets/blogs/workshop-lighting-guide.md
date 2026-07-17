@@ -191,9 +191,9 @@ Before purchasing workshop lighting, ensure it provides:
 
 <h2 class="mb-3">Build a Safer & Brighter Workshop</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial lighting solutions, electrical accessories, power tools and workshop equipment for factories, garages, fabrication units and businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial lighting solutions, electrical accessories, power tools and workshop equipment for factories, garages, fabrication units and businesses across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Workshop Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Workshop Products</a>
 
 </div>
 

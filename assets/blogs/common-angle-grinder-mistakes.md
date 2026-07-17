@@ -177,8 +177,8 @@ Never install oversized discs. Always use the disc diameter recommended by the m
 
 <div class="bg-dark text-white rounded p-4 text-center">
 <h2 class="mb-3">Work Smarter. Work Safer.</h2>
-<p class="mb-3">JK Enterprises supplies professional angle grinders, abrasive discs, cutting accessories and industrial power tools from trusted brands for workshops, contractors and industries across India.</p>
-<a href="#/products" class="btn btn-warning btn-lg">Browse Power Tools</a>
+<p class="mb-3">HARYANA TOOLS supplies professional angle grinders, abrasive discs, cutting accessories and industrial power tools from trusted brands for workshops, contractors and industries across India.</p>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Power Tools</a>
 </div>
 
 </div>

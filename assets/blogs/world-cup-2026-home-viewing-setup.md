@@ -801,11 +801,11 @@ Run a speed test before important matches to ensure smooth streaming.
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <p>
 
-JK Enterprises supplies reliable electrical accessories, extension boards, surge protectors, LED lighting, solar systems, power backup solutions and professional equipment to help homeowners create safe and dependable entertainment spaces.
+HARYANA TOOLS supplies reliable electrical accessories, extension boards, surge protectors, LED lighting, solar systems, power backup solutions and professional equipment to help homeowners create safe and dependable entertainment spaces.
 
 </p>
 
@@ -1036,25 +1036,25 @@ Whether you're watching every group-stage match with family or hosting a final-n
 
 <h2 class="mb-3">
 
-Build the Perfect Home Entertainment Setup with JK Enterprises
+Build the Perfect Home Entertainment Setup with HARYANA TOOLS
 
 </h2>
 
 <p class="mb-4">
 
-JK Enterprises supplies reliable electrical accessories, extension boards, surge protectors, LED lighting, home power backup solutions, solar systems and industrial products that help create safer, smarter and more dependable homes.
+HARYANA TOOLS supplies reliable electrical accessories, extension boards, surge protectors, LED lighting, home power backup solutions, solar systems and industrial products that help create safer, smarter and more dependable homes.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Electrical" class="btn btn-warning btn-lg">
+<a href="products.html?category=Electrical" class="btn btn-warning btn-lg">
 
 Browse Electrical Accessories
 
 </a>
 
-<a href="#/products?category=Solar" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Solar" class="btn btn-outline-light btn-lg">
 
 Explore Solar Solutions
 
@@ -1072,19 +1072,19 @@ Explore Solar Solutions
 
 <div class="list-group mt-3">
 
-<a href="#/blog?id=watch-world-cup-2026-without-power-cuts" class="list-group-item list-group-item-action">
+<a href="blog.html?id=watch-world-cup-2026-without-power-cuts" class="list-group-item list-group-item-action">
 
 Watch FIFA World Cup 2026 Without Power Cuts – Solar & Power Backup Guide
 
 </a>
 
-<a href="#/blog?id=best-on-grid-solar-installer-pehowa" class="list-group-item list-group-item-action">
+<a href="blog.html?id=best-on-grid-solar-installer-pehowa" class="list-group-item list-group-item-action">
 
 Best On-Grid Solar System Installer & Dealer in Pehowa
 
 </a>
 
-<a href="#/blog?id=how-to-choose-angle-grinder" class="list-group-item list-group-item-action">
+<a href="blog.html?id=how-to-choose-angle-grinder" class="list-group-item list-group-item-action">
 
 How to Choose the Right Angle Grinder
 

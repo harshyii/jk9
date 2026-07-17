@@ -431,11 +431,11 @@ Power Your Equipment Safely
 
 <p class="mb-3">
 
-JK Enterprises supplies heavy-duty extension boards, industrial power strips, power cables and electrical accessories designed for workshops, factories, construction sites and commercial applications across India.
+HARYANA TOOLS supplies heavy-duty extension boards, industrial power strips, power cables and electrical accessories designed for workshops, factories, construction sites and commercial applications across India.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Electrical Products
 

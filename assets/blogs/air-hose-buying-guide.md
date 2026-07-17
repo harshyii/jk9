@@ -193,9 +193,9 @@ Before purchasing an air hose, ensure it has:
 
 <h2 class="mb-3">Build an Efficient Air System</h2>
 
-<p class="mb-3">JK Enterprises supplies premium air hoses, pneumatic fittings, compressors and industrial accessories for workshops, service centers and manufacturing industries across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies premium air hoses, pneumatic fittings, compressors and industrial accessories for workshops, service centers and manufacturing industries across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Air Compressor Accessories</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Air Compressor Accessories</a>
 
 </div>
 

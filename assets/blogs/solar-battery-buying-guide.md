@@ -330,9 +330,9 @@ Yes, but the additional batteries should match the existing battery type, capaci
 
 <h2 class="mb-3">Power Your Home with the Right Solar Battery</h2>
 
-<p class="mb-3">JK Enterprises supplies high-quality solar batteries, inverters, solar panels and complete solar power solutions for homes, businesses and industrial applications across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies high-quality solar batteries, inverters, solar panels and complete solar power solutions for homes, businesses and industrial applications across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Solar Products
 </a>
 

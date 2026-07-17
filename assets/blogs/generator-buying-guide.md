@@ -479,9 +479,9 @@ Follow the manufacturer's maintenance schedule. Regular oil changes and periodic
 
 <h2 class="mb-3">Reliable Backup Power Starts with the Right Generator</h2>
 
-<p class="mb-3">JK Enterprises supplies portable generators, inverter generators, diesel generators and industrial power backup solutions from trusted manufacturers. Whether you need emergency home backup or reliable industrial power, we help you choose the right generator for your application.</p>
+<p class="mb-3">HARYANA TOOLS supplies portable generators, inverter generators, diesel generators and industrial power backup solutions from trusted manufacturers. Whether you need emergency home backup or reliable industrial power, we help you choose the right generator for your application.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Generators</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Generators</a>
 
 </div>
 

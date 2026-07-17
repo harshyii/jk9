@@ -8,13 +8,13 @@ alt="Best Drill Machine Dealer in Pehowa">
 
 <h1>Best Drill Machine Dealer in Pehowa – Find the Right Drill Machine for Every Job</h1>
 
-<p>Whether you're a homeowner, electrician, carpenter, fabricator, contractor, or industrial workshop owner, a reliable drill machine is one of the most essential power tools you can own. If you're looking for the <strong>best drill machine dealer in Pehowa</strong>, JK Enterprises offers a wide range of corded drills, cordless drills, hammer drills, and rotary hammers suitable for home, commercial, and industrial applications.</p>
+<p>Whether you're a homeowner, electrician, carpenter, fabricator, contractor, or industrial workshop owner, a reliable drill machine is one of the most essential power tools you can own. If you're looking for the <strong>best drill machine dealer in Pehowa</strong>, HARYANA TOOLS offers a wide range of corded drills, cordless drills, hammer drills, and rotary hammers suitable for home, commercial, and industrial applications.</p>
 
 <p>Modern drill machines are designed for drilling wood, metal, plastic, masonry, concrete, and for fastening screws. Choosing the right model depends on the material you work with, the required drilling capacity, and whether portability or continuous power is more important. :contentReference[oaicite:0]{index=0}</p>
 
 <hr>
 
-<h2>Why Buy Your Drill Machine from JK Enterprises in Pehowa?</h2>
+<h2>Why Buy Your Drill Machine from HARYANA TOOLS in Pehowa?</h2>
 
 <div class="row g-3">
 
@@ -196,7 +196,7 @@ Choose your drill machine according to the material you'll be working on most of
 
 <h2>Serving Pehowa & Nearby Areas</h2>
 
-<p>JK Enterprises supplies drill machines to customers across:</p>
+<p>HARYANA TOOLS supplies drill machines to customers across:</p>
 
 <div class="row">
 
@@ -227,7 +227,7 @@ Choose your drill machine according to the material you'll be working on most of
 </div>
 
 <div class="alert alert-success mt-3">
-Searching for a <strong>drill machine near me</strong>, <strong>cordless drill dealer in Pehowa</strong>, or a <strong>power tools shop near me</strong>? Visit JK Enterprises to explore a wide range of drilling machines suitable for home, workshop, construction, and industrial applications.
+Searching for a <strong>drill machine near me</strong>, <strong>cordless drill dealer in Pehowa</strong>, or a <strong>power tools shop near me</strong>? Visit HARYANA TOOLS to explore a wide range of drilling machines suitable for home, workshop, construction, and industrial applications.
 </div>
 
 <hr>
@@ -652,7 +652,7 @@ Where can I buy a drill machine in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises offers cordless drills, hammer drills, rotary hammers and industrial drilling machines for professionals, workshops and homeowners in Pehowa and nearby areas.
+HARYANA TOOLS offers cordless drills, hammer drills, rotary hammers and industrial drilling machines for professionals, workshops and homeowners in Pehowa and nearby areas.
 
 </div>
 
@@ -670,11 +670,11 @@ JK Enterprises offers cordless drills, hammer drills, rotary hammers and industr
 
 <p class="mb-3">
 
-JK Enterprises supplies quality drill machines, cordless drills, hammer drills, rotary hammers, drill bits and professional power tools for homeowners, electricians, contractors, workshops and industries across Pehowa, Kurukshetra and nearby regions.
+HARYANA TOOLS supplies quality drill machines, cordless drills, hammer drills, rotary hammers, drill bits and professional power tools for homeowners, electricians, contractors, workshops and industries across Pehowa, Kurukshetra and nearby regions.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Drill Machines
 

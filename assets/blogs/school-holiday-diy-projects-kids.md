@@ -13,7 +13,7 @@ School holidays are the perfect opportunity to spend quality time with your fami
 </p>
 
 <p>
-From building a small bookshelf to organizing the garage or creating a garden planter, these projects encourage creativity, teamwork and problem-solving. With quality tools from JK Enterprises, your school holidays can become both productive and memorable.
+From building a small bookshelf to organizing the garage or creating a garden planter, these projects encourage creativity, teamwork and problem-solving. With quality tools from HARYANA TOOLS, your school holidays can become both productive and memorable.
 </p>
 
 <div class="alert alert-success">
@@ -134,7 +134,7 @@ Children should always be supervised by adults when working near tools.
 
 <hr>
 
-<h2>Recommended Products from JK Enterprises</h2>
+<h2>Recommended Products from HARYANA TOOLS</h2>
 
 <div class="list-group">
 
@@ -160,11 +160,11 @@ Children should always be supervised by adults when working near tools.
 
 <p class="mb-3">
 
-Whether you're repairing furniture, organizing your workshop or completing your first DIY project, JK Enterprises supplies quality power tools, hand tools and safety equipment to help you get the job done safely.
+Whether you're repairing furniture, organizing your workshop or completing your first DIY project, HARYANA TOOLS supplies quality power tools, hand tools and safety equipment to help you get the job done safely.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Explore DIY Tools
 
@@ -676,7 +676,7 @@ Where can I buy quality DIY tools?
 
 <div class="accordion-body">
 
-JK Enterprises offers a wide range of power tools, hand tools, measuring instruments, safety equipment and workshop accessories suitable for beginners, homeowners and professionals.
+HARYANA TOOLS offers a wide range of power tools, hand tools, measuring instruments, safety equipment and workshop accessories suitable for beginners, homeowners and professionals.
 
 </div>
 
@@ -736,25 +736,25 @@ With the right planning, quality tools and a strong focus on safety, even small 
 
 <h2 class="mb-3">
 
-Build, Learn & Create with JK Enterprises
+Build, Learn & Create with HARYANA TOOLS
 
 </h2>
 
 <p class="mb-4">
 
-Whether you're assembling furniture, organizing your workshop, repairing household items or introducing your family to DIY projects, JK Enterprises supplies reliable power tools, hand tools, measuring equipment, safety accessories and workshop essentials to help you work safely and confidently.
+Whether you're assembling furniture, organizing your workshop, repairing household items or introducing your family to DIY projects, HARYANA TOOLS supplies reliable power tools, hand tools, measuring equipment, safety accessories and workshop essentials to help you work safely and confidently.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Power%20Tools" class="btn btn-warning btn-lg">
+<a href="products.html?category=Power%20Tools" class="btn btn-warning btn-lg">
 
 Explore Power Tools
 
 </a>
 
-<a href="#/products?category=Hand%20Tools" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Hand%20Tools" class="btn btn-outline-light btn-lg">
 
 Browse Hand Tools
 

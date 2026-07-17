@@ -8,7 +8,7 @@ alt="On Grid Solar Installer in Pehowa">
 
 <h1>Best On-Grid Solar Installer in Pehowa | Residential & Commercial Rooftop Solar Systems</h1>
 
-<p>Electricity costs continue to rise across Haryana, making rooftop solar one of the smartest long-term investments for homes, businesses, schools, industries and commercial buildings. If you're searching for the <strong>best on-grid solar installer in Pehowa</strong>, JK Enterprises provides complete consultation, quality solar equipment, professional installation and after-sales support for residential and commercial solar projects.</p>
+<p>Electricity costs continue to rise across Haryana, making rooftop solar one of the smartest long-term investments for homes, businesses, schools, industries and commercial buildings. If you're searching for the <strong>best on-grid solar installer in Pehowa</strong>, HARYANA TOOLS provides complete consultation, quality solar equipment, professional installation and after-sales support for residential and commercial solar projects.</p>
 
 <p>Whether you want to reduce monthly electricity bills, install a net metering system or upgrade your property with renewable energy, an on-grid solar system offers excellent returns while reducing dependence on conventional power sources.</p>
 
@@ -271,7 +271,7 @@ alt="On Grid Solar Installer in Pehowa">
 
 <hr>
 
-<h2>Why Choose JK Enterprises for Solar Installation?</h2>
+<h2>Why Choose HARYANA TOOLS for Solar Installation?</h2>
 
 <div class="list-group">
 
@@ -798,7 +798,7 @@ Do you provide residential and commercial solar installation in Pehowa?
 
 <div class="accordion-body">
 
-Yes. JK Enterprises offers consultation, system design, installation and support for both residential and commercial rooftop solar projects in Pehowa and nearby areas.
+Yes. HARYANA TOOLS offers consultation, system design, installation and support for both residential and commercial rooftop solar projects in Pehowa and nearby areas.
 
 </div>
 
@@ -816,7 +816,7 @@ Yes. JK Enterprises offers consultation, system design, installation and support
 
 <p class="mb-3">
 
-JK Enterprises supplies high-quality solar panels, grid-tied inverters, mounting structures and complete rooftop solar solutions for homes, shops, schools, offices, factories and commercial buildings. Our team assists with system selection, professional installation and ongoing technical support to help you make the most of solar energy.
+HARYANA TOOLS supplies high-quality solar panels, grid-tied inverters, mounting structures and complete rooftop solar solutions for homes, shops, schools, offices, factories and commercial buildings. Our team assists with system selection, professional installation and ongoing technical support to help you make the most of solar energy.
 
 </p>
 

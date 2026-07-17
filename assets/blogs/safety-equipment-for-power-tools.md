@@ -365,10 +365,10 @@ No. Safety glasses are impact-rated and specifically designed to protect against
 <h2 class="mb-3">Safety Comes Before Every Job</h2>
 
 <p class="mb-3">
-JK Enterprises supplies professional power tools, industrial safety equipment, PPE kits, cutting accessories and workshop essentials for contractors, workshops and businesses across India. The right safety gear protects both people and productivity.
+HARYANA TOOLS supplies professional power tools, industrial safety equipment, PPE kits, cutting accessories and workshop essentials for contractors, workshops and businesses across India. The right safety gear protects both people and productivity.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Safety Equipment
 </a>
 

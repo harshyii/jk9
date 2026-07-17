@@ -10,7 +10,7 @@ alt="Best Power Tools Shop in Pehowa">
 
 <p>If you're searching for the <strong>best power tools shop in Pehowa</strong>, you're probably looking for genuine products, competitive prices, reliable after-sales support and professional guidance before making a purchase. Whether you're a contractor, fabricator, electrician, carpenter, mechanic or DIY enthusiast, choosing the right supplier is just as important as choosing the right tool.</p>
 
-<p>At <strong>JK Enterprises</strong>, we supply quality power tools and industrial equipment for residential, commercial and industrial applications. From cordless drills and angle grinders to demolition hammers, marble cutters and pressure washers, we help customers choose tools that match their work requirements.</p>
+<p>At <strong>HARYANA TOOLS</strong>, we supply quality power tools and industrial equipment for residential, commercial and industrial applications. From cordless drills and angle grinders to demolition hammers, marble cutters and pressure washers, we help customers choose tools that match their work requirements.</p>
 
 <div class="alert alert-success py-2">
 
@@ -241,7 +241,7 @@ Always select a machine based on workload rather than price alone. Daily industr
 
 <p>If you're searching online for <strong>"power tools near me"</strong>, <strong>"tool shop near me"</strong>, <strong>"drill machine shop in Pehowa"</strong> or <strong>"angle grinder dealer in Pehowa"</strong>, choosing a supplier with a wide product range and knowledgeable support can save both time and money.</p>
 
-<p>JK Enterprises serves customers in Pehowa and nearby areas with a growing selection of power tools, accessories and workshop equipment for professionals as well as home users.</p>
+<p>HARYANA TOOLS serves customers in Pehowa and nearby areas with a growing selection of power tools, accessories and workshop equipment for professionals as well as home users.</p>
 
 <hr>
 <h2>How to Choose the Right Power Tool</h2>
@@ -500,7 +500,7 @@ Always follow these safety practices before operating any power tool.
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises supplies power tools to professionals, contractors, workshops and businesses across:</p>
+<p>HARYANA TOOLS supplies power tools to professionals, contractors, workshops and businesses across:</p>
 
 <div class="row">
 
@@ -588,7 +588,7 @@ Where can I buy power tools in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises offers a wide range of professional power tools and accessories for residential, commercial and industrial applications in Pehowa.
+HARYANA TOOLS offers a wide range of professional power tools and accessories for residential, commercial and industrial applications in Pehowa.
 
 </div>
 
@@ -654,11 +654,11 @@ Yes. We help customers compare specifications, applications and suitable accesso
 
 <p class="mb-3">
 
-Whether you need a cordless drill, angle grinder, demolition hammer, marble cutter, pressure washer or other professional power tools, JK Enterprises supplies reliable products for homeowners, contractors, workshops and industries across Pehowa and nearby regions.
+Whether you need a cordless drill, angle grinder, demolition hammer, marble cutter, pressure washer or other professional power tools, HARYANA TOOLS supplies reliable products for homeowners, contractors, workshops and industries across Pehowa and nearby regions.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 
@@ -818,7 +818,7 @@ Browse Power Tools
 
 <hr>
 
-<h2>Why Professionals Choose JK Enterprises</h2>
+<h2>Why Professionals Choose HARYANA TOOLS</h2>
 
 <div class="alert alert-primary">
 
@@ -856,7 +856,7 @@ Browse Power Tools
 
 <p class="small mb-3">Metal cutting and grinding applications.</p>
 
-<a href="#/products?category=Angle%20Grinder" class="btn btn-outline-primary btn-sm">View Products</a>
+<a href="products.html?category=Angle%20Grinder" class="btn btn-outline-primary btn-sm">View Products</a>
 
 </div>
 
@@ -874,7 +874,7 @@ Browse Power Tools
 
 <p class="small mb-3">Professional drilling and screw driving.</p>
 
-<a href="#/products?category=Drill%20Machine" class="btn btn-outline-primary btn-sm">View Products</a>
+<a href="products.html?category=Drill%20Machine" class="btn btn-outline-primary btn-sm">View Products</a>
 
 </div>
 
@@ -892,7 +892,7 @@ Browse Power Tools
 
 <p class="small mb-3">Concrete drilling and chiselling.</p>
 
-<a href="#/products?category=Rotary%20Hammer" class="btn btn-outline-primary btn-sm">View Products</a>
+<a href="products.html?category=Rotary%20Hammer" class="btn btn-outline-primary btn-sm">View Products</a>
 
 </div>
 
@@ -910,7 +910,7 @@ Browse Power Tools
 
 <p class="small mb-3">Cleaning for homes, vehicles and industries.</p>
 
-<a href="#/products?category=Pressure%20Washer" class="btn btn-outline-primary btn-sm">View Products</a>
+<a href="products.html?category=Pressure%20Washer" class="btn btn-outline-primary btn-sm">View Products</a>
 
 </div>
 
@@ -924,11 +924,11 @@ Browse Power Tools
 
 <div class="bg-warning-subtle border rounded p-4">
 
-<h2>Visit JK Enterprises</h2>
+<h2>Visit HARYANA TOOLS</h2>
 
 <p>
 
-If you're looking for a <strong>power tools shop near me</strong>, <strong>hardware store in Pehowa</strong>, <strong>industrial tools supplier</strong> or <strong>power tools dealer in Haryana</strong>, JK Enterprises offers a comprehensive range of quality products backed by knowledgeable assistance.
+If you're looking for a <strong>power tools shop near me</strong>, <strong>hardware store in Pehowa</strong>, <strong>industrial tools supplier</strong> or <strong>power tools dealer in Haryana</strong>, HARYANA TOOLS offers a comprehensive range of quality products backed by knowledgeable assistance.
 
 </p>
 

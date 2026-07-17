@@ -373,9 +373,9 @@ Not always. Manual equipment is economical for light-duty work, while powered eq
 
 <h2 class="mb-3">Move Materials Faster & Safer</h2>
 
-<p class="mb-3">JK Enterprises supplies material handling equipment, trolleys, pallet trucks, lifting tools and industrial solutions for warehouses, factories and commercial businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies material handling equipment, trolleys, pallet trucks, lifting tools and industrial solutions for warehouses, factories and commercial businesses across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Material Handling Equipment</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Material Handling Equipment</a>
 
 </div>
 

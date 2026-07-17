@@ -156,9 +156,9 @@ Before buying a car wax, check for:
 
 <h2 class="mb-3">Protect Your Vehicle's Finish</h2>
 
-<p class="mb-3">JK Enterprises supplies premium car waxes, polishing compounds, detailing accessories and complete automotive care products for professionals, workshops and vehicle owners across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies premium car waxes, polishing compounds, detailing accessories and complete automotive care products for professionals, workshops and vehicle owners across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Car Care Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Car Care Products</a>
 
 </div>
 

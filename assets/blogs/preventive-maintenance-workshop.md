@@ -201,8 +201,8 @@ Maintaining service records helps schedule inspections, track repairs and improv
 
 <div class="bg-dark text-white rounded p-4 text-center">
 <h2 class="mb-3">Keep Your Equipment Running at Peak Performance</h2>
-<p class="mb-3">JK Enterprises supplies professional power tools, workshop equipment and genuine accessories for industrial users, contractors and maintenance professionals across India.</p>
-<a href="#/products" class="btn btn-warning btn-lg">Browse Workshop Equipment</a>
+<p class="mb-3">HARYANA TOOLS supplies professional power tools, workshop equipment and genuine accessories for industrial users, contractors and maintenance professionals across India.</p>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Workshop Equipment</a>
 </div>
 
 </div>

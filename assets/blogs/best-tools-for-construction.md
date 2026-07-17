@@ -291,10 +291,10 @@ Professional tools should be inspected regularly and serviced according to the m
 <h2 class="mb-3">Build Better with Professional Tools</h2>
 
 <p class="mb-3">
-JK Enterprises supplies high-quality construction tools, power tools, hand tools, drilling equipment, cutting machines and industrial accessories for contractors, workshops, businesses and infrastructure projects across India.
+HARYANA TOOLS supplies high-quality construction tools, power tools, hand tools, drilling equipment, cutting machines and industrial accessories for contractors, workshops, businesses and infrastructure projects across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Construction Tools
 </a>
 

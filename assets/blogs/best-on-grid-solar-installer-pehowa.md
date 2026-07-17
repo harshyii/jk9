@@ -8,7 +8,7 @@ alt="On Grid Solar Installer in Pehowa">
 
 <h1>Best On-Grid Solar Installer in Pehowa | Residential & Commercial Rooftop Solar Systems</h1>
 
-<p>Looking for the best <strong>on grid solar installer in Pehowa</strong>? JK Enterprises provides complete rooftop solar solutions for homes, shops, offices, factories, schools and commercial buildings. From system design and quality solar panels to inverter selection, installation and net metering assistance, we help customers reduce electricity bills while switching to clean renewable energy.</p>
+<p>Looking for the best <strong>on grid solar installer in Pehowa</strong>? HARYANA TOOLS provides complete rooftop solar solutions for homes, shops, offices, factories, schools and commercial buildings. From system design and quality solar panels to inverter selection, installation and net metering assistance, we help customers reduce electricity bills while switching to clean renewable energy.</p>
 
 <p>Whether you need a <strong>residential on grid solar system in Pehowa</strong> or a <strong>commercial rooftop solar installation</strong>, choosing the correct system size and experienced installer is essential for maximum performance and long-term savings.</p>
 
@@ -290,7 +290,7 @@ Electricity is imported from the grid as usual. Net metering adjusts the final e
 
 <hr>
 
-<h2>Why Choose JK Enterprises?</h2>
+<h2>Why Choose HARYANA TOOLS?</h2>
 
 <div class="list-group">
 
@@ -555,7 +555,7 @@ Before selecting an installer, always verify the following:
 
 <h2>Areas We Serve</h2>
 
-<p>JK Enterprises provides rooftop solar installation and consultation services across:</p>
+<p>HARYANA TOOLS provides rooftop solar installation and consultation services across:</p>
 
 <div class="list-group">
 
@@ -691,7 +691,7 @@ Which is the best on-grid solar installer in Pehowa?
 
 <div class="accordion-body">
 
-JK Enterprises offers complete rooftop solar consultation, quality solar equipment, professional installation and ongoing support for residential and commercial customers in Pehowa.
+HARYANA TOOLS offers complete rooftop solar consultation, quality solar equipment, professional installation and ongoing support for residential and commercial customers in Pehowa.
 
 </div>
 
@@ -705,11 +705,11 @@ JK Enterprises offers complete rooftop solar consultation, quality solar equipme
 
 <div class="bg-success text-white rounded p-4 text-center">
 
-<h2 class="mb-3">Switch to Clean Solar Energy with JK Enterprises</h2>
+<h2 class="mb-3">Switch to Clean Solar Energy with HARYANA TOOLS</h2>
 
 <p class="mb-3">
 
-Whether you need a residential rooftop solar system or a commercial on-grid installation, JK Enterprises provides reliable products, expert guidance and professional installation services across Pehowa and nearby areas.
+Whether you need a residential rooftop solar system or a commercial on-grid installation, HARYANA TOOLS provides reliable products, expert guidance and professional installation services across Pehowa and nearby areas.
 
 </p>
 

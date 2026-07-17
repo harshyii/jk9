@@ -183,8 +183,8 @@ Before purchasing a tyre polish, check for:
 
 <div class="bg-dark text-white rounded p-4 text-center">
 <h2 class="mb-3">Keep Your Tyres Looking New</h2>
-<p class="mb-3">JK Enterprises offers premium tyre polish, car care products, detailing accessories and automotive maintenance solutions for professionals and vehicle owners across India.</p>
-<a href="#/products" class="btn btn-warning btn-lg">Browse Car Care Products</a>
+<p class="mb-3">HARYANA TOOLS offers premium tyre polish, car care products, detailing accessories and automotive maintenance solutions for professionals and vehicle owners across India.</p>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Car Care Products</a>
 </div>
 
 </div>

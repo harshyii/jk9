@@ -891,11 +891,11 @@ Investing in quality power tools makes fabrication projects safer, faster and fa
 
 <hr>
 
-<h2>Why Choose JK Enterprises for Power Tools?</h2>
+<h2>Why Choose HARYANA TOOLS for Power Tools?</h2>
 
 <p>
 
-Whether you're building a football goal, fabricating steel structures or working on home improvement projects, using reliable tools improves both safety and productivity. JK Enterprises supplies professional power tools, abrasives, cutting discs, welding accessories and industrial equipment from trusted manufacturers.
+Whether you're building a football goal, fabricating steel structures or working on home improvement projects, using reliable tools improves both safety and productivity. HARYANA TOOLS supplies professional power tools, abrasives, cutting discs, welding accessories and industrial equipment from trusted manufacturers.
 
 </p>
 
@@ -1228,19 +1228,19 @@ Build with Confidence Using Professional Power Tools
 
 <p class="mb-4">
 
-JK Enterprises supplies professional angle grinders, cordless drill machines, welding equipment, cutting discs, measuring tools, industrial safety products and fabrication accessories for workshops, contractors, schools and DIY enthusiasts across India.
+HARYANA TOOLS supplies professional angle grinders, cordless drill machines, welding equipment, cutting discs, measuring tools, industrial safety products and fabrication accessories for workshops, contractors, schools and DIY enthusiasts across India.
 
 </p>
 
 <div class="d-flex flex-wrap justify-content-center gap-2">
 
-<a href="#/products?category=Power%20Tools" class="btn btn-warning btn-lg">
+<a href="products.html?category=Power%20Tools" class="btn btn-warning btn-lg">
 
 Browse Power Tools
 
 </a>
 
-<a href="#/products?category=Safety" class="btn btn-outline-light btn-lg">
+<a href="products.html?category=Safety" class="btn btn-outline-light btn-lg">
 
 Shop Safety Equipment
 

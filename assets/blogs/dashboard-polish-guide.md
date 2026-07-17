@@ -281,9 +281,9 @@ Many premium dashboard polishes contain anti-static additives that help reduce d
 
 <h2 class="mb-3">Keep Your Car Interior Looking New</h2>
 
-<p class="mb-3">JK Enterprises offers professional dashboard polish, interior cleaners, microfiber cloths and complete car care products designed to restore shine and protect your vehicle's interior for years.</p>
+<p class="mb-3">HARYANA TOOLS offers professional dashboard polish, interior cleaners, microfiber cloths and complete car care products designed to restore shine and protect your vehicle's interior for years.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Car Care Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Car Care Products</a>
 
 </div>
 

@@ -239,9 +239,9 @@ Replace gloves immediately if they become torn, worn out, chemically contaminate
 
 <h2 class="mb-3">Protect Your Hands with the Right Safety Gloves</h2>
 
-<p class="mb-3">JK Enterprises supplies industrial safety gloves, PPE equipment, construction safety products and protective accessories from trusted manufacturers for workshops, factories and industrial businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial safety gloves, PPE equipment, construction safety products and protective accessories from trusted manufacturers for workshops, factories and industrial businesses across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Safety Products
 </a>
 

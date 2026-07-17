@@ -1,169 +1,473 @@
-// DOM Selector Shorthand Helper used by ui.js
-export const $ = (selector) => document.querySelector(selector);
+// ==========================================================
+// Core Utilities
+// ==========================================================
+
+// DOM Selector
+export const $ = selector => document.querySelector(selector);
 
 // ==========================================================
-// CORE PLATFORM DATA MATRIX UTILITIES (OFFLINE COMPATIBLE)
+// Configuration
 // ==========================================================
+
 export const CONFIG = {
-  API: "https://script.google.com/macros/s/AKfycbywzgqu88hDPHKVo6MTi9UntK7d122dZLTCT8TGIvlcWW9uahpFVkq1-Gz5XmCughAZyg/exec",
-  UPI: "9050623210@sbi",
-  NAME: "JK Enterprises",
-  WHATSAPP: "919050623210" // Destination phone framework array with country code prefix
+
+    API:
+        "https://script.google.com/macros/s/AKfycbyoD3zkvG-A1mpChQHLHMXTG40SqLM0jf8zpNazftn-n3a5G1hdwZf5Goa1ItkZEj898g/exec",
+
+    UPI:
+        "9050623210@sbi",
+
+    NAME:
+        "HARYANA TOOLS",
+
+    WHATSAPP:
+        "919050623210"
+
 };
 
-export const formatINR = (num) => {
-  return new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'INR',
-    maximumFractionDigits: 0
-  }).format(num);
+// ==========================================================
+// Currency Formatter
+// ==========================================================
+
+export function formatINR(value) {
+
+    return new Intl.NumberFormat(
+
+        "en-IN",
+
+        {
+
+            style: "currency",
+
+            currency: "INR",
+
+            maximumFractionDigits: 0
+
+        }
+
+    ).format(Number(value) || 0);
+
+}
+
+// ==========================================================
+// API Service
+// ==========================================================
+
+export const api = {
+
+    // ==============================================
+    // GET
+    // ==============================================
+
+    async get(action, params = {}) {
+
+        try {
+
+            const controller =
+                new AbortController();
+
+            const timeout = setTimeout(
+
+                () => controller.abort(),
+
+                6000
+
+            );
+
+            const url =
+                new URL(CONFIG.API);
+
+            url.searchParams.set(
+                "action",
+                action
+            );
+
+            Object.entries(params).forEach(
+
+                ([key, value]) => {
+
+                    if (
+
+                        value !== undefined &&
+                        value !== null
+
+                    ) {
+
+                        url.searchParams.set(
+                            key,
+                            value
+                        );
+
+                    }
+
+                }
+
+            );
+
+            const response = await fetch(
+
+                url,
+
+                {
+
+                    signal:
+                        controller.signal
+
+                }
+
+            );
+
+            clearTimeout(timeout);
+
+            if (!response.ok) {
+
+                throw new Error(
+
+                    `HTTP ${response.status}`
+
+                );
+
+            }
+
+            const json =
+                await response.json();
+
+            return json.data ?? json;
+
+        }
+
+        catch (error) {
+
+            console.error(
+
+                "GET Error:",
+
+                error
+
+            );
+
+            return [];
+
+        }
+
+    },
+
+      // ==============================================
+    // POST
+    // ==============================================
+
+    async post(action, data = {}) {
+
+        try {
+
+            // --------------------------------------
+            // Google Apps Script Order Endpoint
+            // --------------------------------------
+
+            if (action === "order") {
+
+                const params = new URLSearchParams({
+
+                    action,
+
+                    customerName:
+                        data.customerName,
+
+                    phone:
+                        data.phone,
+
+                    address:
+                        data.address,
+
+                    paymentMethod:
+                        data.paymentMethod,
+
+                    subtotal:
+                        data.subtotal,
+
+                    codCharge:
+                        data.codCharge,
+
+                    total:
+                        data.total,
+
+                    items:
+                        JSON.stringify(data.items || [])
+
+                });
+
+                const response = await fetch(
+
+                    `${CONFIG.API}?${params}`
+
+                );
+
+                if (!response.ok) {
+
+                    throw new Error(
+
+                        `HTTP ${response.status}`
+
+                    );
+
+                }
+
+                return await response.json();
+
+            }
+
+            // --------------------------------------
+            // Standard POST Request
+            // --------------------------------------
+
+            const controller =
+                new AbortController();
+
+            const timeout = setTimeout(
+
+                () => controller.abort(),
+
+                10000
+
+            );
+
+            const response = await fetch(
+
+                `${CONFIG.API}?action=${encodeURIComponent(action)}`,
+
+                {
+
+                    method: "POST",
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+                    body: JSON.stringify(data),
+
+                    signal:
+                        controller.signal
+
+                }
+
+            );
+
+            clearTimeout(timeout);
+
+            if (!response.ok) {
+
+                throw new Error(
+
+                    `HTTP ${response.status}`
+
+                );
+
+            }
+
+            return await response.json();
+
+        }
+
+        catch (error) {
+
+            console.error(
+
+                "POST Error:",
+
+                error
+
+            );
+
+            return {
+
+                success: false,
+
+                error:
+
+                    error.message ||
+
+                    "Request failed."
+
+            };
+
+        }
+
+    }
+
 };
+// ==========================================================
+// Application State
+// ==========================================================
 
-export const api={
-async get(action, params = {}) {
-
-try{
-
-const controller = new AbortController();
-
-const timeoutId = setTimeout(()=>controller.abort(),6000);
-
-const url = new URL(CONFIG.API);
-
-url.searchParams.set("action", action);
-
-Object.entries(params).forEach(([key,value])=>{
-    if(value !== undefined && value !== null)
-        url.searchParams.set(key,value);
-});
-
-const response = await fetch(url,{
-    signal:controller.signal
-});
-
-clearTimeout(timeoutId);
-
-if(!response.ok)
-    throw new Error(`HTTP ${response.status}`);
-
-const json = await response.json();
-
-return json.data ?? json;
-
-}catch(err){
-
-console.error("GET Error:",err);
-
-return [];
-
-}
-
-},
-
-async post(action,data){
-
-try{
-
-// Google Apps Script order endpoint uses GET
-if(action==="order"){
-
-const params=new URLSearchParams({
-action,
-customerName:data.customerName,
-phone:data.phone,
-address:data.address,
-paymentMethod:data.paymentMethod,
-subtotal:data.subtotal,
-codCharge:data.codCharge,
-total:data.total,
-items:JSON.stringify(data.items)
-});
-
-const response=await fetch(`${CONFIG.API}?${params}`);
-
-if(!response.ok)
-throw new Error(`HTTP ${response.status}`);
-
-return await response.json();
-
-}
-
-// Everything else still uses POST
-const controller=new AbortController();
-
-const timeoutId=setTimeout(()=>controller.abort(),10000);
-
-const response=await fetch(
-`${CONFIG.API}?action=${encodeURIComponent(action)}`,
-{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify(data),
-signal:controller.signal
-}
-);
-
-clearTimeout(timeoutId);
-
-if(!response.ok)
-throw new Error(`HTTP ${response.status}`);
-
-return await response.json();
-
-}catch(err){
-
-console.error("POST Error:",err);
-
-return{
-success:false,
-error:err.message
-};
-
-}
-
-}
-};
-
-// Global reactive application cart storage layout architecture mappings
 export const app = {
-  getCart() {
-    try {
-      return JSON.parse(localStorage.getItem("jke_cart")) || [];
-    } catch (e) {
-      return [];
-    }
-  },
 
-  getCartTotals() {
+    // ==============================================
+    // Cart
+    // ==============================================
+
+    getCart() {
+
+        try {
+
+            return JSON.parse(
+
+                localStorage.getItem("jke_cart")
+
+            ) || [];
+
+        }
+
+        catch {
+
+            return [];
+
+        }
+
+    },
+
+    // ==============================================
+    // Cart Totals
+    // ==============================================
+
+    getCartTotals() {
+
     const cart = this.getCart();
-    const count = cart.reduce((acc, item) => acc + Number(item.qty || 0), 0);
-    const subtotal = cart.reduce((acc, item) => acc + (Number(item.price || 0) * Number(item.qty || 0)), 0);
-    return { count, subtotal };
-  },
 
-  saveCart(cart) {
-    localStorage.setItem("jke_cart", JSON.stringify(cart));
-    window.dispatchEvent(new Event("cart_updated"));
-  },
-  
-  updateCart(sku, qty, price, name, img) {
-    let cart = this.getCart();
-    const index = cart.findIndex(item => item.sku === sku);
-    if (index > -1) {
-      if (qty <= 0) cart.splice(index, 1);
-      else cart[index].qty = qty;
-    } else if (qty > 0) {
-      cart.push({ sku, qty, price, name, img });
+    const count = cart.reduce(
+
+        (total, item) =>
+
+            total + Number(item.qty || 0),
+
+        0
+
+    );
+
+    const subtotal = cart.reduce(
+
+        (total, item) =>
+
+            total +
+
+            Number(item.price || 0) *
+
+            Number(item.qty || 0),
+
+        0
+
+    );
+
+    return {
+
+        count,
+
+        subtotal,
+
+        total: subtotal
+
+    };
+
+},
+
+    // ==============================================
+    // Save Cart
+    // ==============================================
+
+    saveCart(cart) {
+
+        localStorage.setItem(
+
+            "jke_cart",
+
+            JSON.stringify(cart)
+
+        );
+
+        window.dispatchEvent(
+
+            new Event("cart_updated")
+
+        );
+
+    },
+
+    // ==============================================
+    // Update Cart
+    // ==============================================
+
+    updateCart(
+
+        sku,
+        qty,
+        price = 0,
+        name = "",
+        img = ""
+
+    ) {
+
+        const cart = this.getCart();
+
+        const index = cart.findIndex(
+
+            item => item.sku === sku
+
+        );
+
+        if (index >= 0) {
+
+            if (qty <= 0) {
+
+                cart.splice(index, 1);
+
+            }
+
+            else {
+
+                cart[index].qty = qty;
+
+            }
+
+        }
+
+        else if (qty > 0) {
+
+            cart.push({
+
+                sku,
+
+                qty,
+
+                price,
+
+                name,
+
+                img
+
+            });
+
+        }
+
+        this.saveCart(cart);
+
+    },
+
+    // ==============================================
+    // Clear Cart
+    // ==============================================
+
+    clearCart() {
+
+        this.saveCart([]);
+
     }
-    this.saveCart(cart);
-  },
 
-  clearCart() {
-    this.saveCart([]);
-  }
 };
 
-// Global safe bridge for script engines that don't explicitly handle ES6 imports
+// ==========================================================
+// Global Bridge
+// ==========================================================
+
 window.app = app;

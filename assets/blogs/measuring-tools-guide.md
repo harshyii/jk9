@@ -153,9 +153,9 @@ Before purchasing measuring tools, check for:
 
 <h2 class="mb-3">Measure with Confidence</h2>
 
-<p class="mb-3">JK Enterprises supplies measuring tapes, Vernier calipers, digital calipers, micrometers, spirit levels and professional measuring equipment for workshops, contractors, manufacturers and industrial buyers across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies measuring tapes, Vernier calipers, digital calipers, micrometers, spirit levels and professional measuring equipment for workshops, contractors, manufacturers and industrial buyers across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Measuring Tools</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Measuring Tools</a>
 
 </div>
 

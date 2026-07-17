@@ -319,10 +319,10 @@ Equip Yourself with Professional Electrical Tools
 </h2>
 
 <p class="mb-3">
-JK Enterprises supplies quality electrical hand tools, power tools, testing equipment and industrial accessories for electricians, contractors, workshops and businesses across India.
+HARYANA TOOLS supplies quality electrical hand tools, power tools, testing equipment and industrial accessories for electricians, contractors, workshops and businesses across India.
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 Browse Electrical Tools
 </a>
 

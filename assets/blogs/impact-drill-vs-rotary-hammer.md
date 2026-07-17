@@ -868,12 +868,12 @@ Choose the Right Drill for Every Project
 
 <p class="mb-3">
 
-JK Enterprises supplies genuine impact drills, rotary hammers, drilling accessories and industrial power tools from trusted manufacturers. Whether you're a homeowner, contractor or industrial buyer, we help you choose equipment that delivers reliable performance and long service life.
+HARYANA TOOLS supplies genuine impact drills, rotary hammers, drilling accessories and industrial power tools from trusted manufacturers. Whether you're a homeowner, contractor or industrial buyer, we help you choose equipment that delivers reliable performance and long service life.
 
 </p>
 
 <a
-href="#/products"
+href="products.html"
 class="btn btn-warning btn-lg">
 
 Browse Drilling Machines

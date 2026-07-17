@@ -328,9 +328,9 @@ Reliable support helps resolve warranty claims, product issues and technical que
 
 <h2 class="mb-3">Partner with a Trusted Wholesale Supplier</h2>
 
-<p class="mb-3">JK Enterprises supplies genuine power tools, hand tools, solar products, automotive care products and industrial equipment for businesses across India with competitive pricing, dependable service and nationwide delivery.</p>
+<p class="mb-3">HARYANA TOOLS supplies genuine power tools, hand tools, solar products, automotive care products and industrial equipment for businesses across India with competitive pricing, dependable service and nationwide delivery.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Our Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Our Products</a>
 
 </div>
 

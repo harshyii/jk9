@@ -459,11 +459,11 @@ Wheel life depends on usage and material, but proper dressing and correct operat
 
 <p class="mb-3">
 
-JK Enterprises supplies professional bench grinders, grinding wheels, polishing accessories and industrial workshop equipment from trusted manufacturers for workshops, factories, fabricators and maintenance professionals across India.
+HARYANA TOOLS supplies professional bench grinders, grinding wheels, polishing accessories and industrial workshop equipment from trusted manufacturers for workshops, factories, fabricators and maintenance professionals across India.
 
 </p>
 
-<a href="#/products" class="btn btn-warning btn-lg">
+<a href="products.html" class="btn btn-warning btn-lg">
 
 Browse Bench Grinders
 

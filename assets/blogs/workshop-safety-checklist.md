@@ -179,9 +179,9 @@
 
 <h2 class="mb-3">Safety Starts Before the Job Begins</h2>
 
-<p class="mb-3">JK Enterprises supplies professional safety equipment, power tools and industrial accessories for workshops, factories, contractors and maintenance professionals across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies professional safety equipment, power tools and industrial accessories for workshops, factories, contractors and maintenance professionals across India.</p>
 
-<a href="#/products" class="btn btn-warning btn-lg">Browse Safety Equipment</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse Safety Equipment</a>
 
 </div>
 

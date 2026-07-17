@@ -48,10 +48,15 @@ async function renderBrandProducts(container, brandName) {
   container.innerHTML = `<h4 class="fw-bold text-dark mb-4">Pipeline: ${brandName}</h4><div class="row g-3" id="brand-filtered-grid"><div class="col-12 text-center py-5"><div class="spinner-border text-warning"></div></div></div>`;
   
   try {
-    const products = await api.get("products");
+    const response = await api.get("products");
 
+const products = Array.isArray(response)
+    ? response
+    : response.data || [];
     const match = products.filter(
-      p => (p.Brand ?? "").trim().toLowerCase() === brand
+    p =>
+        (p.Brand ?? "").trim().toLowerCase() ===
+        brandName.trim().toLowerCase()
     );
     const grid = container.querySelector("#brand-filtered-grid");
 
@@ -141,6 +146,14 @@ View Details
 
 }).join("");
   } catch (err) {
-    document.getElementById("brand-filtered-grid").innerHTML = `<div class="alert alert-danger">Communication drop parsing channel rows.</div>`;
-  }
-}
+    console.error(err);
+
+    const grid = container.querySelector("#brand-filtered-grid");
+
+    if (grid) {
+        grid.innerHTML = `
+            <div class="alert alert-danger">
+                ${err.message}
+            </div>
+        `;
+    }}}

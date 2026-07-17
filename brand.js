@@ -17,8 +17,6 @@ export async function render(container, params) {
 
   try {
     const manufacturers = await api.get("brands");
-    console.log("Brands:", manufacturers);
-    console.log("Is Array:", Array.isArray(manufacturers));
     const grid = document.getElementById("brands-index-grid");
     
     if(!manufacturers || manufacturers.length === 0) {
@@ -52,9 +50,9 @@ async function renderBrandProducts(container, brandName) {
   try {
     const products = await api.get("products");
 
-  const match = products.filter(p =>
-  (p.Brand || "").toLowerCase() === brandName.toLowerCase()
-  );
+    const match = products.filter(
+      p => (p.Brand ?? "").trim().toLowerCase() === brand
+    );
     const grid = container.querySelector("#brand-filtered-grid");
 
     if(!match || match.length === 0) {
@@ -74,8 +72,11 @@ const sku = String(
 
 const name = p["Item Name"] || p.Name || "Product";
 
-const img = p.Image1 || p.Image || "assets/404.webp";
-
+const img =
+    p.Image1?.trim() ||
+    p.Image?.trim() ||
+    "assets/404.webp";
+    
 const price =
 Number(
 String(

@@ -227,7 +227,7 @@ if (post.ContentFile) {
       <article class="mx-auto" style="max-width:900px;">
 
         <a
-          href="index.htmlblog.htmls"
+          href="blogs.html"
           class="btn btn-outline-secondary mb-4">
 
           ← Back to Blogs

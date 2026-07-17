@@ -114,61 +114,64 @@ export async function render(container, params = {}) {
 
     try {
 
-        const response =
+        const [products, blogs] = await Promise.all([
+    api.get("products"),
+    api.get("blogs")
+]);
 
-            await api.get("products");
+const productResults = (Array.isArray(products) ? products : products.data || [])
+.filter(product =>
 
-        const products =
+    !query ||
 
-            Array.isArray(response)
+    [
 
-                ? response
+        sku(product),
+        name(product),
+        brand(product),
+        product.Category,
+        product.Subcategory,
+        product.Description,
+        product["Detailed Info"]
 
-                : response.data || [];
+    ]
 
-        const results = query
+    .join(" ")
+    .toLowerCase()
+    .includes(query)
 
-            ? products.filter(product =>
+);
 
-                [
+const blogResults = (Array.isArray(blogs) ? blogs : blogs.data || [])
+.filter(blog =>
 
-                    sku(product),
+    !query ||
 
-                    name(product),
+    [
 
-                    brand(product),
+        blog.BlogID,
+        blog.Slug,
+        blog.Title,
+        blog.Excerpt,
+        blog.MetaDescription,
+        blog.Category,
+        blog.Tags,
+        blog.Keywords
 
-                    product.Category,
+    ]
 
-                    product.Subcategory,
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase()
+    .includes(query)
 
-                    product.Description,
+);
 
-                    product["Detailed Info"]
-
-                ]
-
-                    .join(" ")
-
-                    .toLowerCase()
-
-                    .includes(query)
-
-            )
-
-            : products;
-
-        renderGrid(
-
-            document.getElementById(
-
-                "search-results-grid"
-
-            ),
-
-            results
-
-        );
+renderGrid(
+    document.getElementById("search-results-grid"),
+    productResults,
+    blogResults
+);
 
     }
 
@@ -201,11 +204,11 @@ export async function render(container, params = {}) {
 // Search Results Grid
 // ==========================================================
 
-function renderGrid(target, products) {
+function renderGrid(target, products, blogs = []) {
 
     if (!target) return;
 
-    if (!products.length) {
+    if (!products.length && !blogs.length) {
 
         target.innerHTML = `
 
@@ -227,7 +230,9 @@ function renderGrid(target, products) {
 
     }
 
-    target.innerHTML = products.map(product => `
+    target.innerHTML =
+
+    products.map(product => `
 
 <div class="col-6 col-md-4 col-lg-3">
 
@@ -291,6 +296,75 @@ function renderGrid(target, products) {
 
 </div>
 
-`).join("");
+`).join("")
 
++
+
+(
+
+blogs.length
+
+?
+
+`
+
+<div class="col-12 mt-5">
+
+    <h4 class="border-bottom pb-2">
+
+        Blog Articles
+
+    </h4>
+
+</div>
+
+${blogs.map(blog => `
+
+<div class="col-12">
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <h5 class="mb-2">
+
+                <a
+                    href="blog.html?id=${encodeURIComponent(blog.Slug || blog.BlogID || blog.ID)}"
+                    class="text-decoration-none">
+
+                    ${blog.Title}
+
+                </a>
+
+            </h5>
+
+            <p class="text-muted mb-3">
+
+                ${blog.Excerpt || blog.MetaDescription || ""}
+
+            </p>
+
+            <a
+                href="blog.html?id=${encodeURIComponent(blog.Slug || blog.BlogID || blog.ID)}"
+                class="btn btn-sm btn-outline-warning">
+
+                Read Article
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+`).join("")}
+
+`
+
+:
+
+""
+
+);
 }

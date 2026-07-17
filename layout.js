@@ -108,7 +108,7 @@ export function getHeaderHTML() {
                         id="navbar-search"
                         type="search"
                         class="form-control"
-                        placeholder="Search products..."
+                        placeholder="Search..."
                         autocomplete="off">
 
                     <button

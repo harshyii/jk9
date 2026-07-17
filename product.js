@@ -583,39 +583,93 @@ async function renderDetail(container, id) {
 
     try {
 
-        const response =
+    const response =
 
-            await api.get("products");
+        await api.get("products");
 
-        const products =
+    const products =
 
-            Array.isArray(response)
+        Array.isArray(response)
 
-                ? response
+            ? response
 
-                : response.data || [];
+            : response.data || [];
 
-        const product = products.find(item =>
+    const product = products.find(item =>
 
-            sku(item) === String(id).trim()
+        sku(item) === String(id).trim()
 
-        );
+    );
 
-        if (!product) {
+    if (!product) {
 
-            container.innerHTML = `
+        document.title = "Product Not Found | Haryana Tools";
+
+        container.innerHTML = `
 
 <div class="alert alert-warning">
 
-    Product not found.
+    <h1 class="h4 mb-3">
+
+        Product Not Found
+
+    </h1>
+
+    <p class="mb-0">
+
+        The requested product could not be found.
+
+    </p>
 
 </div>
 
 `;
 
-            return;
+        return;
 
-        }
+    }
+
+    // ======================================================
+    // SEO
+    // ======================================================
+
+    document.title = `${name(product)} | Haryana Tools`;
+
+    document
+        .querySelector('meta[name="description"]')
+        ?.setAttribute(
+            "content",
+            (product.Description || name(product))
+                .substring(0, 155)
+        );
+
+    document
+    .querySelector('link[rel="canonical"]')
+    ?.setAttribute(
+        "href",
+        `https://haryana.tools/product.html?id=${encodeURIComponent(sku(product))}`
+    );
+
+    document
+        .querySelector('meta[property="og:title"]')
+        ?.setAttribute(
+            "content",
+            name(product)
+        );
+
+    document
+        .querySelector('meta[property="og:description"]')
+        ?.setAttribute(
+            "content",
+            product.Description || ""
+        );
+
+    document
+        .querySelector('meta[property="og:image"]')
+        ?.setAttribute(
+            "content",
+            image(product)
+        );
 
         const salePrice = price(product);
 
@@ -816,11 +870,11 @@ function renderProductInfo(product, salePrice, mrp) {
 
     </small>
 
-    <h2 class="fw-bold mt-2">
+    <h1 class="fw-bold mt-2">
 
         ${name(product)}
 
-    </h2>
+    </h1>
 
     <p class="text-muted">
 

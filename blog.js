@@ -625,19 +625,7 @@ async function renderPost(container, slugId) {
 
     </a>
 
-    ${image ? `
-
-    <img
-
-        src="${image}"
-
-        class="img-fluid rounded shadow-sm mb-4 w-100"
-
-        style="max-height:450px;object-fit:cover"
-
-        alt="${title}">
-
-    ` : ""}
+ 
 
     <header class="mb-4">
 

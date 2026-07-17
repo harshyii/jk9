@@ -1,0 +1,74 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /cart.html
+Disallow: /checkout.html
+
+Sitemap: https://www.haryana.tools/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Brave
+User-agent: Bravebot
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Facebook
+User-agent: FacebookBot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Ads
+User-agent: AdsBot-Google
+Allow: /
+
+Crawl-delay: 2

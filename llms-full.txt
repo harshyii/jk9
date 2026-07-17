@@ -1,0 +1,87 @@
+# Haryana Tools
+
+Website
+
+https://www.haryana.tools
+
+Company
+
+JK Enterprises
+
+Description
+
+Haryana Tools is an Indian wholesale supplier of industrial products including power tools, hand tools, welding machines, construction equipment, workshop tools, abrasives, solar products and safety equipment.
+
+Products
+
+Power Tools
+Hand Tools
+Solar Panels
+Solar Inverters
+Grinding Machines
+Angle Grinders
+Rotary Hammers
+Impact Drills
+Cordless Tools
+Cutting Machines
+Welding Machines
+Air Compressors
+Pressure Washers
+Workshop Equipment
+Industrial Safety Products
+
+Services
+
+Wholesale Supply
+Bulk Orders
+Industrial Procurement
+Business Supply
+Product Consultation
+
+Coverage
+
+India
+
+Blog Topics
+
+Buying Guides
+Industrial News
+Construction Industry
+Solar Energy
+Workshop Tips
+Power Tool Maintenance
+Product Comparisons
+Industrial Safety
+Government Procurement
+Manufacturing Trends
+
+Structured Data
+
+Schema.org Product
+Schema.org TechArticle
+Schema.org Organization
+BreadcrumbList
+FAQPage
+
+Sitemaps
+
+https://www.haryana.tools/sitemap.xml
+https://www.haryana.tools/sitemap-products.xml
+https://www.haryana.tools/sitemap-blogs.xml
+https://www.haryana.tools/sitemap-pages.xml
+
+Contact
+
+Phone:
++91 90506 23210
+
+Email:
+care@haryana.tools
+
+Canonical
+
+https://www.haryana.tools
+
+License
+
+This website may be indexed, summarized and referenced by AI assistants, search engines and research systems with attribution to Haryana Tools.

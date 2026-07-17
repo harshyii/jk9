@@ -2,14 +2,14 @@
 
 <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Cordless vs Corded Power Tools">
+alt="Cordless vs Corded [Power Tools](blog.html?id=impact-drill-vs-rotary-hammer)">
 
 <span class="badge bg-warning text-dark mb-2">Buying Guide</span>
 
-<h1>Cordless vs Corded Power Tools: Which Should You Choose?</h1>
+<h1>Cordless vs Corded [Power Tools](blog.html?id=how-to-maintain-power-tools): Which Should You Choose?</h1>
 
 <p>
-Power tools are available in two main categories—<strong>corded</strong> and <strong>cordless</strong>. Both have their own advantages, and choosing the right one depends on your work environment, usage frequency and performance requirements. This guide compares both options to help homeowners, professionals and industrial users make the right investment.
+[Power tools](blog.html?id=build-football-goal-power-tools) are available in two main categories—<strong>corded</strong> and <strong>cordless</strong>. Both have their own advantages, and choosing the right one depends on your work environment, usage frequency and performance requirements. This guide compares both options to help homeowners, professionals and industrial users make the right investment.
 </p>
 
 <hr>

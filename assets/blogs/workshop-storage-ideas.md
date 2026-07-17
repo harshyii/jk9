@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Workshop Storage Ideas">
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Workshop](blog.html?id=best-tools-for-home-workshop) Storage Ideas">
 
-<span class="badge bg-warning text-dark mb-2">Workshop Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Workshop](blog.html?id=welding-accessories-guide) Guide</span>
 
-<h1>Workshop Storage Ideas: Organize Your Tools Like a Professional</h1>
+<h1>[Workshop](blog.html?id=workshop-lighting-guide) Storage Ideas: Organize Your Tools Like a Professional</h1>
 
 <p>A clean and organized workshop improves productivity, saves time and increases safety. Whether you own a professional fabrication shop or a small home garage, proper storage keeps your tools protected, easy to find and ready whenever you need them.</p>
 

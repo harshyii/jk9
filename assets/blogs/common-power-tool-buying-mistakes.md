@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Common Power Tool Buying Mistakes">
 
-<span class="badge bg-danger mb-2">Buying Guide</span>
+<span class="badge bg-danger mb-2">[Buying Guide](blog.html?id=circular-saw-buying-guide)</span>
 
 <h1>10 Common Power Tool Buying Mistakes and How to Avoid Them</h1>
 
-<p>Buying a power tool is an investment. Choosing the wrong machine can lead to poor performance, unnecessary expenses and even safety risks. Whether you're a homeowner, contractor or workshop owner, understanding these common mistakes will help you buy the right tool for your needs.</p>
+<p>Buying a power tool is an investment. Choosing the wrong machine can lead to poor performance, unnecessary expenses and even [safety](blog.html?id=safety-gloves-buying-guide) risks. Whether you're a homeowner, contractor or workshop owner, understanding these common mistakes will help you buy the right tool for your needs.</p>
 
 <hr>
 
@@ -107,7 +107,7 @@ Compare specifications, warranty, spare part availability and brand reputation i
 <p>The accessory is just as important as the tool itself. Using an incorrect blade or drill bit reduces efficiency and may damage both the machine and the workpiece.</p>
 
 <div class="alert alert-info py-2">
-Always use accessories recommended by the manufacturer for your specific application.
+Always use [accessories](blog.html?id=choosing-cutting-discs) recommended by the manufacturer for your specific application.
 </div>
 
 <hr>

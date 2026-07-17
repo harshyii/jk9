@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Watch FIFA World Cup 2026 Without Power Cuts">
+alt="Watch FIFA [World Cup 2026](blog.html?id=solar-vs-grid-electricity-world-cup-2026) Without Power Cuts">
 
 <span class="badge bg-success mb-2">World Cup 2026 • Solar & Power Backup</span>
 
@@ -16,7 +16,7 @@ an uninterrupted power supply ensures you never miss a single moment of the tour
 
 <p>
 With increasing electricity demand and occasional outages, many homeowners and businesses are investing in
-<strong>solar panels</strong>, <strong>home inverters</strong>, <strong>battery backup systems</strong> and
+<strong>[solar panels](blog.html?id=best-solar-system-for-summer)</strong>, <strong>home inverters</strong>, <strong>battery backup systems</strong> and
 <strong>UPS solutions</strong>. Besides providing uninterrupted entertainment, these systems also reduce
 electricity bills and improve energy reliability throughout the year.
 </p>
@@ -786,7 +786,7 @@ HARYANA TOOLS supplies quality electrical products, solar equipment, power tools
 
 <li>Solar Panels</li>
 
-<li>On-Grid Solar Systems</li>
+<li>[On-Grid Solar](blog.html?id=best-on-grid-solar-installer-pehowa) Systems</li>
 
 <li>Solar Inverters</li>
 

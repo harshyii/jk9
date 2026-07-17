@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Solar Battery Buying Guide">
+alt="Solar Battery [Buying Guide](blog.html?id=solar-panel-buying-guide)">
 
 <span class="badge bg-success mb-2">Solar Guide</span>
 
-<h1>Solar Battery Buying Guide: How to Choose the Right Battery for Your Solar System</h1>
+<h1>Solar Battery [Buying Guide](blog.html?id=solar-inverter-buying-guide): How to Choose the Right Battery for Your Solar System</h1>
 
 <p>Choosing the right solar battery is just as important as selecting the right solar panels. A quality battery stores excess solar energy and supplies power during the night or electricity outages. This guide explains battery types, capacity, backup time and maintenance so you can select the best option for your home, business or industrial installation.</p>
 
@@ -155,7 +155,7 @@ alt="Solar Battery Buying Guide">
 
 </div>
 
-<p class="small text-muted">*Actual backup depends on connected electrical load.</p>
+<p class="small text-muted">*Actual backup depends on connected [electrical](blog.html?id=extension-cord-buying-guide) load.</p>
 
 <hr>
 

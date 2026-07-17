@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="DIY Football Goal Using Power Tools">
+alt="DIY Football Goal Using [Power Tools](blog.html?id=cordless-vs-corded-tools)">
 
 <span class="badge bg-success mb-2">DIY Project • FIFA World Cup 2026</span>
 
-<h1>How to Build a Backyard Football Goal Using Power Tools</h1>
+<h1>How to Build a Backyard Football Goal Using [Power Tools](blog.html?id=how-to-maintain-power-tools)</h1>
 
 <p>
 Inspired by the excitement of the <strong>FIFA World Cup 2026</strong>? Building your own football goal is a rewarding DIY project for homes, schools, sports clubs and academies. With a few steel pipes, basic fabrication skills and the right power tools, you can construct a durable football goal suitable for regular practice and recreational matches.
@@ -120,7 +120,7 @@ Use heavy-duty steel pipes for years of reliable use.
 
 <p>
 
-Professional results require quality power tools. Most of these tools are useful for many fabrication and home improvement projects beyond building a football goal.
+Professional results require quality power tools. Most of these tools are useful for many fabrication and [home improvement](blog.html?id=school-holiday-diy-projects-kids) projects beyond building a football goal.
 
 </p>
 

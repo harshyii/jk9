@@ -4,12 +4,12 @@
 class="img-fluid rounded shadow-sm mb-3"
 alt="Essential Electrician Tools">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
 <h1>10 Essential Tools Every Electrician Needs</h1>
 
 <p>
-Whether you're a professional electrician, maintenance engineer or someone starting an electrical business, having the right tools improves safety, productivity and the quality of your work. This guide covers the most important hand tools, power tools and testing equipment every electrician should own.
+Whether you're a professional electrician, maintenance engineer or someone starting an electrical business, having the right tools improves safety, productivity and the quality of your work. This guide covers the most important hand tools, [power tools](blog.html?id=circular-saw-buying-guide) and testing equipment every electrician should own.
 </p>
 
 <hr>
@@ -319,7 +319,7 @@ Equip Yourself with Professional Electrical Tools
 </h2>
 
 <p class="mb-3">
-HARYANA TOOLS supplies quality electrical hand tools, power tools, testing equipment and industrial accessories for electricians, contractors, workshops and businesses across India.
+HARYANA TOOLS supplies quality electrical hand tools, power tools, testing equipment and industrial [accessories](blog.html?id=choosing-cutting-discs) for electricians, contractors, workshops and businesses across India.
 </p>
 
 <a href="products.html" class="btn btn-warning btn-lg">

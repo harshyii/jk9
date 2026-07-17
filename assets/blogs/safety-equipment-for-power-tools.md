@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Power Tool Safety Equipment">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Power Tool [Safety](blog.html?id=warehouse-safety-guide) Equipment">
 
 <span class="badge bg-danger mb-2">Safety Guide</span>
 
-<h1>Essential Safety Equipment for Using Power Tools</h1>
+<h1>Essential Safety Equipment for Using [Power Tools](blog.html?id=common-angle-grinder-mistakes)</h1>
 
 <p>Power tools make construction, fabrication and repair work faster and more efficient, but they can also cause serious injuries if proper safety equipment isn't used. Whether you're a DIY enthusiast, contractor or industrial professional, wearing the right Personal Protective Equipment (PPE) should always be your first priority.</p>
 
@@ -365,7 +365,7 @@ No. Safety glasses are impact-rated and specifically designed to protect against
 <h2 class="mb-3">Safety Comes Before Every Job</h2>
 
 <p class="mb-3">
-HARYANA TOOLS supplies professional power tools, industrial safety equipment, PPE kits, cutting accessories and workshop essentials for contractors, workshops and businesses across India. The right safety gear protects both people and productivity.
+HARYANA TOOLS supplies professional power tools, industrial safety equipment, PPE kits, cutting accessories and [workshop](blog.html?id=workshop-safety-checklist) essentials for contractors, workshops and businesses across India. The right safety gear protects both people and productivity.
 </p>
 
 <a href="products.html" class="btn btn-warning btn-lg">

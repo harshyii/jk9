@@ -2,9 +2,9 @@
 
 <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Bench Grinder Buying Guide">
+alt="Bench Grinder [Buying Guide](blog.html?id=choosing-cutting-discs)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=circular-saw-buying-guide)</span>
 
 <h1>Bench Grinder Buying Guide: How to Choose the Right Bench Grinder</h1>
 
@@ -205,7 +205,7 @@ alt="Bench Grinder Buying Guide">
 </table>
 
 <hr>
-<h2>Bench Grinder vs Angle Grinder</h2>
+<h2>Bench Grinder vs [Angle Grinder](blog.html?id=how-to-choose-angle-grinder)</h2>
 
 <div class="table-responsive">
 

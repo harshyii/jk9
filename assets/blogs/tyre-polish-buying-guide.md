@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Tyre Polish Buying Guide">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Tyre Polish [Buying Guide](blog.html?id=dashboard-polish-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Car Care Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Car Care](blog.html?id=microfiber-cloth-buying-guide) Guide</span>
 
-<h1>Tyre Polish Buying Guide: How to Choose the Best Tyre Shine for Your Vehicle</h1>
+<h1>Tyre Polish [Buying Guide](blog.html?id=car-shampoo-buying-guide): How to Choose the Best Tyre Shine for Your Vehicle</h1>
 
 <p>A quality tyre polish does much more than make your tyres look glossy. It protects rubber from UV rays, slows fading and cracking, repels dirt and water, and gives your vehicle a fresh, well-maintained appearance. This guide explains everything you should know before buying a tyre polish.</p>
 

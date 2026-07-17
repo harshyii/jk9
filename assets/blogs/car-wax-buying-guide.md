@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Car Wax Buying Guide">
+<img src="https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Car Wax [Buying Guide](blog.html?id=tyre-polish-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=dashboard-polish-guide)</span>
 
-<h1>Car Wax Buying Guide: How to Choose the Best Wax for Your Vehicle</h1>
+<h1>Car Wax [Buying Guide](blog.html?id=car-shampoo-buying-guide): How to Choose the Best Wax for Your Vehicle</h1>
 
 <p>A quality car wax protects your vehicle's paint from sunlight, dust, rain and environmental contaminants while giving it a deep glossy finish. Choosing the correct wax depends on your vehicle, driving conditions and maintenance routine. This guide explains the different types of car wax and helps you select the best option.</p>
 

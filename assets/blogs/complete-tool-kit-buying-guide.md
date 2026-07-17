@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1581147036324-c1c88935c3b1?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Complete Tool Kit Buying Guide">
+alt="Complete Tool Kit [Buying Guide](blog.html?id=measuring-tools-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=industrial-hand-tools-guide)</span>
 
-<h1>Complete Tool Kit Buying Guide for Every Home, Workshop & Professional</h1>
+<h1>Complete Tool Kit [Buying Guide](blog.html?id=how-to-choose-angle-grinder) for Every Home, Workshop & Professional</h1>
 
 <p>
 A good tool kit is one of the smartest investments for homeowners, mechanics, electricians, technicians and industrial professionals. Instead of purchasing tools individually, a complete tool kit provides everything required for installation, repair and maintenance in one organized case.

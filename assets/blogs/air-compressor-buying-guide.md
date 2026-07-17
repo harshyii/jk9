@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Air Compressor Buying Guide">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Air Compressor [Buying Guide](blog.html?id=air-hose-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
-<h1>Air Compressor Buying Guide: How to Choose the Right Air Compressor</h1>
+<h1>Air Compressor [Buying Guide](blog.html?id=choosing-cutting-discs): How to Choose the Right Air Compressor</h1>
 
 <p>An air compressor is one of the most useful machines in workshops, garages, construction sites and manufacturing industries. It powers pneumatic tools, inflates tyres, sprays paint and supports countless industrial applications. Choosing the right compressor depends on pressure, airflow, tank capacity and intended usage. This guide explains everything you should know before buying.</p>
 

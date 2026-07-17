@@ -125,8 +125,8 @@ Children should always be supervised by adults when working near tools.
 <li>Wear safety goggles.</li>
 <li>Use gloves when appropriate.</li>
 <li>Keep workspaces clean.</li>
-<li>Disconnect power tools before changing accessories.</li>
-<li>Never allow children to operate power tools without supervision.</li>
+<li>Disconnect [power tools](blog.html?id=build-football-goal-power-tools) before changing accessories.</li>
+<li>Never allow children to operate [power tools](blog.html?id=how-to-choose-angle-grinder) without supervision.</li>
 
 </ul>
 
@@ -160,7 +160,7 @@ Children should always be supervised by adults when working near tools.
 
 <p class="mb-3">
 
-Whether you're repairing furniture, organizing your workshop or completing your first DIY project, HARYANA TOOLS supplies quality power tools, hand tools and safety equipment to help you get the job done safely.
+Whether you're repairing furniture, organizing your workshop or completing your first DIY project, HARYANA TOOLS supplies quality [power tools](blog.html?id=best-tools-for-home-workshop), hand tools and safety equipment to help you get the job done safely.
 
 </p>
 

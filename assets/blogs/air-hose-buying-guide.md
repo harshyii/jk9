@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Air Hose Buying Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Air Hose [Buying Guide](blog.html?id=air-compressor-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
-<h1>Air Hose Buying Guide: How to Choose the Right Air Hose for Your Compressor</h1>
+<h1>Air Hose [Buying Guide](blog.html?id=choosing-cutting-discs): How to Choose the Right Air Hose for Your Compressor</h1>
 
 <p>An air hose is one of the most important accessories in any compressed air system. Whether you're using an air compressor for spray painting, tyre inflation, pneumatic tools or industrial manufacturing, selecting the correct hose improves airflow, efficiency and tool performance. This guide explains everything you need to know before buying an air hose.</p>
 

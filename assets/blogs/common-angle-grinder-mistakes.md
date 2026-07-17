@@ -2,15 +2,15 @@
 
 <img src="https://images.unsplash.com/photo-1734888369502-3e01d4c0a46e?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Common Angle Grinder Mistakes">
 
-<span class="badge bg-danger mb-2">Safety Guide</span>
+<span class="badge bg-danger mb-2">[Safety](blog.html?id=safety-equipment-for-power-tools) Guide</span>
 
 <h1>10 Common Angle Grinder Mistakes That Can Damage Your Tool or Cause Injury</h1>
 
-<p>Angle grinders are among the most useful power tools in any workshop, but they're also one of the most dangerous when used incorrectly. Many accidents happen because of small mistakes that are easy to avoid. This guide explains the most common errors and how to use your grinder safely and efficiently.</p>
+<p>Angle grinders are among the most useful power tools in any [workshop](blog.html?id=workshop-safety-checklist), but they're also one of the most dangerous when used incorrectly. Many accidents happen because of small mistakes that are easy to avoid. This guide explains the most common errors and how to use your grinder safely and efficiently.</p>
 
 <hr>
 
-<h2>Why Safety Matters</h2>
+<h2>Why [Safety](blog.html?id=warehouse-safety-guide) Matters</h2>
 
 <div class="alert alert-warning">
 Even experienced professionals can damage tools or suffer serious injuries by ignoring basic operating practices. Always inspect both the grinder and the cutting disc before starting work.

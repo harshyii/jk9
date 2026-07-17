@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Safety Goggles Buying Guide">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Safety Goggles [Buying Guide](blog.html?id=safety-gloves-buying-guide)">
 
 <span class="badge bg-warning text-dark mb-2">Safety Guide</span>
 
-<h1>Safety Goggles Buying Guide: How to Choose the Right Eye Protection</h1>
+<h1>Safety Goggles [Buying Guide](blog.html?id=how-to-choose-angle-grinder): How to Choose the Right Eye Protection</h1>
 
 <p>Whether you're cutting metal, grinding concrete, woodworking or working with chemicals, your eyes are constantly exposed to flying particles, sparks and dust. A quality pair of safety goggles is one of the most important pieces of personal protective equipment (PPE) and should never be overlooked.</p>
 

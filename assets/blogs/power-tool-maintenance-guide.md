@@ -1,12 +1,12 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Power Tool Maintenance Guide">
+<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Power Tool Maintenance](blog.html?id=how-to-maintain-power-tools) Guide">
 
-<span class="badge bg-warning text-dark mb-2">Maintenance Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Maintenance](blog.html?id=solar-system-maintenance-guide) Guide</span>
 
 <h1>Power Tool Maintenance Guide: Keep Your Tools Running Like New</h1>
 
-<p>Power tools are valuable investments for homeowners, workshops and industrial professionals. Regular maintenance improves performance, extends tool life, reduces repair costs and helps maintain safe operation. This guide covers simple maintenance practices that every power tool owner should follow.</p>
+<p>[Power tools](blog.html?id=how-to-protect-tools-during-monsoon) are valuable investments for homeowners, workshops and industrial professionals. Regular maintenance improves performance, extends tool life, reduces repair costs and helps maintain safe operation. This guide covers simple maintenance practices that every power tool owner should follow.</p>
 
 <hr>
 

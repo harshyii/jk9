@@ -1,12 +1,12 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Solar System Maintenance Guide">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Solar System [Maintenance](blog.html?id=power-tool-maintenance-guide) Guide">
 
 <span class="badge bg-success mb-2">Solar Guide</span>
 
-<h1>Solar System Maintenance Guide: Keep Your Solar Panels Performing at Their Best</h1>
+<h1>Solar System [Maintenance](blog.html?id=preventive-maintenance-workshop) Guide: Keep Your Solar Panels Performing at Their Best</h1>
 
-<p>Installing a solar power system is a long-term investment, but like any electrical equipment, it requires regular maintenance to deliver maximum efficiency. Dust, bird droppings, loose wiring and neglected batteries can significantly reduce energy production. This guide explains how to maintain your solar system safely and efficiently.</p>
+<p>Installing a solar power system is a long-term investment, but like any electrical equipment, it requires regular [maintenance](blog.html?id=industrial-lubricants-guide) to deliver maximum efficiency. Dust, bird droppings, loose wiring and neglected batteries can significantly reduce energy production. This guide explains how to maintain your solar system safely and efficiently.</p>
 
 <hr>
 

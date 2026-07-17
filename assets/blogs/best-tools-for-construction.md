@@ -6,7 +6,7 @@
 
 <h1>Best Tools for Construction: Essential Equipment Every Professional Should Own</h1>
 
-<p>Construction projects require the right equipment to ensure safety, accuracy and productivity. Whether you're a contractor, civil engineer, builder or homeowner, investing in quality construction tools saves time, reduces labour and delivers professional results. This guide covers the essential hand tools and power tools used across modern construction sites.</p>
+<p>Construction projects require the right equipment to ensure safety, accuracy and productivity. Whether you're a contractor, civil engineer, builder or homeowner, investing in quality construction tools saves time, reduces labour and delivers professional results. This guide covers the essential hand tools and [power tools](blog.html?id=extension-cord-buying-guide) used across modern construction sites.</p>
 
 <hr>
 
@@ -37,7 +37,7 @@
 </thead>
 <tbody>
 <tr><td>Rotary Hammer</td><td>Concrete drilling</td><td>Civil Work</td></tr>
-<tr><td>Angle Grinder</td><td>Cutting & Grinding</td><td>Metal Fabrication</td></tr>
+<tr><td>[Angle Grinder](blog.html?id=how-to-choose-angle-grinder)</td><td>Cutting & Grinding</td><td>Metal Fabrication</td></tr>
 <tr><td>Impact Drill</td><td>Brick & Metal Drilling</td><td>General Construction</td></tr>
 <tr><td>Circular Saw</td><td>Wood Cutting</td><td>Carpentry</td></tr>
 <tr><td>Measuring Tape</td><td>Measurements</td><td>Every Project</td></tr>
@@ -291,7 +291,7 @@ Professional tools should be inspected regularly and serviced according to the m
 <h2 class="mb-3">Build Better with Professional Tools</h2>
 
 <p class="mb-3">
-HARYANA TOOLS supplies high-quality construction tools, power tools, hand tools, drilling equipment, cutting machines and industrial accessories for contractors, workshops, businesses and infrastructure projects across India.
+HARYANA TOOLS supplies high-quality construction tools, power tools, hand tools, drilling equipment, cutting machines and industrial [accessories](blog.html?id=choosing-cutting-discs) for contractors, workshops, businesses and infrastructure projects across India.
 </p>
 
 <a href="products.html" class="btn btn-warning btn-lg">

@@ -2,9 +2,9 @@
 
 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Industrial Tools Maintenance Schedule">
+alt="Industrial Tools [Maintenance](blog.html?id=industrial-lubricants-guide) Schedule">
 
-<span class="badge bg-warning text-dark mb-2">Maintenance Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Maintenance](blog.html?id=solar-system-maintenance-guide) Guide</span>
 
 <h1>Industrial Tools Maintenance Schedule: Daily, Weekly & Monthly Checklist</h1>
 
@@ -153,7 +153,7 @@ Neglecting maintenance can result in:
 
 <div class="alert alert-success">
 
-Store power tools in a clean, dry environment.
+Store [power tools](blog.html?id=power-tool-maintenance-guide) in a clean, dry environment.
 
 <ul class="mt-2 mb-0">
 

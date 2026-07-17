@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590b?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Jigsaw Buying Guide">
+<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590b?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Jigsaw [Buying Guide](blog.html?id=circular-saw-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=heat-gun-buying-guide)</span>
 
-<h1>Jigsaw Buying Guide: How to Choose the Right Jigsaw for Wood, Metal and DIY Projects</h1>
+<h1>Jigsaw [Buying Guide](blog.html?id=best-power-tools-for-beginners): How to Choose the Right Jigsaw for Wood, Metal and DIY Projects</h1>
 
 <p>A jigsaw is one of the most useful power tools for making curved, straight and detailed cuts. Whether you're building furniture, cutting plywood, trimming laminate flooring or working with sheet metal, choosing the right jigsaw improves accuracy, speed and safety. This guide explains everything you should know before buying a jigsaw.</p>
 

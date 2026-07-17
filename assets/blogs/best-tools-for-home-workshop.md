@@ -3,14 +3,14 @@
 <img
 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Best Tools for Home Workshop">
+alt="Best Tools for Home [Workshop](blog.html?id=welding-accessories-guide)">
 
 <span class="badge bg-warning text-dark mb-2">
-Workshop Guide
+[Workshop](blog.html?id=workshop-storage-ideas) Guide
 </span>
 
 <h1>
-10 Essential Power Tools Every Home Workshop Should Have
+10 Essential Power Tools Every Home [Workshop](blog.html?id=workshop-lighting-guide) Should Have
 </h1>
 
 <p>

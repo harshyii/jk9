@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="How to Protect Power Tools During the Monsoon Season">
+alt="How to Protect [Power Tools](blog.html?id=power-tool-maintenance-guide) During the Monsoon Season">
 
-<span class="badge bg-primary mb-2">Monsoon Maintenance Guide</span>
+<span class="badge bg-primary mb-2">Monsoon [Maintenance](blog.html?id=weatherproof-your-workshop) Guide</span>
 
-<h1>How to Protect Power Tools During the Monsoon Season</h1>
+<h1>How to Protect [Power Tools](blog.html?id=winter-tool-maintenance-guide) During the Monsoon Season</h1>
 
 <p>
 

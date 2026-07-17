@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Pressure Washer Buying Guide">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Pressure Washer [Buying Guide](blog.html?id=car-shampoo-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
-<h1>Pressure Washer Buying Guide: How to Choose the Right Pressure Washer</h1>
+<h1>Pressure Washer [Buying Guide](blog.html?id=choosing-cutting-discs): How to Choose the Right Pressure Washer</h1>
 
 <p>A pressure washer makes cleaning vehicles, driveways, machinery, buildings and industrial equipment significantly faster than manual cleaning. Choosing the correct machine depends on pressure, flow rate, motor type and intended application. This guide explains everything you should know before purchasing a pressure washer.</p>
 

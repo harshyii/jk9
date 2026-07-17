@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Solar Panel Dealer in Pehowa">
+alt="[Solar](blog.html?id=solar-panel-buying-guide) Panel Dealer in Pehowa">
 
-<span class="badge bg-success mb-2">Solar Solutions</span>
+<span class="badge bg-success mb-2">[Solar](blog.html?id=solar-battery-buying-guide) Solutions</span>
 
-<h1>Best Solar Panel Dealer in Pehowa | Residential & Commercial Rooftop Solar Solutions</h1>
+<h1>Best [Solar](blog.html?id=solar-inverter-buying-guide) Panel Dealer in Pehowa | Residential & Commercial Rooftop Solar Solutions</h1>
 
 <p>Looking for a trusted <strong>solar panel dealer in Pehowa</strong>? HARYANA TOOLS provides complete solar energy solutions including rooftop solar panels, on-grid solar systems, solar inverters, mounting structures, accessories and installation support for residential, commercial and industrial applications. Whether you want to reduce electricity bills or invest in clean renewable energy, choosing the right solar products and installation partner is the first step toward long-term savings.</p>
 

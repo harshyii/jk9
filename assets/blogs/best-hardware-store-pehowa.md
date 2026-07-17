@@ -10,7 +10,7 @@ alt="Best Hardware Store in Pehowa">
 
 <p>Finding a reliable hardware store in Pehowa is important whether you're building a home, managing a factory, working on a construction site, running a workshop or simply completing a DIY repair. A well-stocked hardware supplier saves time, provides genuine products and ensures you always have the right tools and equipment for the job.</p>
 
-<p>HARYANA TOOLS supplies a wide range of industrial tools, power tools, hand tools, safety equipment, welding accessories, abrasives, fasteners, solar products and workshop equipment for customers across Pehowa, Kurukshetra and nearby areas.</p>
+<p>HARYANA TOOLS supplies a wide range of [industrial tools](blog.html?id=industrial-tools-supplier-pehowa), [power tools](blog.html?id=best-power-tools-shop-pehowa), hand tools, safety equipment, [welding](blog.html?id=welding-machine-dealer-pehowa) accessories, abrasives, fasteners, solar products and workshop equipment for customers across Pehowa, Kurukshetra and nearby areas.</p>
 
 <div class="alert alert-success">
 

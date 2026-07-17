@@ -13,7 +13,7 @@ The <strong>FIFA World Cup 2026</strong> is one of the biggest sporting events i
 </p>
 
 <p>
-Whether you're planning to watch the tournament with family or host a football party for dozens of guests, this guide covers everything needed to create a professional home viewing experience using practical electrical accessories and reliable equipment.
+Whether you're planning to watch the tournament with family or host a football party for dozens of guests, this guide covers everything needed to create a professional home viewing experience using practical [electrical](blog.html?id=industrial-extension-board-guide) accessories and reliable equipment.
 </p>
 
 <div class="alert alert-primary">
@@ -240,7 +240,7 @@ Power fluctuations can damage expensive televisions, sound systems and gaming co
 
 <td>MCB Protection</td>
 
-<td>Improves electrical safety</td>
+<td>Improves [electrical safety](blog.html?id=rainy-season-electrical-safety)</td>
 
 </tr>
 
@@ -1086,7 +1086,7 @@ Best On-Grid Solar System Installer & Dealer in Pehowa
 
 <a href="blog.html?id=how-to-choose-angle-grinder" class="list-group-item list-group-item-action">
 
-How to Choose the Right Angle Grinder
+How to Choose the Right [Angle Grinder](blog.html?id=how-to-choose-angle-grinder)
 
 </a>
 

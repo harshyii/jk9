@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1428592953211-077101b2021b?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Rainy Season Electrical Safety Guide">
+alt="Rainy Season Electrical [Safety](blog.html?id=safety-equipment-for-power-tools) Guide">
 
 <span class="badge bg-primary mb-2">Electrical Safety</span>
 
@@ -444,7 +444,7 @@ Extension boards are among the most commonly used electrical accessories, but th
 
 <hr>
 
-<h2>Protecting Power Tools During Monsoon</h2>
+<h2>Protecting [Power Tools](blog.html?id=common-angle-grinder-mistakes) During Monsoon</h2>
 
 <p>
 
@@ -592,7 +592,7 @@ Thunderstorms can produce sudden voltage spikes capable of damaging televisions,
 
 <tr>
 
-<td>Surge Protector</td>
+<td>[Surge Protector](blog.html?id=world-cup-2026-home-viewing-setup)</td>
 
 <td>Protects electronic devices from voltage spikes.</td>
 

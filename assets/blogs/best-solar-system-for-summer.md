@@ -13,7 +13,7 @@ Indian summers bring intense heat, longer daylight hours and significantly highe
 </p>
 
 <p>
-If you're planning to install solar panels for your home, office, shop or factory, summer is actually one of the best seasons to do so. Longer sunshine hours allow solar panels to generate more electricity, improving your return on investment and reducing dependence on conventional grid power.
+If you're planning to install [solar panels](blog.html?id=solar-vs-grid-electricity-world-cup-2026) for your home, office, shop or factory, summer is actually one of the best seasons to do so. Longer sunshine hours allow [solar panels](blog.html?id=watch-world-cup-2026-without-power-cuts) to generate more electricity, improving your return on investment and reducing dependence on conventional grid power.
 </p>
 
 <div class="alert alert-success">
@@ -385,7 +385,7 @@ Before installing a solar system, it's important to understand the difference be
 
 <th>Feature</th>
 
-<th>On-Grid Solar</th>
+<th>[On-Grid Solar](blog.html?id=best-on-grid-solar-installer-pehowa)</th>
 
 <th>Off-Grid Solar</th>
 

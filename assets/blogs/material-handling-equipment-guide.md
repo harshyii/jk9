@@ -4,7 +4,7 @@
 class="img-fluid rounded shadow-sm mb-3"
 alt="Material Handling Equipment Guide">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=industrial-cleaning-equipment-guide)</span>
 
 <h1>Material Handling Equipment Guide: Choosing the Right Equipment for Your Business</h1>
 
@@ -205,7 +205,7 @@ alt="Material Handling Equipment Guide">
 <div class="list-group-item">✔ Load Capacity</div>
 <div class="list-group-item">✔ Lift Height</div>
 <div class="list-group-item">✔ Wheel Quality</div>
-<div class="list-group-item">✔ Safety Features</div>
+<div class="list-group-item">✔ [Safety](blog.html?id=safety-gloves-buying-guide) Features</div>
 <div class="list-group-item">✔ Ease of Maintenance</div>
 <div class="list-group-item">✔ Spare Parts Availability</div>
 <div class="list-group-item">✔ Manufacturer Warranty</div>

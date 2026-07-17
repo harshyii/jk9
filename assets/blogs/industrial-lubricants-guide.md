@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Lubricants Guide">
 
-<span class="badge bg-warning text-dark mb-2">Maintenance Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Maintenance](blog.html?id=industrial-tools-maintenance-schedule) Guide</span>
 
 <h1>Industrial Lubricants Guide: Choosing the Right Oil and Grease for Machinery</h1>
 
-<p>Lubrication plays a critical role in keeping industrial machinery running efficiently. The right lubricant reduces friction, prevents wear, protects against corrosion and extends equipment life. Whether you operate manufacturing machines, compressors, pumps or construction equipment, selecting the correct lubricant improves productivity while lowering maintenance costs.</p>
+<p>Lubrication plays a critical role in keeping industrial machinery running efficiently. The right lubricant reduces friction, prevents wear, protects against corrosion and extends equipment life. Whether you operate manufacturing machines, compressors, pumps or construction equipment, selecting the correct lubricant improves productivity while lowering [maintenance](blog.html?id=power-tool-maintenance-guide) costs.</p>
 
 <hr>
 
@@ -23,7 +23,7 @@
 <li>Protects against rust and corrosion</li>
 <li>Improves machine efficiency</li>
 <li>Extends service life</li>
-<li>Reduces maintenance costs</li>
+<li>Reduces [maintenance](blog.html?id=solar-system-maintenance-guide) costs</li>
 </ul>
 </div>
 

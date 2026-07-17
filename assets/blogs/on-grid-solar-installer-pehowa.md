@@ -2,9 +2,9 @@
 
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="On Grid Solar Installer in Pehowa">
+alt="[On Grid Solar Installer in Pehowa](blog.html?id=best-on-grid-solar-installer-pehowa)">
 
-<span class="badge bg-success mb-2">Solar Energy Guide</span>
+<span class="badge bg-success mb-2">[Solar](blog.html?id=solar-vs-grid-electricity-world-cup-2026) Energy Guide</span>
 
 <h1>Best On-Grid Solar Installer in Pehowa | Residential & Commercial Rooftop Solar Systems</h1>
 
@@ -502,7 +502,7 @@ alt="On Grid Solar Installer in Pehowa">
 
 <tr>
 
-<td>Power Backup</td>
+<td>[Power Backup](blog.html?id=watch-world-cup-2026-without-power-cuts)</td>
 
 <td>Grid Only</td>
 

@@ -476,7 +476,7 @@ Creates a rotating high-pressure spray pattern that removes stubborn dirt and co
 <h5>Extension Lance</h5>
 
 <p class="mb-0">
-Makes it easier to clean roofs, walls, trucks, solar panels and elevated surfaces.
+Makes it easier to clean roofs, walls, trucks, [solar](blog.html?id=solar-panel-dealer-pehowa) panels and elevated surfaces.
 </p>
 
 </div>
@@ -619,7 +619,7 @@ Replace damaged or leaking hoses immediately to maintain pressure and safety.
 
 <div class="card-body">
 
-<h5>Store Indoors</h5>
+<h5>[Store](blog.html?id=tool-store-near-me-pehowa) Indoors</h5>
 
 <p class="mb-0">
 Protect the machine from direct sunlight, rain and freezing temperatures.

@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1520340356584-8f87dff9627f?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Microfiber Cloth Buying Guide">
+<img src="https://images.unsplash.com/photo-1520340356584-8f87dff9627f?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Microfiber Cloth [Buying Guide](blog.html?id=tyre-polish-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=dashboard-polish-guide)</span>
 
-<h1>Microfiber Cloth Buying Guide: How to Choose the Best Cleaning Cloth</h1>
+<h1>Microfiber Cloth [Buying Guide](blog.html?id=car-shampoo-buying-guide): How to Choose the Best Cleaning Cloth</h1>
 
 <p>Microfiber cloths have become an essential cleaning accessory for homes, workshops, garages and professional detailers. They remove dust, grease, fingerprints and water spots without scratching delicate surfaces. However, not every microfiber cloth is made the same. GSM, weave type, edge stitching and fiber blend all affect performance. This guide explains everything you should know before buying microfiber cloths.</p>
 

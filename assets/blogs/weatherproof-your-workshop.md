@@ -4,7 +4,7 @@
 class="img-fluid rounded shadow-sm mb-3"
 alt="How to Weatherproof Your Workshop">
 
-<span class="badge bg-primary mb-2">Workshop Maintenance</span>
+<span class="badge bg-primary mb-2">Workshop [Maintenance](blog.html?id=winter-tool-maintenance-guide)</span>
 
 <h1>How to Weatherproof Your Workshop for Every Season</h1>
 
@@ -16,7 +16,7 @@ Whether you own a home workshop, fabrication unit, automobile garage, woodworkin
 
 <p>
 
-This guide explains how to <strong>weatherproof your workshop</strong> throughout the year using simple maintenance practices, proper storage solutions and quality electrical accessories. A well-protected workshop not only increases tool life but also improves safety and reduces costly repairs.
+This guide explains how to <strong>weatherproof your workshop</strong> throughout the year using simple [maintenance](blog.html?id=preventive-maintenance-workshop) practices, proper storage solutions and quality electrical accessories. A well-protected workshop not only increases tool life but also improves safety and reduces costly repairs.
 
 </p>
 
@@ -258,7 +258,7 @@ The rainy season is often the most damaging period for workshops. Moisture enter
 
 <p>
 
-Rust is one of the biggest enemies of workshops. Once corrosion begins, tool performance decreases and replacement costs increase. Fortunately, rust prevention is simple when performed regularly.
+Rust is one of the biggest enemies of workshops. Once corrosion begins, tool performance decreases and replacement costs increase. Fortunately, [rust prevention](blog.html?id=how-to-protect-tools-during-monsoon) is simple when performed regularly.
 
 </p>
 

@@ -204,9 +204,9 @@ We regularly update our inventory to offer quality products suitable for worksho
 
 You may also find these guides helpful:
 
-- Why Power Tool Prices Are Rising in India in 2026
-- How China's Import Duties Affect Power Tool Prices in India
-- How Global Supply Chain Problems Increase Tool Prices
+- [Why Power Tool Prices Are Rising in India in 2026](blog.html?id=why-power-tool-prices-are-rising-india)
+- [How China's Import Duties Affect Power Tool Prices in India](blog.html?id=china-import-duty-tool-prices)
+- [How Global Supply Chain Problems Increase Tool Prices](blog.html?id=global-supply-chain-tool-prices)
 - How Rising Steel Prices Affect Industrial Tool Manufacturing
 - Why Construction Costs Are Increasing Across India
 - Impact Drill vs Rotary Hammer: Which One Should You Buy?

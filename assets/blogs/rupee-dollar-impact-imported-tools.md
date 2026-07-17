@@ -2,7 +2,7 @@
 
 The price of imported power tools and industrial equipment in India is influenced by several factors, and one of the biggest is the **USD to INR (US Dollar to Indian Rupee) exchange rate**. Even when manufacturers keep their prices unchanged, fluctuations in currency exchange rates can significantly affect the final cost that distributors, dealers, and customers pay.
 
-Whether you're buying an angle grinder, rotary hammer, welding machine, cordless drill, or industrial machinery, understanding how exchange rates impact pricing can help you make smarter purchasing decisions.
+Whether you're buying an angle grinder, rotary hammer, welding machine, cordless drill, or industrial machinery, understanding how exchange rates impact [pricing](blog.html?id=why-power-tool-prices-are-rising-india) can help you make smarter purchasing decisions.
 
 ---
 
@@ -37,7 +37,7 @@ Currency values change every day because of several economic factors, including:
 - Inflation
 - Interest rate changes
 - Foreign investments
-- Crude oil imports
+- Crude oil [imports](blog.html?id=china-import-duty-tool-prices)
 - Geopolitical events
 - Central bank monetary policies
 
@@ -89,7 +89,7 @@ Imagine an industrial drill imported from overseas.
 
 | Exchange Rate | Product Cost (USD) | Landed Cost (Approx.) |
 |---------------|-------------------:|----------------------:|
-| ₹80/USD | $150 | ₹12,000 + duties & logistics |
+| ₹80/USD | $150 | ₹12,000 + duties & [logistics](blog.html?id=how-fuel-prices-affect-tool-costs) |
 | ₹84/USD | $150 | ₹12,600 + duties & logistics |
 | ₹88/USD | $150 | ₹13,200 + duties & logistics |
 

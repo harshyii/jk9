@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5902?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Heat Gun Buying Guide">
+<img src="https://images.unsplash.com/photo-1581092919535-7146ff1a5902?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Heat Gun [Buying Guide](blog.html?id=circular-saw-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=jigsaw-buying-guide)</span>
 
-<h1>Heat Gun Buying Guide: How to Choose the Best Heat Gun</h1>
+<h1>Heat Gun [Buying Guide](blog.html?id=best-power-tools-for-beginners): How to Choose the Best Heat Gun</h1>
 
 <p>A heat gun is one of the most useful tools for workshops, electricians, automotive technicians, plumbers and DIY enthusiasts. It produces a controlled stream of hot air that can remove paint, shrink tubing, soften adhesives, bend plastic and perform countless industrial applications. This guide explains everything you should consider before buying a heat gun.</p>
 

@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Hand Tools Guide">
+<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial [Hand Tools](blog.html?id=complete-tool-kit-buying-guide) Guide">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=measuring-tools-guide)</span>
 
 <h1>Complete Guide to Industrial Hand Tools for Workshops and Professionals</h1>
 
@@ -172,7 +172,7 @@ Before purchasing industrial hand tools, ensure they offer:
 
 <div class="bg-dark text-white rounded p-4 text-center">
 <h2 class="mb-3">Build Your Professional Tool Kit</h2>
-<p class="mb-3">HARYANA TOOLS supplies premium industrial hand tools, maintenance equipment and workshop accessories for professionals, industries and businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies premium industrial hand tools, maintenance equipment and workshop [accessories](blog.html?id=choosing-cutting-discs) for professionals, industries and businesses across India.</p>
 <a href="products.html" class="btn btn-warning btn-lg">Browse Hand Tools</a>
 </div>
 

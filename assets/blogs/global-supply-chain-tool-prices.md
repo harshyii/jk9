@@ -253,9 +253,9 @@ We regularly work with trusted manufacturers and suppliers to ensure product ava
 
 Continue reading:
 
-- Why Power Tool Prices Are Rising in India in 2026
-- How Rising Fuel Prices Increase Power Tool Costs
-- How China's Import Duties Affect Power Tool Prices in India
+- [Why Power Tool Prices Are Rising in India in 2026](blog.html?id=why-power-tool-prices-are-rising-india)
+- [How Rising Fuel Prices Increase Power Tool Costs](blog.html?id=how-fuel-prices-affect-tool-costs)
+- [How China's Import Duties Affect Power Tool Prices in India](blog.html?id=china-import-duty-tool-prices)
 - How Rising Steel Prices Affect Industrial Tool Manufacturing
 - Why Construction Costs Are Increasing Across India
 - Impact Drill vs Rotary Hammer: Which One Should You Buy?

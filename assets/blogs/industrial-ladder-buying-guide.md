@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Industrial Ladder Buying Guide">
+alt="Industrial Ladder [Buying Guide](blog.html?id=how-to-choose-angle-grinder)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=choosing-cutting-discs)</span>
 
-<h1>Industrial Ladder Buying Guide: How to Choose the Right Ladder for Every Job</h1>
+<h1>Industrial Ladder [Buying Guide](blog.html?id=circular-saw-buying-guide): How to Choose the Right Ladder for Every Job</h1>
 
 <p>
 A ladder is one of the most frequently used pieces of equipment in construction, warehouses, factories, workshops and homes. Choosing the wrong ladder can reduce productivity and increase the risk of accidents. This guide explains the different ladder types, materials, load capacities and safety features to help you select the right ladder for your application.

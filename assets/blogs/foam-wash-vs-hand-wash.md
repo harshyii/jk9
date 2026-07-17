@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Foam Wash vs Hand Wash">
+<img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Foam Wash](blog.html?id=car-shampoo-buying-guide) vs Hand Wash">
 
-<span class="badge bg-warning text-dark mb-2">Car Care Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Car Care](blog.html?id=tyre-polish-buying-guide) Guide</span>
 
 <h1>Foam Wash vs Hand Wash: Which Car Cleaning Method is Better?</h1>
 
@@ -10,7 +10,7 @@
 
 <hr>
 
-<h2>Quick Comparison</h2>
+<h2>Quick [Comparison](blog.html?id=impact-drill-vs-rotary-hammer)</h2>
 
 <div class="table-responsive">
 <table class="table table-bordered">

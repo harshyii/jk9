@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Workshop Air Line Guide">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Workshop](blog.html?id=best-tools-for-home-workshop) Air Line Guide">
 
-<span class="badge bg-warning text-dark mb-2">Workshop Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Workshop](blog.html?id=welding-accessories-guide) Guide</span>
 
-<h1>Workshop Air Line Guide: Planning an Efficient Compressed Air System</h1>
+<h1>[Workshop](blog.html?id=workshop-storage-ideas) Air Line Guide: Planning an Efficient Compressed Air System</h1>
 
 <p>A properly designed compressed air system is one of the most valuable assets in any workshop. Whether you operate impact wrenches, spray guns, pneumatic drills or industrial machinery, an efficient air line network improves productivity, reduces pressure loss and lowers maintenance costs. This guide explains how to design a reliable workshop air distribution system.</p>
 

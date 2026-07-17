@@ -2,18 +2,18 @@
 
 <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow-sm mb-3"
-alt="Power Tool Maintenance">
+alt="[Power Tool Maintenance](blog.html?id=power-tool-maintenance-guide)">
 
 <span class="badge bg-warning text-dark mb-3">
 Maintenance Guide
 </span>
 
 <h1 class="fw-bold mb-3">
-How to Maintain Power Tools for Longer Life and Better Performance
+How to Maintain [Power Tools](blog.html?id=cordless-vs-corded-tools) for Longer Life and Better Performance
 </h1>
 
 <p class="lead">
-Power tools are valuable investments for professionals, workshops and homeowners. Regular maintenance keeps your equipment running efficiently, improves workplace safety and helps avoid expensive repairs.
+[Power tools](blog.html?id=build-football-goal-power-tools) are valuable investments for professionals, workshops and homeowners. Regular maintenance keeps your equipment running efficiently, improves workplace safety and helps avoid expensive repairs.
 </p>
 
 <div class="row text-center g-3 my-4">

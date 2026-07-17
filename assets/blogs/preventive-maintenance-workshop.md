@@ -1,12 +1,12 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Preventive Maintenance Workshop">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Preventive [Maintenance](blog.html?id=weatherproof-your-workshop) Workshop">
 
-<span class="badge bg-warning text-dark mb-2">Maintenance Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Maintenance](blog.html?id=solar-system-maintenance-guide) Guide</span>
 
 <h1>Preventive Maintenance Checklist for Workshops and Industrial Equipment</h1>
 
-<p>Unexpected equipment failure can stop production, increase repair costs and reduce workplace safety. A well-planned preventive maintenance program helps workshops maximize machine life, improve productivity and minimize downtime. This guide explains how to build an effective maintenance schedule for power tools and industrial equipment.</p>
+<p>Unexpected equipment failure can stop production, increase repair costs and reduce workplace safety. A well-planned preventive maintenance program helps workshops maximize machine life, improve productivity and minimize downtime. This guide explains how to build an effective maintenance schedule for [power tools](blog.html?id=power-tool-maintenance-guide) and industrial equipment.</p>
 
 <hr>
 

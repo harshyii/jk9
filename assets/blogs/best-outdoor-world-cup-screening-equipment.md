@@ -272,7 +272,7 @@ Provides illumination during unexpected power interruptions.
 
 <hr>
 
-<h2>Reliable Electrical Accessories</h2>
+<h2>Reliable Electrical [Accessories](blog.html?id=choosing-cutting-discs)</h2>
 
 <p>
 Professional electrical accessories improve safety, simplify installation and protect expensive equipment from voltage fluctuations.
@@ -663,7 +663,7 @@ Before your FIFA World Cup screening begins, confirm you have:
 
 <p>
 
-HARYANA TOOLS supplies quality electrical accessories, extension boards, industrial cables, LED lighting, power tools, safety equipment and solar products suitable for homes, businesses and outdoor events across India.
+HARYANA TOOLS supplies quality electrical accessories, extension boards, industrial cables, LED lighting, [power tools](blog.html?id=circular-saw-buying-guide), safety equipment and solar products suitable for homes, businesses and outdoor events across India.
 
 </p>
 
@@ -695,7 +695,7 @@ HARYANA TOOLS supplies quality electrical accessories, extension boards, industr
 
 <ul>
 
-<li>Power Tools</li>
+<li>[Power Tools](blog.html?id=jigsaw-buying-guide)</li>
 
 <li>Safety Equipment</li>
 

@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Cleaning Equipment Guide">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=material-handling-equipment-guide)</span>
 
 <h1>Industrial Cleaning Equipment Guide: Choosing the Right Machine for Every Workplace</h1>
 
-<p>Keeping an industrial facility clean improves safety, productivity and equipment life. Whether you operate a factory, warehouse, workshop, hospital, shopping mall or commercial building, selecting the right cleaning equipment reduces labour costs and delivers better cleaning results. This guide explains the most common industrial cleaning machines and how to choose the best one for your business.</p>
+<p>Keeping an industrial facility clean improves [safety](blog.html?id=safety-gloves-buying-guide), productivity and equipment life. Whether you operate a factory, warehouse, workshop, hospital, shopping mall or commercial building, selecting the right cleaning equipment reduces labour costs and delivers better cleaning results. This guide explains the most common industrial cleaning machines and how to choose the best one for your business.</p>
 
 <hr>
 

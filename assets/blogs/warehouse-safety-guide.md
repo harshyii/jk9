@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Warehouse Safety Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Warehouse [Safety](blog.html?id=safety-equipment-for-power-tools) Guide">
 
-<span class="badge bg-danger mb-2">Safety Guide</span>
+<span class="badge bg-danger mb-2">[Safety](blog.html?id=common-angle-grinder-mistakes) Guide</span>
 
-<h1>Warehouse Safety Guide: Best Practices for Safe Material Handling and Storage</h1>
+<h1>Warehouse [Safety](blog.html?id=workshop-safety-checklist) Guide: Best Practices for Safe Material Handling and Storage</h1>
 
 <p>Warehouses are busy workplaces where forklifts, heavy goods, machinery and workers operate together. A small safety mistake can result in serious injuries, damaged inventory and business losses. This guide covers practical warehouse safety practices that every business should follow.</p>
 

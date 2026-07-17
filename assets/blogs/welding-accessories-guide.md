@@ -9,11 +9,11 @@ alt="Complete Welding Accessories Buying Guide">
 <h1>Complete Welding Accessories Guide: Essential Tools Every Welder Needs</h1>
 
 <p>
-Buying a welding machine is only the beginning. The quality of your welds, your safety and your productivity depend heavily on the accessories you use. Whether you're a beginner, fabricator, workshop owner or industrial contractor, having the right welding accessories makes every job easier and safer.
+Buying a welding machine is only the beginning. The quality of your welds, your safety and your productivity depend heavily on the accessories you use. Whether you're a beginner, fabricator, [workshop](blog.html?id=best-tools-for-home-workshop) owner or industrial contractor, having the right welding accessories makes every job easier and safer.
 </p>
 
 <p>
-This guide covers the most important welding accessories, their purpose and how to choose the right equipment for your workshop.
+This guide covers the most important welding accessories, their purpose and how to choose the right equipment for your [workshop](blog.html?id=workshop-storage-ideas).
 </p>
 
 <hr>
@@ -533,7 +533,7 @@ Magnets and clamps keep workpieces aligned during welding. Proper alignment impr
 
 <hr>
 
-<h2>Workshop Essentials</h2>
+<h2>[Workshop](blog.html?id=workshop-lighting-guide) Essentials</h2>
 
 <div class="table-responsive">
 

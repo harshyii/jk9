@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Solar vs Grid Electricity During FIFA World Cup 2026">
+alt="Solar vs Grid Electricity During FIFA [World Cup 2026](blog.html?id=watch-world-cup-2026-without-power-cuts)">
 
 <span class="badge bg-success mb-2">Solar Energy • FIFA World Cup 2026</span>
 
@@ -562,7 +562,7 @@ Battery storage or grid electricity supplies power after sunset.
 
 <hr>
 
-<h2>Advantages of On-Grid Solar Systems</h2>
+<h2>Advantages of [On-Grid Solar](blog.html?id=best-on-grid-solar-installer-pehowa) Systems</h2>
 
 <div class="alert alert-success">
 
@@ -1006,7 +1006,7 @@ Request a Free Consultation
 
 <li><a href="blog.html?id=watch-world-cup-2026-without-power-cuts">Watch FIFA World Cup 2026 Without Power Cuts</a></li>
 
-<li><a href="blog.html?id=ultimate-solar-buying-guide">Complete Solar Buying Guide for Homes & Businesses</a></li>
+<li><a href="blog.html?id=ultimate-solar-buying-guide">Complete Solar [Buying Guide](blog.html?id=best-solar-system-for-summer) for Homes & Businesses</a></li>
 
 </ul>
 

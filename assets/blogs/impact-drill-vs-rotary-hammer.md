@@ -6,7 +6,7 @@ class="img-fluid rounded shadow-sm mb-3"
 alt="Impact Drill vs Rotary Hammer">
 
 <span class="badge bg-warning text-dark mb-2">
-Comparison Guide
+[Comparison](blog.html?id=mppt-vs-pwm-charge-controller) Guide
 </span>
 
 <h1>
@@ -24,7 +24,7 @@ Choosing the correct tool improves productivity, reduces fatigue and ensures cle
 <hr>
 
 <h2>
-Quick Comparison
+Quick [Comparison](blog.html?id=foam-wash-vs-hand-wash)
 </h2>
 
 <div class="table-responsive">
@@ -868,7 +868,7 @@ Choose the Right Drill for Every Project
 
 <p class="mb-3">
 
-HARYANA TOOLS supplies genuine impact drills, rotary hammers, drilling accessories and industrial power tools from trusted manufacturers. Whether you're a homeowner, contractor or industrial buyer, we help you choose equipment that delivers reliable performance and long service life.
+HARYANA TOOLS supplies genuine impact drills, rotary hammers, drilling accessories and industrial [power tools](blog.html?id=cordless-vs-corded-tools) from trusted manufacturers. Whether you're a homeowner, contractor or industrial buyer, we help you choose equipment that delivers reliable performance and long service life.
 
 </p>
 

@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Safety Gloves Buying Guide">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Safety Gloves [Buying Guide](blog.html?id=safety-goggles-buying-guide)">
 
 <span class="badge bg-warning text-dark mb-2">Safety Guide</span>
 
-<h1>Safety Gloves Buying Guide: How to Choose the Right Protective Gloves</h1>
+<h1>Safety Gloves [Buying Guide](blog.html?id=how-to-choose-angle-grinder): How to Choose the Right Protective Gloves</h1>
 
 <p>Safety gloves are one of the most important pieces of personal protective equipment (PPE). Whether you're handling sharp metal, chemicals, machinery or electrical equipment, the correct pair of gloves protects your hands from injuries while improving grip and comfort. This guide explains how to select the best safety gloves for your work.</p>
 
@@ -239,7 +239,7 @@ Replace gloves immediately if they become torn, worn out, chemically contaminate
 
 <h2 class="mb-3">Protect Your Hands with the Right Safety Gloves</h2>
 
-<p class="mb-3">HARYANA TOOLS supplies industrial safety gloves, PPE equipment, construction safety products and protective accessories from trusted manufacturers for workshops, factories and industrial businesses across India.</p>
+<p class="mb-3">HARYANA TOOLS supplies industrial safety gloves, PPE equipment, construction safety products and protective [accessories](blog.html?id=choosing-cutting-discs) from trusted manufacturers for workshops, factories and industrial businesses across India.</p>
 
 <a href="products.html" class="btn btn-warning btn-lg">
 Browse Safety Products

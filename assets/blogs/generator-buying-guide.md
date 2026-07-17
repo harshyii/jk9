@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Generator Buying Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Generator [Buying Guide](blog.html?id=best-outdoor-world-cup-screening-equipment)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
-<h1>Generator Buying Guide: How to Choose the Right Generator for Home, Business & Industrial Use</h1>
+<h1>Generator [Buying Guide](blog.html?id=choosing-cutting-discs): How to Choose the Right Generator for Home, Business & Industrial Use</h1>
 
 <p>A generator provides backup electricity during power failures and is essential for homes, shops, offices, hospitals, factories and construction sites. Choosing the right generator depends on your power requirement, fuel type, efficiency and intended application. This guide explains everything you need before purchasing a generator.</p>
 

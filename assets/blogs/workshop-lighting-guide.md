@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Workshop Lighting Guide">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Workshop](blog.html?id=best-tools-for-home-workshop) Lighting Guide">
 
-<span class="badge bg-warning text-dark mb-2">Workshop Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Workshop](blog.html?id=welding-accessories-guide) Guide</span>
 
-<h1>Workshop Lighting Guide: How to Choose the Best Lighting for Productivity and Safety</h1>
+<h1>[Workshop](blog.html?id=workshop-storage-ideas) Lighting Guide: How to Choose the Best Lighting for Productivity and Safety</h1>
 
 <p>A well-lit workshop improves accuracy, reduces eye strain and makes every job safer. Whether you're operating power tools, repairing vehicles, fabricating metal or assembling products, choosing the right workshop lighting can significantly improve productivity. This guide explains everything you need to know before upgrading your workspace.</p>
 

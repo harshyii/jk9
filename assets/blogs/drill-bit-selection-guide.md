@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Drill Bit Selection Guide">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=choosing-cutting-discs)</span>
 
 <h1>Drill Bit Selection Guide: Choose the Right Drill Bit for Every Material</h1>
 
@@ -71,7 +71,7 @@
 <tr>
 <td>Step Drill Bit</td>
 <td>Sheet Metal</td>
-<td>Electrical Work</td>
+<td>[Electrical](blog.html?id=extension-cord-buying-guide) Work</td>
 </tr>
 
 <tr>
@@ -222,7 +222,7 @@ Before purchasing drill bits, check for:
 <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Can one drill bit work on every material?</button>
 </h2>
 <div id="faq1" class="accordion-collapse collapse show">
-<div class="accordion-body">No. Different materials require different drill bit designs for the best performance and safety.</div>
+<div class="accordion-body">No. Different materials require different drill bit designs for the best performance and [safety](blog.html?id=safety-gloves-buying-guide).</div>
 </div>
 </div>
 

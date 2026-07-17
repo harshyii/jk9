@@ -10,7 +10,7 @@ alt="Winter Tool Maintenance Guide">
 
 <p>
 
-Cold weather affects more than just people—it also impacts power tools, batteries, lubricants, electrical equipment and workshop machinery. Whether you're a professional contractor, fabricator, mechanic or DIY enthusiast, proper winter maintenance helps improve tool performance, extends equipment life and reduces costly breakdowns.
+Cold weather affects more than just people—it also impacts [power tools](blog.html?id=how-to-protect-tools-during-monsoon), batteries, lubricants, electrical equipment and workshop machinery. Whether you're a professional contractor, fabricator, mechanic or DIY enthusiast, proper winter maintenance helps improve tool performance, extends equipment life and reduces costly breakdowns.
 
 </p>
 
@@ -46,7 +46,7 @@ Although many regions of India experience mild winters, low temperatures, moistu
 
 <hr>
 
-<h2>Why Winter Affects Power Tools</h2>
+<h2>Why Winter Affects [Power Tools](blog.html?id=power-tool-maintenance-guide)</h2>
 
 <p>
 
@@ -697,7 +697,7 @@ HARYANA TOOLS supplies professional power tools, industrial equipment, electrica
 
 <li>Workshop Consumables</li>
 
-<li>Tool Storage Solutions</li>
+<li>[Tool Storage](blog.html?id=weatherproof-your-workshop) Solutions</li>
 
 <li>Maintenance Products</li>
 

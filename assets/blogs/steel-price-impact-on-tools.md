@@ -276,9 +276,9 @@ We work with trusted manufacturers to provide quality products that offer durabi
 
 You may also like:
 
-- Why Power Tool Prices Are Rising in India in 2026
-- How Rising Fuel Prices Increase Power Tool Costs
-- How China's Import Duties Affect Power Tool Prices in India
+- [Why Power Tool Prices Are Rising in India in 2026](blog.html?id=why-power-tool-prices-are-rising-india)
+- [How Rising Fuel Prices Increase Power Tool Costs](blog.html?id=how-fuel-prices-affect-tool-costs)
+- [How China's Import Duties Affect Power Tool Prices in India](blog.html?id=china-import-duty-tool-prices)
 - How Global Supply Chain Problems Increase Tool Prices
 - Why Construction Costs Are Increasing Across India
 - Impact Drill vs Rotary Hammer: Which One Should You Buy?

@@ -8,7 +8,7 @@ alt="Welding Machine Dealer in Pehowa">
 
 <h1>Best Welding Machine Dealer in Pehowa | ARC, MIG, TIG & Inverter Welding Machines</h1>
 
-<p>If you're looking for a reliable <strong>welding machine dealer in Pehowa</strong>, HARYANA TOOLS supplies quality welding machines, welding accessories, safety equipment and industrial tools for workshops, fabricators, mechanics, farmers, construction contractors and manufacturing industries across Pehowa and nearby areas.</p>
+<p>If you're looking for a reliable <strong>welding machine dealer in Pehowa</strong>, HARYANA TOOLS supplies quality welding machines, welding accessories, [safety equipment](blog.html?id=safety-equipment-supplier-pehowa) and [industrial tools](blog.html?id=industrial-tools-supplier-pehowa) for workshops, fabricators, mechanics, farmers, construction contractors and manufacturing industries across Pehowa and nearby areas.</p>
 
 <p>Whether you need a compact inverter welding machine for home repairs or a heavy-duty industrial welder for fabrication work, choosing the right machine improves weld quality, productivity and operating costs. Modern welding equipment is available in multiple technologies including ARC (MMA), MIG, TIG and multi-process welding machines, each designed for different applications. :contentReference[oaicite:0]{index=0}</p>
 
@@ -628,7 +628,7 @@ If you're looking for a trusted welding machine dealer in Pehowa, HARYANA TOOLS 
 
 <p class="mb-3">
 
-HARYANA TOOLS supplies inverter welding machines, ARC welders, MIG welders, TIG welders, welding accessories, safety equipment and industrial power tools for workshops, fabricators, contractors and manufacturing industries across Pehowa, Kurukshetra and nearby areas.
+HARYANA TOOLS supplies inverter welding machines, ARC welders, MIG welders, TIG welders, welding accessories, safety equipment and industrial [power tools](blog.html?id=best-power-tools-shop-pehowa) for workshops, fabricators, contractors and manufacturing industries across Pehowa, Kurukshetra and nearby areas.
 
 </p>
 

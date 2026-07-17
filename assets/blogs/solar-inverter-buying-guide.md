@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Solar Inverter Buying Guide">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Solar](blog.html?id=mppt-vs-pwm-charge-controller) Inverter [Buying Guide](blog.html?id=solar-panel-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Solar Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">Solar [Buying Guide](blog.html?id=solar-battery-buying-guide)</span>
 
 <h1>Solar Inverter Buying Guide: How to Choose the Right Inverter for Your Home</h1>
 

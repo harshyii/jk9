@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="MPPT vs PWM Solar Charge Controller">
 
-<span class="badge bg-success mb-2">Solar Buying Guide</span>
+<span class="badge bg-success mb-2">Solar [Buying Guide](blog.html?id=solar-inverter-buying-guide)</span>
 
 <h1>MPPT vs PWM Charge Controller: Which One Should You Buy?</h1>
 
@@ -10,7 +10,7 @@
 
 <hr>
 
-<h2>Quick Comparison</h2>
+<h2>Quick [Comparison](blog.html?id=impact-drill-vs-rotary-hammer)</h2>
 
 <div class="table-responsive">
 <table class="table table-bordered">
@@ -66,7 +66,7 @@
 
 <hr>
 
-<h2>Efficiency Comparison</h2>
+<h2>Efficiency [Comparison](blog.html?id=foam-wash-vs-hand-wash)</h2>
 
 <div class="row g-3">
 

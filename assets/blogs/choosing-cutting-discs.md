@@ -6,7 +6,7 @@ class="img-fluid rounded shadow-sm mb-3"
 alt="Choosing Cutting Discs">
 
 <span class="badge bg-warning text-dark mb-2">
-Buying Guide
+[Buying Guide](blog.html?id=drill-bit-selection-guide)
 </span>
 
 <h1>
@@ -29,7 +29,7 @@ Why Choosing the Right Disc Matters
 
 <p>
 
-Every cutting disc is designed for a specific material and operating speed. Using the correct disc improves cutting speed, reduces heat generation, extends tool life and increases operator safety.
+Every cutting disc is designed for a specific material and operating speed. Using the correct disc improves cutting speed, reduces heat generation, extends tool life and increases operator [safety](blog.html?id=safety-gloves-buying-guide).
 
 </p>
 
@@ -329,7 +329,7 @@ Which Disc for Which Material?
 
 <td>Mild Steel</td>
 
-<td>Metal Cutting Disc</td>
+<td>[Metal Cutting](blog.html?id=how-to-choose-angle-grinder) Disc</td>
 
 </tr>
 

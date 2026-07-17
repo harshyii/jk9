@@ -2,9 +2,9 @@
 
 <img src="https://images.unsplash.com/photo-1734888369502-3e01d4c0a46e?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="Angle Grinder Buying Guide">
+alt="Angle Grinder [Buying Guide](blog.html?id=extension-cord-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=best-tools-for-construction)</span>
 
 <h1>How to Choose the Right Angle Grinder for Industrial and Home Use</h1>
 
@@ -24,7 +24,7 @@ An angle grinder is a handheld power tool that rotates abrasive discs at high sp
 <strong>Common Applications</strong>
 
 <ul class="mb-0 mt-2">
-<li>Metal cutting</li>
+<li>[Metal cutting](blog.html?id=choosing-cutting-discs)</li>
 <li>Weld grinding</li>
 <li>Rust removal</li>
 <li>Tile and marble cutting</li>

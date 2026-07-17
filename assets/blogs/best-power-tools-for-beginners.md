@@ -1,14 +1,14 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Best Power Tools for Beginners">
+<img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Best [Power Tools](blog.html?id=circular-saw-buying-guide) for Beginners">
 
 <span class="badge bg-warning text-dark mb-2">Beginner Guide</span>
 
-<h1>Best Power Tools for Beginners: Essential Tools Every DIY Enthusiast Should Own</h1>
+<h1>Best [Power Tools](blog.html?id=jigsaw-buying-guide) for Beginners: Essential Tools Every DIY Enthusiast Should Own</h1>
 
 <p>Starting your power tool collection can be confusing. Hundreds of machines are available, but you don't need all of them. The right combination of quality tools helps you complete home repairs, furniture projects, automotive work and light construction safely and efficiently.</p>
 
-<p>This guide covers the best beginner-friendly power tools, their uses and what to look for before purchasing.</p>
+<p>This guide covers the best beginner-friendly [power tools](blog.html?id=heat-gun-buying-guide), their uses and what to look for before purchasing.</p>
 
 <hr>
 

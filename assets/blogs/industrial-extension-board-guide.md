@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Extension Board Buying Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Extension Board [Buying Guide](blog.html?id=extension-cord-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=world-cup-2026-home-viewing-setup)</span>
 
 <h1>Industrial Extension Board Buying Guide: How to Choose a Safe Power Strip</h1>
 
@@ -327,7 +327,7 @@ Before buying an industrial extension board, make sure it includes:
 
 <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
 
-Can I connect an angle grinder to a normal extension board?
+Can I connect an [angle grinder](blog.html?id=how-to-choose-angle-grinder) to a normal extension board?
 
 </button>
 

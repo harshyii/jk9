@@ -47,7 +47,7 @@ It is used in:
 - Warehouses
 - Commercial buildings
 
-Global demand for steel, manufacturing costs, energy prices, and transportation expenses all influence steel prices.
+Global demand for steel, [manufacturing](blog.html?id=steel-price-impact-on-tools) costs, energy prices, and transportation expenses all influence steel prices.
 
 Even a modest increase in steel prices can add thousands—or even lakhs—of rupees to large construction projects.
 
@@ -92,7 +92,7 @@ Whether it's steel, cement, bricks, tiles, or industrial equipment, almost every
 
 ---
 
-# 4. Transportation and Logistics Costs
+# 4. Transportation and [Logistics](blog.html?id=how-fuel-prices-affect-tool-costs) Costs
 
 Construction materials often travel hundreds of kilometers before reaching a project site.
 
@@ -296,7 +296,7 @@ Whether you're constructing a home, factory, warehouse, office, or commercial bu
 
 ## Why are construction costs increasing every year?
 
-Construction costs increase due to rising prices of raw materials, transportation, labor, fuel, electricity, equipment, and government compliance requirements. Inflation and global supply chain changes also contribute to higher project costs.
+Construction costs increase due to rising prices of raw materials, transportation, labor, fuel, electricity, equipment, and government compliance requirements. Inflation and global [supply chain](blog.html?id=global-supply-chain-tool-prices) changes also contribute to higher project costs.
 
 ---
 

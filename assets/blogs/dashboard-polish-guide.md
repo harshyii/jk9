@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Car Dashboard Polish Guide">
 
-<span class="badge bg-warning text-dark mb-2">Car Care Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Car Care](blog.html?id=tyre-polish-buying-guide) Guide</span>
 
 <h1>How to Choose the Best Dashboard Polish for Your Car</h1>
 
@@ -281,9 +281,9 @@ Many premium dashboard polishes contain anti-static additives that help reduce d
 
 <h2 class="mb-3">Keep Your Car Interior Looking New</h2>
 
-<p class="mb-3">HARYANA TOOLS offers professional dashboard polish, interior cleaners, microfiber cloths and complete car care products designed to restore shine and protect your vehicle's interior for years.</p>
+<p class="mb-3">HARYANA TOOLS offers professional dashboard polish, interior cleaners, microfiber cloths and complete [car care](blog.html?id=car-shampoo-buying-guide) products designed to restore shine and protect your vehicle's interior for years.</p>
 
-<a href="products.html" class="btn btn-warning btn-lg">Browse Car Care Products</a>
+<a href="products.html" class="btn btn-warning btn-lg">Browse [Car Care](blog.html?id=microfiber-cloth-buying-guide) Products</a>
 
 </div>
 

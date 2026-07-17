@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Industrial Tool Buying Checklist">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
 <h1>Industrial Tool Buying Checklist: 15 Things to Check Before You Purchase</h1>
 
-<p>Buying industrial tools is an investment. Choosing the wrong equipment can increase maintenance costs, reduce productivity and even create safety risks. Whether you're purchasing power tools, hand tools or workshop equipment, this checklist will help you make an informed decision.</p>
+<p>Buying industrial tools is an investment. Choosing the wrong equipment can increase maintenance costs, reduce productivity and even create safety risks. Whether you're purchasing [power tools](blog.html?id=circular-saw-buying-guide), hand tools or workshop equipment, this checklist will help you make an informed decision.</p>
 
 <hr>
 
@@ -116,7 +116,7 @@
 </tr>
 
 <tr>
-<td>Accessories</td>
+<td>[Accessories](blog.html?id=choosing-cutting-discs)</td>
 <td>Included in the package.</td>
 </tr>
 

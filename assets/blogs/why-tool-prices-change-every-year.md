@@ -2,7 +2,7 @@
 
 Power tool prices rarely stay the same for long. If you've noticed that an angle grinder, rotary hammer, cordless drill, welding machine, or cut-off machine costs more today than it did a year ago, you're not alone. Manufacturers across the world periodically revise their prices to keep up with changing production costs, market demand, and economic conditions.
 
-Many customers assume that brands simply increase prices to earn higher profits. In reality, the cost of manufacturing and delivering a power tool involves dozens of expenses beyond the machine itself. Raw materials, transportation, labor, electricity, taxes, currency exchange rates, packaging, warehousing, and import duties all contribute to the final selling price.
+Many customers assume that brands simply increase prices to earn higher profits. In reality, the cost of [manufacturing](blog.html?id=steel-price-impact-on-tools) and delivering a power tool involves dozens of expenses beyond the machine itself. Raw materials, transportation, labor, electricity, taxes, currency exchange rates, packaging, warehousing, and import duties all contribute to the final selling price.
 
 This article explains the major reasons why power tool brands revise their prices every year and why these changes affect dealers, businesses, contractors, and end users alike.
 
@@ -42,7 +42,7 @@ Similarly, copper is used extensively in:
 
 When global prices of steel or copper increase, manufacturing costs also rise. Since these materials account for a significant portion of production expenses, manufacturers often revise product prices to offset higher costs.
 
-Other materials that influence pricing include:
+Other materials that influence [pricing](blog.html?id=why-power-tool-prices-are-rising-india) include:
 
 - Aluminum
 - Brass
@@ -65,7 +65,7 @@ These costs include:
 - Insurance
 - Local delivery expenses
 
-A nationwide increase in fuel prices affects nearly every shipment. Even products manufactured within India become more expensive because transportation is an unavoidable part of the supply chain.
+A nationwide increase in fuel prices affects nearly every shipment. Even products manufactured within India become more expensive because transportation is an unavoidable part of the [supply chain](blog.html?id=global-supply-chain-tool-prices).
 
 Imported machinery is even more sensitive to rising freight costs because it involves international shipping before domestic distribution.
 

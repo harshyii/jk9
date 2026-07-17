@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Extension Cord Buying Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Extension Cord [Buying Guide](blog.html?id=industrial-extension-board-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=how-to-choose-angle-grinder)</span>
 
-<h1>Extension Cord Buying Guide: How to Choose the Right Extension Board & Cable</h1>
+<h1>Extension Cord [Buying Guide](blog.html?id=best-tools-for-construction): How to Choose the Right Extension Board & Cable</h1>
 
 <p>An extension cord is one of the most commonly used electrical accessories in homes, offices, workshops and industrial sites. Choosing the wrong extension cord can lead to voltage drop, overheating, damaged equipment and even fire hazards. This guide explains everything you should know before purchasing an extension cord.</p>
 

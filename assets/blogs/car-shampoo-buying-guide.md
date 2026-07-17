@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Car Shampoo Buying Guide">
+<img src="https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Car Shampoo [Buying Guide](blog.html?id=tyre-polish-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=dashboard-polish-guide)</span>
 
 <h1>How to Choose the Best Car Shampoo for a Spotless Finish</h1>
 

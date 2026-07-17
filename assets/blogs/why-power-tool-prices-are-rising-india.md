@@ -420,8 +420,8 @@ Whether you're purchasing a single drill machine or equipping an entire workshop
 
 ## Related Articles
 
-- How Rising Fuel Prices Increase Power Tool Costs
-- How China's Import Duties Affect Power Tool Prices in India
-- How Global Supply Chain Problems Increase Tool Prices
+- [How Rising Fuel Prices Increase Power Tool Costs](blog.html?id=how-fuel-prices-affect-tool-costs)
+- [How China's Import Duties Affect Power Tool Prices in India](blog.html?id=china-import-duty-tool-prices)
+- [How Global Supply Chain Problems Increase Tool Prices](blog.html?id=global-supply-chain-tool-prices)
 - How Rising Steel Prices Affect Industrial Tool Manufacturing
 - Should You Buy Power Tools Before the Next Price Increase?

@@ -159,10 +159,10 @@
 </div>
 
 <hr>
-<h2>Safety Equipment Every Plumber Should Wear</h2>
+<h2>[Safety](blog.html?id=safety-gloves-buying-guide) Equipment Every Plumber Should Wear</h2>
 
 <div class="list-group mb-3">
-<div class="list-group-item">✔ Safety Gloves</div>
+<div class="list-group-item">✔ [Safety](blog.html?id=safety-goggles-buying-guide) Gloves</div>
 <div class="list-group-item">✔ Safety Glasses</div>
 <div class="list-group-item">✔ Steel Toe Safety Shoes</div>
 <div class="list-group-item">✔ Knee Pads</div>
@@ -299,7 +299,7 @@ A quality pipe wrench is the most essential tool because it is used on almost ev
 <div class="accordion-item">
 <h2 class="accordion-header">
 <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-Do plumbers need power tools?
+Do plumbers need [power tools](blog.html?id=circular-saw-buying-guide)?
 </button>
 </h2>
 <div id="faq2" class="accordion-collapse collapse">

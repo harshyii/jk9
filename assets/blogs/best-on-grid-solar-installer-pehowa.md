@@ -2,11 +2,11 @@
 
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded shadow-sm mb-3"
-alt="On Grid Solar Installer in Pehowa">
+alt="On Grid [Solar](blog.html?id=watch-world-cup-2026-without-power-cuts) Installer in Pehowa">
 
-<span class="badge bg-success mb-2">Solar Energy Guide</span>
+<span class="badge bg-success mb-2">[Solar](blog.html?id=solar-vs-grid-electricity-world-cup-2026) Energy Guide</span>
 
-<h1>Best On-Grid Solar Installer in Pehowa | Residential & Commercial Rooftop Solar Systems</h1>
+<h1>[Best On-Grid Solar Installer in Pehowa](blog.html?id=on-grid-solar-installer-pehowa) | Residential & Commercial Rooftop Solar Systems</h1>
 
 <p>Looking for the best <strong>on grid solar installer in Pehowa</strong>? HARYANA TOOLS provides complete rooftop solar solutions for homes, shops, offices, factories, schools and commercial buildings. From system design and quality solar panels to inverter selection, installation and net metering assistance, we help customers reduce electricity bills while switching to clean renewable energy.</p>
 

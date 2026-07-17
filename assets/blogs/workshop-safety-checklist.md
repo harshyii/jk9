@@ -1,8 +1,8 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Workshop Safety Checklist">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Workshop [Safety](blog.html?id=safety-equipment-for-power-tools) Checklist">
 
-<span class="badge bg-danger mb-2">Safety Guide</span>
+<span class="badge bg-danger mb-2">[Safety](blog.html?id=warehouse-safety-guide) Guide</span>
 
 <h1>Workshop Safety Checklist: 20 Essential Rules Every Technician Should Follow</h1>
 
@@ -54,7 +54,7 @@
 <tbody>
 
 <tr><td>Wear appropriate PPE before starting work</td><td>☐</td></tr>
-<tr><td>Inspect power tools before use</td><td>☐</td></tr>
+<tr><td>Inspect [power tools](blog.html?id=common-angle-grinder-mistakes) before use</td><td>☐</td></tr>
 <tr><td>Check electrical cables for damage</td><td>☐</td></tr>
 <tr><td>Keep workbench clean and organized</td><td>☐</td></tr>
 <tr><td>Ensure adequate lighting</td><td>☐</td></tr>

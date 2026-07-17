@@ -1,10 +1,10 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Solar Panel Buying Guide">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Solar Panel [Buying Guide](blog.html?id=solar-battery-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=solar-inverter-buying-guide)</span>
 
-<h1>Solar Panel Buying Guide: How to Choose the Best Solar Panels for Your Home or Business</h1>
+<h1>Solar Panel [Buying Guide](blog.html?id=how-to-choose-angle-grinder): How to Choose the Best Solar Panels for Your Home or Business</h1>
 
 <p>Solar energy is one of the smartest long-term investments for homes, businesses and industries. The right solar panel can significantly reduce electricity bills while providing clean, renewable energy for over 25 years. This guide explains everything you should know before purchasing solar panels.</p>
 

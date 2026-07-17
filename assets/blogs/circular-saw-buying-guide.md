@@ -1,12 +1,12 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Circular Saw Buying Guide">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Circular Saw [Buying Guide](blog.html?id=jigsaw-buying-guide)">
 
-<span class="badge bg-warning text-dark mb-2">Buying Guide</span>
+<span class="badge bg-warning text-dark mb-2">[Buying Guide](blog.html?id=heat-gun-buying-guide)</span>
 
 <h1>How to Choose the Right Circular Saw for Professional and DIY Projects</h1>
 
-<p>A circular saw is one of the most important woodworking and construction power tools. Whether you're cutting plywood, timber, MDF, laminate flooring or metal sheets, selecting the right circular saw improves cutting accuracy, safety and productivity. This guide explains everything you should consider before purchasing one.</p>
+<p>A circular saw is one of the most important woodworking and construction [power tools](blog.html?id=best-power-tools-for-beginners). Whether you're cutting plywood, timber, MDF, laminate flooring or metal sheets, selecting the right circular saw improves cutting accuracy, safety and productivity. This guide explains everything you should consider before purchasing one.</p>
 
 <hr>
 

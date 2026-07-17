@@ -297,6 +297,26 @@ export async function render(container, params = {}) {
 // ==========================================================
 // Product Grid
 // ==========================================================
+function brandColor(brand) {
+
+    const colors = {
+        eastman: "#0d6efd",
+        bosch: "#005691",
+        makita: "#009688",
+        dewalt: "#facc15",
+        stanley: "#f59e0b",
+        ingco: "#f97316",
+        total: "#16a34a",
+        hikoki: "#22c55e",
+        hitachi: "#22c55e",
+        taparia: "#dc2626",
+        xtra: "#7c3aed"
+    };
+
+    return colors[(brand || "").toLowerCase()] || "#343a40";
+
+}
+
 
 function renderGrid(target, products) {
 
@@ -331,27 +351,40 @@ function renderGrid(target, products) {
     <div class="card h-100 shadow-sm border-0 rounded-3">
 
         <a
-            href="product.html?id=${encodeURIComponent(sku(product))}">
+    href="product.html?id=${encodeURIComponent(sku(product))}">
 
-            <img
-                src="${image(product)}"
-                class="card-img-top p-3"
-                style="height:220px;object-fit:contain;background:#fafafa"
-                alt="${name(product)}">
+    <div class="position-relative">
 
-        </a>
+        <img
+            src="${image(product)}"
+            class="card-img-top p-3"
+            style="height:220px;object-fit:contain;background:#fafafa"
+            alt="${name(product)}">
+
+        ${brand(product) ? `
+
+        <span
+    class="position-absolute top-0 end-0 mt-2 me-2 px-3 py-1 rounded-pill text-white fw-semibold shadow-sm"
+    style="
+        background:${brandColor(brand(product))};
+        font-size:.72rem;
+        letter-spacing:.3px;
+        z-index:2;
+    ">
+
+    ${brand(product)}
+
+</span>
+
+        ` : ""}
+
+    </div>
+
+</a>
 
         <div class="card-body d-flex flex-column p-3">
 
-            ${brand(product) ? `
-
-            <small class="text-muted text-uppercase fw-semibold mb-1">
-
-                ${brand(product)}
-
-            </small>
-
-            ` : ""}
+        
 
             <h6
                 class="fw-semibold mb-2"

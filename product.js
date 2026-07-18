@@ -631,41 +631,57 @@ async function renderDetail(container, id) {
         throw new Error("Invalid product response");
         }
         
+        if (products.length === 0) {
+
+    container.innerHTML = `
+        <div class="alert alert-warning text-center">
+            Loading product...
+        </div>
+    `;
+
+    return;
+}
+
 
     const product = products.find(item =>
+    sku(item) === String(id).trim()
+);
 
-        sku(item) === String(id).trim()
+if (!product) {
 
-    );
+    console.warn(`Product not found: ${id}`);
 
-    if (!product) {
+    document.title = "Product Temporarily Unavailable | Haryana Tools";
 
-        document.title = "Product Not Found | Haryana Tools";
+    container.innerHTML = `
 
-        container.innerHTML = `
-
-<div class="alert alert-warning">
+<div class="alert alert-info text-center py-5">
 
     <h1 class="h4 mb-3">
 
-        Product Not Found
+        Product Temporarily Unavailable
 
     </h1>
 
-    <p class="mb-0">
+    <p class="mb-3">
 
-        The requested product could not be found.
+        This product may have been moved, removed, or is temporarily unavailable.
 
     </p>
+
+    <a href="products.html" class="btn btn-warning">
+
+        Browse Products
+
+    </a>
 
 </div>
 
 `;
 
-        return;
+    return;
 
-    }
-    
+}
 
     // ======================================================
     // SEO

@@ -616,40 +616,16 @@ async function renderDetail(container, id) {
 
     try {
 
-    const response =
-
-        await api.get("products");
-
-    const products =
-
-        Array.isArray(response)
-
-            ? response
-
-            : response.data || [];
-        if (!Array.isArray(products)) {
-        throw new Error("Invalid product response");
-        }
-        
-        if (products.length === 0) {
-
-    container.innerHTML = `
-        <div class="alert alert-warning text-center">
-            Loading product...
-        </div>
-    `;
-
-    return;
-}
-
-
-    const product = products.find(item =>
-    sku(item) === String(id).trim()
+    const response = await api.get(
+    "product",
+    {
+        id
+    }
 );
 
-if (!product) {
+const product = response;
 
-    console.warn(`Product not found: ${id}`);
+if (!product || !product.ProductID) {
 
     document.title = "Product Temporarily Unavailable | Haryana Tools";
 
@@ -658,21 +634,15 @@ if (!product) {
 <div class="alert alert-info text-center py-5">
 
     <h1 class="h4 mb-3">
-
         Product Temporarily Unavailable
-
     </h1>
 
     <p class="mb-3">
-
         This product may have been moved, removed, or is temporarily unavailable.
-
     </p>
 
     <a href="products.html" class="btn btn-warning">
-
         Browse Products
-
     </a>
 
 </div>
@@ -680,9 +650,7 @@ if (!product) {
 `;
 
     return;
-
 }
-
     // ======================================================
     // SEO
     // ======================================================

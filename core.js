@@ -12,7 +12,7 @@ export const $ = selector => document.querySelector(selector);
 export const CONFIG = {
 
     API:
-        "https://script.google.com/macros/s/AKfycbymQAmnFOsN2xwwDy_FyPo_Zmid-73zxxXROlw7CnOqnv1lYN-nM3aM_EjRvaYVb_7wlg/exec",
+        "https://script.google.com/macros/s/AKfycbzw4MSbw-WN4QxPjZKwidKF5dtlEpGpiSjDQ9zPTYVSKMFJNF8LGQx0uANAn3w3HLezIw/exec",
 
     UPI:
         "9050623210@sbi",

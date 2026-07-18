@@ -39,7 +39,7 @@ function setSEO(post) {
         "";
 
     const url =
-        `https://haryana.tools/blog.html?id=${encodeURIComponent(slug)}`;
+    `https://www.haryana.tools/blog.html?id=${encodeURIComponent(slug)}`;
 
     document.title =
         `${title} | Haryana Tools`;
@@ -238,7 +238,7 @@ export async function render(container, params = {}) {
         const articles =
             await api.get("blogs");
 
-        articles.sort(
+                articles.sort(
 
             (a, b) =>
 
@@ -422,12 +422,26 @@ async function renderPost(container, slugId) {
 
     try {
 
-        const articles =
-            await api.get("blogs");
+        const articles = await api.get("blogs");
+
+if (!Array.isArray(articles)) {
+    throw new Error("Invalid blog response");
+}
+
+if (articles.length === 0) {
+
+    container.innerHTML = `
+        <div class="alert alert-warning text-center">
+            Loading article...
+        </div>
+    `;
+
+    return;
+}
 
         const post =
             articles.find(item =>
-
+                    
                 String(
 
                     item.Slug ||
@@ -441,25 +455,35 @@ async function renderPost(container, slugId) {
                 String(slugId)
 
             );
+            console.log("Found post:", post);
 
         if (!post) {
 
-            document.title =
-                "Blog Not Found | Haryana Tools";
+    console.warn(
+        "Slug not found:",
+        slugId
+    );
 
-            container.innerHTML = `
+    console.table(
+        articles.map(x => x.Slug)
+    );
 
-<div class="alert alert-warning text-center">
+    document.title =
+        "Article Unavailable | Haryana Tools";
+
+    container.innerHTML = `
+
+<div class="alert alert-info text-center">
 
     <h1 class="h4">
 
-        Blog Not Found
+        Article is temporarily unavailable
 
     </h1>
 
     <p class="mb-0">
 
-        The requested blog article could not be found.
+        Please try again shortly.
 
     </p>
 
@@ -467,9 +491,8 @@ async function renderPost(container, slugId) {
 
 `;
 
-            return;
-
-        }
+    return;
+}
 
         // ==========================================
         // SEO

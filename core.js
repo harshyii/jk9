@@ -131,7 +131,7 @@ export const api = {
 
             const json =
                 await response.json();
-
+            
             return json.data ?? json;
 
         }

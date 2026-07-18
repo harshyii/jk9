@@ -2,7 +2,7 @@
 // Service Worker
 // ==========================================================
 
-const CACHE = "haryana-tools-v1";
+const CACHE = "haryana-tools-v1.2";
 
 // ==========================================================
 // Static Assets

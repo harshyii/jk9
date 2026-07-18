@@ -726,6 +726,7 @@ if (!product || !product.ProductID) {
             ).replace(/[^\d.]/g, "")
 
         ) || salePrice;
+        updateProductSchema(product, salePrice, mrp);
 
         const img1 = image(product);
 
@@ -1208,6 +1209,75 @@ Added
 // ==========================================================
 // Product Specifications
 // ==========================================================
+function updateProductSchema(product, salePrice, mrp) {
+
+    document.getElementById("product-schema")?.remove();
+
+    const script = document.createElement("script");
+
+    script.id = "product-schema";
+    script.type = "application/ld+json";
+
+    script.textContent = JSON.stringify({
+
+        "@context": "https://schema.org",
+        "@type": "Product",
+
+        name: name(product),
+        description: product.Description,
+        sku: sku(product),
+        image: [
+            product.Image1,
+            product.Image2,
+            product.Image3,
+            product.Image4
+        ].filter(Boolean),
+
+        brand: {
+            "@type": "Brand",
+            name: brand(product)
+        },
+
+        manufacturer: {
+            "@type": "Organization",
+            name: product.Supplier || "Haryana Tools"
+        },
+
+        mpn: product["Manufacturer Part Number"],
+        model: product.Model,
+        category: product.Category,
+        url: location.href,
+
+        offers: {
+    "@type": "Offer",
+    url: location.href,
+    priceCurrency: "INR",
+    price: salePrice,
+
+    priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: mrp,
+        priceCurrency: "INR",
+        priceType: "https://schema.org/ListPrice"
+    },
+
+    availability:
+        product["In Stock Status"] === "In Stock"
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+
+    itemCondition: "https://schema.org/NewCondition",
+
+    seller: {
+        "@type": "Organization",
+        name: "Haryana Tools"
+    }
+}
+
+    });
+
+    document.head.appendChild(script);
+}
 
 function renderSpecifications(product) {
 

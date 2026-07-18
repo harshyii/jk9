@@ -60,19 +60,29 @@ const price = product =>
 
     ) || 0;
 
+const normalize = value =>
+
+    String(value || "")
+
+        .toLowerCase()
+
+        .normalize("NFKD")
+
+        .replace(/[\u0300-\u036f]/g, "")
+
+        .replace(/[-_/.,()]/g, " ")
+
+        .replace(/\s+/g, " ")
+
+        .trim();
+
 // ==========================================================
 // Search Page
 // ==========================================================
 
 export async function render(container, params = {}) {
 
-    const query =
-
-        (params.q || "")
-
-            .trim()
-
-            .toLowerCase();
+    const query = normalize(params.q);
 
     container.innerHTML = `
 
@@ -118,51 +128,71 @@ export async function render(container, params = {}) {
     api.get("products"),
     api.get("blogs")
 ]);
-
 const productResults = (Array.isArray(products) ? products : products.data || [])
+
 .filter(product =>
 
     !query ||
 
-    [
+    normalize([
 
         sku(product),
+
         name(product),
+
         brand(product),
+
         product.Category,
+
         product.Subcategory,
+
         product.Description,
-        product["Detailed Info"]
 
-    ]
+        product["Detailed Info"],
 
-    .join(" ")
-    .toLowerCase()
-    .includes(query)
-
-);
-
-const blogResults = (Array.isArray(blogs) ? blogs : blogs.data || [])
-.filter(blog =>
-
-    !query ||
-
-    [
-
-        blog.BlogID,
-        blog.Slug,
-        blog.Title,
-        blog.Excerpt,
-        blog.MetaDescription,
-        blog.Category,
-        blog.Tags,
-        blog.Keywords
+        product.SearchKeywords
 
     ]
 
     .filter(Boolean)
-    .join(" ")
-    .toLowerCase()
+
+    .join(" "))
+
+    .includes(query)
+
+);
+const blogResults = (Array.isArray(blogs) ? blogs : blogs.data || [])
+
+.filter(blog =>
+
+    !query ||
+
+    normalize([
+
+        blog.BlogID,
+
+        blog.Slug,
+
+        blog.Title,
+
+        blog.Excerpt,
+
+        blog.MetaDescription,
+
+        blog.Category,
+
+        blog.Tags,
+
+        blog.Keywords,
+
+        blog.SearchKeywords
+
+    ]
+
+    .filter(Boolean)
+
+    .join(" "))
+
     .includes(query)
 
 );

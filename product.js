@@ -627,6 +627,10 @@ async function renderDetail(container, id) {
             ? response
 
             : response.data || [];
+        if (!Array.isArray(products)) {
+        throw new Error("Invalid product response");
+        }
+        
 
     const product = products.find(item =>
 
@@ -636,21 +640,28 @@ async function renderDetail(container, id) {
 
     if (!product) {
 
-        document.title = "Product Not Found | Haryana Tools";
+    console.warn("Product not found:", id);
 
-        container.innerHTML = `
+    console.table(
+        products.map(p => sku(p))
+    );
 
-<div class="alert alert-warning">
+    document.title =
+        "Product Temporarily Unavailable | Haryana Tools";
 
-    <h1 class="h4 mb-3">
+    container.innerHTML = `
 
-        Product Not Found
+<div class="alert alert-info text-center">
+
+    <h1 class="h4">
+
+        Product temporarily unavailable
 
     </h1>
 
-    <p class="mb-0">
+    <p>
 
-        The requested product could not be found.
+        Please try again shortly.
 
     </p>
 
@@ -658,9 +669,13 @@ async function renderDetail(container, id) {
 
 `;
 
-        return;
+    return;
 
-    }
+}
+
+    const product = products.find(item =>
+    sku(item) === String(id).trim()
+);
 
     // ======================================================
     // SEO
@@ -680,7 +695,7 @@ async function renderDetail(container, id) {
     .querySelector('link[rel="canonical"]')
     ?.setAttribute(
         "href",
-        `https://haryana.tools/product.html?id=${encodeURIComponent(sku(product))}`
+        `https://www.haryana.tools/product.html?id=${encodeURIComponent(sku(product))}`
     );
 
     document

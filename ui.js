@@ -940,7 +940,7 @@ If you have any questions regarding this Privacy Policy or your personal informa
 
 <li>📞 +91 90506 23210</li>
 
-<li>🌐 https://haryana.tools</li>
+<li>🌐 https://www.haryana.tools</li>
 
 </ul>
 
@@ -1204,7 +1204,7 @@ If you have any questions regarding shipping, delivery timelines or order tracki
 
 <li>📧 care@haryana.tools</li>
 
-<li>🌐 https://haryana.tools</li>
+<li>🌐 https://www.haryana.tools</li>
 
 </ul>
 

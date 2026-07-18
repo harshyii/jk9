@@ -3,72 +3,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://haryana.tools/</loc>
+        <loc>https://www.haryana.tools/</loc>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/products.html</loc>
+        <loc>https://www.haryana.tools/products.html</loc>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/brands.html</loc>
+        <loc>https://www.haryana.tools/brands.html</loc>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/blogs.html</loc>
+        <loc>https://www.haryana.tools/blogs.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/search.html</loc>
+        <loc>https://www.haryana.tools/search.html</loc>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/contact.html</loc>
+        <loc>https://www.haryana.tools/contact.html</loc>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/about.html</loc>
+        <loc>https://www.haryana.tools/about.html</loc>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/faq.html</loc>
+        <loc>https://www.haryana.tools/faq.html</loc>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/shipping.html</loc>
+        <loc>https://www.haryana.tools/shipping.html</loc>
         <priority>0.5</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/returns.html</loc>
+        <loc>https://www.haryana.tools/returns.html</loc>
         <priority>0.5</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/privacy.html</loc>
+        <loc>https://www.haryana.tools/privacy.html</loc>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/terms.html</loc>
+        <loc>https://www.haryana.tools/terms.html</loc>
         <priority>0.4</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/cart.html</loc>
+        <loc>https://www.haryana.tools/cart.html</loc>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://haryana.tools/checkout.html</loc>
+        <loc>https://www.haryana.tools/checkout.html</loc>
         <priority>0.2</priority>
     </url>
 

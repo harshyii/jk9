@@ -259,7 +259,7 @@ contact: `
 <div class="text-center mb-5">
 
 <h1 class="fw-bold mb-3">
-Contact HARYANA TOOLS
+Contact HARYANA TOOLS <h3> <b> by JK ENTERPRISES</b></h3>
 </h1>
 
 <p class="lead text-muted mb-0">
@@ -402,7 +402,7 @@ Business Information
 
 <tr>
 <th>Business</th>
-<td>HARYANA TOOLS</td>
+<td>JK ENTERPRISES</td>
 </tr>
 
 <tr>

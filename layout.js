@@ -208,7 +208,7 @@ export function getFooterHTML() {
 
                 <h5 class="fw-bold mb-3">
 
-                    HARYANA TOOLS
+                    HARYANA TOOLS 
 
                 </h5>
 
@@ -341,7 +341,7 @@ export function getFooterHTML() {
 
             <div>
 
-                © ${new Date().getFullYear()} HARYANA TOOLS.
+                © ${new Date().getFullYear()}  JK ENTERPRISES.
                 All Rights Reserved.
 
             </div>

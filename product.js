@@ -640,28 +640,21 @@ async function renderDetail(container, id) {
 
     if (!product) {
 
-    console.warn("Product not found:", id);
+        document.title = "Product Not Found | Haryana Tools";
 
-    console.table(
-        products.map(p => sku(p))
-    );
+        container.innerHTML = `
 
-    document.title =
-        "Product Temporarily Unavailable | Haryana Tools";
+<div class="alert alert-warning">
 
-    container.innerHTML = `
+    <h1 class="h4 mb-3">
 
-<div class="alert alert-info text-center">
-
-    <h1 class="h4">
-
-        Product temporarily unavailable
+        Product Not Found
 
     </h1>
 
-    <p>
+    <p class="mb-0">
 
-        Please try again shortly.
+        The requested product could not be found.
 
     </p>
 
@@ -669,13 +662,10 @@ async function renderDetail(container, id) {
 
 `;
 
-    return;
+        return;
 
-}
-
-    const product = products.find(item =>
-    sku(item) === String(id).trim()
-);
+    }
+    
 
     // ======================================================
     // SEO

@@ -64,7 +64,7 @@
 
 <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>5 Metre</h5><p class="mb-0">Professional workshop and contractor use.</p></div></div></div>
 
-<div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>8 Metre+</h5><p class="mb-0">Construction sites and industrial projects.</p></div></div></div>
+<div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>8 Metre+</h5><p class="mb-0">Construction sites and [industrial](blog.html?id=generator-sizing-guide) projects.</p></div></div></div>
 
 </div>
 
@@ -153,7 +153,7 @@ Before purchasing measuring tools, check for:
 
 <h2 class="mb-3">Measure with Confidence</h2>
 
-<p class="mb-3">HARYANA TOOLS supplies measuring tapes, Vernier calipers, digital calipers, micrometers, spirit levels and professional measuring equipment for workshops, contractors, manufacturers and industrial buyers across India.</p>
+<p class="mb-3">[HARYANA TOOLS](blog.html?id=best-hand-tools-workshop) supplies measuring tapes, Vernier calipers, digital calipers, micrometers, spirit levels and professional measuring equipment for workshops, contractors, manufacturers and industrial buyers across India.</p>
 
 <a href="products.html" class="btn btn-warning btn-lg">Browse Measuring Tools</a>
 

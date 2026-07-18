@@ -5,12 +5,12 @@
 <img
 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow-lg mb-4"
-alt="Professional Cordless Drill Buying Guide">
+alt="Professional Cordless Drill [Buying Guide](blog.html?id=choosing-circular-saw)">
 
 <div class="text-center mb-4">
 
 <span class="badge bg-warning text-dark px-3 py-2">
-Buying Guide
+[Buying Guide](blog.html?id=best-jigsaw-for-woodworking)
 </span>
 
 <h1 class="display-5 fw-bold mt-3">
@@ -500,7 +500,7 @@ Whether you're a homeowner, carpenter, electrician, mechanic, or industrial cont
 
 <h4>Need Help Choosing?</h4>
 
-Contact <strong>JK Enterprises – Haryana Tools</strong> for expert guidance on selecting the right cordless drill based on your budget and application.
+Contact <strong>JK Enterprises – [Haryana Tools](blog.html?id=best-impact-wrench-guide)</strong> for expert guidance on selecting the right cordless drill based on your budget and application.
 
 </div>
 

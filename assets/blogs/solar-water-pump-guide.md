@@ -9,7 +9,7 @@ Solar Energy
 </span>
 
 <span class="badge bg-warning text-dark px-3 py-2 me-2">
-Buying Guide
+[Buying Guide](blog.html?id=cordless-drill-buying-guide)
 </span>
 
 <span class="badge bg-primary px-3 py-2">
@@ -903,12 +903,12 @@ Ready to Install a Solar Water Pump?
 </h2>
 
 <p class="lead mb-4">
-Whether you need a small residential system or a high-capacity agricultural solar pumping solution, Haryana Tools provides quality products, professional guidance, and reliable after-sales support to help you choose the right system.
+Whether you need a small residential system or a high-capacity agricultural solar pumping solution, [Haryana Tools](blog.html?id=off-grid-vs-on-grid-solar) provides quality products, professional guidance, and reliable after-sales support to help you choose the right system.
 </p>
 
 <a href="contact.html" class="btn btn-warning btn-lg px-5">
 <i class="bi bi-envelope-fill me-2"></i>
-Contact Haryana Tools
+Contact [Haryana Tools](blog.html?id=solar-inverter-buying-guide)
 </a>
 
 </div>

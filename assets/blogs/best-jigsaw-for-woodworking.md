@@ -7,7 +7,7 @@ alt="Professional woodworker using a jigsaw to cut plywood">
 <div class="alert alert-warning border-0 shadow-sm">
 
 <h1 class="h2 mb-2">
-Best Jigsaw for Woodworking – Complete Buying Guide (2026)
+Best Jigsaw for Woodworking – Complete [Buying Guide](blog.html?id=cordless-drill-buying-guide) (2026)
 </h1>
 
 <p class="mb-0">
@@ -20,7 +20,7 @@ Whether you're a DIY enthusiast building furniture at home or a professional car
 
 ## Why Choose a Jigsaw?
 
-A jigsaw is one of the most versatile power tools available. Unlike circular saws that only make straight cuts, a jigsaw allows you to cut:
+A jigsaw is one of the most versatile [power tools](blog.html?id=jigsaw-buying-guide) available. Unlike circular saws that only make straight cuts, a jigsaw allows you to cut:
 
 <div class="row g-3 my-4">
 
@@ -339,7 +339,7 @@ In <strong>Part 2</strong>, we'll cover:
 
 <li>✔ Safety tips for woodworking</li>
 
-<li>✔ Professional maintenance guide</li>
+<li>✔ Professional [maintenance](blog.html?id=how-to-maintain-power-tools) guide</li>
 
 <li>✔ Best blades for different wood types</li>
 

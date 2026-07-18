@@ -12,7 +12,7 @@
 
 <h2>Why Industrial Cleaning Equipment Matters</h2>
 
-<p>Dust, grease, metal particles, oil spills and industrial waste can reduce productivity and create workplace hazards. Professional cleaning equipment helps businesses maintain hygiene standards, improve employee safety and comply with workplace regulations.</p>
+<p>Dust, grease, metal particles, oil spills and industrial waste can reduce productivity and create workplace hazards. Professional cleaning equipment helps businesses maintain hygiene standards, improve employee [safety](blog.html?id=safety-gloves-buying-guide) and comply with workplace regulations.</p>
 
 <div class="alert alert-warning py-2">
 <strong>Benefits</strong>

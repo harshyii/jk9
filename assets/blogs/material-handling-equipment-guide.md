@@ -214,7 +214,7 @@ alt="Material Handling Equipment Guide">
 
 <hr>
 
-<h2>Safety Tips</h2>
+<h2>[Safety](blog.html?id=safety-gloves-buying-guide) Tips</h2>
 
 <div class="alert alert-success">
 

@@ -37,7 +37,7 @@ Buying the wrong welding machine often results in:
 </li>
 
 <li class="list-group-item">
-❌ Expensive maintenance
+❌ Expensive [maintenance](blog.html?id=how-to-maintain-power-tools)
 </li>
 
 <li class="list-group-item">
@@ -822,7 +822,7 @@ Verify warranty and spare parts availability.
 
 <label class="form-check-label">
 
-Purchase safety equipment before operating.
+Purchase [safety](blog.html?id=power-tool-safety-tips) equipment before operating.
 
 </label>
 
@@ -988,7 +988,7 @@ Our experts can help you select the perfect welding machine based on your budget
 
 <i class="bi bi-headset me-2"></i>
 
-Contact Haryana Tools
+Contact [Haryana Tools](blog.html?id=cordless-drill-buying-guide)
 
 </a>
 

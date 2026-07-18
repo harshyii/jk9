@@ -2,7 +2,7 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow-lg mb-4 w-100"
-alt="Industrial Safety Equipment Guide">
+alt="Industrial [Safety](blog.html?id=safety-equipment-for-power-tools) Equipment Guide">
 
 <div class="text-center mb-4">
 
@@ -896,7 +896,7 @@ Industrial safety equipment is an investment in employee well-being, operational
 
 <p class="mb-0">
 
-Whether you operate a construction site, fabrication workshop, warehouse, manufacturing unit, or industrial facility, Haryana Tools offers a wide range of reliable industrial safety products designed for professional use.
+Whether you operate a construction site, fabrication workshop, warehouse, manufacturing unit, or industrial facility, [Haryana Tools](blog.html?id=cordless-drill-buying-guide) offers a wide range of reliable industrial safety products designed for professional use.
 
 </p>
 
@@ -914,7 +914,7 @@ Related Articles
 
 <i class="bi bi-arrow-right-circle-fill text-warning"></i>
 
-Power Tool Safety Tips Every Worker Should Know
+[Power Tool Safety Tips](blog.html?id=power-tool-safety-tips) Every Worker Should Know
 
 </a>
 

@@ -2,10 +2,10 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
      class="img-fluid rounded shadow-sm mb-4"
-     alt="Professional Circular Saw Buying Guide">
+     alt="Professional Circular Saw [Buying Guide](blog.html?id=best-impact-wrench-guide)">
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-    <span class="badge bg-warning text-dark">Buying Guide</span>
+    <span class="badge bg-warning text-dark">[Buying Guide](blog.html?id=best-jigsaw-for-woodworking)</span>
     <span class="badge bg-dark">Power Tools</span>
     <span class="badge bg-secondary">Circular Saw</span>
     <span class="badge bg-success">2026 Guide</span>
@@ -989,7 +989,7 @@ For most professionals, a <strong>1600–1800W corded circular saw with a 185 mm
 
 <p class="mb-0">
 
-At <strong>Haryana Tools (JK Enterprises)</strong>, we supply reliable circular saws, replacement blades, and industrial power tools suitable for woodworking, fabrication, construction, and manufacturing applications. Our team can help you choose the right machine based on your specific requirements and budget.
+At <strong>[Haryana Tools](blog.html?id=cordless-drill-buying-guide) (JK Enterprises)</strong>, we supply reliable circular saws, replacement blades, and industrial power tools suitable for woodworking, fabrication, construction, and manufacturing applications. Our team can help you choose the right machine based on your specific requirements and budget.
 
 </p>
 

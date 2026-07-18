@@ -2,12 +2,12 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow-lg mb-4 w-100"
-alt="Diamond Cutting Disc Buying Guide">
+alt="Diamond Cutting Disc [Buying Guide](blog.html?id=best-impact-wrench-guide)">
 
 <div class="alert alert-warning border-0 shadow-sm">
 
 <h1 class="display-5 fw-bold mb-2">
-Diamond Cutting Disc Buying Guide
+Diamond Cutting Disc [Buying Guide](blog.html?id=how-to-maintain-power-tools)
 </h1>
 
 <p class="lead mb-0">
@@ -908,7 +908,7 @@ The blade may be glazed, worn out, incorrectly matched to the material or runnin
 
 Choosing the right diamond cutting disc improves cutting speed, extends tool life, reduces operating costs and significantly enhances workplace safety. Whether you're a contractor, fabricator, mason or DIY enthusiast, selecting the proper blade for your material and machine ensures clean, precise and efficient results.
 
-At <strong>JK Enterprises (Haryana Tools)</strong>, we offer premium-quality diamond cutting discs suitable for angle grinders, marble cutters, tile cutters and industrial cutting machines. Our range includes segmented, turbo and continuous rim blades designed for concrete, granite, marble, ceramic tiles, bricks, pavers and other construction materials.
+At <strong>JK Enterprises ([Haryana Tools](blog.html?id=cordless-drill-buying-guide))</strong>, we offer premium-quality diamond cutting discs suitable for angle grinders, marble cutters, tile cutters and industrial cutting machines. Our range includes segmented, turbo and continuous rim blades designed for concrete, granite, marble, ceramic tiles, bricks, pavers and other construction materials.
 
 <div class="alert alert-warning shadow-sm mt-4">
 

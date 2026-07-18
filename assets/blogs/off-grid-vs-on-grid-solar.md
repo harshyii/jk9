@@ -894,7 +894,7 @@ Need Help Choosing the Right Solar System?
 
 <p class="lead">
 
-Whether you're planning a residential rooftop installation, a commercial solar project, or a farm-based solar solution, <strong>JK Enterprises (Haryana Tools)</strong> can help you choose the right solar panels, inverters, mounting structures, and accessories for maximum performance and long-term savings.
+Whether you're planning a residential rooftop installation, a commercial solar project, or a farm-based solar solution, <strong>JK Enterprises ([Haryana Tools](blog.html?id=solar-water-pump-guide))</strong> can help you choose the right solar panels, inverters, mounting structures, and accessories for maximum performance and long-term savings.
 
 </p>
 
@@ -922,9 +922,9 @@ Related Articles
 
 <li><a href="blog.html?id=best-on-grid-solar-installer-pehowa">Best On-Grid Solar Installer in Pehowa</a></li>
 
-<li><a href="blog.html?id=solar-inverter-buying-guide">Solar Inverter Buying Guide</a></li>
+<li><a href="blog.html?id=solar-inverter-buying-guide">[Solar Inverter Buying Guide](blog.html?id=solar-inverter-buying-guide)</a></li>
 
-<li><a href="blog.html?id=solar-water-pump-guide">Solar Water Pump Buying Guide</a></li>
+<li><a href="blog.html?id=solar-water-pump-guide">Solar Water Pump [Buying Guide](blog.html?id=cordless-drill-buying-guide)</a></li>
 
 <li><a href="blog.html?id=how-to-maintain-power-tools">How to Maintain Power Tools</a></li>
 

@@ -9,7 +9,7 @@
 <div class="col-md-8">
 
 <span class="badge bg-success me-2">
-Buying Guide
+[Buying Guide](blog.html?id=cordless-drill-buying-guide)
 </span>
 
 <span class="badge bg-warning text-dark me-2">
@@ -36,13 +36,13 @@ Updated July 2026
 
 <h1 class="display-5 fw-bold mb-4">
 
-Complete Chainsaw Buying Guide: Choose the Right Chainsaw for Every Job
+Complete Chainsaw [Buying Guide](blog.html?id=best-impact-wrench-guide): Choose the Right Chainsaw for Every Job
 
 </h1>
 
 <p class="lead">
 
-Whether you're cutting firewood, trimming trees, clearing farmland, or handling professional forestry work, choosing the right chainsaw makes every job safer, faster, and more efficient. This comprehensive buying guide explains everything you need to know before purchasing a chainsaw.
+Whether you're cutting firewood, trimming trees, clearing farmland, or handling professional forestry work, choosing the right chainsaw makes every job safer, faster, and more efficient. This comprehensive [buying guide](blog.html?id=choosing-circular-saw) explains everything you need to know before purchasing a chainsaw.
 
 </p>
 

@@ -2,12 +2,12 @@
 
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow mb-4"
-alt="Industrial Impact Wrench Buying Guide">
+alt="Industrial Impact Wrench [Buying Guide](blog.html?id=cordless-drill-buying-guide)">
 
 <div class="alert alert-warning border-0 shadow-sm">
 
 <h1 class="mb-2">
-Best Impact Wrench Buying Guide (2026)
+Best Impact Wrench [Buying Guide](blog.html?id=choosing-circular-saw) (2026)
 </h1>
 
 <p class="mb-0">
@@ -990,7 +990,7 @@ Yes. A quality 1/2-inch impact wrench with around 500–700 Nm torque can easily
 
 <p>
 
-Only if you're buying a pneumatic impact wrench. Corded and cordless models work without an air compressor.
+Only if you're buying a pneumatic impact wrench. Corded and cordless models work without an [air compressor](blog.html?id=air-compressor-buying-guide).
 
 </p>
 

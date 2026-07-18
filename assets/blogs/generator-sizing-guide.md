@@ -6,7 +6,7 @@ alt="Industrial Diesel Generator Supplying Backup Power">
 
 <div class="d-flex flex-wrap gap-2 mb-3">
 
-<span class="badge bg-warning text-dark">Buying Guide</span>
+<span class="badge bg-warning text-dark">[Buying Guide](blog.html?id=best-impact-wrench-guide)</span>
 
 <span class="badge bg-dark">Industrial Equipment</span>
 
@@ -20,7 +20,7 @@ alt="Industrial Diesel Generator Supplying Backup Power">
 
 <p class="lead">
 
-Choosing the correct generator is one of the most important decisions for any business, factory, construction site, hospital, office or home. Buying a generator that is too small causes overloads and equipment failures, while buying an oversized generator increases fuel consumption, maintenance costs and purchase price.
+Choosing the correct generator is one of the most important decisions for any business, factory, construction site, hospital, office or home. Buying a generator that is too small causes overloads and equipment failures, while buying an oversized generator increases fuel consumption, [maintenance](blog.html?id=how-to-maintain-power-tools) costs and purchase price.
 
 This complete guide explains everything you need to know before purchasing a generator, including load calculations, fuel types, applications and sizing tips.
 
@@ -1095,7 +1095,7 @@ Need Help Choosing the Right Generator?
 
 <p class="mb-0">
 
-Our experts at <strong>JK Enterprises (Haryana Tools)</strong> can help you select the ideal generator based on your electrical load, application and budget. We supply quality industrial generators, electrical equipment and power solutions for residential, commercial and industrial customers.
+Our experts at <strong>JK Enterprises ([Haryana Tools](blog.html?id=cordless-drill-buying-guide))</strong> can help you select the ideal generator based on your electrical load, application and budget. We supply quality industrial generators, electrical equipment and power solutions for residential, commercial and industrial customers.
 
 </p>
 

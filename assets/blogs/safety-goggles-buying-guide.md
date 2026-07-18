@@ -1,6 +1,6 @@
 <div class="blog-content">
 
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="Safety Goggles [Buying Guide](blog.html?id=safety-gloves-buying-guide)">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop" class="img-fluid rounded shadow-sm mb-3" alt="[Safety](blog.html?id=safety-gloves-buying-guide) Goggles [Buying Guide](blog.html?id=safety-gloves-buying-guide)">
 
 <span class="badge bg-warning text-dark mb-2">Safety Guide</span>
 

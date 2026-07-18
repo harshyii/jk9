@@ -3,7 +3,7 @@
 <img
 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop"
 class="img-fluid rounded-4 shadow mb-4"
-alt="Power Tool Safety Tips">
+alt="Power Tool [Safety](blog.html?id=industrial-safety-equipment-guide) Tips">
 
 <div class="alert alert-warning border-0 shadow-sm mb-4">
 
@@ -12,7 +12,7 @@ Power Tool Safety Tips Every Professional and DIY User Should Know
 </h1>
 
 <p class="lead mb-0">
-Power tools make construction, fabrication, woodworking and home improvement projects faster and easier. However, they can also cause serious injuries if used incorrectly. Whether you're using an angle grinder, drill machine, circular saw, impact wrench or rotary hammer, following proper safety practices protects both you and your equipment.
+[Power tools](blog.html?id=common-angle-grinder-mistakes) make construction, fabrication, woodworking and home improvement projects faster and easier. However, they can also cause serious injuries if used incorrectly. Whether you're using an angle grinder, drill machine, circular saw, impact wrench or rotary hammer, following proper safety practices protects both you and your equipment.
 </p>
 
 </div>
@@ -79,7 +79,7 @@ Most Common Causes of Accidents
 
 <li>Improper grip</li>
 
-<li>Poor maintenance</li>
+<li>Poor [maintenance](blog.html?id=how-to-maintain-power-tools)</li>
 
 <li>Using incorrect speed settings</li>
 
